@@ -7,10 +7,10 @@
 **Matrícula:** 24.2.4038 
 
 **Nome:** Pedro Vitor Silva Cruz   
-**Matrícula:**  
+**Matrícula:** 24.2.4086
 
 **Nome:** Rafael Araújo Granato     
-**Matrícula:**  
+**Matrícula:** 24.2.4085
 
 ## Descrição do Projeto
 O **Agenda+** é um sistema web para agendamento de pacientes, desenvolvido especificamente para otimizar e organizar a marcação de consultas em clínicas e consultórios médicos. O projeto visa facilitar a comunicação entre pacientes, recepcionistas e médicos, centralizando a gestão de horários, usuários e estoques de medicamentos.
