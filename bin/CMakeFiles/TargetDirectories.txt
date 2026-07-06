@@ -1,0 +1,4 @@
+/home/cesar/Agenda_Mais/bin/CMakeFiles/Agenda_Mais.dir
+/home/cesar/Agenda_Mais/bin/CMakeFiles/edit_cache.dir
+/home/cesar/Agenda_Mais/bin/CMakeFiles/rebuild_cache.dir
+/home/cesar/Agenda_Mais/bin/CMakeFiles/Agenda_Mais_autogen.dir
