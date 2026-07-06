@@ -3,25 +3,113 @@
 
 #include <string>
 
+// Definição dos Enums limitando as opções do Storyboard
+
+/*!
+ * @brief Enum class that defines the possible types of a status.
+ */
+enum class Status{
+    PENDING,
+    CONFIRMED,
+    REJECTED
+};
+
+/*!
+ * @brief Enumeration class defining the possible types of a doctor.
+ */
+enum class Specialty {
+    DENTIST,
+    NEUROLOGIST,
+    PSYCHOLOGIST,
+    CARDIOLOGIST,
+    NUTRITIONIST,
+    DERMATOLOGIST
+};
+
+/*!
+ * @brief This class represents the interface of an Appointment as implemented in this code.
+ * * It defines the abstract methods for appointment management.
+ */
+
 class Appointment {
 public:
+    /*!
+     * @brief This is the default destructor for the Appointment Class.
+     */
     virtual ~Appointment() {}
     
+    //getters e setters
+    /*!
+     * @brief Returns the patientName attribute in the Appointment Class.
+     * * @return string - the content patientName attribute.
+     */
     virtual std::string getPatientName() const = 0;
-    virtual std::string getDoctorName() const = 0;
-    virtual std::string getDate() const = 0;
-    virtual std::string getTime() const = 0;
-    virtual std::string getStatus() const = 0;
-    virtual std::string getReason() const = 0;
-    virtual std::string getAppointmentType() const = 0;
 
+    /*!
+     * @brief Returns the doctorName attribute in the Appointment Class.
+     * * @return string - the content doctorName attribute.
+     */
+    virtual std::string getDoctorName() const = 0;
+
+    /*!
+     * @brief Returns the date attribute in the Appointment Class.
+     * * @return string - the content date attribute.
+     */
+    virtual std::string getDate() const = 0;
+
+    /*!
+     * @brief Returns the time attribute in the Appointment Class.
+     * * @return string - the content time attribute.
+     */
+    virtual std::string getTime() const = 0;
+
+    /*!
+     * @brief Returns the status attribute in the Appointment Class.
+     * * @return Status - the content status attribute.
+     */
+    virtual Status getStatus() const = 0;
+
+    /*!
+     * @brief Returns the appointmentType attribute in the Appointment Class.
+     * * @return Specialty - the content appointmentType attribute.
+     */
+    virtual Specialty getAppointmentType() const = 0;
+
+    /*!
+     * @brief Sets the patientName attribute in the Appointment Class.
+     * * @param name which will be set to the current appointment.
+     */
     virtual void setPatientName(const std::string& name) = 0;
+
+    /*!
+     * @brief Sets the doctorName attribute in the Appointment Class.
+     * * @param name which will be set to the current appointment.
+     */
     virtual void setDoctorName(const std::string& name) = 0;
+
+    /*!
+     * @brief Sets the date attribute in the Appointment Class.
+     * * @param date which will be set to the current appointment.
+     */
     virtual void setDate(const std::string& date) = 0;
+
+    /*!
+     * @brief Sets the time attribute in the Appointment Class.
+     * * @param time which will be set to the current appointment.
+     */
     virtual void setTime(const std::string& time) = 0;
-    virtual void setStatus(const std::string& status) = 0;
-    virtual void setReason(const std::string& reason) = 0;
-    virtual void setAppointmentType(const std::string& type) = 0;
+
+    /*!
+     * @brief Sets the status attribute in the Appointment Class.
+     * * @param status which will be set to the current appointment.
+     */
+    virtual void setStatus(const Status status) = 0;
+
+    /*!
+     * @brief Sets the appointmentType attribute in the Appointment Class.
+     * * @param type which will be set to the current appointment.
+     */
+    virtual void setAppointmentType(const Specialty type) = 0;
 };
 
 #endif // APPOINTMENT_H
