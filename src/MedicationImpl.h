@@ -23,6 +23,7 @@ protected:
     bool requiresPrescription;    ///< Flag indicating if a prescription is needed.
 
 public:
+    MedicationBody();
     /**
      * @brief Constructor for MedicationBody.
      * @param name The name of the medication.

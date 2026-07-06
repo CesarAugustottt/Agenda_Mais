@@ -7,6 +7,9 @@
 
 // MedicationBody Implementation
 
+MedicationBody::MedicationBody()
+    : Body(), name(""), quantity(0), requiresPrescription(false) {}
+
 MedicationBody::MedicationBody(const std::string& name, int quantity, bool requiresPrescription)
     : Body(), name(name), quantity(quantity), requiresPrescription(requiresPrescription) {}
 
@@ -47,9 +50,12 @@ bool MedicationBody::decreaseStock(int amount) {
 
 // MedicationHandle Implementation
 
-MedicationHandle::MedicationHandle(const std::string& name, int quantity, bool requiresPrescription)
-    : Handle<MedicationBody>(new MedicationBody(name, quantity, requiresPrescription)) {}
-
+MedicationHandle::MedicationHandle(const std::string& name, int quantity, bool requiresPrescription) {
+    // O pImpl_ já foi criado vazio pelo Handle, agora usamos os setters:
+    pImpl_->setName(name);
+    pImpl_->setQuantity(quantity);
+    pImpl_->setRequiresPrescription(requiresPrescription);
+}
 MedicationHandle::~MedicationHandle() {}
 
 std::string MedicationHandle::getName() const { 
