@@ -1,5 +1,5 @@
 #include "TelaDataHora.h"
-#include "../../src/AppointmentImpl.h" // Inclui a implementação do Handle-Body
+#include "AppointmentImpl.h" // Inclui a implementação do Handle-Body
 #include "TelaEspecialidade.h"
 #include <QMessageBox>
 

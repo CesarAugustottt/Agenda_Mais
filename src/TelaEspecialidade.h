@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include "../../src/Appointment.h"
+#include "Appointment.h"
 
 class TelaEspecialidade : public QWidget {
     Q_OBJECT

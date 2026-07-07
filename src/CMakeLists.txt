@@ -8,6 +8,10 @@ qt_standard_project_setup()
 qt_add_executable(Agenda
     WIN32 MACOSX_BUNDLE
     main.cpp
+    TelaDataHora.cpp
+    TelaDataHora.h
+    TelaEspecialidade.cpp
+    TelaEspecialidade.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui

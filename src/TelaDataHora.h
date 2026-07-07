@@ -5,7 +5,7 @@
 #include <QCalendarWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include "../../src/Appointment.h"
+#include "Appointment.h"
 
 class TelaDataHora : public QWidget {
     Q_OBJECT
