@@ -1,15 +1,15 @@
 #include "TelaLogin.h"
 #include "mainwindow.h"
-#include "UserImpl.h"
+#include "TelaCadastroUsuario.h" // Incluindo a sua tela de cadastro existente
 #include <QMessageBox>
-#include <QFrame>
 
 TelaLogin::TelaLogin(QWidget *parent) : QWidget(parent) {
-    this->resize(380, 680);
+    // Reduzimos o tamanho da janela já que agora ela tem menos componentes
+    this->resize(380, 400);
     this->setWindowTitle("Clínica - Acesso ao Sistema");
 
     layoutPrincipal = new QVBoxLayout(this);
-    layoutPrincipal->setSpacing(8);
+    layoutPrincipal->setSpacing(12);
 
     // ================= SEÇÃO DE LOGIN =================
     lblTituloLogin = new QLabel("<h2>Acessar Conta</h2>", this);
@@ -28,6 +28,7 @@ TelaLogin::TelaLogin(QWidget *parent) : QWidget(parent) {
     layoutPrincipal->addWidget(txtSenha);
 
     btnEntrar = new QPushButton("Entrar", this);
+    btnEntrar->setMinimumHeight(40);
     layoutPrincipal->addWidget(btnEntrar);
 
     // ================= LINHA DIVISÓRIA =================
@@ -36,47 +37,18 @@ TelaLogin::TelaLogin(QWidget *parent) : QWidget(parent) {
     linhaDivisoria->setFrameShadow(QFrame::Sunken);
     layoutPrincipal->addWidget(linhaDivisoria);
 
-    // ================= SEÇÃO DE CADASTRO =================
-    lblTituloCadastro = new QLabel("<h2>Não tem conta? Cadastre-se</h2>", this);
-    lblTituloCadastro->setAlignment(Qt::AlignCenter);
-    layoutPrincipal->addWidget(lblTituloCadastro);
+    // ================= SEÇÃO DE CADASTRO SIMPLIFICADA =================
+    lblTextoCadastro = new QLabel("Ainda não tem uma conta no sistema?", this);
+    lblTextoCadastro->setAlignment(Qt::AlignCenter);
+    layoutPrincipal->addWidget(lblTextoCadastro);
 
-    lblCadNome = new QLabel("Nome Completo:", this);
-    txtCadNome = new QLineEdit(this);
-    layoutPrincipal->addWidget(lblCadNome);
-    layoutPrincipal->addWidget(txtCadNome);
-
-    lblCadCpf = new QLabel("CPF:", this);
-    txtCadCpf = new QLineEdit(this);
-    layoutPrincipal->addWidget(lblCadCpf);
-    layoutPrincipal->addWidget(txtCadCpf);
-
-    lblCadEmail = new QLabel("Email:", this);
-    txtCadEmail = new QLineEdit(this);
-    layoutPrincipal->addWidget(lblCadEmail);
-    layoutPrincipal->addWidget(txtCadEmail);
-
-    lblCadSenha = new QLabel("Senha de Cadastro:", this);
-    txtCadSenha = new QLineEdit(this);
-    txtCadSenha->setEchoMode(QLineEdit::Password);
-    layoutPrincipal->addWidget(lblCadSenha);
-    layoutPrincipal->addWidget(txtCadSenha);
-
-    lblCadTipo = new QLabel("Tipo de Usuário:", this);
-    cbxCadTipo = new QComboBox(this);
-    cbxCadTipo->addItem("Paciente");
-    cbxCadTipo->addItem("Secretária");
-    cbxCadTipo->addItem("Médico");
-    cbxCadTipo->addItem("Administrador");
-    layoutPrincipal->addWidget(lblCadTipo);
-    layoutPrincipal->addWidget(cbxCadTipo);
-
-    btnCadastrar = new QPushButton("Criar Nova Conta", this);
-    layoutPrincipal->addWidget(btnCadastrar);
+    btnIrParaCadastro = new QPushButton("Criar Nova Conta / Cadastrar", this);
+    btnIrParaCadastro->setMinimumHeight(35);
+    layoutPrincipal->addWidget(btnIrParaCadastro);
 
     // Conexões dos botões
     connect(btnEntrar, &QPushButton::clicked, this, &TelaLogin::on_btnEntrar_clicked);
-    connect(btnCadastrar, &QPushButton::clicked, this, &TelaLogin::on_btnCadastrar_clicked);
+    connect(btnIrParaCadastro, &QPushButton::clicked, this, &TelaLogin::on_btnIrParaCadastro_clicked);
 }
 
 TelaLogin::~TelaLogin() {}
@@ -85,40 +57,24 @@ void TelaLogin::on_btnEntrar_clicked() {
     QString usuario = txtUsuario->text();
     QString senha = txtSenha->text();
 
-    // Validação master rápida ou você pode expandir para ler do seu sistema de usuários
     if ((usuario == "admin" && senha == "1234") || (!usuario.isEmpty() && !senha.isEmpty())) {
         MainWindow *janelaPrincipal = new MainWindow();
         janelaPrincipal->setAttribute(Qt::WA_DeleteOnClose);
         janelaPrincipal->show();
-        
-        this->close(); // Fecha a tela de login integrada
+
+        this->close();
     } else {
         QMessageBox::warning(this, "Erro de Acesso", "Por favor, preencha o usuário e senha corretamente!");
     }
 }
 
-void TelaLogin::on_btnCadastrar_clicked() {
-    if (txtCadNome->text().isEmpty() || txtCadEmail->text().isEmpty() || txtCadSenha->text().isEmpty()) {
-        QMessageBox::warning(this, "Erro no Cadastro", "Preencha todos os campos obrigatórios (Nome, Email e Senha)!");
-        return;
-    }
+// Essa função roda quando clicam no botão de Cadastrar lá embaixo
+void TelaLogin::on_btnIrParaCadastro_clicked() {
+    // Abre a sua tela de cadastro de usuário padrão do projeto
+    TelaCadastroUsuario *telaCadastro = new TelaCadastroUsuario(nullptr);
+    telaCadastro->setAttribute(Qt::WA_DeleteOnClose);
+    telaCadastro->show();
 
-    UserType tipoSelecionado = static_cast<UserType>(cbxCadTipo->currentIndex());
-
-    // Cria o usuário usando a estrutura Handle-Body que você possui
-    User* newUser = new UserHandle(
-        txtCadNome->text().toStdString(),
-        txtCadCpf->text().toStdString(),
-        txtCadEmail->text().toStdString(),
-        txtCadSenha->text().toStdString(),
-        tipoSelecionado
-    );
-
-    QMessageBox::information(this, "Sucesso", "Usuário cadastrado com sucesso! Agora você já pode fazer o Login no topo.");
-    
-    // Limpa os campos de cadastro após o sucesso
-    txtCadNome->clear();
-    txtCadCpf->clear();
-    txtCadEmail->clear();
-    txtCadSenha->clear();
+    // Opcional: Se quiser fechar a tela de login ao abrir o cadastro, descomente a linha abaixo:
+    // this->close();
 }

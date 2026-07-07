@@ -6,7 +6,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
-#include <QComboBox>
+#include <QFrame>
 
 class TelaLogin : public QWidget {
     Q_OBJECT
@@ -17,11 +17,11 @@ public:
 
 private slots:
     void on_btnEntrar_clicked();
-    void on_btnCadastrar_clicked();
+    void on_btnIrParaCadastro_clicked(); // Slot alterado para abrir a nova tela
 
 private:
     QVBoxLayout *layoutPrincipal;
-    
+
     // --- COMPONENTES DE LOGIN ---
     QLabel *lblTituloLogin;
     QLabel *lblUsuario;
@@ -33,18 +33,9 @@ private:
     // Linha divisória visual
     QFrame *linhaDivisoria;
 
-    // --- COMPONENTES DE CADASTRO ---
-    QLabel *lblTituloCadastro;
-    QLabel *lblCadNome;
-    QLineEdit *txtCadNome;
-    QLabel *lblCadCpf;
-    QLineEdit *txtCadCpf;
-    QLabel *lblCadEmail;
-    QLineEdit *txtCadEmail;
-    QLabel *lblCadSenha;
-    QLineEdit *txtCadSenha;
-    QLabel *lblCadTipo;
-    QComboBox *cbxCadTipo;
-    QPushButton *btnCadastrar;
+    // --- COMPONENTES DE CADASTRO SIMPLIFICADO ---
+    QLabel *lblTextoCadastro;
+    QPushButton *btnIrParaCadastro; // Apenas o botão agora!
 };
+
 #endif // TELALOGIN_H
