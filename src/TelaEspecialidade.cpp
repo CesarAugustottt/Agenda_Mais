@@ -2,8 +2,8 @@
 #include "TelaDataHora.h"
 
 TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
-    this->resize(360, 640);
-    this->setWindowTitle("Agende Sua Consulta");
+    this->resize(360, 640); //define o tamanho da janela
+    this->setWindowTitle("Agende Sua Consulta"); //titulo
 
     layoutPrincipal = new QVBoxLayout(this);
 
@@ -15,7 +15,7 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     btnNutricionista = new QPushButton("Nutricionista", this);
     btnDermatologista = new QPushButton("Dermatologista", this);
 
-    // Adicionando todos ao layout de exibição
+    // Adicionando todos os botoes ao layout de exibição
     layoutPrincipal->addWidget(btnDentista);
     layoutPrincipal->addWidget(btnNeurologista);
     layoutPrincipal->addWidget(btnPsicologo);
@@ -23,7 +23,7 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     layoutPrincipal->addWidget(btnNutricionista);
     layoutPrincipal->addWidget(btnDermatologista);
 
-    // Conectando os cliques aos respectivos métodos slots
+    // Conectando os sinais aos slots
     connect(btnDentista,      &QPushButton::clicked, this, &TelaEspecialidade::on_btnDentista_clicked);
     connect(btnNeurologista,  &QPushButton::clicked, this, &TelaEspecialidade::on_btnNeurologista_clicked);
     connect(btnPsicologo,     &QPushButton::clicked, this, &TelaEspecialidade::on_btnPsicologo_clicked);
@@ -32,13 +32,14 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     connect(btnDermatologista, &QPushButton::clicked, this, &TelaEspecialidade::on_btnDermatologista_clicked);
 }
 
+//destrutor
 TelaEspecialidade::~TelaEspecialidade() {}
 
 void TelaEspecialidade::abrirProximaTela(Specialty esp) {
     TelaDataHora *proximaTela = new TelaDataHora(nullptr, esp);
     proximaTela->setAttribute(Qt::WA_DeleteOnClose);
-    proximaTela->show();
-    this->close();
+    proximaTela->show(); //exibir
+    this->close(); //fechar tela atual
 }
 
 // Repassando o valor do Enum original para a próxima tela

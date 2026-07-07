@@ -86,8 +86,8 @@ Definition at line 4 of file Tela\+Especialidade.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{4                                                     : QWidget(parent) \{}
-\DoxyCodeLine{5     this-\/>resize(360, 640);}
-\DoxyCodeLine{6     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Agende Sua Consulta"{}});}
+\DoxyCodeLine{5     this-\/>resize(360, 640); \textcolor{comment}{//define o tamanho da janela}}
+\DoxyCodeLine{6     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Agende Sua Consulta"{}}); \textcolor{comment}{//titulo}}
 \DoxyCodeLine{7 }
 \DoxyCodeLine{8     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
 \DoxyCodeLine{9 }
@@ -99,7 +99,7 @@ Definition at line 4 of file Tela\+Especialidade.\+cpp.
 \DoxyCodeLine{15     \mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btnNutricionista}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Nutricionista"{}}, \textcolor{keyword}{this});}
 \DoxyCodeLine{16     \mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btnDermatologista}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Dermatologista"{}}, \textcolor{keyword}{this});}
 \DoxyCodeLine{17 }
-\DoxyCodeLine{18     \textcolor{comment}{// Adicionando todos ao layout de exibição}}
+\DoxyCodeLine{18     \textcolor{comment}{// Adicionando todos os botoes ao layout de exibição}}
 \DoxyCodeLine{19     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btnDentista}});}
 \DoxyCodeLine{20     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btnNeurologista}});}
 \DoxyCodeLine{21     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btnPsicologo}});}
@@ -107,7 +107,7 @@ Definition at line 4 of file Tela\+Especialidade.\+cpp.
 \DoxyCodeLine{23     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btnNutricionista}});}
 \DoxyCodeLine{24     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btnDermatologista}});}
 \DoxyCodeLine{25 }
-\DoxyCodeLine{26     \textcolor{comment}{// Conectando os cliques aos respectivos métodos slots}}
+\DoxyCodeLine{26     \textcolor{comment}{// Conectando os sinais aos slots}}
 \DoxyCodeLine{27     connect(\mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btnDentista}},      \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}{TelaEspecialidade::on\_btnDentista\_clicked}});}
 \DoxyCodeLine{28     connect(\mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btnNeurologista}},  \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}{TelaEspecialidade::on\_btnNeurologista\_clicked}});}
 \DoxyCodeLine{29     connect(\mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btnPsicologo}},     \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}{TelaEspecialidade::on\_btnPsicologo\_clicked}});}
@@ -125,11 +125,11 @@ Definition at line 4 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 35 of file Tela\+Especialidade.\+cpp.
+Definition at line 36 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{35 \{\}}
+\DoxyCodeLine{36 \{\}}
 
 \end{DoxyCode}
 
@@ -143,16 +143,16 @@ Definition at line 35 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 37 of file Tela\+Especialidade.\+cpp.
+Definition at line 38 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{37                                                       \{}
-\DoxyCodeLine{38     \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}} *proximaTela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}}(\textcolor{keyword}{nullptr}, esp);}
-\DoxyCodeLine{39     proximaTela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
-\DoxyCodeLine{40     proximaTela-\/>show();}
-\DoxyCodeLine{41     this-\/>close();}
-\DoxyCodeLine{42 \}}
+\DoxyCodeLine{38                                                       \{}
+\DoxyCodeLine{39     \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}} *proximaTela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}}(\textcolor{keyword}{nullptr}, esp);}
+\DoxyCodeLine{40     proximaTela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{41     proximaTela-\/>show(); \textcolor{comment}{//exibir}}
+\DoxyCodeLine{42     this-\/>close(); \textcolor{comment}{//fechar tela atual}}
+\DoxyCodeLine{43 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}\label{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}} 
@@ -163,11 +163,11 @@ Definition at line 37 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 48 of file Tela\+Especialidade.\+cpp.
+Definition at line 49 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{48 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}}); \}}
+\DoxyCodeLine{49 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}}); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}\label{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}} 
@@ -178,11 +178,11 @@ Definition at line 48 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 45 of file Tela\+Especialidade.\+cpp.
+Definition at line 46 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}}); \}}
+\DoxyCodeLine{46 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}}); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}\label{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}} 
@@ -193,11 +193,11 @@ Definition at line 45 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 50 of file Tela\+Especialidade.\+cpp.
+Definition at line 51 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{50 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9}{Specialty::DERMATOLOGIST}}); \}}
+\DoxyCodeLine{51 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9}{Specialty::DERMATOLOGIST}}); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}\label{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}} 
@@ -208,11 +208,11 @@ Definition at line 50 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 46 of file Tela\+Especialidade.\+cpp.
+Definition at line 47 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{46 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b}{Specialty::NEUROLOGIST}}); \}}
+\DoxyCodeLine{47 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b}{Specialty::NEUROLOGIST}}); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}\label{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}} 
@@ -223,11 +223,11 @@ Definition at line 46 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 49 of file Tela\+Especialidade.\+cpp.
+Definition at line 50 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{49 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e}{Specialty::NUTRITIONIST}}); \}}
+\DoxyCodeLine{50 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e}{Specialty::NUTRITIONIST}}); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}\label{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}} 
@@ -238,11 +238,11 @@ Definition at line 49 of file Tela\+Especialidade.\+cpp.
 
 
 
-Definition at line 47 of file Tela\+Especialidade.\+cpp.
+Definition at line 48 of file Tela\+Especialidade.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1}{Specialty::PSYCHOLOGIST}}); \}}
+\DoxyCodeLine{48 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1}{Specialty::PSYCHOLOGIST}}); \}}
 
 \end{DoxyCode}
 

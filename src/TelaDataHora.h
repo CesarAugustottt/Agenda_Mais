@@ -15,6 +15,7 @@ public:
     ~TelaDataHora();
 
 private:
+    //slots acionados dependendo do botao com horario que o usuario clicar
     void on_btnHora1330_clicked();
     void on_btnHora1400_clicked();
     void on_btnHora1430_clicked();
@@ -24,8 +25,8 @@ private:
 private:
     Specialty espSelecionada; 
 
-    QVBoxLayout *layoutPrincipal;
-    QCalendarWidget *calendarioWidget;
+    QVBoxLayout *layoutPrincipal; //layout que organiza tudo
+    QCalendarWidget *calendarioWidget; //ponteiro com calendario
     QPushButton *btnHora1330;
     QPushButton *btnHora1400;
     QPushButton *btnHora1430;
