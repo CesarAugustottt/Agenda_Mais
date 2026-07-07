@@ -19,13 +19,14 @@ public:
     ~MainWindow() override;
 
 private slots:
+    // Deixamos apenas o slot do agendamento
     void on_btnAbrirAgendamento_clicked();
-    void on_btnAbrirCadastro_clicked();
 
 private:
     Ui::MainWindow *ui;
+
+    // Deixamos apenas o botão de agendamento
     QPushButton *btnAbrirAgendamento;
-    QPushButton *btnAbrirCadastro;
     QVBoxLayout *layoutCentral;
 };
 #endif // MAINWINDOW_H
