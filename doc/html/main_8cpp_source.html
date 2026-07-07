@@ -70,27 +70,31 @@ $(function() {
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="handleBody_8h.html#aac78cb29dfe4a565da68073b0beebf2f">    4</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a> = 0;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="handleBody_8h.html#a01128a06118f949a0b24a3d080f515fd">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a> = 0;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="handleBody_8h.html#ac1322042429ed9724fbef55908244f3b">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a> = 0;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="handleBody_8h.html#aba38ebae7f83ef57afab8c447dddb6cf">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a> = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    9</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    QApplication a(argc, argv);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classMainWindow.html">MainWindow</a> w;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    w.show();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="ttc" id="aclassMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00012">mainwindow.h:13</a></div></div>
-<div class="ttc" id="amain_8cpp_html_a01128a06118f949a0b24a3d080f515fd"><div class="ttname"><a href="main_8cpp.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a></div><div class="ttdeci">int numHandleDeleted</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00005">main.cpp:5</a></div></div>
-<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00009">main.cpp:9</a></div></div>
-<div class="ttc" id="amain_8cpp_html_aac78cb29dfe4a565da68073b0beebf2f"><div class="ttname"><a href="main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a></div><div class="ttdeci">int numHandleCreated</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00004">main.cpp:4</a></div></div>
-<div class="ttc" id="amain_8cpp_html_aba38ebae7f83ef57afab8c447dddb6cf"><div class="ttname"><a href="main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a></div><div class="ttdeci">int numBodyDeleted</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00007">main.cpp:7</a></div></div>
-<div class="ttc" id="amain_8cpp_html_ac1322042429ed9724fbef55908244f3b"><div class="ttname"><a href="main_8cpp.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a></div><div class="ttdeci">int numBodyCreated</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
+<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TelaLogin_8h.html">TelaLogin.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="handleBody_8h.html#ac1322042429ed9724fbef55908244f3b">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a> = 0;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="handleBody_8h.html#aba38ebae7f83ef57afab8c447dddb6cf">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a> = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="handleBody_8h.html#aac78cb29dfe4a565da68073b0beebf2f">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="handleBody_8h.html#a01128a06118f949a0b24a3d080f515fd">    8</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a> = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    QApplication app(argc, argv);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Agora o aplicativo inicia obrigatoriamente pela tela de Login integrada</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classTelaLogin.html">TelaLogin</a> w;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    w.show();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> app.exec();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="ttc" id="aTelaLogin_8h_html"><div class="ttname"><a href="TelaLogin_8h.html">TelaLogin.h</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html"><div class="ttname"><a href="classTelaLogin.html">TelaLogin</a></div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00011">TelaLogin.h:11</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a01128a06118f949a0b24a3d080f515fd"><div class="ttname"><a href="main_8cpp.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a></div><div class="ttdeci">int numHandleDeleted</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00008">main.cpp:8</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00010">main.cpp:10</a></div></div>
+<div class="ttc" id="amain_8cpp_html_aac78cb29dfe4a565da68073b0beebf2f"><div class="ttname"><a href="main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a></div><div class="ttdeci">int numHandleCreated</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00007">main.cpp:7</a></div></div>
+<div class="ttc" id="amain_8cpp_html_aba38ebae7f83ef57afab8c447dddb6cf"><div class="ttname"><a href="main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a></div><div class="ttdeci">int numBodyDeleted</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ac1322042429ed9724fbef55908244f3b"><div class="ttname"><a href="main_8cpp.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a></div><div class="ttdeci">int numBodyCreated</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00005">main.cpp:5</a></div></div>
 <div class="ttc" id="amainwindow_8h_html"><div class="ttname"><a href="mainwindow_8h.html">mainwindow.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status_308',['status',['../classAppointmentBody.html#a3d064abc8537c1d63d63e3fa44379a25',1,'AppointmentBody']]]
+  ['quantity_488',['quantity',['../classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a',1,'MedicationBody::quantity()'],['../classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4',1,'ReservationBody::quantity()']]]
 ];

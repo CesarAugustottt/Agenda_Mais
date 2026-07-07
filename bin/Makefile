@@ -238,6 +238,30 @@ interface/tela_agendamentos/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/interface/tela_agendamentos/main.cpp.s
 .PHONY : interface/tela_agendamentos/main.cpp.s
 
+src/AppointmentController.o: src/AppointmentController.cpp.o
+.PHONY : src/AppointmentController.o
+
+# target to build an object file
+src/AppointmentController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/AppointmentController.cpp.o
+.PHONY : src/AppointmentController.cpp.o
+
+src/AppointmentController.i: src/AppointmentController.cpp.i
+.PHONY : src/AppointmentController.i
+
+# target to preprocess a source file
+src/AppointmentController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/AppointmentController.cpp.i
+.PHONY : src/AppointmentController.cpp.i
+
+src/AppointmentController.s: src/AppointmentController.cpp.s
+.PHONY : src/AppointmentController.s
+
+# target to generate assembly for a file
+src/AppointmentController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/AppointmentController.cpp.s
+.PHONY : src/AppointmentController.cpp.s
+
 src/AppointmentImpl.o: src/AppointmentImpl.cpp.o
 .PHONY : src/AppointmentImpl.o
 
@@ -261,6 +285,30 @@ src/AppointmentImpl.s: src/AppointmentImpl.cpp.s
 src/AppointmentImpl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/AppointmentImpl.cpp.s
 .PHONY : src/AppointmentImpl.cpp.s
+
+src/MedicationImpl.o: src/MedicationImpl.cpp.o
+.PHONY : src/MedicationImpl.o
+
+# target to build an object file
+src/MedicationImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/MedicationImpl.cpp.o
+.PHONY : src/MedicationImpl.cpp.o
+
+src/MedicationImpl.i: src/MedicationImpl.cpp.i
+.PHONY : src/MedicationImpl.i
+
+# target to preprocess a source file
+src/MedicationImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/MedicationImpl.cpp.i
+.PHONY : src/MedicationImpl.cpp.i
+
+src/MedicationImpl.s: src/MedicationImpl.cpp.s
+.PHONY : src/MedicationImpl.s
+
+# target to generate assembly for a file
+src/MedicationImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/MedicationImpl.cpp.s
+.PHONY : src/MedicationImpl.cpp.s
 
 src/UserImpl.o: src/UserImpl.cpp.o
 .PHONY : src/UserImpl.o
@@ -286,6 +334,54 @@ src/UserImpl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/UserImpl.cpp.s
 .PHONY : src/UserImpl.cpp.s
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/mainwindow.o: src/mainwindow.cpp.o
+.PHONY : src/mainwindow.o
+
+# target to build an object file
+src/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/mainwindow.cpp.o
+.PHONY : src/mainwindow.cpp.o
+
+src/mainwindow.i: src/mainwindow.cpp.i
+.PHONY : src/mainwindow.i
+
+# target to preprocess a source file
+src/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/mainwindow.cpp.i
+.PHONY : src/mainwindow.cpp.i
+
+src/mainwindow.s: src/mainwindow.cpp.s
+.PHONY : src/mainwindow.s
+
+# target to generate assembly for a file
+src/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Agenda_Mais.dir/build.make CMakeFiles/Agenda_Mais.dir/src/mainwindow.cpp.s
+.PHONY : src/mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -308,12 +404,24 @@ help:
 	@echo "... interface/tela_agendamentos/main.o"
 	@echo "... interface/tela_agendamentos/main.i"
 	@echo "... interface/tela_agendamentos/main.s"
+	@echo "... src/AppointmentController.o"
+	@echo "... src/AppointmentController.i"
+	@echo "... src/AppointmentController.s"
 	@echo "... src/AppointmentImpl.o"
 	@echo "... src/AppointmentImpl.i"
 	@echo "... src/AppointmentImpl.s"
+	@echo "... src/MedicationImpl.o"
+	@echo "... src/MedicationImpl.i"
+	@echo "... src/MedicationImpl.s"
 	@echo "... src/UserImpl.o"
 	@echo "... src/UserImpl.i"
 	@echo "... src/UserImpl.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/mainwindow.o"
+	@echo "... src/mainwindow.i"
+	@echo "... src/mainwindow.s"
 .PHONY : help
 
 

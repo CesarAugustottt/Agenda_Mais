@@ -6,7 +6,7 @@ var searchData=
   ['appointment_3',['Appointment',['../classAppointment.html',1,'']]],
   ['appointment_2eh_4',['Appointment.h',['../Appointment_8h.html',1,'']]],
   ['appointmentbody_5',['AppointmentBody',['../classAppointmentBody.html',1,'AppointmentBody'],['../classAppointmentBody.html#ac42b3a657a73250f758e62282331ac03',1,'AppointmentBody::AppointmentBody()']]],
-  ['appointmentcontroller_6',['AppointmentController',['../classAppointmentController.html',1,'AppointmentController'],['../classAppointmentController.html#ad0f58a4d98dc332d82f73731f3678ba4',1,'AppointmentController::AppointmentController()']]],
+  ['appointmentcontroller_6',['AppointmentController',['../classAppointmentController.html#ad0f58a4d98dc332d82f73731f3678ba4',1,'AppointmentController::AppointmentController()'],['../classAppointmentController.html',1,'AppointmentController']]],
   ['appointmentcontroller_2ecpp_7',['AppointmentController.cpp',['../AppointmentController_8cpp.html',1,'']]],
   ['appointmentcontroller_2eh_8',['AppointmentController.h',['../AppointmentController_8h.html',1,'']]],
   ['appointmenthandle_9',['AppointmentHandle',['../classAppointmentHandle.html',1,'AppointmentHandle'],['../classAppointmentHandle.html#ad4c829e44f8c889b432ef42cf25d7966',1,'AppointmentHandle::AppointmentHandle()']]],
@@ -14,5 +14,7 @@ var searchData=
   ['appointmentimpl_2eh_11',['AppointmentImpl.h',['../AppointmentImpl_8h.html',1,'']]],
   ['appointments_12',['appointments',['../classAppointmentController.html#a5f529ac23ae594b7cb037445bf385fe5',1,'AppointmentController']]],
   ['appointmenttype_13',['appointmentType',['../classAppointmentBody.html#a4e2b6cf81743708c79dbc9dc0cb23ad3',1,'AppointmentBody']]],
-  ['attach_14',['attach',['../classBody.html#a5d53322c76a6952d096cb7564ac86db1',1,'Body']]]
+  ['approved_14',['APPROVED',['../Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55',1,'Reservation.h']]],
+  ['approvereservation_15',['approveReservation',['../classMedicationsController.html#a8d779c0bc48fb27eb10157970f944b1d',1,'MedicationsController']]],
+  ['attach_16',['attach',['../classBody.html#a5d53322c76a6952d096cb7564ac86db1',1,'Body']]]
 ];

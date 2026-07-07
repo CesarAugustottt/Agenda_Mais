@@ -1,0 +1,10 @@
+<map id="src/MedicationsController.h" name="src/MedicationsController.h">
+<area shape="rect" id="node1" title=" " alt="" coords="76,5,275,32"/>
+<area shape="rect" id="node2" href="$MedicationImpl_8h.html" title="Defines the Body and Handle classes for Medication using the Bridge pattern." alt="" coords="27,80,161,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="65,229,123,256"/>
+<area shape="rect" id="node6" href="$ReservationImpl_8h.html" title=" " alt="" coords="186,80,327,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="352,80,415,107"/>
+<area shape="rect" id="node3" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="41,155,147,181"/>
+<area shape="rect" id="node5" href="$handleBody_8h.html" title=" " alt="" coords="171,155,281,181"/>
+<area shape="rect" id="node7" href="$Reservation_8h.html" title=" " alt="" coords="355,155,467,181"/>
+</map>
