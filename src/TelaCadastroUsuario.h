@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
+#include <QComboBox>
 
 class TelaCadastroUsuario : public QWidget {
     Q_OBJECT
@@ -27,11 +28,17 @@ private:
     QLabel *lblCpf;
     QLineEdit *txtCpf;
     
+    QLabel *lblEmail;
+    QLineEdit *txtEmail;
+    
     QLabel *lblSenha;
     QLineEdit *txtSenha;
+    
+    QLabel *lblTipo;
+    QComboBox *cbxTipo;
     
     QPushButton *btnSalvar;
     QPushButton *btnVoltar;
 };
 
-#endif // TELACADASTROUSUARIO_H
+#endif
