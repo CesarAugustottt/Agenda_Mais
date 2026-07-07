@@ -1,0 +1,358 @@
+\hypertarget{classTelaDataHora}{}\doxysection{Tela\+Data\+Hora Class Reference}
+\label{classTelaDataHora}\index{TelaDataHora@{TelaDataHora}}
+
+
+{\ttfamily \#include $<$Tela\+Data\+Hora.\+h$>$}
+
+
+
+Inheritance diagram for Tela\+Data\+Hora\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classTelaDataHora__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tela\+Data\+Hora\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classTelaDataHora__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTelaDataHora_a67cd624356e120df6ee524eea1e9cca1}{Tela\+Data\+Hora}} (QWidget $\ast$parent=nullptr, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp=\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty\+::\+DENTIST}})
+\item 
+\mbox{\hyperlink{classTelaDataHora_a7d93bd3d99090b9c39037e5b01db957d}{$\sim$\+Tela\+Data\+Hora}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a71984cb2c00676ace00d3125a1c7a16a}{on\+\_\+btn\+Hora1330\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a09c58db6b2e113e4b6c596ba53c5852c}{on\+\_\+btn\+Hora1400\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a0eaf0c7c5083490c486770ffeb72d9e9}{on\+\_\+btn\+Hora1430\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a5ce168d0cbe18250a16b4b48901414e1}{on\+\_\+btn\+Hora1500\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a73e0a5109bcb113ead5f7d059e3b9975}{on\+\_\+btn\+Voltar\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}{processar\+Agendamento}} (const std\+::string \&horario)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{esp\+Selecionada}}
+\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layout\+Principal}}
+\item 
+QCalendar\+Widget $\ast$ \mbox{\hyperlink{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}{calendario\+Widget}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}{btn\+Hora1330}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}{btn\+Hora1400}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}{btn\+Hora1430}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}{btn\+Hora1500}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}{btn\+Voltar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Tela\+Data\+Hora.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTelaDataHora_a67cd624356e120df6ee524eea1e9cca1}\label{classTelaDataHora_a67cd624356e120df6ee524eea1e9cca1}} 
+\index{TelaDataHora@{TelaDataHora}!TelaDataHora@{TelaDataHora}}
+\index{TelaDataHora@{TelaDataHora}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{TelaDataHora()}{TelaDataHora()}}
+{\footnotesize\ttfamily Tela\+Data\+Hora\+::\+Tela\+Data\+Hora (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{esp = {\ttfamily \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty\+::\+DENTIST}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 6 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7     : QWidget(parent), \mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}}(esp) }
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     this-\/>resize(360, 640);}
+\DoxyCodeLine{10     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Data"{}});}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \mbox{\hyperlink{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}{calendarioWidget}} = \textcolor{keyword}{new} QCalendarWidget(\textcolor{keyword}{this});}
+\DoxyCodeLine{15     \mbox{\hyperlink{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}{calendarioWidget}}-\/>setMinimumDate(QDate::currentDate());}
+\DoxyCodeLine{16     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}{calendarioWidget}});}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}{btnHora1330}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}13:30"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}{btnHora1400}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}14:00"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}{btnHora1430}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}14:30"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{21     \mbox{\hyperlink{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}{btnHora1500}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}15:00"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{22     \mbox{\hyperlink{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}{btnVoltar}}   = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Voltar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}{btnHora1330}});}
+\DoxyCodeLine{25     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}{btnHora1400}});}
+\DoxyCodeLine{26     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}{btnHora1430}});}
+\DoxyCodeLine{27     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}{btnHora1500}});}
+\DoxyCodeLine{28     \mbox{\hyperlink{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}{btnVoltar}});}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     connect(\mbox{\hyperlink{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}{btnHora1330}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaDataHora_a71984cb2c00676ace00d3125a1c7a16a}{TelaDataHora::on\_btnHora1330\_clicked}});}
+\DoxyCodeLine{31     connect(\mbox{\hyperlink{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}{btnHora1400}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaDataHora_a09c58db6b2e113e4b6c596ba53c5852c}{TelaDataHora::on\_btnHora1400\_clicked}});}
+\DoxyCodeLine{32     connect(\mbox{\hyperlink{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}{btnHora1430}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaDataHora_a0eaf0c7c5083490c486770ffeb72d9e9}{TelaDataHora::on\_btnHora1430\_clicked}});}
+\DoxyCodeLine{33     connect(\mbox{\hyperlink{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}{btnHora1500}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaDataHora_a5ce168d0cbe18250a16b4b48901414e1}{TelaDataHora::on\_btnHora1500\_clicked}});}
+\DoxyCodeLine{34     connect(\mbox{\hyperlink{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}{btnVoltar}},   \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaDataHora_a73e0a5109bcb113ead5f7d059e3b9975}{TelaDataHora::on\_btnVoltar\_clicked}});}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a7d93bd3d99090b9c39037e5b01db957d}\label{classTelaDataHora_a7d93bd3d99090b9c39037e5b01db957d}} 
+\index{TelaDataHora@{TelaDataHora}!````~TelaDataHora@{$\sim$TelaDataHora}}
+\index{````~TelaDataHora@{$\sim$TelaDataHora}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{$\sim$TelaDataHora()}{~TelaDataHora()}}
+{\footnotesize\ttfamily Tela\+Data\+Hora\+::$\sim$\+Tela\+Data\+Hora (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTelaDataHora_a71984cb2c00676ace00d3125a1c7a16a}\label{classTelaDataHora_a71984cb2c00676ace00d3125a1c7a16a}} 
+\index{TelaDataHora@{TelaDataHora}!on\_btnHora1330\_clicked@{on\_btnHora1330\_clicked}}
+\index{on\_btnHora1330\_clicked@{on\_btnHora1330\_clicked}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{on\_btnHora1330\_clicked()}{on\_btnHora1330\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::on\+\_\+btn\+Hora1330\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \mbox{\hyperlink{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}{processarAgendamento}}(\textcolor{stringliteral}{"{}13:30"{}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a09c58db6b2e113e4b6c596ba53c5852c}\label{classTelaDataHora_a09c58db6b2e113e4b6c596ba53c5852c}} 
+\index{TelaDataHora@{TelaDataHora}!on\_btnHora1400\_clicked@{on\_btnHora1400\_clicked}}
+\index{on\_btnHora1400\_clicked@{on\_btnHora1400\_clicked}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{on\_btnHora1400\_clicked()}{on\_btnHora1400\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::on\+\_\+btn\+Hora1400\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78 \{ \mbox{\hyperlink{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}{processarAgendamento}}(\textcolor{stringliteral}{"{}14:00"{}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a0eaf0c7c5083490c486770ffeb72d9e9}\label{classTelaDataHora_a0eaf0c7c5083490c486770ffeb72d9e9}} 
+\index{TelaDataHora@{TelaDataHora}!on\_btnHora1430\_clicked@{on\_btnHora1430\_clicked}}
+\index{on\_btnHora1430\_clicked@{on\_btnHora1430\_clicked}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{on\_btnHora1430\_clicked()}{on\_btnHora1430\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::on\+\_\+btn\+Hora1430\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{ \mbox{\hyperlink{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}{processarAgendamento}}(\textcolor{stringliteral}{"{}14:30"{}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a5ce168d0cbe18250a16b4b48901414e1}\label{classTelaDataHora_a5ce168d0cbe18250a16b4b48901414e1}} 
+\index{TelaDataHora@{TelaDataHora}!on\_btnHora1500\_clicked@{on\_btnHora1500\_clicked}}
+\index{on\_btnHora1500\_clicked@{on\_btnHora1500\_clicked}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{on\_btnHora1500\_clicked()}{on\_btnHora1500\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::on\+\_\+btn\+Hora1500\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \mbox{\hyperlink{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}{processarAgendamento}}(\textcolor{stringliteral}{"{}15:00"{}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a73e0a5109bcb113ead5f7d059e3b9975}\label{classTelaDataHora_a73e0a5109bcb113ead5f7d059e3b9975}} 
+\index{TelaDataHora@{TelaDataHora}!on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}}
+\index{on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{on\_btnVoltar\_clicked()}{on\_btnVoltar\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::on\+\_\+btn\+Voltar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                         \{}
+\DoxyCodeLine{83     \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}} *telaAnterior = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}}(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{84     telaAnterior-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{85     telaAnterior-\/>show();}
+\DoxyCodeLine{86     this-\/>close();}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}\label{classTelaDataHora_a3625e833e992ed31fb42c2ecf1ac6918}} 
+\index{TelaDataHora@{TelaDataHora}!processarAgendamento@{processarAgendamento}}
+\index{processarAgendamento@{processarAgendamento}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{processarAgendamento()}{processarAgendamento()}}
+{\footnotesize\ttfamily void Tela\+Data\+Hora\+::processar\+Agendamento (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{horario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Tela\+Data\+Hora.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                                 \{}
+\DoxyCodeLine{40     QDate dataSelecionada = \mbox{\hyperlink{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}{calendarioWidget}}-\/>selectedDate();}
+\DoxyCodeLine{41     std::string dataStr = dataSelecionada.toString(\textcolor{stringliteral}{"{}dd/MM/yyyy"{}}).toStdString();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     std::string nomePaciente = \textcolor{stringliteral}{"{}Paciente"{}}; }
+\DoxyCodeLine{44     std::string nomeMedico = \textcolor{stringliteral}{"{}Doctor"{}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{// Mapeamento completo baseado nas 6 opções do seu arquivo de cabeçalho original}}
+\DoxyCodeLine{47     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}}) \{}
+\DoxyCodeLine{48         nomeMedico = \textcolor{stringliteral}{"{}Dr. Arnaldo (Dentista)"{}};}
+\DoxyCodeLine{49     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b}{Specialty::NEUROLOGIST}}) \{}
+\DoxyCodeLine{50         nomeMedico = \textcolor{stringliteral}{"{}Dra. Mariana (Neurologista)"{}};}
+\DoxyCodeLine{51     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1}{Specialty::PSYCHOLOGIST}}) \{}
+\DoxyCodeLine{52         nomeMedico = \textcolor{stringliteral}{"{}Dr. Roberto (Psicologo)"{}};}
+\DoxyCodeLine{53     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}}) \{}
+\DoxyCodeLine{54         nomeMedico = \textcolor{stringliteral}{"{}Dra. Aline (Cadiologista)"{}};}
+\DoxyCodeLine{55     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e}{Specialty::NUTRITIONIST}}) \{}
+\DoxyCodeLine{56         nomeMedico = \textcolor{stringliteral}{"{}Dr. Bruno (Nutricionista)"{}};}
+\DoxyCodeLine{57     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}} == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9}{Specialty::DERMATOLOGIST}}) \{}
+\DoxyCodeLine{58         nomeMedico = \textcolor{stringliteral}{"{}Dra. Carla (Dermatologista)"{}};}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{comment}{// Criando o objeto com a assinatura correta de 6 parâmetros}}
+\DoxyCodeLine{62     \mbox{\hyperlink{classAppointment}{Appointment}}* novoAgendamento = \textcolor{keyword}{new} \mbox{\hyperlink{classAppointmentHandle}{AppointmentHandle}}(}
+\DoxyCodeLine{63         nomePaciente, }
+\DoxyCodeLine{64         nomeMedico, }
+\DoxyCodeLine{65         dataStr, }
+\DoxyCodeLine{66         horario, }
+\DoxyCodeLine{67         \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}}, }
+\DoxyCodeLine{68         \mbox{\hyperlink{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}{espSelecionada}}}
+\DoxyCodeLine{69     );}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     QString msg = QString::fromStdString(\textcolor{stringliteral}{"{}Consulta Solicitada!\(\backslash\)n\(\backslash\)nCom: "{}} + nomeMedico + \textcolor{stringliteral}{"{}\(\backslash\)nData: "{}} + dataStr + \textcolor{stringliteral}{"{}\(\backslash\)nHora: "{}} + horario);}
+\DoxyCodeLine{72     QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Sucesso"{}}, msg);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     this-\/>close();}
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}\label{classTelaDataHora_a50c3a4acac5197e23dd732248e4b7d84}} 
+\index{TelaDataHora@{TelaDataHora}!btnHora1330@{btnHora1330}}
+\index{btnHora1330@{btnHora1330}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{btnHora1330}{btnHora1330}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Data\+Hora\+::btn\+Hora1330\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}\label{classTelaDataHora_a0366d3fb28ace9603457a101a45a9e1d}} 
+\index{TelaDataHora@{TelaDataHora}!btnHora1400@{btnHora1400}}
+\index{btnHora1400@{btnHora1400}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{btnHora1400}{btnHora1400}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Data\+Hora\+::btn\+Hora1400\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}\label{classTelaDataHora_a85692b05f204066fe0755eba05a4d297}} 
+\index{TelaDataHora@{TelaDataHora}!btnHora1430@{btnHora1430}}
+\index{btnHora1430@{btnHora1430}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{btnHora1430}{btnHora1430}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Data\+Hora\+::btn\+Hora1430\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}\label{classTelaDataHora_a9fa44df4eb3ab387e7a0d3fcc91beb22}} 
+\index{TelaDataHora@{TelaDataHora}!btnHora1500@{btnHora1500}}
+\index{btnHora1500@{btnHora1500}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{btnHora1500}{btnHora1500}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Data\+Hora\+::btn\+Hora1500\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}\label{classTelaDataHora_abd5b9b60f82998b46aeaab5c758eb1e7}} 
+\index{TelaDataHora@{TelaDataHora}!btnVoltar@{btnVoltar}}
+\index{btnVoltar@{btnVoltar}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{btnVoltar}{btnVoltar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Data\+Hora\+::btn\+Voltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}\label{classTelaDataHora_a3af255135b50c32db2fc9c4a96e7bb49}} 
+\index{TelaDataHora@{TelaDataHora}!calendarioWidget@{calendarioWidget}}
+\index{calendarioWidget@{calendarioWidget}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{calendarioWidget}{calendarioWidget}}
+{\footnotesize\ttfamily QCalendar\+Widget$\ast$ Tela\+Data\+Hora\+::calendario\+Widget\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}\label{classTelaDataHora_a6c96b6b4a0cc80c953f3bf7aaeb0759f}} 
+\index{TelaDataHora@{TelaDataHora}!espSelecionada@{espSelecionada}}
+\index{espSelecionada@{espSelecionada}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{espSelecionada}{espSelecionada}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} Tela\+Data\+Hora\+::esp\+Selecionada\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Tela\+Data\+Hora.\+h.
+
+\mbox{\Hypertarget{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}\label{classTelaDataHora_a096d3136df377ebf289cbc131c277e98}} 
+\index{TelaDataHora@{TelaDataHora}!layoutPrincipal@{layoutPrincipal}}
+\index{layoutPrincipal@{layoutPrincipal}!TelaDataHora@{TelaDataHora}}
+\doxysubsubsection{\texorpdfstring{layoutPrincipal}{layoutPrincipal}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ Tela\+Data\+Hora\+::layout\+Principal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Tela\+Data\+Hora.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/tela\+\_\+agendamentos/\mbox{\hyperlink{TelaDataHora_8h}{Tela\+Data\+Hora.\+h}}\item 
+interface/tela\+\_\+agendamentos/\mbox{\hyperlink{TelaDataHora_8cpp}{Tela\+Data\+Hora.\+cpp}}\end{DoxyCompactItemize}

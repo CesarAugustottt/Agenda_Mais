@@ -1,0 +1,5 @@
+<map id="AppointmentHandle" name="AppointmentHandle">
+<area shape="rect" id="node1" title="This class represents the handle of an Appointment." alt="" coords="75,80,227,107"/>
+<area shape="rect" id="node2" href="$classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="137,5,351,32"/>
+</map>

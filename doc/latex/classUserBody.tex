@@ -1,0 +1,386 @@
+\hypertarget{classUserBody}{}\doxysection{User\+Body Class Reference}
+\label{classUserBody}\index{UserBody@{UserBody}}
+
+
+This class represents the concrete implementation of a \mbox{\hyperlink{classUser}{User}}.  
+
+
+
+
+{\ttfamily \#include $<$User\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for User\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classUserBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classUserBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserBody_a7f3b6314d35b908778df297daefacfe9}{User\+Body}} ()
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classUserBody_a43e1143995f735f72e242c424424198a}{$\sim$\+User\+Body}} ()
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUserBody_a78f30be1b94c8a3532de9e15557ed559}{get\+Cpf}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}{get\+Email}} () const
+\item 
+\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} \mbox{\hyperlink{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}{get\+Type}} () const
+\item 
+bool \mbox{\hyperlink{classUserBody_a52cec1c327b9509936cdb0111134d3ee}{is\+Active}} () const
+\item 
+void \mbox{\hyperlink{classUserBody_a8ad503c2e9947764d390359073e6c122}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}})
+\item 
+void \mbox{\hyperlink{classUserBody_ae3b032f5872a435982a900595cbac6b1}{set\+Cpf}} (const std\+::string \&\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}})
+\item 
+void \mbox{\hyperlink{classUserBody_ab6854fc5d8b343f1c890c9a9487e5b57}{set\+Email}} (const std\+::string \&\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}})
+\item 
+void \mbox{\hyperlink{classUserBody_afdd00c178b0d51a7117db6298395f55a}{set\+Password}} (const std\+::string \&\mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}})
+\item 
+void \mbox{\hyperlink{classUserBody_ab57984453bb4467773f13f635c0bb5bf}{set\+Type}} (\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} new\+Type)
+\item 
+void \mbox{\hyperlink{classUserBody_aa611151e7f457bcc411a852f56cbdc69}{deactivate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}}
+\item 
+std\+::string \mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}
+\item 
+std\+::string \mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}
+\item 
+std\+::string \mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}}
+\item 
+\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} \mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}}
+\item 
+bool \mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUserBody_a0ec03bb437d38aebadc68361839057f0}{Unit\+\_\+\+User}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the concrete implementation of a \mbox{\hyperlink{classUser}{User}}. 
+
+Definition at line 12 of file User\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUserBody_a7f3b6314d35b908778df297daefacfe9}\label{classUserBody_a7f3b6314d35b908778df297daefacfe9}} 
+\index{UserBody@{UserBody}!UserBody@{UserBody}}
+\index{UserBody@{UserBody}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{UserBody()}{UserBody()}}
+{\footnotesize\ttfamily User\+Body\+::\+User\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is the default constructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. 
+
+
+
+Definition at line 4 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4                    \{}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{9     this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}} = \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}};}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_a43e1143995f735f72e242c424424198a}\label{classUserBody_a43e1143995f735f72e242c424424198a}} 
+\index{UserBody@{UserBody}!````~UserBody@{$\sim$UserBody}}
+\index{````~UserBody@{$\sim$UserBody}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$UserBody()}{~UserBody()}}
+{\footnotesize\ttfamily User\+Body\+::$\sim$\+User\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the default destructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. 
+
+
+
+Definition at line 13 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{\} \textcolor{comment}{// fica vazio, pois não há ponteiros dinâmicos locais para desalocar}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUserBody_aa611151e7f457bcc411a852f56cbdc69}\label{classUserBody_aa611151e7f457bcc411a852f56cbdc69}} 
+\index{UserBody@{UserBody}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily void User\+Body\+::deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                           \{}
+\DoxyCodeLine{52     this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}} = \textcolor{keyword}{false}; }
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_a78f30be1b94c8a3532de9e15557ed559}\label{classUserBody_a78f30be1b94c8a3532de9e15557ed559}} 
+\index{UserBody@{UserBody}!getCpf@{getCpf}}
+\index{getCpf@{getCpf}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{getCpf()}{getCpf()}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::get\+Cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 15 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                  \{}
+\DoxyCodeLine{16     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}\label{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}} 
+\index{UserBody@{UserBody}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 19 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                    \{}
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}\label{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}} 
+\index{UserBody@{UserBody}!getType@{getType}}
+\index{getType@{getType}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} User\+Body\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 23 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                  \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}}; }
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_a52cec1c327b9509936cdb0111134d3ee}\label{classUserBody_a52cec1c327b9509936cdb0111134d3ee}} 
+\index{UserBody@{UserBody}!isActive@{isActive}}
+\index{isActive@{isActive}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool User\+Body\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 27 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                               \{}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}}; }
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_ae3b032f5872a435982a900595cbac6b1}\label{classUserBody_ae3b032f5872a435982a900595cbac6b1}} 
+\index{UserBody@{UserBody}!setCpf@{setCpf}}
+\index{setCpf@{setCpf}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{setCpf()}{setCpf()}}
+{\footnotesize\ttfamily void User\+Body\+::set\+Cpf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                           \{}
+\DoxyCodeLine{36     this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}} = \mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_ab6854fc5d8b343f1c890c9a9487e5b57}\label{classUserBody_ab6854fc5d8b343f1c890c9a9487e5b57}} 
+\index{UserBody@{UserBody}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily void User\+Body\+::set\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{email }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                               \{}
+\DoxyCodeLine{40     this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}} = \mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_a8ad503c2e9947764d390359073e6c122}\label{classUserBody_a8ad503c2e9947764d390359073e6c122}} 
+\index{UserBody@{UserBody}!setName@{setName}}
+\index{setName@{setName}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void User\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                             \{}
+\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}} = \mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}}; }
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_afdd00c178b0d51a7117db6298395f55a}\label{classUserBody_afdd00c178b0d51a7117db6298395f55a}} 
+\index{UserBody@{UserBody}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily void User\+Body\+::set\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                     \{}
+\DoxyCodeLine{44     this-\/>\mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}} = \mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}}; }
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_ab57984453bb4467773f13f635c0bb5bf}\label{classUserBody_ab57984453bb4467773f13f635c0bb5bf}} 
+\index{UserBody@{UserBody}!setType@{setType}}
+\index{setType@{setType}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void User\+Body\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}}}]{new\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                        \{}
+\DoxyCodeLine{48     this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}} = newType; }
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classUserBody_a0ec03bb437d38aebadc68361839057f0}\label{classUserBody_a0ec03bb437d38aebadc68361839057f0}} 
+\index{UserBody@{UserBody}!Unit\_User@{Unit\_User}}
+\index{Unit\_User@{Unit\_User}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{Unit\_User}{Unit\_User}}
+{\footnotesize\ttfamily friend class Unit\+\_\+\+User\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 53 of file User\+Impl.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}\label{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}} 
+\index{UserBody@{UserBody}!active@{active}}
+\index{active@{active}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool User\+Body\+::active\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute indicates if the user is active. 
+
+Definition at line 25 of file User\+Impl.\+h.
+
+\mbox{\Hypertarget{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}\label{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}} 
+\index{UserBody@{UserBody}!cpf@{cpf}}
+\index{cpf@{cpf}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{cpf}{cpf}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::cpf\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains a cpf for the user. 
+
+Definition at line 17 of file User\+Impl.\+h.
+
+\mbox{\Hypertarget{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}\label{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}} 
+\index{UserBody@{UserBody}!email@{email}}
+\index{email@{email}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::email\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains an email for the user. 
+
+Definition at line 19 of file User\+Impl.\+h.
+
+\mbox{\Hypertarget{classUserBody_ae6645ee270deaf30d525117689d36cf8}\label{classUserBody_ae6645ee270deaf30d525117689d36cf8}} 
+\index{UserBody@{UserBody}!name@{name}}
+\index{name@{name}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains a name for the user. 
+
+Definition at line 15 of file User\+Impl.\+h.
+
+\mbox{\Hypertarget{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}\label{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}} 
+\index{UserBody@{UserBody}!password@{password}}
+\index{password@{password}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::password\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains a password for the user. 
+
+Definition at line 21 of file User\+Impl.\+h.
+
+\mbox{\Hypertarget{classUserBody_a6084389bf7a938d7919de5295ea78f66}\label{classUserBody_a6084389bf7a938d7919de5295ea78f66}} 
+\index{UserBody@{UserBody}!type@{type}}
+\index{type@{type}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} User\+Body\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the type of the user. 
+
+Definition at line 23 of file User\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{UserImpl_8h}{User\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{UserImpl_8cpp}{User\+Impl.\+cpp}}\end{DoxyCompactItemize}

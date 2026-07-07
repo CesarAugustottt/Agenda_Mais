@@ -1,0 +1,5 @@
+<map id="src/Medication.h" name="src/Medication.h">
+<area shape="rect" id="node1" title="Defines the abstract interface for the Medication entity." alt="" coords="27,5,157,32"/>
+<area shape="rect" id="node2" href="$MedicationImpl_8h.html" title="Defines the Body and Handle classes for Medication using the Bridge pattern." alt="" coords="13,80,171,107"/>
+<area shape="rect" id="node3" href="$MedicationImpl_8cpp.html" title="Implementation of the MedicationBody and MedicationHandle classes." alt="" coords="5,155,179,181"/>
+</map>

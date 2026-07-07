@@ -1,0 +1,12 @@
+<map id="src/handleBody.h" name="src/handleBody.h">
+<area shape="rect" id="node1" title=" " alt="" coords="709,5,841,32"/>
+<area shape="rect" id="node2" href="$AppointmentImpl_8h.html" title=" " alt="" coords="360,80,531,107"/>
+<area shape="rect" id="node7" href="$MedicationImpl_8h.html" title="Defines the Body and Handle classes for Medication using the Bridge pattern." alt="" coords="695,80,854,107"/>
+<area shape="rect" id="node9" href="$UserImpl_8h.html" title=" " alt="" coords="885,80,1001,107"/>
+<area shape="rect" id="node3" href="$AppointmentController_8h.html" title=" " alt="" coords="13,162,217,189"/>
+<area shape="rect" id="node5" href="$AppointmentImpl_8cpp.html" title=" " alt="" coords="241,162,426,189"/>
+<area shape="rect" id="node6" href="$TelaDataHora_8cpp.html" title=" " alt="" coords="451,155,664,196"/>
+<area shape="rect" id="node4" href="$AppointmentController_8cpp.html" title=" " alt="" coords="5,244,224,271"/>
+<area shape="rect" id="node8" href="$MedicationImpl_8cpp.html" title="Implementation of the MedicationBody and MedicationHandle classes." alt="" coords="688,162,861,189"/>
+<area shape="rect" id="node10" href="$UserImpl_8cpp.html" title=" " alt="" coords="885,162,1016,189"/>
+</map>

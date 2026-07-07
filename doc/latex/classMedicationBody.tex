@@ -1,0 +1,315 @@
+\hypertarget{classMedicationBody}{}\doxysection{Medication\+Body Class Reference}
+\label{classMedicationBody}\index{MedicationBody@{MedicationBody}}
+
+
+Concrete implementation (\mbox{\hyperlink{classBody}{Body}}) of the \mbox{\hyperlink{classMedication}{Medication}} class.  
+
+
+
+
+{\ttfamily \#include $<$Medication\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Medication\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classMedicationBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Medication\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classMedicationBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMedicationBody_a6538d623a8ccdef7a03d404d5bfd7bb9}{Medication\+Body}} ()
+\item 
+\mbox{\hyperlink{classMedicationBody_aa7b28daf5527b5a81f4c204c284f61eb}{Medication\+Body}} (const std\+::string \&\mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}, int \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}, bool \mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requires\+Prescription}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMedicationBody}{Medication\+Body}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classMedicationBody_ac270aae47bf0a6a3ace64a6050681d21}{$\sim$\+Medication\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMedicationBody_a0c4a0382ba7e304691673d6e4151b27a}{get\+Name}} () const
+\item 
+int \mbox{\hyperlink{classMedicationBody_afd21fe24380a5ff68faa1fea06128ae2}{get\+Quantity}} () const
+\item 
+bool \mbox{\hyperlink{classMedicationBody_a7f9405c74f01d24018340911b8810d6f}{get\+Requires\+Prescription}} () const
+\item 
+void \mbox{\hyperlink{classMedicationBody_a1a0ad89c29918da470653a0f0cb17966}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}})
+\item 
+void \mbox{\hyperlink{classMedicationBody_a413d16ace0475cc5e1cf545a926852a1}{set\+Quantity}} (int \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}})
+\item 
+void \mbox{\hyperlink{classMedicationBody_a9c98014fbd5e531f3961659d2a809550}{set\+Requires\+Prescription}} (bool requires)
+\item 
+bool \mbox{\hyperlink{classMedicationBody_aa3fdd570f259a611f1a825f8c90c7a5d}{decrease\+Stock}} (int amount)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the medication. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}
+\begin{DoxyCompactList}\small\item\em The current quantity in stock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requires\+Prescription}}
+\begin{DoxyCompactList}\small\item\em Flag indicating if a prescription is needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation (\mbox{\hyperlink{classBody}{Body}}) of the \mbox{\hyperlink{classMedication}{Medication}} class. 
+
+
+\begin{DoxyItemize}
+\item This class holds the actual data and implements the business logic for the \mbox{\hyperlink{classMedication}{Medication}} entity following the Handle/\+Body (Bridge) idiom. 
+\end{DoxyItemize}
+
+Definition at line 19 of file Medication\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicationBody_a6538d623a8ccdef7a03d404d5bfd7bb9}\label{classMedicationBody_a6538d623a8ccdef7a03d404d5bfd7bb9}} 
+\index{MedicationBody@{MedicationBody}!MedicationBody@{MedicationBody}}
+\index{MedicationBody@{MedicationBody}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{MedicationBody()}{MedicationBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Medication\+Body\+::\+Medication\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11     : \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}(), \mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}(\textcolor{stringliteral}{"{}"{}}), \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}(0), \mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requiresPrescription}}(\textcolor{keyword}{false}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_aa7b28daf5527b5a81f4c204c284f61eb}\label{classMedicationBody_aa7b28daf5527b5a81f4c204c284f61eb}} 
+\index{MedicationBody@{MedicationBody}!MedicationBody@{MedicationBody}}
+\index{MedicationBody@{MedicationBody}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{MedicationBody()}{MedicationBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Medication\+Body\+::\+Medication\+Body (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{quantity,  }\item[{bool}]{requires\+Prescription }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classMedicationBody}{Medication\+Body}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the medication. \\
+\hline
+{\em quantity} & Initial quantity in stock. \\
+\hline
+{\em requires\+Prescription} & True if it requires a prescription. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14     : \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}(), \mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}(\mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}), \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}(\mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}), \mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requiresPrescription}}(\mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requiresPrescription}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_ac270aae47bf0a6a3ace64a6050681d21}\label{classMedicationBody_ac270aae47bf0a6a3ace64a6050681d21}} 
+\index{MedicationBody@{MedicationBody}!````~MedicationBody@{$\sim$MedicationBody}}
+\index{````~MedicationBody@{$\sim$MedicationBody}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicationBody()}{~MedicationBody()}}
+{\footnotesize\ttfamily Medication\+Body\+::$\sim$\+Medication\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 16 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicationBody_aa3fdd570f259a611f1a825f8c90c7a5d}\label{classMedicationBody_aa3fdd570f259a611f1a825f8c90c7a5d}} 
+\index{MedicationBody@{MedicationBody}!decreaseStock@{decreaseStock}}
+\index{decreaseStock@{decreaseStock}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{decreaseStock()}{decreaseStock()}}
+{\footnotesize\ttfamily bool Medication\+Body\+::decrease\+Stock (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                              \{}
+\DoxyCodeLine{43     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}} >= amount) \{}
+\DoxyCodeLine{44         this-\/>\mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}} -\/= amount;}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_a0c4a0382ba7e304691673d6e4151b27a}\label{classMedicationBody_a0c4a0382ba7e304691673d6e4151b27a}} 
+\index{MedicationBody@{MedicationBody}!getName@{getName}}
+\index{getName@{getName}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Medication\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 18 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                         \{ }
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}; }
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_afd21fe24380a5ff68faa1fea06128ae2}\label{classMedicationBody_afd21fe24380a5ff68faa1fea06128ae2}} 
+\index{MedicationBody@{MedicationBody}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Medication\+Body\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 22 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                       \{ }
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}; }
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_a7f9405c74f01d24018340911b8810d6f}\label{classMedicationBody_a7f9405c74f01d24018340911b8810d6f}} 
+\index{MedicationBody@{MedicationBody}!getRequiresPrescription@{getRequiresPrescription}}
+\index{getRequiresPrescription@{getRequiresPrescription}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{getRequiresPrescription()}{getRequiresPrescription()}}
+{\footnotesize\ttfamily bool Medication\+Body\+::get\+Requires\+Prescription (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 26 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                                                    \{ }
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requiresPrescription}}; }
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_a1a0ad89c29918da470653a0f0cb17966}\label{classMedicationBody_a1a0ad89c29918da470653a0f0cb17966}} 
+\index{MedicationBody@{MedicationBody}!setName@{setName}}
+\index{setName@{setName}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Medication\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                                   \{ }
+\DoxyCodeLine{31     this-\/>\mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}} = \mbox{\hyperlink{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}{name}}; }
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_a413d16ace0475cc5e1cf545a926852a1}\label{classMedicationBody_a413d16ace0475cc5e1cf545a926852a1}} 
+\index{MedicationBody@{MedicationBody}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Medication\+Body\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                                              \{ }
+\DoxyCodeLine{35     this-\/>\mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}} = \mbox{\hyperlink{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}{quantity}}; }
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationBody_a9c98014fbd5e531f3961659d2a809550}\label{classMedicationBody_a9c98014fbd5e531f3961659d2a809550}} 
+\index{MedicationBody@{MedicationBody}!setRequiresPrescription@{setRequiresPrescription}}
+\index{setRequiresPrescription@{setRequiresPrescription}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{setRequiresPrescription()}{setRequiresPrescription()}}
+{\footnotesize\ttfamily void Medication\+Body\+::set\+Requires\+Prescription (\begin{DoxyParamCaption}\item[{bool}]{requires }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                           \{ }
+\DoxyCodeLine{39     this-\/>\mbox{\hyperlink{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}{requiresPrescription}} = requires; }
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}\label{classMedicationBody_abfd3a7a0979e71b4b4f2413c56c33968}} 
+\index{MedicationBody@{MedicationBody}!name@{name}}
+\index{name@{name}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Medication\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of the medication. 
+
+
+
+Definition at line 21 of file Medication\+Impl.\+h.
+
+\mbox{\Hypertarget{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}\label{classMedicationBody_a35cb39b1383761cdff886bb7a4b17e0a}} 
+\index{MedicationBody@{MedicationBody}!quantity@{quantity}}
+\index{quantity@{quantity}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{quantity}{quantity}}
+{\footnotesize\ttfamily int Medication\+Body\+::quantity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The current quantity in stock. 
+
+
+
+Definition at line 22 of file Medication\+Impl.\+h.
+
+\mbox{\Hypertarget{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}\label{classMedicationBody_a6295114cdf3f79994cbe082867b9fddb}} 
+\index{MedicationBody@{MedicationBody}!requiresPrescription@{requiresPrescription}}
+\index{requiresPrescription@{requiresPrescription}!MedicationBody@{MedicationBody}}
+\doxysubsubsection{\texorpdfstring{requiresPrescription}{requiresPrescription}}
+{\footnotesize\ttfamily bool Medication\+Body\+::requires\+Prescription\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Flag indicating if a prescription is needed. 
+
+
+
+Definition at line 23 of file Medication\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{MedicationImpl_8h}{Medication\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{MedicationImpl_8cpp}{Medication\+Impl.\+cpp}}\end{DoxyCompactItemize}

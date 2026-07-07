@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,56,60,83"/>
+<area shape="rect" id="node2" href="$classAppointmentBody.html" title="This class represents the concrete implementation of an Appointment." alt="" coords="108,5,247,32"/>
+<area shape="rect" id="node3" href="$classMedicationBody.html" title="Concrete implementation (Body) of the Medication class." alt="" coords="114,56,241,83"/>
+<area shape="rect" id="node4" href="$classUserBody.html" title="This class represents the concrete implementation of a User." alt="" coords="135,107,220,133"/>
+</map>

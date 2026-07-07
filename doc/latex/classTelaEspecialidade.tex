@@ -1,0 +1,328 @@
+\hypertarget{classTelaEspecialidade}{}\doxysection{Tela\+Especialidade Class Reference}
+\label{classTelaEspecialidade}\index{TelaEspecialidade@{TelaEspecialidade}}
+
+
+{\ttfamily \#include $<$Tela\+Especialidade.\+h$>$}
+
+
+
+Inheritance diagram for Tela\+Especialidade\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTelaEspecialidade__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tela\+Especialidade\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTelaEspecialidade__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTelaEspecialidade_a69f78d27bafe936c17fb788c74bb850f}{Tela\+Especialidade}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classTelaEspecialidade_ad5b0b5cc9f98eb7dad4ae7967af8cd42}{$\sim$\+Tela\+Especialidade}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}{on\+\_\+btn\+Dentista\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}{on\+\_\+btn\+Neurologista\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}{on\+\_\+btn\+Psicologo\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}{on\+\_\+btn\+Cardiologista\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}{on\+\_\+btn\+Nutricionista\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}{on\+\_\+btn\+Dermatologista\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrir\+Proxima\+Tela}} (\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layout\+Principal}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btn\+Dentista}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btn\+Neurologista}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btn\+Psicologo}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}{btn\+Cardiologista}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btn\+Nutricionista}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btn\+Dermatologista}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Tela\+Especialidade.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTelaEspecialidade_a69f78d27bafe936c17fb788c74bb850f}\label{classTelaEspecialidade_a69f78d27bafe936c17fb788c74bb850f}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!TelaEspecialidade@{TelaEspecialidade}}
+\index{TelaEspecialidade@{TelaEspecialidade}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{TelaEspecialidade()}{TelaEspecialidade()}}
+{\footnotesize\ttfamily Tela\+Especialidade\+::\+Tela\+Especialidade (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 4 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4                                                     : QWidget(parent) \{}
+\DoxyCodeLine{5     this-\/>resize(360, 640);}
+\DoxyCodeLine{6     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Agende Sua Consulta"{}});}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \textcolor{comment}{// Inicializando todos os 6 botões}}
+\DoxyCodeLine{11     \mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btnDentista}}      = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Dentista"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{12     \mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btnNeurologista}}  = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Neurologista"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{13     \mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btnPsicologo}}     = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Psicologo"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{14     \mbox{\hyperlink{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}{btnCardiologista}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Cardiologista"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{15     \mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btnNutricionista}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Nutricionista"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{16     \mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btnDermatologista}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Dermatologista"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{comment}{// Adicionando todos ao layout de exibição}}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btnDentista}});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btnNeurologista}});}
+\DoxyCodeLine{21     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btnPsicologo}});}
+\DoxyCodeLine{22     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}{btnCardiologista}});}
+\DoxyCodeLine{23     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btnNutricionista}});}
+\DoxyCodeLine{24     \mbox{\hyperlink{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btnDermatologista}});}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{comment}{// Conectando os cliques aos respectivos métodos slots}}
+\DoxyCodeLine{27     connect(\mbox{\hyperlink{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}{btnDentista}},      \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}{TelaEspecialidade::on\_btnDentista\_clicked}});}
+\DoxyCodeLine{28     connect(\mbox{\hyperlink{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}{btnNeurologista}},  \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}{TelaEspecialidade::on\_btnNeurologista\_clicked}});}
+\DoxyCodeLine{29     connect(\mbox{\hyperlink{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}{btnPsicologo}},     \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}{TelaEspecialidade::on\_btnPsicologo\_clicked}});}
+\DoxyCodeLine{30     connect(\mbox{\hyperlink{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}{btnCardiologista}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}{TelaEspecialidade::on\_btnCardiologista\_clicked}});}
+\DoxyCodeLine{31     connect(\mbox{\hyperlink{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}{btnNutricionista}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}{TelaEspecialidade::on\_btnNutricionista\_clicked}});}
+\DoxyCodeLine{32     connect(\mbox{\hyperlink{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}{btnDermatologista}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}{TelaEspecialidade::on\_btnDermatologista\_clicked}});}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_ad5b0b5cc9f98eb7dad4ae7967af8cd42}\label{classTelaEspecialidade_ad5b0b5cc9f98eb7dad4ae7967af8cd42}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!````~TelaEspecialidade@{$\sim$TelaEspecialidade}}
+\index{````~TelaEspecialidade@{$\sim$TelaEspecialidade}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{$\sim$TelaEspecialidade()}{~TelaEspecialidade()}}
+{\footnotesize\ttfamily Tela\+Especialidade\+::$\sim$\+Tela\+Especialidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}\label{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!abrirProximaTela@{abrirProximaTela}}
+\index{abrirProximaTela@{abrirProximaTela}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{abrirProximaTela()}{abrirProximaTela()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::abrir\+Proxima\+Tela (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{esp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                       \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}} *proximaTela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}}(\textcolor{keyword}{nullptr}, esp);}
+\DoxyCodeLine{39     proximaTela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{40     proximaTela-\/>show();}
+\DoxyCodeLine{41     this-\/>close();}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}\label{classTelaEspecialidade_a5a44e436675518792091a02ad26b3c80}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnCardiologista\_clicked@{on\_btnCardiologista\_clicked}}
+\index{on\_btnCardiologista\_clicked@{on\_btnCardiologista\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnCardiologista\_clicked()}{on\_btnCardiologista\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Cardiologista\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}\label{classTelaEspecialidade_abe586738a7e63ff254996dc3c126f547}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnDentista\_clicked@{on\_btnDentista\_clicked}}
+\index{on\_btnDentista\_clicked@{on\_btnDentista\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnDentista\_clicked()}{on\_btnDentista\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Dentista\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}\label{classTelaEspecialidade_a0553249e5dd1bbe600adb768b6b7b9e4}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnDermatologista\_clicked@{on\_btnDermatologista\_clicked}}
+\index{on\_btnDermatologista\_clicked@{on\_btnDermatologista\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnDermatologista\_clicked()}{on\_btnDermatologista\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Dermatologista\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9}{Specialty::DERMATOLOGIST}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}\label{classTelaEspecialidade_a6264964a54ef5e621bfda3617cbdb891}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnNeurologista\_clicked@{on\_btnNeurologista\_clicked}}
+\index{on\_btnNeurologista\_clicked@{on\_btnNeurologista\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnNeurologista\_clicked()}{on\_btnNeurologista\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Neurologista\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b}{Specialty::NEUROLOGIST}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}\label{classTelaEspecialidade_a17b5757ded46881c9966f179db0a3635}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnNutricionista\_clicked@{on\_btnNutricionista\_clicked}}
+\index{on\_btnNutricionista\_clicked@{on\_btnNutricionista\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnNutricionista\_clicked()}{on\_btnNutricionista\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Nutricionista\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e}{Specialty::NUTRITIONIST}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}\label{classTelaEspecialidade_a42f7eb87792adc85fd52a3a0c1816360}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!on\_btnPsicologo\_clicked@{on\_btnPsicologo\_clicked}}
+\index{on\_btnPsicologo\_clicked@{on\_btnPsicologo\_clicked}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{on\_btnPsicologo\_clicked()}{on\_btnPsicologo\_clicked()}}
+{\footnotesize\ttfamily void Tela\+Especialidade\+::on\+\_\+btn\+Psicologo\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Tela\+Especialidade.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \mbox{\hyperlink{classTelaEspecialidade_a9ff672ef0846cc1de69e8cc0a3f7597c}{abrirProximaTela}}(\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1}{Specialty::PSYCHOLOGIST}}); \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}\label{classTelaEspecialidade_afa305fc2e6443f4d844af17209cfc276}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnCardiologista@{btnCardiologista}}
+\index{btnCardiologista@{btnCardiologista}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnCardiologista}{btnCardiologista}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Cardiologista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}\label{classTelaEspecialidade_a2a683c99ba72c07943c50adf1ce4e63d}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnDentista@{btnDentista}}
+\index{btnDentista@{btnDentista}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnDentista}{btnDentista}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Dentista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}\label{classTelaEspecialidade_a9c5e3ac2ae6d7bdf793ea16c2037f6c1}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnDermatologista@{btnDermatologista}}
+\index{btnDermatologista@{btnDermatologista}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnDermatologista}{btnDermatologista}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Dermatologista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}\label{classTelaEspecialidade_a94840c8008bed4bb1c52077cdf5893d8}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnNeurologista@{btnNeurologista}}
+\index{btnNeurologista@{btnNeurologista}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnNeurologista}{btnNeurologista}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Neurologista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}\label{classTelaEspecialidade_a6023c95652bffe47f1fce768d096c237}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnNutricionista@{btnNutricionista}}
+\index{btnNutricionista@{btnNutricionista}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnNutricionista}{btnNutricionista}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Nutricionista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}\label{classTelaEspecialidade_a2751b6b8422830458397aa8763febbce}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!btnPsicologo@{btnPsicologo}}
+\index{btnPsicologo@{btnPsicologo}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{btnPsicologo}{btnPsicologo}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Especialidade\+::btn\+Psicologo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Tela\+Especialidade.\+h.
+
+\mbox{\Hypertarget{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}\label{classTelaEspecialidade_a32f3624fa02bb9befcbed7d0a9d61591}} 
+\index{TelaEspecialidade@{TelaEspecialidade}!layoutPrincipal@{layoutPrincipal}}
+\index{layoutPrincipal@{layoutPrincipal}!TelaEspecialidade@{TelaEspecialidade}}
+\doxysubsubsection{\texorpdfstring{layoutPrincipal}{layoutPrincipal}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ Tela\+Especialidade\+::layout\+Principal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Tela\+Especialidade.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/tela\+\_\+agendamentos/\mbox{\hyperlink{TelaEspecialidade_8h}{Tela\+Especialidade.\+h}}\item 
+interface/tela\+\_\+agendamentos/\mbox{\hyperlink{TelaEspecialidade_8cpp}{Tela\+Especialidade.\+cpp}}\end{DoxyCompactItemize}
