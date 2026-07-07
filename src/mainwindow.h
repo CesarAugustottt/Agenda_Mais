@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include "MedicationsController.h" // COM 'S'
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,14 +20,19 @@ public:
     ~MainWindow() override;
 
 private slots:
-    // Deixamos apenas o slot do agendamento
     void on_btnAbrirAgendamento_clicked();
+    void on_btnAbrirCadastro_clicked();
+    void on_btnGerenciarMedicamentos_clicked();
 
 private:
     Ui::MainWindow *ui;
-
-    // Deixamos apenas o botão de agendamento
+    
     QPushButton *btnAbrirAgendamento;
+    QPushButton *btnAbrirCadastro;
+    QPushButton *btnGerenciarMedicamentos; 
+    
     QVBoxLayout *layoutCentral;
+
+    MedicationsController *medicationsController; // COM 'S'
 };
 #endif // MAINWINDOW_H

@@ -37,17 +37,14 @@ TelaDataHora::TelaDataHora(QWidget *parent, Specialty esp)
 TelaDataHora::~TelaDataHora() {}
 
 void TelaDataHora::processarAgendamento(const std::string& horario) {
-    QDate dataSelecionada = calendarioWidget->selectedDate();
-    std::string dataStr = dataSelecionada.toString("dd/MM/yyyy").toStdString();
+    std::string dataStr = calendarioWidget->selectedDate().toString("dd/MM/yyyy").toStdString();
+    std::string nomePaciente = "Paciente Fixo"; // Simulação
+    std::string nomeMedico = "";
 
-    std::string nomePaciente = "Paciente"; 
-    std::string nomeMedico = "Doctor";
-
-    // Mapeamento completo baseado nas 6 opções do seu arquivo de cabeçalho original
     if (espSelecionada == Specialty::DENTIST) {
-        nomeMedico = "Dr. Arnaldo (Dentista)";
+        nomeMedico = "Dr. Carlos (Dentista)";
     } else if (espSelecionada == Specialty::NEUROLOGIST) {
-        nomeMedico = "Dra. Mariana (Neurologista)";
+        nomeMedico = "Dra. Ana (Neurologista)";
     } else if (espSelecionada == Specialty::PSYCHOLOGIST) {
         nomeMedico = "Dr. Roberto (Psicologo)";
     } else if (espSelecionada == Specialty::CARDIOLOGIST) {
@@ -71,6 +68,11 @@ void TelaDataHora::processarAgendamento(const std::string& horario) {
     QString msg = QString::fromStdString("Consulta Solicitada!\n\nCom: " + nomeMedico + "\nData: " + dataStr + "\nHora: " + horario);
     QMessageBox::information(this, "Sucesso", msg);
 
+    // --- CORREÇÃO DO MEMORY LEAK AQUI ---
+    // Como este agendamento ainda não é guardado no banco de dados em memória do AppointmentController,
+    // precisamos de o apagar no final para não sobrecarregar a memória RAM.
+    delete novoAgendamento;
+
     this->close();
 }
 
@@ -80,8 +82,8 @@ void TelaDataHora::on_btnHora1430_clicked() { processarAgendamento("14:30"); }
 void TelaDataHora::on_btnHora1500_clicked() { processarAgendamento("15:00"); }
 
 void TelaDataHora::on_btnVoltar_clicked() {
-    TelaEspecialidade *telaAnterior = new TelaEspecialidade(nullptr);
-    telaAnterior->setAttribute(Qt::WA_DeleteOnClose);
-    telaAnterior->show();
+    TelaEspecialidade *tela = new TelaEspecialidade(nullptr);
+    tela->setAttribute(Qt::WA_DeleteOnClose);
+    tela->show();
     this->close();
 }

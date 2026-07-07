@@ -29,6 +29,13 @@ qt_add_executable(Agenda
     AppointmentImpl.cpp
     TelaLogin.h
     TelaLogin.cpp
+    MedicationsController.h
+    MedicationsController.cpp
+    ManageMedicationsView.h
+    ManageMedicationsView.cpp
+    Reservation.h
+    ReservationImpl.h
+    ReservationImpl.cpp
 )
 
 target_link_libraries(Agenda
