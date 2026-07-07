@@ -1,0 +1,198 @@
+\hypertarget{classUser}{}\doxysection{User Class Reference}
+\label{classUser}\index{User@{User}}
+
+
+This class represents the interface of a \mbox{\hyperlink{classUser}{User}} as implemented in this code.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+
+
+Inheritance diagram for User\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classUser__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classUser_a7d1cf7c22ba031caec015ec427419513}{$\sim$\+User}} ()
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{get\+Cpf}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the cpf attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classUser_ac70713a8100d22a586cc50496069071e}{get\+Email}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the email attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} \mbox{\hyperlink{classUser_a7b663fb1d71ad5ffe07d6225657099b9}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the type attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classUser_ab2484a8ad22bca122e320184c219beab}{is\+Active}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the active status attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classUser_ad2bfc02024c5c0d867dfc32af82b83f3}{set\+Type}} (\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} new\+Type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classUser_a09f7933c1926c4d8b3b3181ef063b235}{deactivate}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to deactivate the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the interface of a \mbox{\hyperlink{classUser}{User}} as implemented in this code. 
+
+
+\begin{DoxyItemize}
+\item It defines the abstract methods for user management. 
+\end{DoxyItemize}
+
+Definition at line 20 of file User.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUser_a7d1cf7c22ba031caec015ec427419513}\label{classUser_a7d1cf7c22ba031caec015ec427419513}} 
+\index{User@{User}!````~User@{$\sim$User}}
+\index{````~User@{$\sim$User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{$\sim$User()}{~User()}}
+{\footnotesize\ttfamily virtual User\+::$\sim$\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+This is the default destructor for the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+
+Definition at line 25 of file User.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUser_a09f7933c1926c4d8b3b3181ef063b235}\label{classUser_a09f7933c1926c4d8b3b3181ef063b235}} 
+\index{User@{User}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!User@{User}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily virtual void User\+::deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to deactivate the user. 
+
+
+\begin{DoxyItemize}
+\item Must be implemented by subclasses to set the active attribute to false. 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_a607ea0dd513d8c9942dceeaa2a7ad664}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}\label{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}} 
+\index{User@{User}!getCpf@{getCpf}}
+\index{getCpf@{getCpf}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getCpf()}{getCpf()}}
+{\footnotesize\ttfamily virtual std\+::string User\+::get\+Cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the cpf attribute in the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content cpf attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_a5caee32fa944e7ea57fbf82bb2e15cbb}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_ac70713a8100d22a586cc50496069071e}\label{classUser_ac70713a8100d22a586cc50496069071e}} 
+\index{User@{User}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily virtual std\+::string User\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the email attribute in the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content email attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_ad28ea24763961199ebf4934f8dca0cab}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_a7b663fb1d71ad5ffe07d6225657099b9}\label{classUser_a7b663fb1d71ad5ffe07d6225657099b9}} 
+\index{User@{User}!getType@{getType}}
+\index{getType@{getType}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} User\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the type attribute in the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+User\+Type -\/ the content type attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_a674cf1811b2ab92c819c62a8fd0768f1}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_ab2484a8ad22bca122e320184c219beab}\label{classUser_ab2484a8ad22bca122e320184c219beab}} 
+\index{User@{User}!isActive@{isActive}}
+\index{isActive@{isActive}!User@{User}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily virtual bool User\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the active status attribute in the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+bool -\/ the content active status attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_a11490d48a745a0eb6415c518a17d2711}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_ad2bfc02024c5c0d867dfc32af82b83f3}\label{classUser_ad2bfc02024c5c0d867dfc32af82b83f3}} 
+\index{User@{User}!setType@{setType}}
+\index{setType@{setType}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}}}]{new\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the type attribute in the \mbox{\hyperlink{classUser}{User}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em new\+Type} & which will be set to the current user. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classUserHandle_ad5f490d9ef91f1a4960efe0449ef754d}{User\+Handle}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{User_8h}{User.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['_7eappointment_144',['~Appointment',['../classAppointment.html#ad07411589ffabede4a1c8b9b8521935c',1,'Appointment']]],
+  ['_7eappointmentbody_145',['~AppointmentBody',['../classAppointmentBody.html#a6d33733f8f2c281e1eac9ba1cf2626f2',1,'AppointmentBody']]],
+  ['_7eappointmentcontroller_146',['~AppointmentController',['../classAppointmentController.html#a17459aec59efe930701af8927da60491',1,'AppointmentController']]],
+  ['_7eappointmenthandle_147',['~AppointmentHandle',['../classAppointmentHandle.html#ab9429d434f96a2737e8c76b454909dae',1,'AppointmentHandle']]],
+  ['_7ebody_148',['~Body',['../classBody.html#a9b15e54cf881ac0ca64790ca1d50110e',1,'Body']]],
+  ['_7ehandle_149',['~Handle',['../classHandle.html#addd59fdf43baa517a06d44e1125b5ab1',1,'Handle']]],
+  ['_7emainwindow_150',['~MainWindow',['../classMainWindow.html#a1f7d2c56410fc1bfa135bb907d43313f',1,'MainWindow']]],
+  ['_7emedication_151',['~Medication',['../classMedication.html#abfa3707a51e589684eab93b5ee6f6243',1,'Medication']]],
+  ['_7emedicationbody_152',['~MedicationBody',['../classMedicationBody.html#ac270aae47bf0a6a3ace64a6050681d21',1,'MedicationBody']]],
+  ['_7emedicationhandle_153',['~MedicationHandle',['../classMedicationHandle.html#a6382ed92bcaa1733eabc6c99c95022b1',1,'MedicationHandle']]],
+  ['_7eteladatahora_154',['~TelaDataHora',['../classTelaDataHora.html#a7d93bd3d99090b9c39037e5b01db957d',1,'TelaDataHora']]],
+  ['_7etelaespecialidade_155',['~TelaEspecialidade',['../classTelaEspecialidade.html#ad5b0b5cc9f98eb7dad4ae7967af8cd42',1,'TelaEspecialidade']]],
+  ['_7euser_156',['~User',['../classUser.html#a7d1cf7c22ba031caec015ec427419513',1,'User']]],
+  ['_7euserbody_157',['~UserBody',['../classUserBody.html#a43e1143995f735f72e242c424424198a',1,'UserBody']]],
+  ['_7euserhandle_158',['~UserHandle',['../classUserHandle.html#af32fb0520616ddde9ab53a07d0364384',1,'UserHandle']]]
+];

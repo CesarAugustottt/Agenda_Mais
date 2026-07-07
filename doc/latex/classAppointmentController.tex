@@ -1,0 +1,193 @@
+\hypertarget{classAppointmentController}{}\doxysection{Appointment\+Controller Class Reference}
+\label{classAppointmentController}\index{AppointmentController@{AppointmentController}}
+
+
+{\ttfamily \#include $<$Appointment\+Controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAppointmentController_ad0f58a4d98dc332d82f73731f3678ba4}{Appointment\+Controller}} ()
+\item 
+virtual \mbox{\hyperlink{classAppointmentController_a17459aec59efe930701af8927da60491}{$\sim$\+Appointment\+Controller}} ()
+\item 
+void \mbox{\hyperlink{classAppointmentController_a204c3435d215e2a0bbb35221bd1b40a0}{create\+Appointment}} (const std\+::string \&patient\+Name, const std\+::string \&doctor\+Name, const std\+::string \&date, const std\+::string \&time, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} appointment\+Type)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ \mbox{\hyperlink{classAppointmentController_a0d2d07ebf55a29a380b713bfb5e9e04b}{get\+Appointments\+By\+Doctor}} (const std\+::string \&doctor\+Name) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ \mbox{\hyperlink{classAppointmentController_a598c4b09f134746b0e34033754ab8f15}{get\+Appointments\+By\+Patient}} (const std\+::string \&patient\+Name) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ \mbox{\hyperlink{classAppointmentController_adc51dfd8f6f6989929c59e07b40550b6}{get\+All\+Appointments}} () const
+\item 
+void \mbox{\hyperlink{classAppointmentController_a0c9d4e3551a308e2876dd9e85d0dc892}{update\+Appointment\+Status}} (size\+\_\+t index, \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} new\+Status)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Appointment\+Controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAppointmentController_ad0f58a4d98dc332d82f73731f3678ba4}\label{classAppointmentController_ad0f58a4d98dc332d82f73731f3678ba4}} 
+\index{AppointmentController@{AppointmentController}!AppointmentController@{AppointmentController}}
+\index{AppointmentController@{AppointmentController}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{AppointmentController()}{AppointmentController()}}
+{\footnotesize\ttfamily Appointment\+Controller\+::\+Appointment\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 13 of file Appointment\+Controller.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentController_a17459aec59efe930701af8927da60491}\label{classAppointmentController_a17459aec59efe930701af8927da60491}} 
+\index{AppointmentController@{AppointmentController}!````~AppointmentController@{$\sim$AppointmentController}}
+\index{````~AppointmentController@{$\sim$AppointmentController}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{$\sim$AppointmentController()}{~AppointmentController()}}
+{\footnotesize\ttfamily virtual Appointment\+Controller\+::$\sim$\+Appointment\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 14 of file Appointment\+Controller.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAppointmentController_a204c3435d215e2a0bbb35221bd1b40a0}\label{classAppointmentController_a204c3435d215e2a0bbb35221bd1b40a0}} 
+\index{AppointmentController@{AppointmentController}!createAppointment@{createAppointment}}
+\index{createAppointment@{createAppointment}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{createAppointment()}{createAppointment()}}
+{\footnotesize\ttfamily void Appointment\+Controller\+::create\+Appointment (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Name,  }\item[{const std\+::string \&}]{doctor\+Name,  }\item[{const std\+::string \&}]{date,  }\item[{const std\+::string \&}]{time,  }\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{appointment\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Appointment\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                                                                          \{}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7     \textcolor{comment}{// Agora passamos os 6 parâmetros exatos exigidos pelo seu AppointmentImpl.}}
+\DoxyCodeLine{8     \textcolor{comment}{// Como é uma criação, o status inicial é sempre PENDING.}}
+\DoxyCodeLine{9     \mbox{\hyperlink{classAppointmentHandle}{AppointmentHandle}} newAppointment(patientName, doctorName, date, time, \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}}, appointmentType);}
+\DoxyCodeLine{10     \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}.push\_back(newAppointment);}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentController_adc51dfd8f6f6989929c59e07b40550b6}\label{classAppointmentController_adc51dfd8f6f6989929c59e07b40550b6}} 
+\index{AppointmentController@{AppointmentController}!getAllAppointments@{getAllAppointments}}
+\index{getAllAppointments@{getAllAppointments}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{getAllAppointments()}{getAllAppointments()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ Appointment\+Controller\+::get\+All\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 33 of file Appointment\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                                              \{}
+\DoxyCodeLine{34     \textcolor{keywordflow}{return} \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentController_a0d2d07ebf55a29a380b713bfb5e9e04b}\label{classAppointmentController_a0d2d07ebf55a29a380b713bfb5e9e04b}} 
+\index{AppointmentController@{AppointmentController}!getAppointmentsByDoctor@{getAppointmentsByDoctor}}
+\index{getAppointmentsByDoctor@{getAppointmentsByDoctor}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{getAppointmentsByDoctor()}{getAppointmentsByDoctor()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ Appointment\+Controller\+::get\+Appointments\+By\+Doctor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{doctor\+Name }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 13 of file Appointment\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                                                                                              \{}
+\DoxyCodeLine{14     std::vector<AppointmentHandle> filtered;}
+\DoxyCodeLine{15     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& app : \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}) \{}
+\DoxyCodeLine{16         \textcolor{keywordflow}{if} (app.getDoctorName() == doctorName) \{}
+\DoxyCodeLine{17             filtered.push\_back(app);}
+\DoxyCodeLine{18         \}}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} filtered;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentController_a598c4b09f134746b0e34033754ab8f15}\label{classAppointmentController_a598c4b09f134746b0e34033754ab8f15}} 
+\index{AppointmentController@{AppointmentController}!getAppointmentsByPatient@{getAppointmentsByPatient}}
+\index{getAppointmentsByPatient@{getAppointmentsByPatient}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{getAppointmentsByPatient()}{getAppointmentsByPatient()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} $>$ Appointment\+Controller\+::get\+Appointments\+By\+Patient (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Name }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 23 of file Appointment\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                                                                                                \{}
+\DoxyCodeLine{24     std::vector<AppointmentHandle> filtered;}
+\DoxyCodeLine{25     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& app : \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}) \{}
+\DoxyCodeLine{26         \textcolor{keywordflow}{if} (app.getPatientName() == patientName) \{}
+\DoxyCodeLine{27             filtered.push\_back(app);}
+\DoxyCodeLine{28         \}}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} filtered;}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentController_a0c9d4e3551a308e2876dd9e85d0dc892}\label{classAppointmentController_a0c9d4e3551a308e2876dd9e85d0dc892}} 
+\index{AppointmentController@{AppointmentController}!updateAppointmentStatus@{updateAppointmentStatus}}
+\index{updateAppointmentStatus@{updateAppointmentStatus}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{updateAppointmentStatus()}{updateAppointmentStatus()}}
+{\footnotesize\ttfamily void Appointment\+Controller\+::update\+Appointment\+Status (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}]{new\+Status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Appointment\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                                                   \{}
+\DoxyCodeLine{38     \textcolor{keywordflow}{if} (index < \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}.size()) \{}
+\DoxyCodeLine{39         \mbox{\hyperlink{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}{appointments}}[index].setStatus(newStatus);}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}\label{classAppointmentController_a5f529ac23ae594b7cb037445bf385fe5}} 
+\index{AppointmentController@{AppointmentController}!appointments@{appointments}}
+\index{appointments@{appointments}!AppointmentController@{AppointmentController}}
+\doxysubsubsection{\texorpdfstring{appointments}{appointments}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}}$>$ Appointment\+Controller\+::appointments\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file Appointment\+Controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{AppointmentController_8h}{Appointment\+Controller.\+h}}\item 
+src/\mbox{\hyperlink{AppointmentController_8cpp}{Appointment\+Controller.\+cpp}}\end{DoxyCompactItemize}

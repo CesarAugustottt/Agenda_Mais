@@ -1,0 +1,338 @@
+\hypertarget{classMedicationHandle}{}\doxysection{Medication\+Handle Class Reference}
+\label{classMedicationHandle}\index{MedicationHandle@{MedicationHandle}}
+
+
+The \mbox{\hyperlink{classHandle}{Handle}} class for \mbox{\hyperlink{classMedication}{Medication}}.  
+
+
+
+
+{\ttfamily \#include $<$Medication\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Medication\+Handle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classMedicationHandle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Medication\+Handle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classMedicationHandle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMedicationHandle_a685463572e3f83cf99fb8fb7b66e19f1}{Medication\+Handle}} (const std\+::string \&name, int quantity, bool \mbox{\hyperlink{classMedicationHandle_a460337a472ac51a1c76ba0e0f6698e46}{requires\+Prescription}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classMedicationHandle_a6382ed92bcaa1733eabc6c99c95022b1}{$\sim$\+Medication\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMedicationHandle_a5e0ce1661f1b994a31c530e5335073ba}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the name of the medication. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMedicationHandle_a4153ecb656c9e249f92c417947488aed}{get\+Quantity}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current quantity of the medication in stock. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMedicationHandle_a460337a472ac51a1c76ba0e0f6698e46}{requires\+Prescription}} () const override
+\begin{DoxyCompactList}\small\item\em Checks if the medication requires a medical prescription. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMedicationHandle_aba30ca51f8744ef27f41345210441573}{set\+Name}} (const std\+::string \&name) override
+\begin{DoxyCompactList}\small\item\em Sets the name of the medication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMedicationHandle_afb594dddf29528bc8c278f770312e9b9}{set\+Quantity}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Sets the quantity of the medication in stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMedicationHandle_a6524e888b3515f8da37f5efec1195d30}{set\+Requires\+Prescription}} (bool requires) override
+\begin{DoxyCompactList}\small\item\em Sets whether the medication requires a prescription. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMedicationHandle_a3964d6736864843762cb32746e12e789}{decrease\+Stock}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Decreases the medication stock by a given amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classHandle}{Handle}} class for \mbox{\hyperlink{classMedication}{Medication}}. 
+
+
+\begin{DoxyItemize}
+\item This class acts as a proxy/wrapper for \mbox{\hyperlink{classMedicationBody}{Medication\+Body}}, managing its lifecycle (reference counting) and delegating method calls to the underlying implementation. 
+\end{DoxyItemize}
+
+Definition at line 57 of file Medication\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicationHandle_a685463572e3f83cf99fb8fb7b66e19f1}\label{classMedicationHandle_a685463572e3f83cf99fb8fb7b66e19f1}} 
+\index{MedicationHandle@{MedicationHandle}!MedicationHandle@{MedicationHandle}}
+\index{MedicationHandle@{MedicationHandle}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{MedicationHandle()}{MedicationHandle()}}
+{\footnotesize\ttfamily Medication\+Handle\+::\+Medication\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{quantity,  }\item[{bool}]{requires\+Prescription }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the medication. \\
+\hline
+{\em quantity} & Initial quantity in stock. \\
+\hline
+{\em requires\+Prescription} & True if it requires a prescription. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                                                                  \{}
+\DoxyCodeLine{54     \textcolor{comment}{// O pImpl\_ já foi criado vazio pelo Handle, agora usamos os setters:}}
+\DoxyCodeLine{55     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a1a0ad89c29918da470653a0f0cb17966}{setName}}(name);}
+\DoxyCodeLine{56     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a413d16ace0475cc5e1cf545a926852a1}{setQuantity}}(quantity);}
+\DoxyCodeLine{57     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a9c98014fbd5e531f3961659d2a809550}{setRequiresPrescription}}(\mbox{\hyperlink{classMedicationHandle_a460337a472ac51a1c76ba0e0f6698e46}{requiresPrescription}});}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_a6382ed92bcaa1733eabc6c99c95022b1}\label{classMedicationHandle_a6382ed92bcaa1733eabc6c99c95022b1}} 
+\index{MedicationHandle@{MedicationHandle}!````~MedicationHandle@{$\sim$MedicationHandle}}
+\index{````~MedicationHandle@{$\sim$MedicationHandle}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicationHandle()}{~MedicationHandle()}}
+{\footnotesize\ttfamily Medication\+Handle\+::$\sim$\+Medication\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 59 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicationHandle_a3964d6736864843762cb32746e12e789}\label{classMedicationHandle_a3964d6736864843762cb32746e12e789}} 
+\index{MedicationHandle@{MedicationHandle}!decreaseStock@{decreaseStock}}
+\index{decreaseStock@{decreaseStock}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{decreaseStock()}{decreaseStock()}}
+{\footnotesize\ttfamily bool Medication\+Handle\+::decrease\+Stock (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the medication stock by a given amount. 
+
+
+\begin{DoxyItemize}
+\item This method is used when a reservation is made, reducing the available stock.
+\item 
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to subtract from the current stock. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the stock was successfully decreased (sufficient stock), false otherwise. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{Medication}}.
+
+
+
+Definition at line 85 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                \{ }
+\DoxyCodeLine{86     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_aa3fdd570f259a611f1a825f8c90c7a5d}{decreaseStock}}(amount); }
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_a5e0ce1661f1b994a31c530e5335073ba}\label{classMedicationHandle_a5e0ce1661f1b994a31c530e5335073ba}} 
+\index{MedicationHandle@{MedicationHandle}!getName@{getName}}
+\index{getName@{getName}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Medication\+Handle\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the name of the medication. 
+
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the medication\textquotesingle{}s name. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMedication_a123a316ec242f313c692b4cb79d47d62}{Medication}}.
+
+
+
+Definition at line 61 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                           \{ }
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a0c4a0382ba7e304691673d6e4151b27a}{getName}}(); }
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_a4153ecb656c9e249f92c417947488aed}\label{classMedicationHandle_a4153ecb656c9e249f92c417947488aed}} 
+\index{MedicationHandle@{MedicationHandle}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Medication\+Handle\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current quantity of the medication in stock. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the stock quantity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{Medication}}.
+
+
+
+Definition at line 65 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                         \{ }
+\DoxyCodeLine{66     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_afd21fe24380a5ff68faa1fea06128ae2}{getQuantity}}(); }
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_a460337a472ac51a1c76ba0e0f6698e46}\label{classMedicationHandle_a460337a472ac51a1c76ba0e0f6698e46}} 
+\index{MedicationHandle@{MedicationHandle}!requiresPrescription@{requiresPrescription}}
+\index{requiresPrescription@{requiresPrescription}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{requiresPrescription()}{requiresPrescription()}}
+{\footnotesize\ttfamily bool Medication\+Handle\+::requires\+Prescription (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the medication requires a medical prescription. 
+
+\begin{DoxyReturn}{Returns}
+True if a prescription is required, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMedication_a6bd246a40b794147903749340f4b5ffc}{Medication}}.
+
+
+
+Definition at line 69 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                   \{ }
+\DoxyCodeLine{70     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a7f9405c74f01d24018340911b8810d6f}{getRequiresPrescription}}(); }
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_aba30ca51f8744ef27f41345210441573}\label{classMedicationHandle_aba30ca51f8744ef27f41345210441573}} 
+\index{MedicationHandle@{MedicationHandle}!setName@{setName}}
+\index{setName@{setName}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Medication\+Handle\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the name of the medication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name to be assigned to the medication. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMedication_a5857a5e84f8eeb2e335bb3088ca16185}{Medication}}.
+
+
+
+Definition at line 73 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                     \{ }
+\DoxyCodeLine{74     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a1a0ad89c29918da470653a0f0cb17966}{setName}}(name); }
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_afb594dddf29528bc8c278f770312e9b9}\label{classMedicationHandle_afb594dddf29528bc8c278f770312e9b9}} 
+\index{MedicationHandle@{MedicationHandle}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Medication\+Handle\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the quantity of the medication in stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The new stock quantity. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMedication_a72a864b5631279fe9cce389637fca50e}{Medication}}.
+
+
+
+Definition at line 77 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                                \{ }
+\DoxyCodeLine{78     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a413d16ace0475cc5e1cf545a926852a1}{setQuantity}}(quantity); }
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationHandle_a6524e888b3515f8da37f5efec1195d30}\label{classMedicationHandle_a6524e888b3515f8da37f5efec1195d30}} 
+\index{MedicationHandle@{MedicationHandle}!setRequiresPrescription@{setRequiresPrescription}}
+\index{setRequiresPrescription@{setRequiresPrescription}!MedicationHandle@{MedicationHandle}}
+\doxysubsubsection{\texorpdfstring{setRequiresPrescription()}{setRequiresPrescription()}}
+{\footnotesize\ttfamily void Medication\+Handle\+::set\+Requires\+Prescription (\begin{DoxyParamCaption}\item[{bool}]{requires }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets whether the medication requires a prescription. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em requires} & true if it requires a prescription, false otherwise. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMedication_a33ea9482390288326ab5e33e68fee9b2}{Medication}}.
+
+
+
+Definition at line 81 of file Medication\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                             \{ }
+\DoxyCodeLine{82     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classMedicationBody_a9c98014fbd5e531f3961659d2a809550}{setRequiresPrescription}}(requires); }
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{MedicationImpl_8h}{Medication\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{MedicationImpl_8cpp}{Medication\+Impl.\+cpp}}\end{DoxyCompactItemize}

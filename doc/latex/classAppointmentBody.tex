@@ -1,0 +1,400 @@
+\hypertarget{classAppointmentBody}{}\doxysection{Appointment\+Body Class Reference}
+\label{classAppointmentBody}\index{AppointmentBody@{AppointmentBody}}
+
+
+This class represents the concrete implementation of an \mbox{\hyperlink{classAppointment}{Appointment}}.  
+
+
+
+
+{\ttfamily \#include $<$Appointment\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Appointment\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classAppointmentBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Appointment\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classAppointmentBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAppointmentBody_ac42b3a657a73250f758e62282331ac03}{Appointment\+Body}} ()
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classAppointmentBody}{Appointment\+Body}} Class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classAppointmentBody_a6d33733f8f2c281e1eac9ba1cf2626f2}{$\sim$\+Appointment\+Body}} ()
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classAppointmentBody}{Appointment\+Body}} Class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a197bf14915f2f63ae902ae46a8616bd7}{get\+Patient\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a344ece97a5ce41368be09c0aa1f6ccb0}{get\+Doctor\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a134fa891664d997cb3396aa41ecb4de0}{get\+Date}} () const
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a580b98b80f5b910a841cf320b8b113e6}{get\+Time}} () const
+\item 
+\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{classAppointmentBody_aaad3365626a8fd166b635bf1b7633d75}{get\+Status}} () const
+\item 
+\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classAppointmentBody_aea4887f3d6f31bf47801aa2f833c34e8}{get\+Appointment\+Type}} () const
+\item 
+void \mbox{\hyperlink{classAppointmentBody_a4acd3fc7bc3c86d028806de0d7f80cc1}{set\+Patient\+Name}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classAppointmentBody_acb9ddd28cc7a9d609799a3c2c9b8f0fd}{set\+Doctor\+Name}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}{set\+Date}} (const std\+::string \&\mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}})
+\item 
+void \mbox{\hyperlink{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}{set\+Time}} (const std\+::string \&\mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}})
+\item 
+void \mbox{\hyperlink{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}{set\+Status}} (const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}})
+\item 
+void \mbox{\hyperlink{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}{set\+Appointment\+Type}} (const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}{patient\+Name}}
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a13685c48087b801acce98000d02c6e72}{doctor\+Name}}
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}}
+\item 
+std\+::string \mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}}
+\item 
+\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} \mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}}
+\item 
+\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}{appointment\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAppointmentBody_aceecb3099daa4a515d39ed3adfd3d27e}{Unit\+\_\+\+Appointment}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the concrete implementation of an \mbox{\hyperlink{classAppointment}{Appointment}}. 
+
+Definition at line 12 of file Appointment\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAppointmentBody_ac42b3a657a73250f758e62282331ac03}\label{classAppointmentBody_ac42b3a657a73250f758e62282331ac03}} 
+\index{AppointmentBody@{AppointmentBody}!AppointmentBody@{AppointmentBody}}
+\index{AppointmentBody@{AppointmentBody}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{AppointmentBody()}{AppointmentBody()}}
+{\footnotesize\ttfamily Appointment\+Body\+::\+Appointment\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is the default constructor for the \mbox{\hyperlink{classAppointmentBody}{Appointment\+Body}} Class. 
+
+
+
+Definition at line 6 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6                                 \{}
+\DoxyCodeLine{7   this-\/>\mbox{\hyperlink{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}{patientName}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{8   this-\/>\mbox{\hyperlink{classAppointmentBody_a13685c48087b801acce98000d02c6e72}{doctorName}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{9   this-\/>\mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{10   this-\/>\mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{11   this-\/>\mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}} = \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}};}
+\DoxyCodeLine{12   this-\/>\mbox{\hyperlink{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}{appointmentType}} = \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}};}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a6d33733f8f2c281e1eac9ba1cf2626f2}\label{classAppointmentBody_a6d33733f8f2c281e1eac9ba1cf2626f2}} 
+\index{AppointmentBody@{AppointmentBody}!````~AppointmentBody@{$\sim$AppointmentBody}}
+\index{````~AppointmentBody@{$\sim$AppointmentBody}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$AppointmentBody()}{~AppointmentBody()}}
+{\footnotesize\ttfamily Appointment\+Body\+::$\sim$\+Appointment\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the default destructor for the \mbox{\hyperlink{classAppointmentBody}{Appointment\+Body}} Class. 
+
+
+
+Definition at line 15 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAppointmentBody_aea4887f3d6f31bf47801aa2f833c34e8}\label{classAppointmentBody_aea4887f3d6f31bf47801aa2f833c34e8}} 
+\index{AppointmentBody@{AppointmentBody}!getAppointmentType@{getAppointmentType}}
+\index{getAppointmentType@{getAppointmentType}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getAppointmentType()}{getAppointmentType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} Appointment\+Body\+::get\+Appointment\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 22 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}{appointmentType}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a134fa891664d997cb3396aa41ecb4de0}\label{classAppointmentBody_a134fa891664d997cb3396aa41ecb4de0}} 
+\index{AppointmentBody@{AppointmentBody}!getDate@{getDate}}
+\index{getDate@{getDate}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 19 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a344ece97a5ce41368be09c0aa1f6ccb0}\label{classAppointmentBody_a344ece97a5ce41368be09c0aa1f6ccb0}} 
+\index{AppointmentBody@{AppointmentBody}!getDoctorName@{getDoctorName}}
+\index{getDoctorName@{getDoctorName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getDoctorName()}{getDoctorName()}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::get\+Doctor\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 18 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_a13685c48087b801acce98000d02c6e72}{doctorName}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a197bf14915f2f63ae902ae46a8616bd7}\label{classAppointmentBody_a197bf14915f2f63ae902ae46a8616bd7}} 
+\index{AppointmentBody@{AppointmentBody}!getPatientName@{getPatientName}}
+\index{getPatientName@{getPatientName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getPatientName()}{getPatientName()}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::get\+Patient\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 17 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}{patientName}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_aaad3365626a8fd166b635bf1b7633d75}\label{classAppointmentBody_aaad3365626a8fd166b635bf1b7633d75}} 
+\index{AppointmentBody@{AppointmentBody}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} Appointment\+Body\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 21 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a580b98b80f5b910a841cf320b8b113e6}\label{classAppointmentBody_a580b98b80f5b910a841cf320b8b113e6}} 
+\index{AppointmentBody@{AppointmentBody}!getTime@{getTime}}
+\index{getTime@{getTime}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 20 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}\label{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}} 
+\index{AppointmentBody@{AppointmentBody}!setAppointmentType@{setAppointmentType}}
+\index{setAppointmentType@{setAppointmentType}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setAppointmentType()}{setAppointmentType()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Appointment\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}{appointmentType}} = type; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}\label{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}} 
+\index{AppointmentBody@{AppointmentBody}!setDate@{setDate}}
+\index{setDate@{setDate}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}} = \mbox{\hyperlink{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}{date}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_acb9ddd28cc7a9d609799a3c2c9b8f0fd}\label{classAppointmentBody_acb9ddd28cc7a9d609799a3c2c9b8f0fd}} 
+\index{AppointmentBody@{AppointmentBody}!setDoctorName@{setDoctorName}}
+\index{setDoctorName@{setDoctorName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setDoctorName()}{setDoctorName()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Doctor\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_a13685c48087b801acce98000d02c6e72}{doctorName}} = name; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a4acd3fc7bc3c86d028806de0d7f80cc1}\label{classAppointmentBody_a4acd3fc7bc3c86d028806de0d7f80cc1}} 
+\index{AppointmentBody@{AppointmentBody}!setPatientName@{setPatientName}}
+\index{setPatientName@{setPatientName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setPatientName()}{setPatientName()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Patient\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}{patientName}} = name; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}\label{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}} 
+\index{AppointmentBody@{AppointmentBody}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}} = \mbox{\hyperlink{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}{status}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}\label{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}} 
+\index{AppointmentBody@{AppointmentBody}!setTime@{setTime}}
+\index{setTime@{setTime}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Appointment\+Body\+::set\+Time (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 \{ this-\/>\mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}} = \mbox{\hyperlink{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}{time}}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classAppointmentBody_aceecb3099daa4a515d39ed3adfd3d27e}\label{classAppointmentBody_aceecb3099daa4a515d39ed3adfd3d27e}} 
+\index{AppointmentBody@{AppointmentBody}!Unit\_Appointment@{Unit\_Appointment}}
+\index{Unit\_Appointment@{Unit\_Appointment}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{Unit\_Appointment}{Unit\_Appointment}}
+{\footnotesize\ttfamily friend class Unit\+\_\+\+Appointment\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 51 of file Appointment\+Impl.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}\label{classAppointmentBody_a4e2b6cf81743708c79dbc9dc0cb23ad3}} 
+\index{AppointmentBody@{AppointmentBody}!appointmentType@{appointmentType}}
+\index{appointmentType@{appointmentType}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{appointmentType}{appointmentType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} Appointment\+Body\+::appointment\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the type of the appointment. 
+
+Definition at line 25 of file Appointment\+Impl.\+h.
+
+\mbox{\Hypertarget{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}\label{classAppointmentBody_ac6da6373b998251af57f8f54d9deba4d}} 
+\index{AppointmentBody@{AppointmentBody}!date@{date}}
+\index{date@{date}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::date\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the date of the appointment. 
+
+Definition at line 19 of file Appointment\+Impl.\+h.
+
+\mbox{\Hypertarget{classAppointmentBody_a13685c48087b801acce98000d02c6e72}\label{classAppointmentBody_a13685c48087b801acce98000d02c6e72}} 
+\index{AppointmentBody@{AppointmentBody}!doctorName@{doctorName}}
+\index{doctorName@{doctorName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{doctorName}{doctorName}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::doctor\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the name of the doctor. 
+
+Definition at line 17 of file Appointment\+Impl.\+h.
+
+\mbox{\Hypertarget{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}\label{classAppointmentBody_a5b921b294cf8ba0745b60951f3b777dd}} 
+\index{AppointmentBody@{AppointmentBody}!patientName@{patientName}}
+\index{patientName@{patientName}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{patientName}{patientName}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::patient\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the name of the patient. 
+
+Definition at line 15 of file Appointment\+Impl.\+h.
+
+\mbox{\Hypertarget{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}\label{classAppointmentBody_a3d064abc8537c1d63d63e3fa44379a25}} 
+\index{AppointmentBody@{AppointmentBody}!status@{status}}
+\index{status@{status}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} Appointment\+Body\+::status\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the status. 
+
+Definition at line 23 of file Appointment\+Impl.\+h.
+
+\mbox{\Hypertarget{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}\label{classAppointmentBody_a1d68806742b887128179675bf4ed2d45}} 
+\index{AppointmentBody@{AppointmentBody}!time@{time}}
+\index{time@{time}!AppointmentBody@{AppointmentBody}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily std\+::string Appointment\+Body\+::time\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the time of the appointment. 
+
+Definition at line 21 of file Appointment\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{AppointmentImpl_8h}{Appointment\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{AppointmentImpl_8cpp}{Appointment\+Impl.\+cpp}}\end{DoxyCompactItemize}

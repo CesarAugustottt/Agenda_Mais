@@ -1,0 +1,93 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QApplication$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_aac78cb29dfe4a565da68073b0beebf2f}{num\+Handle\+Created}} = 0
+\item 
+int \mbox{\hyperlink{main_8cpp_a01128a06118f949a0b24a3d080f515fd}{num\+Handle\+Deleted}} = 0
+\item 
+int \mbox{\hyperlink{main_8cpp_ac1322042429ed9724fbef55908244f3b}{num\+Body\+Created}} = 0
+\item 
+int \mbox{\hyperlink{main_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}{num\+Body\+Deleted}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     QApplication a(argc, argv);}
+\DoxyCodeLine{12     \mbox{\hyperlink{classMainWindow}{MainWindow}} w;}
+\DoxyCodeLine{13     w.show();}
+\DoxyCodeLine{14     \textcolor{keywordflow}{return} a.exec();}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ac1322042429ed9724fbef55908244f3b}\label{main_8cpp_ac1322042429ed9724fbef55908244f3b}} 
+\index{main.cpp@{main.cpp}!numBodyCreated@{numBodyCreated}}
+\index{numBodyCreated@{numBodyCreated}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{numBodyCreated}{numBodyCreated}}
+{\footnotesize\ttfamily int num\+Body\+Created = 0}
+
+
+
+Definition at line 6 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}\label{main_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}} 
+\index{main.cpp@{main.cpp}!numBodyDeleted@{numBodyDeleted}}
+\index{numBodyDeleted@{numBodyDeleted}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{numBodyDeleted}{numBodyDeleted}}
+{\footnotesize\ttfamily int num\+Body\+Deleted = 0}
+
+
+
+Definition at line 7 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aac78cb29dfe4a565da68073b0beebf2f}\label{main_8cpp_aac78cb29dfe4a565da68073b0beebf2f}} 
+\index{main.cpp@{main.cpp}!numHandleCreated@{numHandleCreated}}
+\index{numHandleCreated@{numHandleCreated}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{numHandleCreated}{numHandleCreated}}
+{\footnotesize\ttfamily int num\+Handle\+Created = 0}
+
+
+
+Definition at line 4 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a01128a06118f949a0b24a3d080f515fd}\label{main_8cpp_a01128a06118f949a0b24a3d080f515fd}} 
+\index{main.cpp@{main.cpp}!numHandleDeleted@{numHandleDeleted}}
+\index{numHandleDeleted@{numHandleDeleted}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{numHandleDeleted}{numHandleDeleted}}
+{\footnotesize\ttfamily int num\+Handle\+Deleted = 0}
+
+
+
+Definition at line 5 of file main.\+cpp.
+
