@@ -41,4 +41,4 @@ private:
     QPushButton *btnVoltar;
 };
 
-#endif // TELACADASTROUSUARIO_H
+#endif
