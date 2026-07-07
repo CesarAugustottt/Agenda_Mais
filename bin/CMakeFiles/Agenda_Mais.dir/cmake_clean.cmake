@@ -12,10 +12,18 @@ file(REMOVE_RECURSE
   "CMakeFiles/Agenda_Mais.dir/interface/tela_agendamentos/TelaEspecialidade.cpp.o.d"
   "CMakeFiles/Agenda_Mais.dir/interface/tela_agendamentos/main.cpp.o"
   "CMakeFiles/Agenda_Mais.dir/interface/tela_agendamentos/main.cpp.o.d"
+  "CMakeFiles/Agenda_Mais.dir/src/AppointmentController.cpp.o"
+  "CMakeFiles/Agenda_Mais.dir/src/AppointmentController.cpp.o.d"
   "CMakeFiles/Agenda_Mais.dir/src/AppointmentImpl.cpp.o"
   "CMakeFiles/Agenda_Mais.dir/src/AppointmentImpl.cpp.o.d"
+  "CMakeFiles/Agenda_Mais.dir/src/MedicationImpl.cpp.o"
+  "CMakeFiles/Agenda_Mais.dir/src/MedicationImpl.cpp.o.d"
   "CMakeFiles/Agenda_Mais.dir/src/UserImpl.cpp.o"
   "CMakeFiles/Agenda_Mais.dir/src/UserImpl.cpp.o.d"
+  "CMakeFiles/Agenda_Mais.dir/src/main.cpp.o"
+  "CMakeFiles/Agenda_Mais.dir/src/main.cpp.o.d"
+  "CMakeFiles/Agenda_Mais.dir/src/mainwindow.cpp.o"
+  "CMakeFiles/Agenda_Mais.dir/src/mainwindow.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

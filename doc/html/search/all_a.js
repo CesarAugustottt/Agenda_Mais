@@ -1,10 +1,23 @@
 var searchData=
 [
-  ['name_76',['name',['../classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968',1,'MedicationBody::name()'],['../classUserBody.html#ae6645ee270deaf30d525117689d36cf8',1,'UserBody::name()']]],
-  ['neurologist_77',['NEUROLOGIST',['../Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b',1,'Appointment.h']]],
-  ['numbodycreated_78',['numBodyCreated',['../handleBody_8h.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated():&#160;main.cpp'],['../src_2main_8cpp.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated():&#160;main.cpp'],['../interface_2tela__agendamentos_2main_8cpp.html#ac1322042429ed9724fbef55908244f3b',1,'numBodyCreated():&#160;main.cpp']]],
-  ['numbodydeleted_79',['numBodyDeleted',['../handleBody_8h.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted():&#160;main.cpp'],['../src_2main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted():&#160;main.cpp'],['../interface_2tela__agendamentos_2main_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf',1,'numBodyDeleted():&#160;main.cpp']]],
-  ['numhandlecreated_80',['numHandleCreated',['../handleBody_8h.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated():&#160;main.cpp'],['../src_2main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated():&#160;main.cpp'],['../interface_2tela__agendamentos_2main_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f',1,'numHandleCreated():&#160;main.cpp']]],
-  ['numhandledeleted_81',['numHandleDeleted',['../handleBody_8h.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted():&#160;main.cpp'],['../src_2main_8cpp.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted():&#160;main.cpp'],['../interface_2tela__agendamentos_2main_8cpp.html#a01128a06118f949a0b24a3d080f515fd',1,'numHandleDeleted():&#160;main.cpp']]],
-  ['nutritionist_82',['NUTRITIONIST',['../Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e',1,'Appointment.h']]]
+  ['main_97',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_98',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainwindow_99',['MainWindow',['../classMainWindow.html',1,'MainWindow'],['../classMainWindow.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]],
+  ['mainwindow_2ecpp_100',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
+  ['mainwindow_2eh_101',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
+  ['managemedicationsview_102',['ManageMedicationsView',['../classManageMedicationsView.html',1,'ManageMedicationsView'],['../classManageMedicationsView.html#a7276557aa216465a41e9832ca9056bc7',1,'ManageMedicationsView::ManageMedicationsView()']]],
+  ['managemedicationsview_2ecpp_103',['ManageMedicationsView.cpp',['../ManageMedicationsView_8cpp.html',1,'']]],
+  ['managemedicationsview_2eh_104',['ManageMedicationsView.h',['../ManageMedicationsView_8h.html',1,'']]],
+  ['medication_105',['Medication',['../classMedication.html',1,'']]],
+  ['medication_106',['medication',['../classReservationBody.html#a4b10e10435baa1535c571d005276d2ac',1,'ReservationBody']]],
+  ['medication_2eh_107',['Medication.h',['../Medication_8h.html',1,'']]],
+  ['medicationbody_108',['MedicationBody',['../classMedicationBody.html',1,'MedicationBody'],['../classMedicationBody.html#a6538d623a8ccdef7a03d404d5bfd7bb9',1,'MedicationBody::MedicationBody()'],['../classMedicationBody.html#aa7b28daf5527b5a81f4c204c284f61eb',1,'MedicationBody::MedicationBody(const std::string &amp;name, int quantity, bool requiresPrescription)']]],
+  ['medicationhandle_109',['MedicationHandle',['../classMedicationHandle.html',1,'MedicationHandle'],['../classMedicationHandle.html#a685463572e3f83cf99fb8fb7b66e19f1',1,'MedicationHandle::MedicationHandle()']]],
+  ['medicationimpl_2ecpp_110',['MedicationImpl.cpp',['../MedicationImpl_8cpp.html',1,'']]],
+  ['medicationimpl_2eh_111',['MedicationImpl.h',['../MedicationImpl_8h.html',1,'']]],
+  ['medications_112',['medications',['../classMedicationsController.html#a94eb14ad09be1d14af7955b88cf0723a',1,'MedicationsController']]],
+  ['medicationscontroller_113',['medicationsController',['../classMainWindow.html#a78ce9b2e26251da995b87287cfb92f33',1,'MainWindow']]],
+  ['medicationscontroller_114',['MedicationsController',['../classMedicationsController.html#a80d879260606a0fc96b05b8d6f0a9a31',1,'MedicationsController::MedicationsController()'],['../classMedicationsController.html',1,'MedicationsController']]],
+  ['medicationscontroller_2ecpp_115',['MedicationsController.cpp',['../MedicationsController_8cpp.html',1,'']]],
+  ['medicationscontroller_2eh_116',['MedicationsController.h',['../MedicationsController_8h.html',1,'']]]
 ];

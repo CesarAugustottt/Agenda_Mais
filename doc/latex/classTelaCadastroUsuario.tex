@@ -1,0 +1,341 @@
+\hypertarget{classTelaCadastroUsuario}{}\doxysection{Tela\+Cadastro\+Usuario Class Reference}
+\label{classTelaCadastroUsuario}\index{TelaCadastroUsuario@{TelaCadastroUsuario}}
+
+
+{\ttfamily \#include $<$Tela\+Cadastro\+Usuario.\+h$>$}
+
+
+
+Inheritance diagram for Tela\+Cadastro\+Usuario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classTelaCadastroUsuario__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tela\+Cadastro\+Usuario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classTelaCadastroUsuario__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTelaCadastroUsuario_a5fe160a26be482fdb46f031516de5e15}{Tela\+Cadastro\+Usuario}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classTelaCadastroUsuario_aca374b62a2beda2aa440945569c54cd5}{$\sim$\+Tela\+Cadastro\+Usuario}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaCadastroUsuario_a12eeb003760d1f491c23986bdf63c685}{on\+\_\+btn\+Salvar\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaCadastroUsuario_a20967363059d6cbffd26ec5748637eac}{on\+\_\+btn\+Voltar\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layout\+Principal}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_a47f011f8bc7c2bac3c2bf8121e4caa83}{lbl\+Nome}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}{txt\+Nome}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_a58bfc436be4b43ea25c243b19fb8808d}{lbl\+Cpf}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}{txt\+Cpf}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_afaeff67f0b5101626f7811296773ed12}{lbl\+Email}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}{txt\+Email}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_ae9b441d5253974a47469af24f80e1960}{lbl\+Senha}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}{txt\+Senha}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_ad5924c7722c432d2decf19edcf8984a4}{lbl\+Tipo}}
+\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbx\+Tipo}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}{btn\+Salvar}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}{btn\+Voltar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file Tela\+Cadastro\+Usuario.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTelaCadastroUsuario_a5fe160a26be482fdb46f031516de5e15}\label{classTelaCadastroUsuario_a5fe160a26be482fdb46f031516de5e15}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{TelaCadastroUsuario()}{TelaCadastroUsuario()}}
+{\footnotesize\ttfamily Tela\+Cadastro\+Usuario\+::\+Tela\+Cadastro\+Usuario (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 6 of file Tela\+Cadastro\+Usuario.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6                                                         : QWidget(parent) \{}
+\DoxyCodeLine{7     this-\/>resize(360, 640);}
+\DoxyCodeLine{8     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Cadastro de Usuário"{}});}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{classTelaCadastroUsuario_a47f011f8bc7c2bac3c2bf8121e4caa83}{lblNome}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Nome:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{13     \mbox{\hyperlink{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}{txtNome}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{14     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_a47f011f8bc7c2bac3c2bf8121e4caa83}{lblNome}});}
+\DoxyCodeLine{15     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}{txtNome}});}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \mbox{\hyperlink{classTelaCadastroUsuario_a58bfc436be4b43ea25c243b19fb8808d}{lblCpf}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}CPF:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{18     \mbox{\hyperlink{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}{txtCpf}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_a58bfc436be4b43ea25c243b19fb8808d}{lblCpf}});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}{txtCpf}});}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{classTelaCadastroUsuario_afaeff67f0b5101626f7811296773ed12}{lblEmail}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Email:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{23     \mbox{\hyperlink{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}{txtEmail}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{24     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_afaeff67f0b5101626f7811296773ed12}{lblEmail}});}
+\DoxyCodeLine{25     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}{txtEmail}});}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{classTelaCadastroUsuario_ae9b441d5253974a47469af24f80e1960}{lblSenha}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Senha:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{28     \mbox{\hyperlink{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}{txtSenha}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{29     \mbox{\hyperlink{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}{txtSenha}}-\/>setEchoMode(QLineEdit::Password);}
+\DoxyCodeLine{30     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_ae9b441d5253974a47469af24f80e1960}{lblSenha}});}
+\DoxyCodeLine{31     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}{txtSenha}});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{classTelaCadastroUsuario_ad5924c7722c432d2decf19edcf8984a4}{lblTipo}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Tipo de Usuário:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{34     \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}} = \textcolor{keyword}{new} QComboBox(\textcolor{keyword}{this});}
+\DoxyCodeLine{35     \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}}-\/>addItem(\textcolor{stringliteral}{"{}Paciente"{}});      \textcolor{comment}{// Index 0 -\/> PATIENT}}
+\DoxyCodeLine{36     \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}}-\/>addItem(\textcolor{stringliteral}{"{}Secretária"{}});    \textcolor{comment}{// Index 1 -\/> SECRETARY}}
+\DoxyCodeLine{37     \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}}-\/>addItem(\textcolor{stringliteral}{"{}Médico"{}});        \textcolor{comment}{// Index 2 -\/> DOCTOR}}
+\DoxyCodeLine{38     \mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}}-\/>addItem(\textcolor{stringliteral}{"{}Administrador"{}}); \textcolor{comment}{// Index 3 -\/> ADMINISTRATOR}}
+\DoxyCodeLine{39     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_ad5924c7722c432d2decf19edcf8984a4}{lblTipo}});}
+\DoxyCodeLine{40     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \mbox{\hyperlink{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}{btnSalvar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Salvar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{43     \mbox{\hyperlink{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}{btnVoltar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Voltar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{44     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}{btnSalvar}});}
+\DoxyCodeLine{45     \mbox{\hyperlink{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}{btnVoltar}});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     connect(\mbox{\hyperlink{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}{btnSalvar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaCadastroUsuario_a12eeb003760d1f491c23986bdf63c685}{TelaCadastroUsuario::on\_btnSalvar\_clicked}});}
+\DoxyCodeLine{48     connect(\mbox{\hyperlink{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}{btnVoltar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaCadastroUsuario_a20967363059d6cbffd26ec5748637eac}{TelaCadastroUsuario::on\_btnVoltar\_clicked}});}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaCadastroUsuario_aca374b62a2beda2aa440945569c54cd5}\label{classTelaCadastroUsuario_aca374b62a2beda2aa440945569c54cd5}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!````~TelaCadastroUsuario@{$\sim$TelaCadastroUsuario}}
+\index{````~TelaCadastroUsuario@{$\sim$TelaCadastroUsuario}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{$\sim$TelaCadastroUsuario()}{~TelaCadastroUsuario()}}
+{\footnotesize\ttfamily Tela\+Cadastro\+Usuario\+::$\sim$\+Tela\+Cadastro\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file Tela\+Cadastro\+Usuario.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTelaCadastroUsuario_a12eeb003760d1f491c23986bdf63c685}\label{classTelaCadastroUsuario_a12eeb003760d1f491c23986bdf63c685}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!on\_btnSalvar\_clicked@{on\_btnSalvar\_clicked}}
+\index{on\_btnSalvar\_clicked@{on\_btnSalvar\_clicked}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{on\_btnSalvar\_clicked}{on\_btnSalvar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Cadastro\+Usuario\+::on\+\_\+btn\+Salvar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 53 of file Tela\+Cadastro\+Usuario.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                \{}
+\DoxyCodeLine{54     \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{UserType}} tipoSelecionado = \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{UserType}}\textcolor{keyword}{>}(\mbox{\hyperlink{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}{cbxTipo}}-\/>currentIndex());}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \mbox{\hyperlink{classUser}{User}}* newUser = \textcolor{keyword}{new} \mbox{\hyperlink{classUserHandle}{UserHandle}}(}
+\DoxyCodeLine{57         \mbox{\hyperlink{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}{txtNome}}-\/>text().toStdString(),}
+\DoxyCodeLine{58         \mbox{\hyperlink{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}{txtCpf}}-\/>text().toStdString(),}
+\DoxyCodeLine{59         \mbox{\hyperlink{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}{txtEmail}}-\/>text().toStdString(),}
+\DoxyCodeLine{60         \mbox{\hyperlink{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}{txtSenha}}-\/>text().toStdString(),}
+\DoxyCodeLine{61         tipoSelecionado}
+\DoxyCodeLine{62     );}
+\DoxyCodeLine{63     }
+\DoxyCodeLine{64     QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Sucesso"{}}, \textcolor{stringliteral}{"{}Usuário alocado na memória com sucesso!"{}});}
+\DoxyCodeLine{65     }
+\DoxyCodeLine{66     \textcolor{keyword}{delete} newUser;}
+\DoxyCodeLine{67     this-\/>close();}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaCadastroUsuario_a20967363059d6cbffd26ec5748637eac}\label{classTelaCadastroUsuario_a20967363059d6cbffd26ec5748637eac}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}}
+\index{on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{on\_btnVoltar\_clicked}{on\_btnVoltar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Cadastro\+Usuario\+::on\+\_\+btn\+Voltar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 70 of file Tela\+Cadastro\+Usuario.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                                \{}
+\DoxyCodeLine{71     this-\/>close();}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}\label{classTelaCadastroUsuario_ade2576f5d9c4b110b463fea23604fce6}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!btnSalvar@{btnSalvar}}
+\index{btnSalvar@{btnSalvar}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{btnSalvar}{btnSalvar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Cadastro\+Usuario\+::btn\+Salvar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}\label{classTelaCadastroUsuario_af420e22820471667eb4b9f5f38295e4a}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!btnVoltar@{btnVoltar}}
+\index{btnVoltar@{btnVoltar}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{btnVoltar}{btnVoltar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Cadastro\+Usuario\+::btn\+Voltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}\label{classTelaCadastroUsuario_aeb40c8cec2059b6d53cbf2a5c320095a}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!cbxTipo@{cbxTipo}}
+\index{cbxTipo@{cbxTipo}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{cbxTipo}{cbxTipo}}
+{\footnotesize\ttfamily QCombo\+Box$\ast$ Tela\+Cadastro\+Usuario\+::cbx\+Tipo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}\label{classTelaCadastroUsuario_af99d575c001322d1090c7ce176782cfb}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!layoutPrincipal@{layoutPrincipal}}
+\index{layoutPrincipal@{layoutPrincipal}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{layoutPrincipal}{layoutPrincipal}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ Tela\+Cadastro\+Usuario\+::layout\+Principal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_a58bfc436be4b43ea25c243b19fb8808d}\label{classTelaCadastroUsuario_a58bfc436be4b43ea25c243b19fb8808d}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!lblCpf@{lblCpf}}
+\index{lblCpf@{lblCpf}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{lblCpf}{lblCpf}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Cadastro\+Usuario\+::lbl\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_afaeff67f0b5101626f7811296773ed12}\label{classTelaCadastroUsuario_afaeff67f0b5101626f7811296773ed12}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!lblEmail@{lblEmail}}
+\index{lblEmail@{lblEmail}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{lblEmail}{lblEmail}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Cadastro\+Usuario\+::lbl\+Email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_a47f011f8bc7c2bac3c2bf8121e4caa83}\label{classTelaCadastroUsuario_a47f011f8bc7c2bac3c2bf8121e4caa83}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!lblNome@{lblNome}}
+\index{lblNome@{lblNome}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{lblNome}{lblNome}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Cadastro\+Usuario\+::lbl\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_ae9b441d5253974a47469af24f80e1960}\label{classTelaCadastroUsuario_ae9b441d5253974a47469af24f80e1960}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!lblSenha@{lblSenha}}
+\index{lblSenha@{lblSenha}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{lblSenha}{lblSenha}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Cadastro\+Usuario\+::lbl\+Senha\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_ad5924c7722c432d2decf19edcf8984a4}\label{classTelaCadastroUsuario_ad5924c7722c432d2decf19edcf8984a4}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!lblTipo@{lblTipo}}
+\index{lblTipo@{lblTipo}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{lblTipo}{lblTipo}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Cadastro\+Usuario\+::lbl\+Tipo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}\label{classTelaCadastroUsuario_aa5b50a6a9ab997ba89664511c73d7f8e}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!txtCpf@{txtCpf}}
+\index{txtCpf@{txtCpf}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{txtCpf}{txtCpf}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Cadastro\+Usuario\+::txt\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}\label{classTelaCadastroUsuario_a4bb9a00b9e43b6edb9a8fc558e6764fb}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!txtEmail@{txtEmail}}
+\index{txtEmail@{txtEmail}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{txtEmail}{txtEmail}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Cadastro\+Usuario\+::txt\+Email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}\label{classTelaCadastroUsuario_a955bc77732ba0fd569770fc79b9fdb6b}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!txtNome@{txtNome}}
+\index{txtNome@{txtNome}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{txtNome}{txtNome}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Cadastro\+Usuario\+::txt\+Nome\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Tela\+Cadastro\+Usuario.\+h.
+
+\mbox{\Hypertarget{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}\label{classTelaCadastroUsuario_a6a93d16fb8b578e3196a41bc2b017ca9}} 
+\index{TelaCadastroUsuario@{TelaCadastroUsuario}!txtSenha@{txtSenha}}
+\index{txtSenha@{txtSenha}!TelaCadastroUsuario@{TelaCadastroUsuario}}
+\doxysubsubsection{\texorpdfstring{txtSenha}{txtSenha}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Cadastro\+Usuario\+::txt\+Senha\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Tela\+Cadastro\+Usuario.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{TelaCadastroUsuario_8h}{Tela\+Cadastro\+Usuario.\+h}}\item 
+src/\mbox{\hyperlink{TelaCadastroUsuario_8cpp}{Tela\+Cadastro\+Usuario.\+cpp}}\end{DoxyCompactItemize}

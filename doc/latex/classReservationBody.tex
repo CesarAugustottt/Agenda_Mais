@@ -1,0 +1,365 @@
+\hypertarget{classReservationBody}{}\doxysection{Reservation\+Body Class Reference}
+\label{classReservationBody}\index{ReservationBody@{ReservationBody}}
+
+
+{\ttfamily \#include $<$Reservation\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for Reservation\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classReservationBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reservation\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classReservationBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReservationBody_af62be6a24ddf2b7965e36f1d0dd2198c}{Reservation\+Body}} (const std\+::string \&\mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patient\+Cpf}}, \mbox{\hyperlink{classMedication}{Medication}} $\ast$\mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}}, int \mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}}, const std\+::string \&\mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescription\+Path}})
+\item 
+virtual \mbox{\hyperlink{classReservationBody_ac54b2a2b26aac22591e0c172ef161fe5}{$\sim$\+Reservation\+Body}} ()
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_a89176772261b9fb5511fc0f6f2e377ea}{get\+Patient\+Cpf}} () const
+\item 
+\mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classReservationBody_ad8eb44de78fdf9443d608b7e8b8ef844}{get\+Medication}} () const
+\item 
+int \mbox{\hyperlink{classReservationBody_aa1aadb5f98316de0ccf98d52c78ddbe6}{get\+Quantity}} () const
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_a1f8533e419fc11ff132f50fdaf8a9857}{get\+Prescription\+Path}} () const
+\item 
+\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} \mbox{\hyperlink{classReservationBody_a264393cbd164f73fe78226597709ee70}{get\+Status}} () const
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_a563eb2cd4e33126fbb156831ce53c9f2}{get\+Justification}} () const
+\item 
+void \mbox{\hyperlink{classReservationBody_a1749c79fc288f50b518352159a22dfe2}{set\+Patient\+Cpf}} (const std\+::string \&cpf)
+\item 
+void \mbox{\hyperlink{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}{set\+Medication}} (\mbox{\hyperlink{classMedication}{Medication}} $\ast$med)
+\item 
+void \mbox{\hyperlink{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}{set\+Quantity}} (int qty)
+\item 
+void \mbox{\hyperlink{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}{set\+Prescription\+Path}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classReservationBody_a6d52211257f79e229ac631c5e576d2c8}{set\+Status}} (\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} stat)
+\item 
+void \mbox{\hyperlink{classReservationBody_a9ead374c688a3b0bc4bf923ab36317a4}{set\+Justification}} (const std\+::string \&just)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patient\+Cpf}}
+\item 
+\mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}}
+\item 
+int \mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}}
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescription\+Path}}
+\item 
+\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} \mbox{\hyperlink{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}{status}}
+\item 
+std\+::string \mbox{\hyperlink{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}{justification}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Reservation\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReservationBody_af62be6a24ddf2b7965e36f1d0dd2198c}\label{classReservationBody_af62be6a24ddf2b7965e36f1d0dd2198c}} 
+\index{ReservationBody@{ReservationBody}!ReservationBody@{ReservationBody}}
+\index{ReservationBody@{ReservationBody}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{ReservationBody()}{ReservationBody()}}
+{\footnotesize\ttfamily Reservation\+Body\+::\+Reservation\+Body (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Cpf,  }\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication,  }\item[{int}]{quantity,  }\item[{const std\+::string \&}]{prescription\+Path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8     : \mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}}(), \mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patientCpf}}(\mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patientCpf}}), \mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}}(\mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}}), \mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}}(\mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}}), }
+\DoxyCodeLine{9       \mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescriptionPath}}(\mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescriptionPath}}), \mbox{\hyperlink{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}{status}}(\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}}), \mbox{\hyperlink{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}{justification}}(\textcolor{stringliteral}{"{}"{}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_ac54b2a2b26aac22591e0c172ef161fe5}\label{classReservationBody_ac54b2a2b26aac22591e0c172ef161fe5}} 
+\index{ReservationBody@{ReservationBody}!````~ReservationBody@{$\sim$ReservationBody}}
+\index{````~ReservationBody@{$\sim$ReservationBody}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$ReservationBody()}{~ReservationBody()}}
+{\footnotesize\ttfamily Reservation\+Body\+::$\sim$\+Reservation\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 11 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReservationBody_a563eb2cd4e33126fbb156831ce53c9f2}\label{classReservationBody_a563eb2cd4e33126fbb156831ce53c9f2}} 
+\index{ReservationBody@{ReservationBody}!getJustification@{getJustification}}
+\index{getJustification@{getJustification}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getJustification()}{getJustification()}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::get\+Justification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 18 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}{justification}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_ad8eb44de78fdf9443d608b7e8b8ef844}\label{classReservationBody_ad8eb44de78fdf9443d608b7e8b8ef844}} 
+\index{ReservationBody@{ReservationBody}!getMedication@{getMedication}}
+\index{getMedication@{getMedication}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getMedication()}{getMedication()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedication}{Medication}} $\ast$ Reservation\+Body\+::get\+Medication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 14 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a89176772261b9fb5511fc0f6f2e377ea}\label{classReservationBody_a89176772261b9fb5511fc0f6f2e377ea}} 
+\index{ReservationBody@{ReservationBody}!getPatientCpf@{getPatientCpf}}
+\index{getPatientCpf@{getPatientCpf}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getPatientCpf()}{getPatientCpf()}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::get\+Patient\+Cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 13 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patientCpf}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a1f8533e419fc11ff132f50fdaf8a9857}\label{classReservationBody_a1f8533e419fc11ff132f50fdaf8a9857}} 
+\index{ReservationBody@{ReservationBody}!getPrescriptionPath@{getPrescriptionPath}}
+\index{getPrescriptionPath@{getPrescriptionPath}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getPrescriptionPath()}{getPrescriptionPath()}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::get\+Prescription\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 16 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescriptionPath}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_aa1aadb5f98316de0ccf98d52c78ddbe6}\label{classReservationBody_aa1aadb5f98316de0ccf98d52c78ddbe6}} 
+\index{ReservationBody@{ReservationBody}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Reservation\+Body\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 15 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a264393cbd164f73fe78226597709ee70}\label{classReservationBody_a264393cbd164f73fe78226597709ee70}} 
+\index{ReservationBody@{ReservationBody}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} Reservation\+Body\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 17 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}{status}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a9ead374c688a3b0bc4bf923ab36317a4}\label{classReservationBody_a9ead374c688a3b0bc4bf923ab36317a4}} 
+\index{ReservationBody@{ReservationBody}!setJustification@{setJustification}}
+\index{setJustification@{setJustification}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setJustification()}{setJustification()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Justification (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{just }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{ this-\/>\mbox{\hyperlink{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}{justification}} = just; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}\label{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}} 
+\index{ReservationBody@{ReservationBody}!setMedication@{setMedication}}
+\index{setMedication@{setMedication}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setMedication()}{setMedication()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{med }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ this-\/>\mbox{\hyperlink{classReservationBody_a4b10e10435baa1535c571d005276d2ac}{medication}} = med; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a1749c79fc288f50b518352159a22dfe2}\label{classReservationBody_a1749c79fc288f50b518352159a22dfe2}} 
+\index{ReservationBody@{ReservationBody}!setPatientCpf@{setPatientCpf}}
+\index{setPatientCpf@{setPatientCpf}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setPatientCpf()}{setPatientCpf()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Patient\+Cpf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{ this-\/>\mbox{\hyperlink{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}{patientCpf}} = cpf; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}\label{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}} 
+\index{ReservationBody@{ReservationBody}!setPrescriptionPath@{setPrescriptionPath}}
+\index{setPrescriptionPath@{setPrescriptionPath}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setPrescriptionPath()}{setPrescriptionPath()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Prescription\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{ this-\/>\mbox{\hyperlink{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}{prescriptionPath}} = path; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}\label{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}} 
+\index{ReservationBody@{ReservationBody}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{qty }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{ this-\/>\mbox{\hyperlink{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}{quantity}} = qty; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationBody_a6d52211257f79e229ac631c5e576d2c8}\label{classReservationBody_a6d52211257f79e229ac631c5e576d2c8}} 
+\index{ReservationBody@{ReservationBody}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily void Reservation\+Body\+::set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}}}]{stat }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{ this-\/>\mbox{\hyperlink{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}{status}} = stat; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}\label{classReservationBody_a5cde9401907b6a7ad574f5f57d9675a7}} 
+\index{ReservationBody@{ReservationBody}!justification@{justification}}
+\index{justification@{justification}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{justification}{justification}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::justification\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 15 of file Reservation\+Impl.\+h.
+
+\mbox{\Hypertarget{classReservationBody_a4b10e10435baa1535c571d005276d2ac}\label{classReservationBody_a4b10e10435baa1535c571d005276d2ac}} 
+\index{ReservationBody@{ReservationBody}!medication@{medication}}
+\index{medication@{medication}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{medication}{medication}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedication}{Medication}}$\ast$ Reservation\+Body\+::medication\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 11 of file Reservation\+Impl.\+h.
+
+\mbox{\Hypertarget{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}\label{classReservationBody_aafe75af476a3e0827b9a45fe86e227c6}} 
+\index{ReservationBody@{ReservationBody}!patientCpf@{patientCpf}}
+\index{patientCpf@{patientCpf}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{patientCpf}{patientCpf}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::patient\+Cpf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 10 of file Reservation\+Impl.\+h.
+
+\mbox{\Hypertarget{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}\label{classReservationBody_a45bbf9991d6ac34252441a7580a373e4}} 
+\index{ReservationBody@{ReservationBody}!prescriptionPath@{prescriptionPath}}
+\index{prescriptionPath@{prescriptionPath}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{prescriptionPath}{prescriptionPath}}
+{\footnotesize\ttfamily std\+::string Reservation\+Body\+::prescription\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 13 of file Reservation\+Impl.\+h.
+
+\mbox{\Hypertarget{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}\label{classReservationBody_ad044ca25bbdb2b9de8e0478a6fbe22e4}} 
+\index{ReservationBody@{ReservationBody}!quantity@{quantity}}
+\index{quantity@{quantity}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{quantity}{quantity}}
+{\footnotesize\ttfamily int Reservation\+Body\+::quantity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 12 of file Reservation\+Impl.\+h.
+
+\mbox{\Hypertarget{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}\label{classReservationBody_a4bcb3387c5a7727f03db34e854af4954}} 
+\index{ReservationBody@{ReservationBody}!status@{status}}
+\index{status@{status}!ReservationBody@{ReservationBody}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} Reservation\+Body\+::status\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 14 of file Reservation\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{ReservationImpl_8h}{Reservation\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{ReservationImpl_8cpp}{Reservation\+Impl.\+cpp}}\end{DoxyCompactItemize}

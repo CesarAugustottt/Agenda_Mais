@@ -42,17 +42,17 @@ void TelaDataHora::processarAgendamento(const std::string& horario) {
     std::string nomeMedico = "";
 
     if (espSelecionada == Specialty::DENTIST) {
-        nomeMedico = "Dr. Carlos (Dentista)";
+        nomeMedico = "Dr. Fulano (Dentista)";
     } else if (espSelecionada == Specialty::NEUROLOGIST) {
-        nomeMedico = "Dra. Ana (Neurologista)";
+        nomeMedico = "Dra. Fulana (Neurologista)";
     } else if (espSelecionada == Specialty::PSYCHOLOGIST) {
-        nomeMedico = "Dr. Roberto (Psicologo)";
+        nomeMedico = "Dr. Fulano (Psicologo)";
     } else if (espSelecionada == Specialty::CARDIOLOGIST) {
-        nomeMedico = "Dra. Aline (Cadiologista)";
+        nomeMedico = "Dra. Fulana (Cadiologista)";
     } else if (espSelecionada == Specialty::NUTRITIONIST) {
-        nomeMedico = "Dr. Bruno (Nutricionista)";
+        nomeMedico = "Dr. Fulano (Nutricionista)";
     } else if (espSelecionada == Specialty::DERMATOLOGIST) {
-        nomeMedico = "Dra. Carla (Dermatologista)";
+        nomeMedico = "Dra. Fulana (Dermatologista)";
     }
 
     // Criando o objeto com a assinatura correta de 6 parâmetros
@@ -68,7 +68,7 @@ void TelaDataHora::processarAgendamento(const std::string& horario) {
     QString msg = QString::fromStdString("Consulta Solicitada!\n\nCom: " + nomeMedico + "\nData: " + dataStr + "\nHora: " + horario);
     QMessageBox::information(this, "Sucesso", msg);
 
-    // --- CORREÇÃO DO MEMORY LEAK AQUI ---
+    //CORREÇÃO DO MEMORY LEAK
     // Como este agendamento ainda não é guardado no banco de dados em memória do AppointmentController,
     // precisamos de o apagar no final para não sobrecarregar a memória RAM.
     delete novoAgendamento;

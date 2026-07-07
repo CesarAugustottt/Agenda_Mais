@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['time_309',['time',['../classAppointmentBody.html#a1d68806742b887128179675bf4ed2d45',1,'AppointmentBody']]],
-  ['type_310',['type',['../classUserBody.html#a6084389bf7a938d7919de5295ea78f66',1,'UserBody']]]
+  ['refcount_5f_489',['refCount_',['../classBody.html#a70b46681762de310d6a3fba89ba2d721',1,'Body']]],
+  ['requiresprescription_490',['requiresPrescription',['../classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb',1,'MedicationBody']]]
 ];

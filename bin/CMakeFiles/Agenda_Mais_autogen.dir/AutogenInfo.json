@@ -397,9 +397,27 @@
 			null
 		],
 		[
+			"/home/cesar/Agenda_Mais/src/AppointmentController.h",
+			"Mu",
+			"UVLADIE3JM/moc_AppointmentController.cpp",
+			null
+		],
+		[
 			"/home/cesar/Agenda_Mais/src/AppointmentImpl.h",
 			"Mu",
 			"UVLADIE3JM/moc_AppointmentImpl.cpp",
+			null
+		],
+		[
+			"/home/cesar/Agenda_Mais/src/Medication.h",
+			"Mu",
+			"UVLADIE3JM/moc_Medication.cpp",
+			null
+		],
+		[
+			"/home/cesar/Agenda_Mais/src/MedicationImpl.h",
+			"Mu",
+			"UVLADIE3JM/moc_MedicationImpl.cpp",
 			null
 		],
 		[
@@ -418,6 +436,12 @@
 			"/home/cesar/Agenda_Mais/src/handleBody.h",
 			"Mu",
 			"UVLADIE3JM/moc_handleBody.cpp",
+			null
+		],
+		[
+			"/home/cesar/Agenda_Mais/src/mainwindow.h",
+			"Mu",
+			"UVLADIE3JM/moc_mainwindow.cpp",
 			null
 		]
 	],
@@ -486,8 +510,12 @@
 			"Mu",
 			null
 		],
+		[ "/home/cesar/Agenda_Mais/src/AppointmentController.cpp", "Mu", null ],
 		[ "/home/cesar/Agenda_Mais/src/AppointmentImpl.cpp", "Mu", null ],
-		[ "/home/cesar/Agenda_Mais/src/UserImpl.cpp", "Mu", null ]
+		[ "/home/cesar/Agenda_Mais/src/MedicationImpl.cpp", "Mu", null ],
+		[ "/home/cesar/Agenda_Mais/src/UserImpl.cpp", "Mu", null ],
+		[ "/home/cesar/Agenda_Mais/src/main.cpp", "Mu", null ],
+		[ "/home/cesar/Agenda_Mais/src/mainwindow.cpp", "Mu", null ]
 	],
 	"VERBOSITY" : 0
 }

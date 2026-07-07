@@ -342,4 +342,9 @@ CMakeFiles/Agenda_Mais.dir/Agenda_Mais_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/JEEYYI5NGB/../../../interface/tela_agendamentos/../../src/Appointment.h \
  /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/JEEYYI5NGB/moc_TelaEspecialidade.cpp \
- /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/JEEYYI5NGB/../../../interface/tela_agendamentos/TelaEspecialidade.h
+ /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/JEEYYI5NGB/../../../interface/tela_agendamentos/TelaEspecialidade.h \
+ /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/UVLADIE3JM/moc_mainwindow.cpp \
+ /home/cesar/Agenda_Mais/bin/Agenda_Mais_autogen/UVLADIE3JM/../../../src/mainwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h

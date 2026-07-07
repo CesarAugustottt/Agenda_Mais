@@ -1,0 +1,215 @@
+\hypertarget{classMedicationsController}{}\doxysection{Medications\+Controller Class Reference}
+\label{classMedicationsController}\index{MedicationsController@{MedicationsController}}
+
+
+{\ttfamily \#include $<$Medications\+Controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMedicationsController_a80d879260606a0fc96b05b8d6f0a9a31}{Medications\+Controller}} ()
+\item 
+virtual \mbox{\hyperlink{classMedicationsController_a58062fe1be4a66b2fca310fd6a51ef76}{$\sim$\+Medications\+Controller}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}} $>$ \mbox{\hyperlink{classMedicationsController_a8d95e7c399c0f5ba4b755d5ec86ce68d}{get\+All\+Medications}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} $>$ \mbox{\hyperlink{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}{get\+Pending\+Reservations}} () const
+\item 
+void \mbox{\hyperlink{classMedicationsController_a894631948765bba2caffd9da61830d74}{update\+Stock}} (size\+\_\+t index, int new\+Quantity)
+\item 
+void \mbox{\hyperlink{classMedicationsController_a8d779c0bc48fb27eb10157970f944b1d}{approve\+Reservation}} (size\+\_\+t index)
+\item 
+void \mbox{\hyperlink{classMedicationsController_aa9ed759141eb4429e2e6d3ba724a421b}{refuse\+Reservation}} (size\+\_\+t index, const std\+::string \&justification)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}} $>$ \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} $>$ \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pending\+Reservations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Medications\+Controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicationsController_a80d879260606a0fc96b05b8d6f0a9a31}\label{classMedicationsController_a80d879260606a0fc96b05b8d6f0a9a31}} 
+\index{MedicationsController@{MedicationsController}!MedicationsController@{MedicationsController}}
+\index{MedicationsController@{MedicationsController}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{MedicationsController()}{MedicationsController()}}
+{\footnotesize\ttfamily Medications\+Controller\+::\+Medications\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                              \{}
+\DoxyCodeLine{9     \textcolor{comment}{// ==============================================================}}
+\DoxyCodeLine{10     \textcolor{comment}{// MOCK DATA: Dados fictícios para testar a interface}}
+\DoxyCodeLine{11     \textcolor{comment}{// ==============================================================}}
+\DoxyCodeLine{12     }
+\DoxyCodeLine{13     \textcolor{comment}{// 1. Inserir Medicamentos (Nome, Quantidade no Estoque, Exige Receita?)}}
+\DoxyCodeLine{14     \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}.push\_back(\mbox{\hyperlink{classMedicationHandle}{MedicationHandle}}(\textcolor{stringliteral}{"{}Dipirona 500mg"{}}, 50, \textcolor{keyword}{false}));}
+\DoxyCodeLine{15     \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}.push\_back(\mbox{\hyperlink{classMedicationHandle}{MedicationHandle}}(\textcolor{stringliteral}{"{}Amoxicilina 500mg"{}}, 20, \textcolor{keyword}{true}));}
+\DoxyCodeLine{16     \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}.push\_back(\mbox{\hyperlink{classMedicationHandle}{MedicationHandle}}(\textcolor{stringliteral}{"{}Ibuprofeno 400mg"{}}, 0, \textcolor{keyword}{false})); \textcolor{comment}{// Estoque zerado de propósito!}}
+\DoxyCodeLine{17     \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}.push\_back(\mbox{\hyperlink{classMedicationHandle}{MedicationHandle}}(\textcolor{stringliteral}{"{}Clonazepam 2mg"{}}, 15, \textcolor{keyword}{true}));}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{comment}{// 2. Inserir Reservas Falsas feitas por pacientes}}
+\DoxyCodeLine{20     \textcolor{comment}{// (CPF, Ponteiro para o Medicamento, Quantidade, Caminho da Foto da Receita)}}
+\DoxyCodeLine{21     \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}.push\_back(\mbox{\hyperlink{classReservationHandle}{ReservationHandle}}(\textcolor{stringliteral}{"{}111.222.333-\/44"{}}, \&\mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}[1], 2, \textcolor{stringliteral}{"{}caminho/receita\_amox.jpg"{}}));}
+\DoxyCodeLine{22     \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}.push\_back(\mbox{\hyperlink{classReservationHandle}{ReservationHandle}}(\textcolor{stringliteral}{"{}555.666.777-\/88"{}}, \&\mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}[3], 1, \textcolor{stringliteral}{"{}caminho/receita\_clona.jpg"{}}));}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationsController_a58062fe1be4a66b2fca310fd6a51ef76}\label{classMedicationsController_a58062fe1be4a66b2fca310fd6a51ef76}} 
+\index{MedicationsController@{MedicationsController}!````~MedicationsController@{$\sim$MedicationsController}}
+\index{````~MedicationsController@{$\sim$MedicationsController}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicationsController()}{~MedicationsController()}}
+{\footnotesize\ttfamily Medications\+Controller\+::$\sim$\+Medications\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 25 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicationsController_a8d779c0bc48fb27eb10157970f944b1d}\label{classMedicationsController_a8d779c0bc48fb27eb10157970f944b1d}} 
+\index{MedicationsController@{MedicationsController}!approveReservation@{approveReservation}}
+\index{approveReservation@{approveReservation}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{approveReservation()}{approveReservation()}}
+{\footnotesize\ttfamily void Medications\+Controller\+::approve\+Reservation (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                                            \{}
+\DoxyCodeLine{42     \textcolor{keywordflow}{if} (index < \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}.size()) \{}
+\DoxyCodeLine{43         \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}[index].setStatus(\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55}{ReservationStatus::APPROVED}});}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationsController_a8d95e7c399c0f5ba4b755d5ec86ce68d}\label{classMedicationsController_a8d95e7c399c0f5ba4b755d5ec86ce68d}} 
+\index{MedicationsController@{MedicationsController}!getAllMedications@{getAllMedications}}
+\index{getAllMedications@{getAllMedications}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{getAllMedications()}{getAllMedications()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}} $>$ Medications\+Controller\+::get\+All\+Medications (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 27 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                                                            \{}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}};}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}\label{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}} 
+\index{MedicationsController@{MedicationsController}!getPendingReservations@{getPendingReservations}}
+\index{getPendingReservations@{getPendingReservations}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{getPendingReservations()}{getPendingReservations()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} $>$ Medications\+Controller\+::get\+Pending\+Reservations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 31 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                                                                  \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{return} \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}};}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationsController_aa9ed759141eb4429e2e6d3ba724a421b}\label{classMedicationsController_aa9ed759141eb4429e2e6d3ba724a421b}} 
+\index{MedicationsController@{MedicationsController}!refuseReservation@{refuseReservation}}
+\index{refuseReservation@{refuseReservation}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{refuseReservation()}{refuseReservation()}}
+{\footnotesize\ttfamily void Medications\+Controller\+::refuse\+Reservation (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{const std\+::string \&}]{justification }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                                                                           \{}
+\DoxyCodeLine{48     \textcolor{keywordflow}{if} (index < \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}.size()) \{}
+\DoxyCodeLine{49         \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}[index].setStatus(\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082}{ReservationStatus::REFUSED}});}
+\DoxyCodeLine{50         \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}[index].setJustification(justification);}
+\DoxyCodeLine{51         }
+\DoxyCodeLine{52         \textcolor{comment}{// REGRA DE NEGÓCIO: Se foi recusado, devolve a quantidade para o stock da clínica}}
+\DoxyCodeLine{53         \mbox{\hyperlink{classMedication}{Medication}}* med = \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}[index].getMedication();}
+\DoxyCodeLine{54         \textcolor{keywordflow}{if} (med) \{}
+\DoxyCodeLine{55             med-\/>\mbox{\hyperlink{classMedication_a72a864b5631279fe9cce389637fca50e}{setQuantity}}(med-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() + \mbox{\hyperlink{classMedicationsController_a692a1a557ef5514dd768c39869b03353}{pendingReservations}}[index].getQuantity());}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMedicationsController_a894631948765bba2caffd9da61830d74}\label{classMedicationsController_a894631948765bba2caffd9da61830d74}} 
+\index{MedicationsController@{MedicationsController}!updateStock@{updateStock}}
+\index{updateStock@{updateStock}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{updateStock()}{updateStock()}}
+{\footnotesize\ttfamily void Medications\+Controller\+::update\+Stock (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Medications\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                                      \{}
+\DoxyCodeLine{36     \textcolor{keywordflow}{if} (index < \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}.size()) \{}
+\DoxyCodeLine{37         \mbox{\hyperlink{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}{medications}}[index].setQuantity(newQuantity);}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}\label{classMedicationsController_a94eb14ad09be1d14af7955b88cf0723a}} 
+\index{MedicationsController@{MedicationsController}!medications@{medications}}
+\index{medications@{medications}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{medications}{medications}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMedicationHandle}{Medication\+Handle}}$>$ Medications\+Controller\+::medications\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Medications\+Controller.\+h.
+
+\mbox{\Hypertarget{classMedicationsController_a692a1a557ef5514dd768c39869b03353}\label{classMedicationsController_a692a1a557ef5514dd768c39869b03353}} 
+\index{MedicationsController@{MedicationsController}!pendingReservations@{pendingReservations}}
+\index{pendingReservations@{pendingReservations}!MedicationsController@{MedicationsController}}
+\doxysubsubsection{\texorpdfstring{pendingReservations}{pendingReservations}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}}$>$ Medications\+Controller\+::pending\+Reservations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Medications\+Controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{MedicationsController_8h}{Medications\+Controller.\+h}}\item 
+src/\mbox{\hyperlink{MedicationsController_8cpp}{Medications\+Controller.\+cpp}}\end{DoxyCompactItemize}
