@@ -6,20 +6,14 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 qt_standard_project_setup()
 
 qt_add_executable(Agenda
-    MACOSX_BUNDLE
+    WIN32 MACOSX_BUNDLE
     main.cpp
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-<<<<<<< HEAD
-    Medicamentos.h
-    MedicamentosImpl.h
-    MedicamentosImpl.cpp
-=======
     Medication.h
     MedicationImpl.h
     MedicationImpl.cpp
->>>>>>> feat/appointment
     User.h
     UserImpl.h
     UserImpl.cpp
