@@ -17,9 +17,9 @@ qt_add_executable(Agenda
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    Medicamentos.h
-    MedicamentosImpl.h
-    MedicamentosImpl.cpp
+    Medication.h
+    MedicationImpl.h
+    MedicationImpl.cpp
     User.h
     UserImpl.h
     UserImpl.cpp
