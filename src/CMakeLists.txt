@@ -12,12 +12,14 @@ qt_add_executable(Agenda
     TelaDataHora.h
     TelaEspecialidade.cpp
     TelaEspecialidade.h
+    TelaCadastroUsuario.cpp
+    TelaCadastroUsuario.h
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    Medication.h
-    MedicationImpl.h
-    MedicationImpl.cpp
+    Medicamentos.h
+    MedicamentosImpl.h
+    MedicamentosImpl.cpp
     User.h
     UserImpl.h
     UserImpl.cpp
