@@ -12,7 +12,7 @@
  */
 class AppointmentBody : public Body {
 protected:
-    /*! This attribute contains the name of the patient. */
+    /*! This attribute contains the patient. */
     User* patient;
     /*! This attribute contains the doctor. */
     User* doctor;
