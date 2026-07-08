@@ -61,6 +61,8 @@ UserHandle::UserHandle(const std::string& name, const std::string& cpf, const st
     pImpl_->setType(type);
 }
 
+UserHandle::UserHandle(){}
+
 UserHandle::~UserHandle() {}
 
 std::string UserHandle::getCpf() const {
