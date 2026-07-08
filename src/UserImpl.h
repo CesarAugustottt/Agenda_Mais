@@ -51,6 +51,7 @@ public:
 
     // Permite que a classe de teste faça testes unitários
     friend class Unit_User;
+    friend class SystemBody; 
 };
 
 /*!
@@ -58,7 +59,7 @@ public:
  * @brief This class represents the handle of a User.
  */
 class UserHandle : public User, public Handle<UserBody> {
-public:
+protected:
     // construtores e destrutor
     /*!
      * @brief This is the parameterized constructor for the UserHandle Class.
@@ -69,6 +70,12 @@ public:
      * * @param type the type of the User.
      */
     UserHandle(const std::string& name, const std::string& cpf, const std::string& email, const std::string& password, UserType type);
+
+     /*!
+     * @brief This is the default constructor for the UserHandle Class.
+     */
+    UserHandle();
+public:
 
     /*!
      * @brief This is the default destructor for the UserHandle Class.
@@ -85,6 +92,7 @@ public:
 
     // Permite que a classe de teste faça testes unitários
     friend class Unit_User;
+    friend class SystemBody; 
 };
 
 #endif

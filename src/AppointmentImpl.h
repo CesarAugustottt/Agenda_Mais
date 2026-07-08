@@ -49,6 +49,7 @@ public:
     void setAppointmentType(const Specialty type);
 
     friend class Unit_Appointment; 
+    friend class SystemBody; 
 };
 
 /*!
@@ -56,8 +57,7 @@ public:
  * @brief This class represents the handle of an Appointment.
  */
 class AppointmentHandle : public Appointment, public Handle<AppointmentBody> {
-public:
-
+protected:
     /*!
      * @brief This is the parameterized constructor for the AppointmentHandle Class.
      * * @param patient the patient from the appointment.
@@ -69,6 +69,12 @@ public:
      */
     AppointmentHandle(User* patient, User* doctor, const std::string& date, const std::string& time, const Status status, const Specialty type);
 
+    /*!
+     * @brief This is the default constructor for the AppointmentHandle Class.
+     */
+    AppointmentHandle();
+
+public:
     /*!
      * @brief This is the default destructor for the AppointmentHandle Class.
      */
@@ -89,6 +95,7 @@ public:
     void setAppointmentType(const Specialty type) override;
 
     friend class Unit_Appointment;
+    friend class SystemBody; 
 };
 
 #endif // APPOINTMENTIMPL_H

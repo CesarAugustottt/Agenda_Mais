@@ -4,9 +4,9 @@
 // ==========================================
 // Implementação do Body
 // ==========================================
-ReservationBody::ReservationBody(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath)
-    : Body(), patientCpf(patientCpf), medication(medication), quantity(quantity), 
-      prescriptionPath(prescriptionPath), status(ReservationStatus::PENDING), justification("") {}
+ReservationBody::ReservationBody()
+    : patientCpf(""), medication(nullptr), quantity(0), 
+      prescriptionPath(""), status(ReservationStatus::PENDING), justification("") {}
 
 ReservationBody::~ReservationBody() {}
 
@@ -27,8 +27,14 @@ void ReservationBody::setJustification(const std::string& just) { this->justific
 // ==========================================
 // Implementação do Handle
 // ==========================================
-ReservationHandle::ReservationHandle(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath)
-    : Handle<ReservationBody>(new ReservationBody(patientCpf, medication, quantity, prescriptionPath)) {}
+ReservationHandle::ReservationHandle(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath){
+    pImpl_->setPatientCpf(patientCpf);
+    pImpl_->setMedication(medication);
+    pImpl_->setQuantity(quantity);
+    pImpl_->setPrescriptionPath(prescriptionPath);
+}
+
+ReservationHandle::ReservationHandle(){}
 
 ReservationHandle::~ReservationHandle() {}
 

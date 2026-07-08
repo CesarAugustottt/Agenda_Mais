@@ -40,7 +40,7 @@ public:
 
     User* createUser(const std::string& name, const std::string& cpf, const std::string& email, const std::string& password, UserType type) override;
     Appointment* createAppointment(User* patient, User* doctor, const std::string& date, const std::string& time, Specialty esp) override;
-    Medication* createMedication(const std::string& name, int quantity, bool requiresPrescription) override { return pImpl_->createMedication(name, quantity, requiresPrescription); } // Caso queira deixar inline, mas movido abaixo
+    Medication* createMedication(const std::string& name, int quantity, bool requiresPrescription) override;
     Reservation* createReservation(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath) override;
 
     void addUser(User* user) override;

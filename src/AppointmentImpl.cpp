@@ -40,6 +40,8 @@ AppointmentHandle::AppointmentHandle(User* patient, User* doctor, const std::str
   pImpl_->setAppointmentType(type);
 }
 
+AppointmentHandle::AppointmentHandle(){}
+
 AppointmentHandle::~AppointmentHandle() {}
 
 User* AppointmentHandle::getPatient() const { return pImpl_->getPatient(); }
