@@ -31,6 +31,8 @@ public:
     void setPrescriptionPath(const std::string& path);
     void setStatus(ReservationStatus stat);
     void setJustification(const std::string& just);
+
+    friend class SystemBody; 
 };
 
 class ReservationHandle : public Reservation, public Handle<ReservationBody> {
@@ -53,6 +55,8 @@ public:
     void setPrescriptionPath(const std::string& path) override;
     void setStatus(ReservationStatus stat) override;
     void setJustification(const std::string& just) override;
+
+    friend class SystemBody; 
 };
 
 #endif // RESERVATIONIMPL_H

@@ -51,6 +51,7 @@ public:
 
     // Permite que a classe de teste faça testes unitários
     friend class Unit_User;
+    friend class SystemBody; 
 };
 
 /*!
@@ -91,6 +92,7 @@ public:
 
     // Permite que a classe de teste faça testes unitários
     friend class Unit_User;
+    friend class SystemBody; 
 };
 
 #endif

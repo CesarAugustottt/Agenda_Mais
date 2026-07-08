@@ -49,6 +49,7 @@ public:
     void setAppointmentType(const Specialty type);
 
     friend class Unit_Appointment; 
+    friend class SystemBody; 
 };
 
 /*!
@@ -94,6 +95,7 @@ public:
     void setAppointmentType(const Specialty type) override;
 
     friend class Unit_Appointment;
+    friend class SystemBody; 
 };
 
 #endif // APPOINTMENTIMPL_H

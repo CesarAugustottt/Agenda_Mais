@@ -39,6 +39,7 @@ public:
     void setRequiresPrescription(bool requires);
     
     bool decreaseStock(int amount);
+    friend class SystemBody; 
 };
 
 /**
@@ -74,6 +75,7 @@ public:
     void setRequiresPrescription(bool requires) override;
     
     bool decreaseStock(int amount) override;
+    friend class SystemBody; 
 };
 
 #endif
