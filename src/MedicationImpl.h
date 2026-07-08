@@ -24,13 +24,6 @@ protected:
 
 public:
     MedicationBody();
-    /**
-     * @brief Constructor for MedicationBody.
-     * @param name The name of the medication.
-     * @param quantity Initial quantity in stock.
-     * @param requiresPrescription True if it requires a prescription.
-     */
-    MedicationBody(const std::string& name, int quantity, bool requiresPrescription);
     
     /**
      * @brief Destructor.
@@ -55,7 +48,7 @@ public:
  * (reference counting) and delegating method calls to the underlying implementation.
  */
 class MedicationHandle : public Medication, public Handle<MedicationBody> {
-public:
+protected:
     /**
      * @brief Constructor for MedicationHandle.
      * @param name The name of the medication.
@@ -63,6 +56,9 @@ public:
      * @param requiresPrescription True if it requires a prescription.
      */
     MedicationHandle(const std::string& name, int quantity, bool requiresPrescription);
+
+    MedicationHandle();
+public:
     
     /**
      * @brief Destructor.

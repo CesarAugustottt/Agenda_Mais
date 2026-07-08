@@ -8,10 +8,7 @@
 // MedicationBody Implementation
 
 MedicationBody::MedicationBody()
-    : Body(), name(""), quantity(0), requiresPrescription(false) {}
-
-MedicationBody::MedicationBody(const std::string& name, int quantity, bool requiresPrescription)
-    : Body(), name(name), quantity(quantity), requiresPrescription(requiresPrescription) {}
+    : name(""), quantity(0), requiresPrescription(false) {}
 
 MedicationBody::~MedicationBody() {}
 
@@ -56,6 +53,9 @@ MedicationHandle::MedicationHandle(const std::string& name, int quantity, bool r
     pImpl_->setQuantity(quantity);
     pImpl_->setRequiresPrescription(requiresPrescription);
 }
+
+MedicationHandle::MedicationHandle(){}
+
 MedicationHandle::~MedicationHandle() {}
 
 std::string MedicationHandle::getName() const { 
