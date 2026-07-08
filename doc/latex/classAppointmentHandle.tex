@@ -30,13 +30,11 @@ Collaboration diagram for Appointment\+Handle\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classAppointmentHandle_ad4c829e44f8c889b432ef42cf25d7966}{Appointment\+Handle}} (const std\+::string \&patient, const std\+::string \&doctor, const std\+::string \&date, const std\+::string \&time, const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} status, const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} type)
-\begin{DoxyCompactList}\small\item\em This is the parameterized constructor for the \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classAppointmentHandle_ab9429d434f96a2737e8c76b454909dae}{$\sim$\+Appointment\+Handle}} ()
 \begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} Class. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classAppointmentHandle_a5beb823859b573c5cb4683a391f7c16a}{get\+Patient\+Name}} () const override
+\mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classAppointmentHandle_a5f4d4c876f5caff7ff396eec9bd653db}{get\+Patient}} () const override
 \begin{DoxyCompactList}\small\item\em Returns the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classAppointmentHandle_aea099685e9c8e29937be3bd50a1217be}{get\+Doctor\+Name}} () const override
+\mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classAppointmentHandle_a05d02a9d1e6efefc85b309a7902a23d1}{get\+Doctor}} () const override
 \begin{DoxyCompactList}\small\item\em Returns the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classAppointmentHandle_a442d386efef763e53c6bc887bb95c601}{get\+Date}} () const override
 \begin{DoxyCompactList}\small\item\em Returns the date attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
@@ -46,9 +44,9 @@ std\+::string \mbox{\hyperlink{classAppointmentHandle_a9809fa7f48966af578718fbc9
 \begin{DoxyCompactList}\small\item\em Returns the status attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classAppointmentHandle_a081734ef3a2ecd3b4ca01462e033a5e5}{get\+Appointment\+Type}} () const override
 \begin{DoxyCompactList}\small\item\em Returns the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAppointmentHandle_a11a90e226e37ffc25c3563acbc3a1305}{set\+Patient\+Name}} (const std\+::string \&name) override
+void \mbox{\hyperlink{classAppointmentHandle_ab1e5b043148768a7dc100b567a7a0242}{set\+Patient}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient) override
 \begin{DoxyCompactList}\small\item\em Sets the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAppointmentHandle_aa7491d3d72de725e78172de9d1628fb4}{set\+Doctor\+Name}} (const std\+::string \&name) override
+void \mbox{\hyperlink{classAppointmentHandle_a847075921b1bf708fb14fc98235137c3}{set\+Doctor}} (\mbox{\hyperlink{classUser}{User}} $\ast$doctor) override
 \begin{DoxyCompactList}\small\item\em Sets the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAppointmentHandle_a674596c3547b76bf5a86f74000e4fc66}{set\+Date}} (const std\+::string \&date) override
 \begin{DoxyCompactList}\small\item\em Sets the date attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
@@ -58,10 +56,19 @@ void \mbox{\hyperlink{classAppointmentHandle_a59335009ca49ed255b269ae96020ee21}{
 \begin{DoxyCompactList}\small\item\em Sets the status attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAppointmentHandle_a0d2ff5bced7ab6d3f11176a69dde6201}{set\+Appointment\+Type}} (const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} type) override
 \begin{DoxyCompactList}\small\item\em Sets the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAppointmentHandle_ab706004a93b5a21d7b38df148f02668f}{Appointment\+Handle}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient, \mbox{\hyperlink{classUser}{User}} $\ast$doctor, const std\+::string \&date, const std\+::string \&time, const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} status, const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} type)
+\begin{DoxyCompactList}\small\item\em This is the parameterized constructor for the \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} Class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAppointmentHandle_a9ae9bf264f125f863691c9d2b9c1f76c}{Appointment\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classAppointmentHandle_aceecb3099daa4a515d39ed3adfd3d27e}{Unit\+\_\+\+Appointment}}
+\item 
+class \mbox{\hyperlink{classAppointmentHandle_a43873a298b26752314d9cba9aadbc1be}{System\+Body}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -69,16 +76,16 @@ class \mbox{\hyperlink{classAppointmentHandle_aceecb3099daa4a515d39ed3adfd3d27e}
 \doxysubsection{Detailed Description}
 This class represents the handle of an \mbox{\hyperlink{classAppointment}{Appointment}}. 
 
-Definition at line 58 of file Appointment\+Impl.\+h.
+Definition at line 59 of file Appointment\+Impl.\+h.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classAppointmentHandle_ad4c829e44f8c889b432ef42cf25d7966}\label{classAppointmentHandle_ad4c829e44f8c889b432ef42cf25d7966}} 
+\mbox{\Hypertarget{classAppointmentHandle_ab706004a93b5a21d7b38df148f02668f}\label{classAppointmentHandle_ab706004a93b5a21d7b38df148f02668f}} 
 \index{AppointmentHandle@{AppointmentHandle}!AppointmentHandle@{AppointmentHandle}}
 \index{AppointmentHandle@{AppointmentHandle}!AppointmentHandle@{AppointmentHandle}}
-\doxysubsubsection{\texorpdfstring{AppointmentHandle()}{AppointmentHandle()}}
-{\footnotesize\ttfamily Appointment\+Handle\+::\+Appointment\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient,  }\item[{const std\+::string \&}]{doctor,  }\item[{const std\+::string \&}]{date,  }\item[{const std\+::string \&}]{time,  }\item[{const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}]{status,  }\item[{const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{type }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{AppointmentHandle()}{AppointmentHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Appointment\+Handle\+::\+Appointment\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{patient,  }\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{doctor,  }\item[{const std\+::string \&}]{date,  }\item[{const std\+::string \&}]{time,  }\item[{const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}]{status,  }\item[{const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -88,13 +95,13 @@ This is the parameterized constructor for the \mbox{\hyperlink{classAppointmentH
 \begin{DoxyItemize}
 \item 
 \begin{DoxyParams}{Parameters}
-{\em patient} & the name of the patient.\\
+{\em patient} & the patient from the appointment.\\
 \hline
 \end{DoxyParams}
 
 \item 
 \begin{DoxyParams}{Parameters}
-{\em doctor} & the name of the doctor.\\
+{\em doctor} & the doctor from the appointment.\\
 \hline
 \end{DoxyParams}
 
@@ -128,14 +135,33 @@ Definition at line 34 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{34                                                                                                                                                                               \{}
-\DoxyCodeLine{35   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a4acd3fc7bc3c86d028806de0d7f80cc1}{setPatientName}}(patient);}
-\DoxyCodeLine{36   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_acb9ddd28cc7a9d609799a3c2c9b8f0fd}{setDoctorName}}(doctor);}
+\DoxyCodeLine{34                                                                                                                                                         \{}
+\DoxyCodeLine{35   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ac1d8cb014b738c6ea7634b519a3316ae}{setPatient}}(patient);}
+\DoxyCodeLine{36   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a663b81878a727d306ffaac4e649e9e94}{setDoctor}}(doctor);}
 \DoxyCodeLine{37   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}{setDate}}(date);}
 \DoxyCodeLine{38   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}{setTime}}(time);}
 \DoxyCodeLine{39   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}{setStatus}}(status);}
 \DoxyCodeLine{40   \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}{setAppointmentType}}(type);}
 \DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAppointmentHandle_a9ae9bf264f125f863691c9d2b9c1f76c}\label{classAppointmentHandle_a9ae9bf264f125f863691c9d2b9c1f76c}} 
+\index{AppointmentHandle@{AppointmentHandle}!AppointmentHandle@{AppointmentHandle}}
+\index{AppointmentHandle@{AppointmentHandle}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{AppointmentHandle()}{AppointmentHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Appointment\+Handle\+::\+Appointment\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+This is the default constructor for the \mbox{\hyperlink{classAppointmentHandle}{Appointment\+Handle}} Class. 
+
+
+
+Definition at line 43 of file Appointment\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_ab9429d434f96a2737e8c76b454909dae}\label{classAppointmentHandle_ab9429d434f96a2737e8c76b454909dae}} 
@@ -150,11 +176,11 @@ This is the default destructor for the \mbox{\hyperlink{classAppointmentHandle}{
 
 
 
-Definition at line 43 of file Appointment\+Impl.\+cpp.
+Definition at line 45 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{43 \{\}}
+\DoxyCodeLine{45 \{\}}
 
 \end{DoxyCode}
 
@@ -182,11 +208,11 @@ Implements \mbox{\hyperlink{classAppointment_a838d1c7f550b0238c3998e2a3ca6bdaf}{
 
 
 
-Definition at line 50 of file Appointment\+Impl.\+cpp.
+Definition at line 52 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{50 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aea4887f3d6f31bf47801aa2f833c34e8}{getAppointmentType}}(); \}}
+\DoxyCodeLine{52 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aea4887f3d6f31bf47801aa2f833c34e8}{getAppointmentType}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a442d386efef763e53c6bc887bb95c601}\label{classAppointmentHandle_a442d386efef763e53c6bc887bb95c601}} 
@@ -211,18 +237,18 @@ Implements \mbox{\hyperlink{classAppointment_a8649cfc25e7b38d114310f2e5e1924b2}{
 
 
 
-Definition at line 47 of file Appointment\+Impl.\+cpp.
+Definition at line 49 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a134fa891664d997cb3396aa41ecb4de0}{getDate}}(); \}}
+\DoxyCodeLine{49 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a134fa891664d997cb3396aa41ecb4de0}{getDate}}(); \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classAppointmentHandle_aea099685e9c8e29937be3bd50a1217be}\label{classAppointmentHandle_aea099685e9c8e29937be3bd50a1217be}} 
-\index{AppointmentHandle@{AppointmentHandle}!getDoctorName@{getDoctorName}}
-\index{getDoctorName@{getDoctorName}!AppointmentHandle@{AppointmentHandle}}
-\doxysubsubsection{\texorpdfstring{getDoctorName()}{getDoctorName()}}
-{\footnotesize\ttfamily std\+::string Appointment\+Handle\+::get\+Doctor\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classAppointmentHandle_a05d02a9d1e6efefc85b309a7902a23d1}\label{classAppointmentHandle_a05d02a9d1e6efefc85b309a7902a23d1}} 
+\index{AppointmentHandle@{AppointmentHandle}!getDoctor@{getDoctor}}
+\index{getDoctor@{getDoctor}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{getDoctor()}{getDoctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} $\ast$ Appointment\+Handle\+::get\+Doctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -231,27 +257,27 @@ Returns the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{App
 
 \begin{DoxyItemize}
 \item \begin{DoxyReturn}{Returns}
-string -\/ the content doctor\+Name attribute. 
+\mbox{\hyperlink{classUser}{User}} -\/ the content doctor attribute. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Implements \mbox{\hyperlink{classAppointment_acdab90efcb5110c1bb770c2f98b2aaef}{Appointment}}.
+Implements \mbox{\hyperlink{classAppointment_a10d8a15164e842c773c831d847fa56ef}{Appointment}}.
 
 
 
-Definition at line 46 of file Appointment\+Impl.\+cpp.
+Definition at line 48 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{46 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a344ece97a5ce41368be09c0aa1f6ccb0}{getDoctorName}}(); \}}
+\DoxyCodeLine{48 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ad0819f9d8bedead96fef76cbbe86cb51}{getDoctor}}(); \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classAppointmentHandle_a5beb823859b573c5cb4683a391f7c16a}\label{classAppointmentHandle_a5beb823859b573c5cb4683a391f7c16a}} 
-\index{AppointmentHandle@{AppointmentHandle}!getPatientName@{getPatientName}}
-\index{getPatientName@{getPatientName}!AppointmentHandle@{AppointmentHandle}}
-\doxysubsubsection{\texorpdfstring{getPatientName()}{getPatientName()}}
-{\footnotesize\ttfamily std\+::string Appointment\+Handle\+::get\+Patient\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classAppointmentHandle_a5f4d4c876f5caff7ff396eec9bd653db}\label{classAppointmentHandle_a5f4d4c876f5caff7ff396eec9bd653db}} 
+\index{AppointmentHandle@{AppointmentHandle}!getPatient@{getPatient}}
+\index{getPatient@{getPatient}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{getPatient()}{getPatient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} $\ast$ Appointment\+Handle\+::get\+Patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -260,20 +286,20 @@ Returns the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Ap
 
 \begin{DoxyItemize}
 \item \begin{DoxyReturn}{Returns}
-string -\/ the content patient\+Name attribute. 
+\mbox{\hyperlink{classUser}{User}} -\/ the content patient attribute. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Implements \mbox{\hyperlink{classAppointment_ae1e029c32ad90e7e348cb869ce773967}{Appointment}}.
+Implements \mbox{\hyperlink{classAppointment_add6d4e67b0050b1f56328f92eca59328}{Appointment}}.
 
 
 
-Definition at line 45 of file Appointment\+Impl.\+cpp.
+Definition at line 47 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a197bf14915f2f63ae902ae46a8616bd7}{getPatientName}}(); \}}
+\DoxyCodeLine{47 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a5022233b1a5a1d0fe960b71a7f20a1b4}{getPatient}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a789bc5e4ba48d38ec68fbed69c751fa0}\label{classAppointmentHandle_a789bc5e4ba48d38ec68fbed69c751fa0}} 
@@ -298,11 +324,11 @@ Implements \mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{
 
 
 
-Definition at line 49 of file Appointment\+Impl.\+cpp.
+Definition at line 51 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{49 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aaad3365626a8fd166b635bf1b7633d75}{getStatus}}(); \}}
+\DoxyCodeLine{51 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aaad3365626a8fd166b635bf1b7633d75}{getStatus}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a9809fa7f48966af578718fbc90d4dbce}\label{classAppointmentHandle_a9809fa7f48966af578718fbc90d4dbce}} 
@@ -327,11 +353,11 @@ Implements \mbox{\hyperlink{classAppointment_a7a0d1b841e8498ea0b8ff6ec1a52e8fd}{
 
 
 
-Definition at line 48 of file Appointment\+Impl.\+cpp.
+Definition at line 50 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{48 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a580b98b80f5b910a841cf320b8b113e6}{getTime}}(); \}}
+\DoxyCodeLine{50 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a580b98b80f5b910a841cf320b8b113e6}{getTime}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a0d2ff5bced7ab6d3f11176a69dde6201}\label{classAppointmentHandle_a0d2ff5bced7ab6d3f11176a69dde6201}} 
@@ -358,11 +384,11 @@ Implements \mbox{\hyperlink{classAppointment_a77c5105bf0eabedeb6bf6d6bf489335a}{
 
 
 
-Definition at line 57 of file Appointment\+Impl.\+cpp.
+Definition at line 59 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{57 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}{setAppointmentType}}(type); \}}
+\DoxyCodeLine{59 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a2fd333b0760834c8b5ec095982c73e81}{setAppointmentType}}(type); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a674596c3547b76bf5a86f74000e4fc66}\label{classAppointmentHandle_a674596c3547b76bf5a86f74000e4fc66}} 
@@ -389,18 +415,18 @@ Implements \mbox{\hyperlink{classAppointment_aee0cf1f127fd8d5639b99fcfd4102c89}{
 
 
 
-Definition at line 54 of file Appointment\+Impl.\+cpp.
+Definition at line 56 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{54 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}{setDate}}(date); \}}
+\DoxyCodeLine{56 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ae0356ae4868bbe5d096c20b42127ae1f}{setDate}}(date); \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classAppointmentHandle_aa7491d3d72de725e78172de9d1628fb4}\label{classAppointmentHandle_aa7491d3d72de725e78172de9d1628fb4}} 
-\index{AppointmentHandle@{AppointmentHandle}!setDoctorName@{setDoctorName}}
-\index{setDoctorName@{setDoctorName}!AppointmentHandle@{AppointmentHandle}}
-\doxysubsubsection{\texorpdfstring{setDoctorName()}{setDoctorName()}}
-{\footnotesize\ttfamily void Appointment\+Handle\+::set\+Doctor\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classAppointmentHandle_a847075921b1bf708fb14fc98235137c3}\label{classAppointmentHandle_a847075921b1bf708fb14fc98235137c3}} 
+\index{AppointmentHandle@{AppointmentHandle}!setDoctor@{setDoctor}}
+\index{setDoctor@{setDoctor}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{setDoctor()}{setDoctor()}}
+{\footnotesize\ttfamily void Appointment\+Handle\+::set\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -410,28 +436,28 @@ Sets the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appoin
 \begin{DoxyItemize}
 \item 
 \begin{DoxyParams}{Parameters}
-{\em name} & which will be set to the current appointment. \\
+{\em doctor} & which will be set to the current appointment. \\
 \hline
 \end{DoxyParams}
 
 \end{DoxyItemize}
 
-Implements \mbox{\hyperlink{classAppointment_a65b55b38aaff39317df0b35e18d6a6f3}{Appointment}}.
+Implements \mbox{\hyperlink{classAppointment_a97aff7fe29156f47c43c89bbeb2e3262}{Appointment}}.
 
 
 
-Definition at line 53 of file Appointment\+Impl.\+cpp.
+Definition at line 55 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{53 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_acb9ddd28cc7a9d609799a3c2c9b8f0fd}{setDoctorName}}(name); \}}
+\DoxyCodeLine{55 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a663b81878a727d306ffaac4e649e9e94}{setDoctor}}(doctor); \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classAppointmentHandle_a11a90e226e37ffc25c3563acbc3a1305}\label{classAppointmentHandle_a11a90e226e37ffc25c3563acbc3a1305}} 
-\index{AppointmentHandle@{AppointmentHandle}!setPatientName@{setPatientName}}
-\index{setPatientName@{setPatientName}!AppointmentHandle@{AppointmentHandle}}
-\doxysubsubsection{\texorpdfstring{setPatientName()}{setPatientName()}}
-{\footnotesize\ttfamily void Appointment\+Handle\+::set\+Patient\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classAppointmentHandle_ab1e5b043148768a7dc100b567a7a0242}\label{classAppointmentHandle_ab1e5b043148768a7dc100b567a7a0242}} 
+\index{AppointmentHandle@{AppointmentHandle}!setPatient@{setPatient}}
+\index{setPatient@{setPatient}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{setPatient()}{setPatient()}}
+{\footnotesize\ttfamily void Appointment\+Handle\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{patient }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -441,21 +467,21 @@ Sets the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appoi
 \begin{DoxyItemize}
 \item 
 \begin{DoxyParams}{Parameters}
-{\em name} & which will be set to the current appointment. \\
+{\em patient} & will be set to the current appointment. \\
 \hline
 \end{DoxyParams}
 
 \end{DoxyItemize}
 
-Implements \mbox{\hyperlink{classAppointment_ad4edc336985a727137d67bbad012e3f7}{Appointment}}.
+Implements \mbox{\hyperlink{classAppointment_a120cc5218236f1e535e58da773fe36bf}{Appointment}}.
 
 
 
-Definition at line 52 of file Appointment\+Impl.\+cpp.
+Definition at line 54 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{52 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a4acd3fc7bc3c86d028806de0d7f80cc1}{setPatientName}}(name); \}}
+\DoxyCodeLine{54 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_ac1d8cb014b738c6ea7634b519a3316ae}{setPatient}}(patient); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_a59335009ca49ed255b269ae96020ee21}\label{classAppointmentHandle_a59335009ca49ed255b269ae96020ee21}} 
@@ -482,11 +508,11 @@ Implements \mbox{\hyperlink{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}{
 
 
 
-Definition at line 56 of file Appointment\+Impl.\+cpp.
+Definition at line 58 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{56 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}{setStatus}}(status); \}}
+\DoxyCodeLine{58 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_aa62b193e69011f3e6802f31a063305f0}{setStatus}}(status); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAppointmentHandle_af9ff5b004310c7809c147eaed33db29e}\label{classAppointmentHandle_af9ff5b004310c7809c147eaed33db29e}} 
@@ -513,16 +539,26 @@ Implements \mbox{\hyperlink{classAppointment_a0884290b4ecc5e97f2e6ada25dadec48}{
 
 
 
-Definition at line 55 of file Appointment\+Impl.\+cpp.
+Definition at line 57 of file Appointment\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{55 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}{setTime}}(time); \}}
+\DoxyCodeLine{57 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classAppointmentBody_a1680f0951d9f49894bd7eb0ad1b45f04}{setTime}}(time); \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classAppointmentHandle_a43873a298b26752314d9cba9aadbc1be}\label{classAppointmentHandle_a43873a298b26752314d9cba9aadbc1be}} 
+\index{AppointmentHandle@{AppointmentHandle}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!AppointmentHandle@{AppointmentHandle}}
+\doxysubsubsection{\texorpdfstring{SystemBody}{SystemBody}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSystemBody}{System\+Body}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 98 of file Appointment\+Impl.\+h.
+
 \mbox{\Hypertarget{classAppointmentHandle_aceecb3099daa4a515d39ed3adfd3d27e}\label{classAppointmentHandle_aceecb3099daa4a515d39ed3adfd3d27e}} 
 \index{AppointmentHandle@{AppointmentHandle}!Unit\_Appointment@{Unit\_Appointment}}
 \index{Unit\_Appointment@{Unit\_Appointment}!AppointmentHandle@{AppointmentHandle}}
@@ -531,7 +567,7 @@ Definition at line 55 of file Appointment\+Impl.\+cpp.
 
 
 
-Definition at line 93 of file Appointment\+Impl.\+h.
+Definition at line 97 of file Appointment\+Impl.\+h.
 
 
 

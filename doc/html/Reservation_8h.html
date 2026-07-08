@@ -88,10 +88,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Reservation_8h__dep__incl.png" border="0" usemap="#asrc_2Reservation_8hdep" alt=""/></div>
 <map name="asrc_2Reservation_8hdep" id="asrc_2Reservation_8hdep">
-<area shape="rect" title=" " alt="" coords="444,5,579,32"/>
-<area shape="rect" href="ReservationImpl_8h.html" title=" " alt="" coords="429,80,593,107"/>
-<area shape="rect" href="MedicationsController_8h.html" title=" " alt="" coords="305,155,504,181"/>
-<area shape="rect" href="ReservationImpl_8cpp.html" title=" " alt="" coords="529,155,707,181"/>
+<area shape="rect" title=" " alt="" coords="669,5,804,32"/>
+<area shape="rect" href="ReservationImpl_8h.html" title=" " alt="" coords="575,80,739,107"/>
+<area shape="rect" href="System_8h.html" title=" " alt="" coords="781,80,887,107"/>
+<area shape="rect" href="MedicationsController_8h.html" title=" " alt="" coords="307,155,505,181"/>
+<area shape="rect" href="ReservationImpl_8cpp.html" title=" " alt="" coords="531,155,710,181"/>
+<area shape="rect" href="SystemImpl_8cpp.html" title=" " alt="" coords="777,229,928,256"/>
 <area shape="rect" href="mainwindow_8h.html" title=" " alt="" coords="133,229,271,256"/>
 <area shape="rect" href="ManageMedicationsView_8h.html" title=" " alt="" coords="295,229,514,256"/>
 <area shape="rect" href="MedicationsController_8cpp.html" title="Implementation of the MedicationController class." alt="" coords="539,229,753,256"/>
@@ -99,6 +101,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" href="mainwindow_8cpp.html" title=" " alt="" coords="293,304,447,331"/>
 <area shape="rect" href="TelaLogin_8cpp.html" title=" " alt="" coords="135,304,269,331"/>
 <area shape="rect" href="ManageMedicationsView_8cpp.html" title=" " alt="" coords="471,304,706,331"/>
+<area shape="rect" href="SystemImpl_8h.html" title=" " alt="" coords="785,155,920,181"/>
 </map>
 </div>
 </div>
@@ -107,6 +110,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservation.html">Reservation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents the interface of a <a class="el" href="classReservation.html" title="This class represents the interface of a Reservation as implemented in this code.">Reservation</a> as implemented in this code.  <a href="classReservation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -115,6 +119,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55">APPROVED</a>
 , <a class="el" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082">REFUSED</a>
  }</td></tr>
+<tr class="memdesc:a2cb75c606487ee602cd39e7139d514e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class that defines the possible status of a medicine reservation.  <a href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3">More...</a><br /></td></tr>
 <tr class="separator:a2cb75c606487ee602cd39e7139d514e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -137,18 +142,20 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enum class that defines the possible status of a medicine reservation. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2"></a>PENDING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55"></a>APPROVED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082"></a>REFUSED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="Reservation_8h_source.html#l00006">6</a> of file <a class="el" href="Reservation_8h_source.html">Reservation.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                             {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">PENDING</a>,</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55">APPROVED</a>,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082">REFUSED</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<p class="definition">Definition at line <a class="el" href="Reservation_8h_source.html#l00009">9</a> of file <a class="el" href="Reservation_8h_source.html">Reservation.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                             {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">PENDING</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55">APPROVED</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082">REFUSED</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
 <div class="ttc" id="aAppointment_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2"><div class="ttname"><a href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">Status::PENDING</a></div><div class="ttdeci">@ PENDING</div></div>
 <div class="ttc" id="aReservation_8h_html_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55"><div class="ttname"><a href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55">ReservationStatus::APPROVED</a></div><div class="ttdeci">@ APPROVED</div></div>
 <div class="ttc" id="aReservation_8h_html_a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082"><div class="ttname"><a href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082">ReservationStatus::REFUSED</a></div><div class="ttdeci">@ REFUSED</div></div>

@@ -1,0 +1,8 @@
+<map id="src/System.h" name="src/System.h">
+<area shape="rect" id="node1" title=" " alt="" coords="73,5,180,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="98,229,157,256"/>
+<area shape="rect" id="node3" href="$User_8h.html" title=" " alt="" coords="27,155,90,181"/>
+<area shape="rect" id="node4" href="$Appointment_8h.html" title=" " alt="" coords="67,80,186,107"/>
+<area shape="rect" id="node5" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="168,155,274,181"/>
+<area shape="rect" id="node6" href="$Reservation_8h.html" title=" " alt="" coords="261,80,373,107"/>
+</map>

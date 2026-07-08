@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classAppointmentHandle-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,18 +99,15 @@ Collaboration diagram for AppointmentHandle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4c829e44f8c889b432ef42cf25d7966"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#ad4c829e44f8c889b432ef42cf25d7966">AppointmentHandle</a> (const std::string &amp;patient, const std::string &amp;doctor, const std::string &amp;date, const std::string &amp;time, const <a class="el" href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> status, const <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a> type)</td></tr>
-<tr class="memdesc:ad4c829e44f8c889b432ef42cf25d7966"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the parameterized constructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class.  <a href="classAppointmentHandle.html#ad4c829e44f8c889b432ef42cf25d7966">More...</a><br /></td></tr>
-<tr class="separator:ad4c829e44f8c889b432ef42cf25d7966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9429d434f96a2737e8c76b454909dae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#ab9429d434f96a2737e8c76b454909dae">~AppointmentHandle</a> ()</td></tr>
 <tr class="memdesc:ab9429d434f96a2737e8c76b454909dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default destructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class.  <a href="classAppointmentHandle.html#ab9429d434f96a2737e8c76b454909dae">More...</a><br /></td></tr>
 <tr class="separator:ab9429d434f96a2737e8c76b454909dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5beb823859b573c5cb4683a391f7c16a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a5beb823859b573c5cb4683a391f7c16a">getPatientName</a> () const override</td></tr>
-<tr class="memdesc:a5beb823859b573c5cb4683a391f7c16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a5beb823859b573c5cb4683a391f7c16a">More...</a><br /></td></tr>
-<tr class="separator:a5beb823859b573c5cb4683a391f7c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea099685e9c8e29937be3bd50a1217be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#aea099685e9c8e29937be3bd50a1217be">getDoctorName</a> () const override</td></tr>
-<tr class="memdesc:aea099685e9c8e29937be3bd50a1217be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the doctorName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#aea099685e9c8e29937be3bd50a1217be">More...</a><br /></td></tr>
-<tr class="separator:aea099685e9c8e29937be3bd50a1217be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4d4c876f5caff7ff396eec9bd653db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUser.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a5f4d4c876f5caff7ff396eec9bd653db">getPatient</a> () const override</td></tr>
+<tr class="memdesc:a5f4d4c876f5caff7ff396eec9bd653db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a5f4d4c876f5caff7ff396eec9bd653db">More...</a><br /></td></tr>
+<tr class="separator:a5f4d4c876f5caff7ff396eec9bd653db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d02a9d1e6efefc85b309a7902a23d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUser.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a05d02a9d1e6efefc85b309a7902a23d1">getDoctor</a> () const override</td></tr>
+<tr class="memdesc:a05d02a9d1e6efefc85b309a7902a23d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the doctorName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a05d02a9d1e6efefc85b309a7902a23d1">More...</a><br /></td></tr>
+<tr class="separator:a05d02a9d1e6efefc85b309a7902a23d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a442d386efef763e53c6bc887bb95c601"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a442d386efef763e53c6bc887bb95c601">getDate</a> () const override</td></tr>
 <tr class="memdesc:a442d386efef763e53c6bc887bb95c601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the date attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a442d386efef763e53c6bc887bb95c601">More...</a><br /></td></tr>
 <tr class="separator:a442d386efef763e53c6bc887bb95c601"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,12 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a081734ef3a2ecd3b4ca01462e033a5e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a081734ef3a2ecd3b4ca01462e033a5e5">getAppointmentType</a> () const override</td></tr>
 <tr class="memdesc:a081734ef3a2ecd3b4ca01462e033a5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the appointmentType attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a081734ef3a2ecd3b4ca01462e033a5e5">More...</a><br /></td></tr>
 <tr class="separator:a081734ef3a2ecd3b4ca01462e033a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a90e226e37ffc25c3563acbc3a1305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a11a90e226e37ffc25c3563acbc3a1305">setPatientName</a> (const std::string &amp;name) override</td></tr>
-<tr class="memdesc:a11a90e226e37ffc25c3563acbc3a1305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a11a90e226e37ffc25c3563acbc3a1305">More...</a><br /></td></tr>
-<tr class="separator:a11a90e226e37ffc25c3563acbc3a1305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7491d3d72de725e78172de9d1628fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#aa7491d3d72de725e78172de9d1628fb4">setDoctorName</a> (const std::string &amp;name) override</td></tr>
-<tr class="memdesc:aa7491d3d72de725e78172de9d1628fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the doctorName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#aa7491d3d72de725e78172de9d1628fb4">More...</a><br /></td></tr>
-<tr class="separator:aa7491d3d72de725e78172de9d1628fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e5b043148768a7dc100b567a7a0242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#ab1e5b043148768a7dc100b567a7a0242">setPatient</a> (<a class="el" href="classUser.html">User</a> *patient) override</td></tr>
+<tr class="memdesc:ab1e5b043148768a7dc100b567a7a0242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#ab1e5b043148768a7dc100b567a7a0242">More...</a><br /></td></tr>
+<tr class="separator:ab1e5b043148768a7dc100b567a7a0242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847075921b1bf708fb14fc98235137c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a847075921b1bf708fb14fc98235137c3">setDoctor</a> (<a class="el" href="classUser.html">User</a> *doctor) override</td></tr>
+<tr class="memdesc:a847075921b1bf708fb14fc98235137c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the doctorName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a847075921b1bf708fb14fc98235137c3">More...</a><br /></td></tr>
+<tr class="separator:a847075921b1bf708fb14fc98235137c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a674596c3547b76bf5a86f74000e4fc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a674596c3547b76bf5a86f74000e4fc66">setDate</a> (const std::string &amp;date) override</td></tr>
 <tr class="memdesc:a674596c3547b76bf5a86f74000e4fc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the date attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointmentHandle.html#a674596c3547b76bf5a86f74000e4fc66">More...</a><br /></td></tr>
 <tr class="separator:a674596c3547b76bf5a86f74000e4fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,10 +158,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_classHandle"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator  <a href="classHandle.html#a06418155d929707d0a95e27efb8f3b82">More...</a><br /></td></tr>
 <tr class="separator:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_classHandle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab706004a93b5a21d7b38df148f02668f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#ab706004a93b5a21d7b38df148f02668f">AppointmentHandle</a> (<a class="el" href="classUser.html">User</a> *patient, <a class="el" href="classUser.html">User</a> *doctor, const std::string &amp;date, const std::string &amp;time, const <a class="el" href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70b">Status</a> status, const <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a> type)</td></tr>
+<tr class="memdesc:ab706004a93b5a21d7b38df148f02668f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the parameterized constructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class.  <a href="classAppointmentHandle.html#ab706004a93b5a21d7b38df148f02668f">More...</a><br /></td></tr>
+<tr class="separator:ab706004a93b5a21d7b38df148f02668f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae9bf264f125f863691c9d2b9c1f76c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a9ae9bf264f125f863691c9d2b9c1f76c">AppointmentHandle</a> ()</td></tr>
+<tr class="memdesc:a9ae9bf264f125f863691c9d2b9c1f76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default constructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class.  <a href="classAppointmentHandle.html#a9ae9bf264f125f863691c9d2b9c1f76c">More...</a><br /></td></tr>
+<tr class="separator:a9ae9bf264f125f863691c9d2b9c1f76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aceecb3099daa4a515d39ed3adfd3d27e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#aceecb3099daa4a515d39ed3adfd3d27e">Unit_Appointment</a></td></tr>
 <tr class="separator:aceecb3099daa4a515d39ed3adfd3d27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43873a298b26752314d9cba9aadbc1be"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointmentHandle.html#a43873a298b26752314d9cba9aadbc1be">SystemBody</a></td></tr>
+<tr class="separator:a43873a298b26752314d9cba9aadbc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,24 +184,27 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents the handle of an <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8h_source.html#l00058">58</a> of file <a class="el" href="AppointmentImpl_8h_source.html">AppointmentImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8h_source.html#l00059">59</a> of file <a class="el" href="AppointmentImpl_8h_source.html">AppointmentImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad4c829e44f8c889b432ef42cf25d7966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c829e44f8c889b432ef42cf25d7966">&#9670;&nbsp;</a></span>AppointmentHandle()</h2>
+<a id="ab706004a93b5a21d7b38df148f02668f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab706004a93b5a21d7b38df148f02668f">&#9670;&nbsp;</a></span>AppointmentHandle() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AppointmentHandle::AppointmentHandle </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> *&#160;</td>
           <td class="paramname"><em>patient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> *&#160;</td>
           <td class="paramname"><em>doctor</em>, </td>
         </tr>
         <tr>
@@ -225,20 +237,25 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This is the parameterized constructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class. </p>
 <ul>
 <li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patient</td><td>the name of the patient.</td></tr>
+    <tr><td class="paramname">patient</td><td>the patient from the appointment.</td></tr>
   </table>
   </dd>
 </dl>
 </li>
 <li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">doctor</td><td>the name of the doctor.</td></tr>
+    <tr><td class="paramname">doctor</td><td>the doctor from the appointment.</td></tr>
   </table>
   </dd>
 </dl>
@@ -274,9 +291,9 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00034">34</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                                                                                                                              {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a4acd3fc7bc3c86d028806de0d7f80cc1">setPatientName</a>(patient);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#acb9ddd28cc7a9d609799a3c2c9b8f0fd">setDoctorName</a>(doctor);</div>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                                                                                                        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ac1d8cb014b738c6ea7634b519a3316ae">setPatient</a>(patient);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a663b81878a727d306ffaac4e649e9e94">setDoctor</a>(doctor);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ae0356ae4868bbe5d096c20b42127ae1f">setDate</a>(date);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a1680f0951d9f49894bd7eb0ad1b45f04">setTime</a>(time);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aa62b193e69011f3e6802f31a063305f0">setStatus</a>(status);</div>
@@ -284,11 +301,41 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="ttc" id="aclassAppointmentBody_html_a1680f0951d9f49894bd7eb0ad1b45f04"><div class="ttname"><a href="classAppointmentBody.html#a1680f0951d9f49894bd7eb0ad1b45f04">AppointmentBody::setTime</a></div><div class="ttdeci">void setTime(const std::string &amp;time)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00027">AppointmentImpl.cpp:27</a></div></div>
 <div class="ttc" id="aclassAppointmentBody_html_a2fd333b0760834c8b5ec095982c73e81"><div class="ttname"><a href="classAppointmentBody.html#a2fd333b0760834c8b5ec095982c73e81">AppointmentBody::setAppointmentType</a></div><div class="ttdeci">void setAppointmentType(const Specialty type)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00029">AppointmentImpl.cpp:29</a></div></div>
-<div class="ttc" id="aclassAppointmentBody_html_a4acd3fc7bc3c86d028806de0d7f80cc1"><div class="ttname"><a href="classAppointmentBody.html#a4acd3fc7bc3c86d028806de0d7f80cc1">AppointmentBody::setPatientName</a></div><div class="ttdeci">void setPatientName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00024">AppointmentImpl.cpp:24</a></div></div>
+<div class="ttc" id="aclassAppointmentBody_html_a663b81878a727d306ffaac4e649e9e94"><div class="ttname"><a href="classAppointmentBody.html#a663b81878a727d306ffaac4e649e9e94">AppointmentBody::setDoctor</a></div><div class="ttdeci">void setDoctor(User *doctor)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00025">AppointmentImpl.cpp:25</a></div></div>
 <div class="ttc" id="aclassAppointmentBody_html_aa62b193e69011f3e6802f31a063305f0"><div class="ttname"><a href="classAppointmentBody.html#aa62b193e69011f3e6802f31a063305f0">AppointmentBody::setStatus</a></div><div class="ttdeci">void setStatus(const Status status)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00028">AppointmentImpl.cpp:28</a></div></div>
-<div class="ttc" id="aclassAppointmentBody_html_acb9ddd28cc7a9d609799a3c2c9b8f0fd"><div class="ttname"><a href="classAppointmentBody.html#acb9ddd28cc7a9d609799a3c2c9b8f0fd">AppointmentBody::setDoctorName</a></div><div class="ttdeci">void setDoctorName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00025">AppointmentImpl.cpp:25</a></div></div>
+<div class="ttc" id="aclassAppointmentBody_html_ac1d8cb014b738c6ea7634b519a3316ae"><div class="ttname"><a href="classAppointmentBody.html#ac1d8cb014b738c6ea7634b519a3316ae">AppointmentBody::setPatient</a></div><div class="ttdeci">void setPatient(User *patient)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00024">AppointmentImpl.cpp:24</a></div></div>
 <div class="ttc" id="aclassAppointmentBody_html_ae0356ae4868bbe5d096c20b42127ae1f"><div class="ttname"><a href="classAppointmentBody.html#ae0356ae4868bbe5d096c20b42127ae1f">AppointmentBody::setDate</a></div><div class="ttdeci">void setDate(const std::string &amp;date)</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00026">AppointmentImpl.cpp:26</a></div></div>
 <div class="ttc" id="aclassHandle_html_a16021e57596d7369dfa1a9fadc35c06f"><div class="ttname"><a href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">Handle&lt; AppointmentBody &gt;::pImpl_</a></div><div class="ttdeci">AppointmentBody * pImpl_</div><div class="ttdoc">referência para a implementação</div><div class="ttdef"><b>Definition:</b> <a href="handleBody_8h_source.html#l00081">handleBody.h:81</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ae9bf264f125f863691c9d2b9c1f76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae9bf264f125f863691c9d2b9c1f76c">&#9670;&nbsp;</a></span>AppointmentHandle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AppointmentHandle::AppointmentHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the default constructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class. </p>
+
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00043">43</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,8 +364,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>This is the default destructor for the <a class="el" href="classAppointmentHandle.html" title="This class represents the handle of an Appointment.">AppointmentHandle</a> Class. </p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00043">43</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00045">45</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -354,8 +401,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#a838d1c7f550b0238c3998e2a3ca6bdaf">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00050">50</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aea4887f3d6f31bf47801aa2f833c34e8">getAppointmentType</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00052">52</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aea4887f3d6f31bf47801aa2f833c34e8">getAppointmentType</a>(); }</div>
 <div class="ttc" id="aclassAppointmentBody_html_aea4887f3d6f31bf47801aa2f833c34e8"><div class="ttname"><a href="classAppointmentBody.html#aea4887f3d6f31bf47801aa2f833c34e8">AppointmentBody::getAppointmentType</a></div><div class="ttdeci">Specialty getAppointmentType() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00022">AppointmentImpl.cpp:22</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -391,14 +438,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#a8649cfc25e7b38d114310f2e5e1924b2">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00047">47</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a134fa891664d997cb3396aa41ecb4de0">getDate</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00049">49</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a134fa891664d997cb3396aa41ecb4de0">getDate</a>(); }</div>
 <div class="ttc" id="aclassAppointmentBody_html_a134fa891664d997cb3396aa41ecb4de0"><div class="ttname"><a href="classAppointmentBody.html#a134fa891664d997cb3396aa41ecb4de0">AppointmentBody::getDate</a></div><div class="ttdeci">std::string getDate() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00019">AppointmentImpl.cpp:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aea099685e9c8e29937be3bd50a1217be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea099685e9c8e29937be3bd50a1217be">&#9670;&nbsp;</a></span>getDoctorName()</h2>
+<a id="a05d02a9d1e6efefc85b309a7902a23d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d02a9d1e6efefc85b309a7902a23d1">&#9670;&nbsp;</a></span>getDoctor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +454,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string AppointmentHandle::getDoctorName </td>
+          <td class="memname"><a class="el" href="classUser.html">User</a> * AppointmentHandle::getDoctor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -422,20 +469,20 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the doctorName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class. </p>
 <ul>
-<li><dl class="section return"><dt>Returns</dt><dd>string - the content doctorName attribute. </dd></dl>
+<li><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classUser.html" title="This class represents the interface of a User as implemented in this code.">User</a> - the content doctor attribute. </dd></dl>
 </li>
 </ul>
 
-<p>Implements <a class="el" href="classAppointment.html#acdab90efcb5110c1bb770c2f98b2aaef">Appointment</a>.</p>
+<p>Implements <a class="el" href="classAppointment.html#a10d8a15164e842c773c831d847fa56ef">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00046">46</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a344ece97a5ce41368be09c0aa1f6ccb0">getDoctorName</a>(); }</div>
-<div class="ttc" id="aclassAppointmentBody_html_a344ece97a5ce41368be09c0aa1f6ccb0"><div class="ttname"><a href="classAppointmentBody.html#a344ece97a5ce41368be09c0aa1f6ccb0">AppointmentBody::getDoctorName</a></div><div class="ttdeci">std::string getDoctorName() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00018">AppointmentImpl.cpp:18</a></div></div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00048">48</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ad0819f9d8bedead96fef76cbbe86cb51">getDoctor</a>(); }</div>
+<div class="ttc" id="aclassAppointmentBody_html_ad0819f9d8bedead96fef76cbbe86cb51"><div class="ttname"><a href="classAppointmentBody.html#ad0819f9d8bedead96fef76cbbe86cb51">AppointmentBody::getDoctor</a></div><div class="ttdeci">User * getDoctor() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00018">AppointmentImpl.cpp:18</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a5beb823859b573c5cb4683a391f7c16a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5beb823859b573c5cb4683a391f7c16a">&#9670;&nbsp;</a></span>getPatientName()</h2>
+<a id="a5f4d4c876f5caff7ff396eec9bd653db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4d4c876f5caff7ff396eec9bd653db">&#9670;&nbsp;</a></span>getPatient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +491,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string AppointmentHandle::getPatientName </td>
+          <td class="memname"><a class="el" href="classUser.html">User</a> * AppointmentHandle::getPatient </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -459,15 +506,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class. </p>
 <ul>
-<li><dl class="section return"><dt>Returns</dt><dd>string - the content patientName attribute. </dd></dl>
+<li><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classUser.html" title="This class represents the interface of a User as implemented in this code.">User</a> - the content patient attribute. </dd></dl>
 </li>
 </ul>
 
-<p>Implements <a class="el" href="classAppointment.html#ae1e029c32ad90e7e348cb869ce773967">Appointment</a>.</p>
+<p>Implements <a class="el" href="classAppointment.html#add6d4e67b0050b1f56328f92eca59328">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00045">45</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a197bf14915f2f63ae902ae46a8616bd7">getPatientName</a>(); }</div>
-<div class="ttc" id="aclassAppointmentBody_html_a197bf14915f2f63ae902ae46a8616bd7"><div class="ttname"><a href="classAppointmentBody.html#a197bf14915f2f63ae902ae46a8616bd7">AppointmentBody::getPatientName</a></div><div class="ttdeci">std::string getPatientName() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00017">AppointmentImpl.cpp:17</a></div></div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00047">47</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a5022233b1a5a1d0fe960b71a7f20a1b4">getPatient</a>(); }</div>
+<div class="ttc" id="aclassAppointmentBody_html_a5022233b1a5a1d0fe960b71a7f20a1b4"><div class="ttname"><a href="classAppointmentBody.html#a5022233b1a5a1d0fe960b71a7f20a1b4">AppointmentBody::getPatient</a></div><div class="ttdeci">User * getPatient() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00017">AppointmentImpl.cpp:17</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -502,8 +549,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#ae9544d54a2c2f36c779ae4f1f120c15a">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00049">49</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aaad3365626a8fd166b635bf1b7633d75">getStatus</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00051">51</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aaad3365626a8fd166b635bf1b7633d75">getStatus</a>(); }</div>
 <div class="ttc" id="aclassAppointmentBody_html_aaad3365626a8fd166b635bf1b7633d75"><div class="ttname"><a href="classAppointmentBody.html#aaad3365626a8fd166b635bf1b7633d75">AppointmentBody::getStatus</a></div><div class="ttdeci">Status getStatus() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00021">AppointmentImpl.cpp:21</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -539,8 +586,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#a7a0d1b841e8498ea0b8ff6ec1a52e8fd">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00048">48</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a580b98b80f5b910a841cf320b8b113e6">getTime</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00050">50</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a580b98b80f5b910a841cf320b8b113e6">getTime</a>(); }</div>
 <div class="ttc" id="aclassAppointmentBody_html_a580b98b80f5b910a841cf320b8b113e6"><div class="ttname"><a href="classAppointmentBody.html#a580b98b80f5b910a841cf320b8b113e6">AppointmentBody::getTime</a></div><div class="ttdeci">std::string getTime() const</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8cpp_source.html#l00020">AppointmentImpl.cpp:20</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -582,8 +629,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#a77c5105bf0eabedeb6bf6d6bf489335a">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00057">57</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a2fd333b0760834c8b5ec095982c73e81">setAppointmentType</a>(type); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00059">59</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a2fd333b0760834c8b5ec095982c73e81">setAppointmentType</a>(type); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -624,13 +671,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#aee0cf1f127fd8d5639b99fcfd4102c89">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00054">54</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ae0356ae4868bbe5d096c20b42127ae1f">setDate</a>(date); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00056">56</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ae0356ae4868bbe5d096c20b42127ae1f">setDate</a>(date); }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa7491d3d72de725e78172de9d1628fb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7491d3d72de725e78172de9d1628fb4">&#9670;&nbsp;</a></span>setDoctorName()</h2>
+<a id="a847075921b1bf708fb14fc98235137c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847075921b1bf708fb14fc98235137c3">&#9670;&nbsp;</a></span>setDoctor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,10 +686,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AppointmentHandle::setDoctorName </td>
+          <td class="memname">void AppointmentHandle::setDoctor </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> *&#160;</td>
+          <td class="paramname"><em>doctor</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -657,22 +704,22 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>which will be set to the current appointment. </td></tr>
+    <tr><td class="paramname">doctor</td><td>which will be set to the current appointment. </td></tr>
   </table>
   </dd>
 </dl>
 </li>
 </ul>
 
-<p>Implements <a class="el" href="classAppointment.html#a65b55b38aaff39317df0b35e18d6a6f3">Appointment</a>.</p>
+<p>Implements <a class="el" href="classAppointment.html#a97aff7fe29156f47c43c89bbeb2e3262">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00053">53</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#acb9ddd28cc7a9d609799a3c2c9b8f0fd">setDoctorName</a>(name); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00055">55</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a663b81878a727d306ffaac4e649e9e94">setDoctor</a>(doctor); }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a11a90e226e37ffc25c3563acbc3a1305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11a90e226e37ffc25c3563acbc3a1305">&#9670;&nbsp;</a></span>setPatientName()</h2>
+<a id="ab1e5b043148768a7dc100b567a7a0242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e5b043148768a7dc100b567a7a0242">&#9670;&nbsp;</a></span>setPatient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,10 +728,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AppointmentHandle::setPatientName </td>
+          <td class="memname">void AppointmentHandle::setPatient </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> *&#160;</td>
+          <td class="paramname"><em>patient</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -699,17 +746,17 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>which will be set to the current appointment. </td></tr>
+    <tr><td class="paramname">patient</td><td>will be set to the current appointment. </td></tr>
   </table>
   </dd>
 </dl>
 </li>
 </ul>
 
-<p>Implements <a class="el" href="classAppointment.html#ad4edc336985a727137d67bbad012e3f7">Appointment</a>.</p>
+<p>Implements <a class="el" href="classAppointment.html#a120cc5218236f1e535e58da773fe36bf">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00052">52</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a4acd3fc7bc3c86d028806de0d7f80cc1">setPatientName</a>(name); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00054">54</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#ac1d8cb014b738c6ea7634b519a3316ae">setPatient</a>(patient); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -750,8 +797,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#ab63bb4f24f114e9971cac870b2ee92ae">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00056">56</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aa62b193e69011f3e6802f31a063305f0">setStatus</a>(status); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00058">58</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#aa62b193e69011f3e6802f31a063305f0">setStatus</a>(status); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -792,12 +839,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAppointment.html#a0884290b4ecc5e97f2e6ada25dadec48">Appointment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00055">55</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a1680f0951d9f49894bd7eb0ad1b45f04">setTime</a>(time); }</div>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8cpp_source.html#l00057">57</a> of file <a class="el" href="AppointmentImpl_8cpp_source.html">AppointmentImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{ <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classAppointmentBody.html#a1680f0951d9f49894bd7eb0ad1b45f04">setTime</a>(time); }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a43873a298b26752314d9cba9aadbc1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43873a298b26752314d9cba9aadbc1be">&#9670;&nbsp;</a></span>SystemBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classSystemBody.html">SystemBody</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8h_source.html#l00098">98</a> of file <a class="el" href="AppointmentImpl_8h_source.html">AppointmentImpl.h</a>.</p>
+
+</div>
+</div>
 <a id="aceecb3099daa4a515d39ed3adfd3d27e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aceecb3099daa4a515d39ed3adfd3d27e">&#9670;&nbsp;</a></span>Unit_Appointment</h2>
 
@@ -818,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8h_source.html#l00093">93</a> of file <a class="el" href="AppointmentImpl_8h_source.html">AppointmentImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AppointmentImpl_8h_source.html#l00097">97</a> of file <a class="el" href="AppointmentImpl_8h_source.html">AppointmentImpl.h</a>.</p>
 
 </div>
 </div>

@@ -2,11 +2,17 @@
 \label{classReservationHandle}\index{ReservationHandle@{ReservationHandle}}
 
 
+This class represents the handle of a \mbox{\hyperlink{classReservation}{Reservation}}.  
+
+
+
+
 {\ttfamily \#include $<$Reservation\+Impl.\+h$>$}
 
 
 
-Inheritance diagram for Reservation\+Handle\+:\nopagebreak
+Inheritance diagram for Reservation\+Handle\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +21,8 @@ Inheritance diagram for Reservation\+Handle\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Reservation\+Handle\+:\nopagebreak
+Collaboration diagram for Reservation\+Handle\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,41 +32,51 @@ Collaboration diagram for Reservation\+Handle\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classReservationHandle_a61890e35013cfca070c9ebf5330afb47}{Reservation\+Handle}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path)
-\item 
 virtual \mbox{\hyperlink{classReservationHandle_a60fb1ca9022908bd416cca502c0630a1}{$\sim$\+Reservation\+Handle}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classReservationHandle_a3db2147b98ce4be97673e489aac19c85}{get\+Patient\+Cpf}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classReservationHandle_a7b8a34982d87bf20061cd22f140b1054}{get\+Medication}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the medication pointer attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classReservationHandle_a068e25c8387e792ca4bb2894db55e634}{get\+Quantity}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classReservationHandle_a46c5a93bd60ac1645cdad6072d64c2fa}{get\+Prescription\+Path}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} \mbox{\hyperlink{classReservationHandle_a7d8d8a79fdb5b1e4d3fb277c607e7fdc}{get\+Status}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classReservationHandle_aa86e476622f7d6868b9529e8a664fe10}{get\+Justification}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_a99021712bf6da5d9bd70bc548ecbefe3}{set\+Patient\+Cpf}} (const std\+::string \&cpf) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_aff1d6d1529b3dc178830b4188dbc1d28}{set\+Medication}} (\mbox{\hyperlink{classMedication}{Medication}} $\ast$med) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the medication attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_ae7389ec388998e8bbc488a6994660eed}{set\+Quantity}} (int qty) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_a1bd56c1eb422946f656689fb5a2db26e}{set\+Prescription\+Path}} (const std\+::string \&path) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_a9adb186039a554ff357e9f4f57db0444}{set\+Status}} (\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} stat) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classReservationHandle_ab2c9747ef547791d9505a8a42e2f453e}{set\+Justification}} (const std\+::string \&just) override
+\begin{DoxyCompactList}\small\item\em Sets the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReservationHandle_a61890e35013cfca070c9ebf5330afb47}{Reservation\+Handle}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path)
+\begin{DoxyCompactList}\small\item\em This is the parameterized constructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classReservationHandle_ae9d1f91c9382ec6656e39cc0ed2f299c}{Reservation\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classReservationHandle_a43873a298b26752314d9cba9aadbc1be}{System\+Body}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+This class represents the handle of a \mbox{\hyperlink{classReservation}{Reservation}}. 
 
-
-Definition at line 36 of file Reservation\+Impl.\+h.
+Definition at line 62 of file Reservation\+Impl.\+h.
 
 
 
@@ -67,16 +84,70 @@ Definition at line 36 of file Reservation\+Impl.\+h.
 \mbox{\Hypertarget{classReservationHandle_a61890e35013cfca070c9ebf5330afb47}\label{classReservationHandle_a61890e35013cfca070c9ebf5330afb47}} 
 \index{ReservationHandle@{ReservationHandle}!ReservationHandle@{ReservationHandle}}
 \index{ReservationHandle@{ReservationHandle}!ReservationHandle@{ReservationHandle}}
-\doxysubsubsection{\texorpdfstring{ReservationHandle()}{ReservationHandle()}}
-{\footnotesize\ttfamily Reservation\+Handle\+::\+Reservation\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Cpf,  }\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication,  }\item[{int}]{quantity,  }\item[{const std\+::string \&}]{prescription\+Path }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{ReservationHandle()}{ReservationHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reservation\+Handle\+::\+Reservation\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Cpf,  }\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication,  }\item[{int}]{quantity,  }\item[{const std\+::string \&}]{prescription\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
+
+This is the parameterized constructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em patient\+Cpf} & the cpf of the patient making the reservation.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em medication} & the pointer to the medication object.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em quantity} & the amount of units requested.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em prescription\+Path} & the path string for the attached prescription document. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Definition at line 30 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{31     : \mbox{\hyperlink{classHandle}{Handle<ReservationBody>}}(\textcolor{keyword}{new} \mbox{\hyperlink{classReservationBody}{ReservationBody}}(patientCpf, medication, quantity, prescriptionPath)) \{\}}
+\DoxyCodeLine{30                                                                                                                                         \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a1749c79fc288f50b518352159a22dfe2}{setPatientCpf}}(patientCpf);}
+\DoxyCodeLine{32     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}{setMedication}}(medication);}
+\DoxyCodeLine{33     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}{setQuantity}}(quantity);}
+\DoxyCodeLine{34     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}{setPrescriptionPath}}(prescriptionPath);}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReservationHandle_ae9d1f91c9382ec6656e39cc0ed2f299c}\label{classReservationHandle_ae9d1f91c9382ec6656e39cc0ed2f299c}} 
+\index{ReservationHandle@{ReservationHandle}!ReservationHandle@{ReservationHandle}}
+\index{ReservationHandle@{ReservationHandle}!ReservationHandle@{ReservationHandle}}
+\doxysubsubsection{\texorpdfstring{ReservationHandle()}{ReservationHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reservation\+Handle\+::\+Reservation\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+This is the default constructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. 
+
+
+
+Definition at line 37 of file Reservation\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a60fb1ca9022908bd416cca502c0630a1}\label{classReservationHandle_a60fb1ca9022908bd416cca502c0630a1}} 
@@ -87,11 +158,15 @@ Definition at line 30 of file Reservation\+Impl.\+cpp.
 
 
 
-Definition at line 33 of file Reservation\+Impl.\+cpp.
+This is the default destructor for the \mbox{\hyperlink{classReservationHandle}{Reservation\+Handle}} Class. 
+
+
+
+Definition at line 39 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{33 \{\}}
+\DoxyCodeLine{39 \{\}}
 
 \end{DoxyCode}
 
@@ -105,15 +180,25 @@ Definition at line 33 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content justification attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a574a0459e90415c927664e85a283cfcb}{Reservation}}.
 
 
 
-Definition at line 40 of file Reservation\+Impl.\+cpp.
+Definition at line 46 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{40 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a563eb2cd4e33126fbb156831ce53c9f2}{getJustification}}(); \}}
+\DoxyCodeLine{46 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a563eb2cd4e33126fbb156831ce53c9f2}{getJustification}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a7b8a34982d87bf20061cd22f140b1054}\label{classReservationHandle_a7b8a34982d87bf20061cd22f140b1054}} 
@@ -124,15 +209,25 @@ Definition at line 40 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the medication pointer attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+Medication$\ast$ -\/ the content medication pointer attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a0d6b16114db37e37dac95364e57b7a2b}{Reservation}}.
 
 
 
-Definition at line 36 of file Reservation\+Impl.\+cpp.
+Definition at line 42 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{36 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_ad8eb44de78fdf9443d608b7e8b8ef844}{getMedication}}(); \}}
+\DoxyCodeLine{42 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_ad8eb44de78fdf9443d608b7e8b8ef844}{getMedication}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a3db2147b98ce4be97673e489aac19c85}\label{classReservationHandle_a3db2147b98ce4be97673e489aac19c85}} 
@@ -143,15 +238,25 @@ Definition at line 36 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content patient cpf attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a65ec9fb2cac854c7a208c49f541d27cf}{Reservation}}.
 
 
 
-Definition at line 35 of file Reservation\+Impl.\+cpp.
+Definition at line 41 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{35 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a89176772261b9fb5511fc0f6f2e377ea}{getPatientCpf}}(); \}}
+\DoxyCodeLine{41 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a89176772261b9fb5511fc0f6f2e377ea}{getPatientCpf}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a46c5a93bd60ac1645cdad6072d64c2fa}\label{classReservationHandle_a46c5a93bd60ac1645cdad6072d64c2fa}} 
@@ -162,15 +267,25 @@ Definition at line 35 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content prescription path attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_aa19177b8c49a1604bb055b35e97c68e6}{Reservation}}.
 
 
 
-Definition at line 38 of file Reservation\+Impl.\+cpp.
+Definition at line 44 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{38 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a1f8533e419fc11ff132f50fdaf8a9857}{getPrescriptionPath}}(); \}}
+\DoxyCodeLine{44 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a1f8533e419fc11ff132f50fdaf8a9857}{getPrescriptionPath}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a068e25c8387e792ca4bb2894db55e634}\label{classReservationHandle_a068e25c8387e792ca4bb2894db55e634}} 
@@ -181,15 +296,25 @@ Definition at line 38 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+int -\/ the content quantity attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a9c8c4f8f62d1c336ff433128b714c0d1}{Reservation}}.
 
 
 
-Definition at line 37 of file Reservation\+Impl.\+cpp.
+Definition at line 43 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{37 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_aa1aadb5f98316de0ccf98d52c78ddbe6}{getQuantity}}(); \}}
+\DoxyCodeLine{43 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_aa1aadb5f98316de0ccf98d52c78ddbe6}{getQuantity}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a7d8d8a79fdb5b1e4d3fb277c607e7fdc}\label{classReservationHandle_a7d8d8a79fdb5b1e4d3fb277c607e7fdc}} 
@@ -200,53 +325,87 @@ Definition at line 37 of file Reservation\+Impl.\+cpp.
 
 
 
+Returns the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+Reservation\+Status -\/ the content status attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}{Reservation}}.
 
 
 
-Definition at line 39 of file Reservation\+Impl.\+cpp.
+Definition at line 45 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{39 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a264393cbd164f73fe78226597709ee70}{getStatus}}(); \}}
+\DoxyCodeLine{45 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a264393cbd164f73fe78226597709ee70}{getStatus}}(); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_ab2c9747ef547791d9505a8a42e2f453e}\label{classReservationHandle_ab2c9747ef547791d9505a8a42e2f453e}} 
 \index{ReservationHandle@{ReservationHandle}!setJustification@{setJustification}}
 \index{setJustification@{setJustification}!ReservationHandle@{ReservationHandle}}
 \doxysubsubsection{\texorpdfstring{setJustification()}{setJustification()}}
-{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Justification (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{just }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Justification (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{justification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Sets the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em justification} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classReservation_a4e5fed968424f58018d4b722448b8af4}{Reservation}}.
 
 
 
-Definition at line 47 of file Reservation\+Impl.\+cpp.
+Definition at line 53 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a9ead374c688a3b0bc4bf923ab36317a4}{setJustification}}(just); \}}
+\DoxyCodeLine{53 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a9ead374c688a3b0bc4bf923ab36317a4}{setJustification}}(just); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_aff1d6d1529b3dc178830b4188dbc1d28}\label{classReservationHandle_aff1d6d1529b3dc178830b4188dbc1d28}} 
 \index{ReservationHandle@{ReservationHandle}!setMedication@{setMedication}}
 \index{setMedication@{setMedication}!ReservationHandle@{ReservationHandle}}
 \doxysubsubsection{\texorpdfstring{setMedication()}{setMedication()}}
-{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{med }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Sets the medication attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em medication} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classReservation_a966e16d4259d4a57fc7c10b273feed77}{Reservation}}.
 
 
 
-Definition at line 43 of file Reservation\+Impl.\+cpp.
+Definition at line 49 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{43 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}{setMedication}}(med); \}}
+\DoxyCodeLine{49 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a7c007ff14a28b8de5576e77ed92a174c}{setMedication}}(med); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a99021712bf6da5d9bd70bc548ecbefe3}\label{classReservationHandle_a99021712bf6da5d9bd70bc548ecbefe3}} 
@@ -257,15 +416,27 @@ Definition at line 43 of file Reservation\+Impl.\+cpp.
 
 
 
+Sets the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em cpf} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a28631a97f61ce043d10c30fee66bff98}{Reservation}}.
 
 
 
-Definition at line 42 of file Reservation\+Impl.\+cpp.
+Definition at line 48 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{42 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a1749c79fc288f50b518352159a22dfe2}{setPatientCpf}}(cpf); \}}
+\DoxyCodeLine{48 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a1749c79fc288f50b518352159a22dfe2}{setPatientCpf}}(cpf); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a1bd56c1eb422946f656689fb5a2db26e}\label{classReservationHandle_a1bd56c1eb422946f656689fb5a2db26e}} 
@@ -276,55 +447,104 @@ Definition at line 42 of file Reservation\+Impl.\+cpp.
 
 
 
+Sets the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em path} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classReservation_a2228904e5dbcc1a2fb96178863421c5a}{Reservation}}.
 
 
 
-Definition at line 45 of file Reservation\+Impl.\+cpp.
+Definition at line 51 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}{setPrescriptionPath}}(path); \}}
+\DoxyCodeLine{51 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_ac9d29dccff80bc5beffb0461e8723569}{setPrescriptionPath}}(path); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_ae7389ec388998e8bbc488a6994660eed}\label{classReservationHandle_ae7389ec388998e8bbc488a6994660eed}} 
 \index{ReservationHandle@{ReservationHandle}!setQuantity@{setQuantity}}
 \index{setQuantity@{setQuantity}!ReservationHandle@{ReservationHandle}}
 \doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
-{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{qty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Sets the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em quantity} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classReservation_a1fe90b41e9cba63a194aa557f4cfeeb6}{Reservation}}.
 
 
 
-Definition at line 44 of file Reservation\+Impl.\+cpp.
+Definition at line 50 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{44 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}{setQuantity}}(qty); \}}
+\DoxyCodeLine{50 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_af2abbeda05b33fe0dd55a71953365ebf}{setQuantity}}(qty); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classReservationHandle_a9adb186039a554ff357e9f4f57db0444}\label{classReservationHandle_a9adb186039a554ff357e9f4f57db0444}} 
 \index{ReservationHandle@{ReservationHandle}!setStatus@{setStatus}}
 \index{setStatus@{setStatus}!ReservationHandle@{ReservationHandle}}
 \doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
-{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}}}]{stat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Reservation\+Handle\+::set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Sets the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em status} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classReservation_a784ad03aeb30837448d0b97ec3a129ca}{Reservation}}.
 
 
 
-Definition at line 46 of file Reservation\+Impl.\+cpp.
+Definition at line 52 of file Reservation\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{46 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a6d52211257f79e229ac631c5e576d2c8}{setStatus}}(stat); \}}
+\DoxyCodeLine{52 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classReservationBody_a6d52211257f79e229ac631c5e576d2c8}{setStatus}}(stat); \}}
 
 \end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classReservationHandle_a43873a298b26752314d9cba9aadbc1be}\label{classReservationHandle_a43873a298b26752314d9cba9aadbc1be}} 
+\index{ReservationHandle@{ReservationHandle}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!ReservationHandle@{ReservationHandle}}
+\doxysubsubsection{\texorpdfstring{SystemBody}{SystemBody}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSystemBody}{System\+Body}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 100 of file Reservation\+Impl.\+h.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

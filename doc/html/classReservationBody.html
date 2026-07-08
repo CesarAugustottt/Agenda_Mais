@@ -65,11 +65,15 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classReservationBody-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ReservationBody Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class represents the concrete implementation of a <a class="el" href="classReservation.html" title="This class represents the interface of a Reservation as implemented in this code.">Reservation</a>.  
+ <a href="classReservationBody.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -77,7 +81,7 @@ Inheritance diagram for ReservationBody:</div>
 <div class="dyncontent">
 <div class="center"><img src="classReservationBody__inherit__graph.png" border="0" usemap="#aReservationBody_inherit__map" alt="Inheritance graph"/></div>
 <map name="aReservationBody_inherit__map" id="aReservationBody_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,139,107"/>
+<area shape="rect" title="This class represents the concrete implementation of a Reservation." alt="" coords="5,80,139,107"/>
 <area shape="rect" href="classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="45,5,99,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -86,7 +90,7 @@ Collaboration diagram for ReservationBody:</div>
 <div class="dyncontent">
 <div class="center"><img src="classReservationBody__coll__graph.png" border="0" usemap="#aReservationBody_coll__map" alt="Collaboration graph"/></div>
 <map name="aReservationBody_coll__map" id="aReservationBody_coll__map">
-<area shape="rect" title=" " alt="" coords="15,95,149,121"/>
+<area shape="rect" title="This class represents the concrete implementation of a Reservation." alt="" coords="15,95,149,121"/>
 <area shape="rect" href="classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,5,60,32"/>
 <area shape="rect" href="classMedication.html" title="Abstract base class representing a medication." alt="" coords="84,5,179,32"/>
 </map>
@@ -94,9 +98,11 @@ Collaboration diagram for ReservationBody:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af62be6a24ddf2b7965e36f1d0dd2198c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#af62be6a24ddf2b7965e36f1d0dd2198c">ReservationBody</a> (const std::string &amp;<a class="el" href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">patientCpf</a>, <a class="el" href="classMedication.html">Medication</a> *<a class="el" href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">medication</a>, int <a class="el" href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">quantity</a>, const std::string &amp;<a class="el" href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">prescriptionPath</a>)</td></tr>
-<tr class="separator:af62be6a24ddf2b7965e36f1d0dd2198c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26548ca03961634bbf3d1c307b58ebc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#ad26548ca03961634bbf3d1c307b58ebc">ReservationBody</a> ()</td></tr>
+<tr class="memdesc:ad26548ca03961634bbf3d1c307b58ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default constructor for the <a class="el" href="classReservationBody.html" title="This class represents the concrete implementation of a Reservation.">ReservationBody</a> Class.  <a href="classReservationBody.html#ad26548ca03961634bbf3d1c307b58ebc">More...</a><br /></td></tr>
+<tr class="separator:ad26548ca03961634bbf3d1c307b58ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54b2a2b26aac22591e0c172ef161fe5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#ac54b2a2b26aac22591e0c172ef161fe5">~ReservationBody</a> ()</td></tr>
+<tr class="memdesc:ac54b2a2b26aac22591e0c172ef161fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default destructor for the <a class="el" href="classReservationBody.html" title="This class represents the concrete implementation of a Reservation.">ReservationBody</a> Class.  <a href="classReservationBody.html#ac54b2a2b26aac22591e0c172ef161fe5">More...</a><br /></td></tr>
 <tr class="separator:ac54b2a2b26aac22591e0c172ef161fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89176772261b9fb5511fc0f6f2e377ea"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#a89176772261b9fb5511fc0f6f2e377ea">getPatientCpf</a> () const</td></tr>
 <tr class="separator:a89176772261b9fb5511fc0f6f2e377ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,13 +158,19 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4bcb3387c5a7727f03db34e854af4954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cde9401907b6a7ad574f5f57d9675a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#a5cde9401907b6a7ad574f5f57d9675a7">justification</a></td></tr>
 <tr class="separator:a5cde9401907b6a7ad574f5f57d9675a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a43873a298b26752314d9cba9aadbc1be"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReservationBody.html#a43873a298b26752314d9cba9aadbc1be">SystemBody</a></td></tr>
+<tr class="separator:a43873a298b26752314d9cba9aadbc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00008">8</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<div class="textblock"><p>This class represents the concrete implementation of a <a class="el" href="classReservation.html" title="This class represents the interface of a Reservation as implemented in this code.">Reservation</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00012">12</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af62be6a24ddf2b7965e36f1d0dd2198c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af62be6a24ddf2b7965e36f1d0dd2198c">&#9670;&nbsp;</a></span>ReservationBody()</h2>
+<a id="ad26548ca03961634bbf3d1c307b58ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26548ca03961634bbf3d1c307b58ebc">&#9670;&nbsp;</a></span>ReservationBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,46 +178,24 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">ReservationBody::ReservationBody </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>patientCpf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classMedication.html">Medication</a> *&#160;</td>
-          <td class="paramname"><em>medication</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quantity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>prescriptionPath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>This is the default constructor for the <a class="el" href="classReservationBody.html" title="This class represents the concrete implementation of a Reservation.">ReservationBody</a> Class. </p>
+
 <p class="definition">Definition at line <a class="el" href="ReservationImpl_8cpp_source.html#l00007">7</a> of file <a class="el" href="ReservationImpl_8cpp_source.html">ReservationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : <a class="code" href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a>(), <a class="code" href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">patientCpf</a>(<a class="code" href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">patientCpf</a>), <a class="code" href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">medication</a>(<a class="code" href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">medication</a>), <a class="code" href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">quantity</a>(<a class="code" href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">quantity</a>), </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      <a class="code" href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">prescriptionPath</a>(<a class="code" href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">prescriptionPath</a>), <a class="code" href="classReservationBody.html#a4bcb3387c5a7727f03db34e854af4954">status</a>(<a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2">ReservationStatus::PENDING</a>), <a class="code" href="classReservationBody.html#a5cde9401907b6a7ad574f5f57d9675a7">justification</a>(<span class="stringliteral">&quot;&quot;</span>) {}</div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : <a class="code" href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">patientCpf</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">medication</a>(<span class="keyword">nullptr</span>), <a class="code" href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">quantity</a>(0), </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      <a class="code" href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">prescriptionPath</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classReservationBody.html#a4bcb3387c5a7727f03db34e854af4954">status</a>(<a class="code" href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2">ReservationStatus::PENDING</a>), <a class="code" href="classReservationBody.html#a5cde9401907b6a7ad574f5f57d9675a7">justification</a>(<span class="stringliteral">&quot;&quot;</span>) {}</div>
 <div class="ttc" id="aReservation_8h_html_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2"><div class="ttname"><a href="Reservation_8h.html#a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2">ReservationStatus::PENDING</a></div><div class="ttdeci">@ PENDING</div></div>
-<div class="ttc" id="aclassBody_html_a7727b0d8c998bbc2942e4c802e31e2eb"><div class="ttname"><a href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body::Body</a></div><div class="ttdeci">Body()</div><div class="ttdoc">Constructor: zero references when the object is being built.</div><div class="ttdef"><b>Definition:</b> <a href="handleBody_8h_source.html#l00095">handleBody.h:95</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_a45bbf9991d6ac34252441a7580a373e4"><div class="ttname"><a href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">ReservationBody::prescriptionPath</a></div><div class="ttdeci">std::string prescriptionPath</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00013">ReservationImpl.h:13</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_a4b10e10435baa1535c571d005276d2ac"><div class="ttname"><a href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">ReservationBody::medication</a></div><div class="ttdeci">Medication * medication</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00011">ReservationImpl.h:11</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_a4bcb3387c5a7727f03db34e854af4954"><div class="ttname"><a href="classReservationBody.html#a4bcb3387c5a7727f03db34e854af4954">ReservationBody::status</a></div><div class="ttdeci">ReservationStatus status</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00014">ReservationImpl.h:14</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_a5cde9401907b6a7ad574f5f57d9675a7"><div class="ttname"><a href="classReservationBody.html#a5cde9401907b6a7ad574f5f57d9675a7">ReservationBody::justification</a></div><div class="ttdeci">std::string justification</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00015">ReservationImpl.h:15</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_aafe75af476a3e0827b9a45fe86e227c6"><div class="ttname"><a href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">ReservationBody::patientCpf</a></div><div class="ttdeci">std::string patientCpf</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00010">ReservationImpl.h:10</a></div></div>
-<div class="ttc" id="aclassReservationBody_html_ad044ca25bbdb2b9de8e0478a6fbe22e4"><div class="ttname"><a href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">ReservationBody::quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00012">ReservationImpl.h:12</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_a45bbf9991d6ac34252441a7580a373e4"><div class="ttname"><a href="classReservationBody.html#a45bbf9991d6ac34252441a7580a373e4">ReservationBody::prescriptionPath</a></div><div class="ttdeci">std::string prescriptionPath</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00021">ReservationImpl.h:21</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_a4b10e10435baa1535c571d005276d2ac"><div class="ttname"><a href="classReservationBody.html#a4b10e10435baa1535c571d005276d2ac">ReservationBody::medication</a></div><div class="ttdeci">Medication * medication</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00017">ReservationImpl.h:17</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_a4bcb3387c5a7727f03db34e854af4954"><div class="ttname"><a href="classReservationBody.html#a4bcb3387c5a7727f03db34e854af4954">ReservationBody::status</a></div><div class="ttdeci">ReservationStatus status</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00023">ReservationImpl.h:23</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_a5cde9401907b6a7ad574f5f57d9675a7"><div class="ttname"><a href="classReservationBody.html#a5cde9401907b6a7ad574f5f57d9675a7">ReservationBody::justification</a></div><div class="ttdeci">std::string justification</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00025">ReservationImpl.h:25</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_aafe75af476a3e0827b9a45fe86e227c6"><div class="ttname"><a href="classReservationBody.html#aafe75af476a3e0827b9a45fe86e227c6">ReservationBody::patientCpf</a></div><div class="ttdeci">std::string patientCpf</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00015">ReservationImpl.h:15</a></div></div>
+<div class="ttc" id="aclassReservationBody_html_ad044ca25bbdb2b9de8e0478a6fbe22e4"><div class="ttname"><a href="classReservationBody.html#ad044ca25bbdb2b9de8e0478a6fbe22e4">ReservationBody::quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdef"><b>Definition:</b> <a href="ReservationImpl_8h_source.html#l00019">ReservationImpl.h:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,6 +221,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This is the default destructor for the <a class="el" href="classReservationBody.html" title="This class represents the concrete implementation of a Reservation.">ReservationBody</a> Class. </p>
 
 <p class="definition">Definition at line <a class="el" href="ReservationImpl_8cpp_source.html#l00011">11</a> of file <a class="el" href="ReservationImpl_8cpp_source.html">ReservationImpl.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{}</div>
@@ -484,6 +476,31 @@ Protected Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a43873a298b26752314d9cba9aadbc1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43873a298b26752314d9cba9aadbc1be">&#9670;&nbsp;</a></span>SystemBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classSystemBody.html">SystemBody</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00055">55</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a5cde9401907b6a7ad574f5f57d9675a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cde9401907b6a7ad574f5f57d9675a7">&#9670;&nbsp;</a></span>justification</h2>
@@ -504,8 +521,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains a justification for refusal if applicable. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00015">15</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00025">25</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>
@@ -528,8 +546,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains a pointer to the medication of the reservation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00011">11</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00017">17</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>
@@ -552,8 +571,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains the patient cpf for the reservation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00010">10</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00015">15</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>
@@ -576,8 +596,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains the digital file path of the prescription. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00013">13</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00021">21</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>
@@ -600,8 +621,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains the medicine quantity for the reservation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00012">12</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00019">19</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>
@@ -624,8 +646,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This attribute contains the current status of the reservation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00014">14</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ReservationImpl_8h_source.html#l00023">23</a> of file <a class="el" href="ReservationImpl_8h_source.html">ReservationImpl.h</a>.</p>
 
 </div>
 </div>

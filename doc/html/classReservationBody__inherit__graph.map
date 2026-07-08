@@ -1,4 +1,4 @@
 <map id="ReservationBody" name="ReservationBody">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node1" title="This class represents the concrete implementation of a Reservation." alt="" coords="5,80,139,107"/>
 <area shape="rect" id="node2" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="45,5,99,32"/>
 </map>

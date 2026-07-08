@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classMedicationBody-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MedicationBody Class Reference</div>  </div>
@@ -98,9 +99,6 @@ Collaboration diagram for MedicationBody:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6538d623a8ccdef7a03d404d5bfd7bb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationBody.html#a6538d623a8ccdef7a03d404d5bfd7bb9">MedicationBody</a> ()</td></tr>
 <tr class="separator:a6538d623a8ccdef7a03d404d5bfd7bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b28daf5527b5a81f4c204c284f61eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationBody.html#aa7b28daf5527b5a81f4c204c284f61eb">MedicationBody</a> (const std::string &amp;<a class="el" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>, int <a class="el" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>, bool <a class="el" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>)</td></tr>
-<tr class="memdesc:aa7b28daf5527b5a81f4c204c284f61eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classMedicationBody.html" title="Concrete implementation (Body) of the Medication class.">MedicationBody</a>.  <a href="classMedicationBody.html#aa7b28daf5527b5a81f4c204c284f61eb">More...</a><br /></td></tr>
-<tr class="separator:aa7b28daf5527b5a81f4c204c284f61eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac270aae47bf0a6a3ace64a6050681d21"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationBody.html#ac270aae47bf0a6a3ace64a6050681d21">~MedicationBody</a> ()</td></tr>
 <tr class="memdesc:ac270aae47bf0a6a3ace64a6050681d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classMedicationBody.html#ac270aae47bf0a6a3ace64a6050681d21">More...</a><br /></td></tr>
 <tr class="separator:ac270aae47bf0a6a3ace64a6050681d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +143,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a6295114cdf3f79994cbe082867b9fddb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a></td></tr>
 <tr class="memdesc:a6295114cdf3f79994cbe082867b9fddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag indicating if a prescription is needed.  <a href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">More...</a><br /></td></tr>
 <tr class="separator:a6295114cdf3f79994cbe082867b9fddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a43873a298b26752314d9cba9aadbc1be"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationBody.html#a43873a298b26752314d9cba9aadbc1be">SystemBody</a></td></tr>
+<tr class="separator:a43873a298b26752314d9cba9aadbc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Concrete implementation (<a class="el" href="classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G...">Body</a>) of the <a class="el" href="classMedication.html" title="Abstract base class representing a medication.">Medication</a> class. </p>
@@ -155,7 +158,7 @@ Protected Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MedicationImpl_8h_source.html#l00019">19</a> of file <a class="el" href="MedicationImpl_8h_source.html">MedicationImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6538d623a8ccdef7a03d404d5bfd7bb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6538d623a8ccdef7a03d404d5bfd7bb9">&#9670;&nbsp;</a></span>MedicationBody() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6538d623a8ccdef7a03d404d5bfd7bb9">&#9670;&nbsp;</a></span>MedicationBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,58 +173,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00010">10</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <a class="code" href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a>(), <a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>(0), <a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>(<span class="keyword">false</span>) {}</div>
-<div class="ttc" id="aclassBody_html_a7727b0d8c998bbc2942e4c802e31e2eb"><div class="ttname"><a href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body::Body</a></div><div class="ttdeci">Body()</div><div class="ttdoc">Constructor: zero references when the object is being built.</div><div class="ttdef"><b>Definition:</b> <a href="handleBody_8h_source.html#l00095">handleBody.h:95</a></div></div>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>(0), <a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>(<span class="keyword">false</span>) {}</div>
 <div class="ttc" id="aclassMedicationBody_html_a35cb39b1383761cdff886bb7a4b17e0a"><div class="ttname"><a href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">MedicationBody::quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdoc">The current quantity in stock.</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8h_source.html#l00022">MedicationImpl.h:22</a></div></div>
 <div class="ttc" id="aclassMedicationBody_html_a6295114cdf3f79994cbe082867b9fddb"><div class="ttname"><a href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">MedicationBody::requiresPrescription</a></div><div class="ttdeci">bool requiresPrescription</div><div class="ttdoc">Flag indicating if a prescription is needed.</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8h_source.html#l00023">MedicationImpl.h:23</a></div></div>
 <div class="ttc" id="aclassMedicationBody_html_abfd3a7a0979e71b4b4f2413c56c33968"><div class="ttname"><a href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">MedicationBody::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">The name of the medication.</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8h_source.html#l00021">MedicationImpl.h:21</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa7b28daf5527b5a81f4c204c284f61eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b28daf5527b5a81f4c204c284f61eb">&#9670;&nbsp;</a></span>MedicationBody() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MedicationBody::MedicationBody </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quantity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>requiresPrescription</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor for <a class="el" href="classMedicationBody.html" title="Concrete implementation (Body) of the Medication class.">MedicationBody</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the medication. </td></tr>
-    <tr><td class="paramname">quantity</td><td>Initial quantity in stock. </td></tr>
-    <tr><td class="paramname">requiresPrescription</td><td>True if it requires a prescription. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00013">13</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    : <a class="code" href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a>(), <a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>(<a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>), <a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>(<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>), <a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>(<a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,8 +205,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00016">16</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00013">13</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -272,14 +227,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00042">42</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                             {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> &gt;= amount) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> -= amount;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00039">39</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                             {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> &gt;= amount) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> -= amount;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -298,10 +253,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00018">18</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                        { </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00015">15</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                        { </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -320,10 +275,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00022">22</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                      { </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00019">19</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                      { </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -342,10 +297,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00026">26</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                   { </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00023">23</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                   { </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,10 +320,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00030">30</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                  { </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a> = <a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00027">27</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                  { </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a> = <a class="code" href="classMedicationBody.html#abfd3a7a0979e71b4b4f2413c56c33968">name</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -388,10 +343,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00034">34</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                             { </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> = <a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00031">31</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                             { </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a> = <a class="code" href="classMedicationBody.html#a35cb39b1383761cdff886bb7a4b17e0a">quantity</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -411,11 +366,36 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00038">38</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                          { </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a> = requires; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00035">35</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                          { </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    this-&gt;<a class="code" href="classMedicationBody.html#a6295114cdf3f79994cbe082867b9fddb">requiresPrescription</a> = requires; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a43873a298b26752314d9cba9aadbc1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43873a298b26752314d9cba9aadbc1be">&#9670;&nbsp;</a></span>SystemBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classSystemBody.html">SystemBody</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8h_source.html#l00042">42</a> of file <a class="el" href="MedicationImpl_8h_source.html">MedicationImpl.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

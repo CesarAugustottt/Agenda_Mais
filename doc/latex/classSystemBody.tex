@@ -1,0 +1,408 @@
+\hypertarget{classSystemBody}{}\doxysection{System\+Body Class Reference}
+\label{classSystemBody}\index{SystemBody@{SystemBody}}
+
+
+{\ttfamily \#include $<$System\+Impl.\+h$>$}
+
+
+
+Inheritance diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classSystemBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classSystemBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystemBody_a147c54091a4184a5cfb99215702d86eb}{System\+Body}} ()
+\item 
+virtual \mbox{\hyperlink{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}{$\sim$\+System\+Body}} ()
+\item 
+\mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}{create\+User}} (const std\+::string \&name, const std\+::string \&cpf, const std\+::string \&email, const std\+::string \&password, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} type)
+\item 
+\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ \mbox{\hyperlink{classSystemBody_a55feb73c2efcace04e183b1222adea12}{create\+Appointment}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient, \mbox{\hyperlink{classUser}{User}} $\ast$doctor, const std\+::string \&date, const std\+::string \&time, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp)
+\item 
+\mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classSystemBody_a0a72088bbef273a17898f879bae393a4}{create\+Medication}} (const std\+::string \&name, int quantity, bool requires\+Prescription)
+\item 
+\mbox{\hyperlink{classReservation}{Reservation}} $\ast$ \mbox{\hyperlink{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}{create\+Reservation}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path)
+\item 
+void \mbox{\hyperlink{classSystemBody_aa093acb06c4ca377572365553caa188f}{add\+User}} (\mbox{\hyperlink{classUser}{User}} $\ast$user)
+\item 
+void \mbox{\hyperlink{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}{add\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment)
+\item 
+void \mbox{\hyperlink{classSystemBody_af6196f2ec5e6ce7257e9451c99377d06}{add\+Medication}} (\mbox{\hyperlink{classMedication}{Medication}} $\ast$medication)
+\item 
+void \mbox{\hyperlink{classSystemBody_a324d84fc7e4b46c6369d3092d84f28a6}{add\+Reservation}} (\mbox{\hyperlink{classReservation}{Reservation}} $\ast$reservation)
+\item 
+bool \mbox{\hyperlink{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}{delete\+User}} (const std\+::string \&cpf)
+\item 
+bool \mbox{\hyperlink{classSystemBody_aa5d6743fe652a2ef2d703efcc7a80b39}{delete\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment)
+\item 
+bool \mbox{\hyperlink{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}{delete\+Medication}} (const std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}{delete\+Reservation}} (\mbox{\hyperlink{classReservation}{Reservation}} $\ast$reservation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMedication}{Medication}} $\ast$ $>$ \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ $>$ \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file System\+Impl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSystemBody_a147c54091a4184a5cfb99215702d86eb}\label{classSystemBody_a147c54091a4184a5cfb99215702d86eb}} 
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{SystemBody()}{SystemBody()}}
+{\footnotesize\ttfamily System\+Body\+::\+System\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 16 of file System\+Impl.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}\label{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}} 
+\index{SystemBody@{SystemBody}!````~SystemBody@{$\sim$SystemBody}}
+\index{````~SystemBody@{$\sim$SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemBody()}{~SystemBody()}}
+{\footnotesize\ttfamily System\+Body\+::$\sim$\+System\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 10 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                         \{}
+\DoxyCodeLine{11     \textcolor{comment}{// O destrutor garante que tudo o que sobrou no sistema seja deletado da RAM}}
+\DoxyCodeLine{12     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} u : \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}) \textcolor{keyword}{delete} u;}
+\DoxyCodeLine{13     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} a : \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}) \textcolor{keyword}{delete} a;}
+\DoxyCodeLine{14     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} m : \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}) \textcolor{keyword}{delete} m;}
+\DoxyCodeLine{15     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} r : \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}) \textcolor{keyword}{delete} r;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}\label{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}} 
+\index{SystemBody@{SystemBody}!addAppointment@{addAppointment}}
+\index{addAppointment@{addAppointment}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{addAppointment()}{addAppointment()}}
+{\footnotesize\ttfamily void System\+Body\+::add\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$}]{appointment }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                                         \{ }
+\DoxyCodeLine{55     \textcolor{keywordflow}{if}(appointment) }
+\DoxyCodeLine{56         \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.push\_back(appointment); }
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_af6196f2ec5e6ce7257e9451c99377d06}\label{classSystemBody_af6196f2ec5e6ce7257e9451c99377d06}} 
+\index{SystemBody@{SystemBody}!addMedication@{addMedication}}
+\index{addMedication@{addMedication}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{addMedication()}{addMedication()}}
+{\footnotesize\ttfamily void System\+Body\+::add\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                      \{ }
+\DoxyCodeLine{60     \textcolor{keywordflow}{if}(medication) }
+\DoxyCodeLine{61         \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.push\_back(medication); }
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a324d84fc7e4b46c6369d3092d84f28a6}\label{classSystemBody_a324d84fc7e4b46c6369d3092d84f28a6}} 
+\index{SystemBody@{SystemBody}!addReservation@{addReservation}}
+\index{addReservation@{addReservation}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{addReservation()}{addReservation()}}
+{\footnotesize\ttfamily void System\+Body\+::add\+Reservation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReservation}{Reservation}} $\ast$}]{reservation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                         \{ }
+\DoxyCodeLine{65     \textcolor{keywordflow}{if}(reservation) }
+\DoxyCodeLine{66     \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.push\_back(reservation); }
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_aa093acb06c4ca377572365553caa188f}\label{classSystemBody_aa093acb06c4ca377572365553caa188f}} 
+\index{SystemBody@{SystemBody}!addUser@{addUser}}
+\index{addUser@{addUser}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void System\+Body\+::add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                    \{ }
+\DoxyCodeLine{50     \textcolor{keywordflow}{if}(user) }
+\DoxyCodeLine{51         \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.push\_back(user); }
+\DoxyCodeLine{52 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a55feb73c2efcace04e183b1222adea12}\label{classSystemBody_a55feb73c2efcace04e183b1222adea12}} 
+\index{SystemBody@{SystemBody}!createAppointment@{createAppointment}}
+\index{createAppointment@{createAppointment}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{createAppointment()}{createAppointment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ System\+Body\+::create\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{patient,  }\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{doctor,  }\item[{const std\+::string \&}]{date,  }\item[{const std\+::string \&}]{time,  }\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{esp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                                                                                                                    \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{classAppointment}{Appointment}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classAppointmentHandle}{AppointmentHandle}}(patient, doctor, date, time, \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}}, esp);}
+\DoxyCodeLine{32     \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.push\_back(a);}
+\DoxyCodeLine{33     \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a0a72088bbef273a17898f879bae393a4}\label{classSystemBody_a0a72088bbef273a17898f879bae393a4}} 
+\index{SystemBody@{SystemBody}!createMedication@{createMedication}}
+\index{createMedication@{createMedication}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{createMedication()}{createMedication()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedication}{Medication}} $\ast$ System\+Body\+::create\+Medication (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{quantity,  }\item[{bool}]{requires\+Prescription }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                                                                        \{}
+\DoxyCodeLine{37     \mbox{\hyperlink{classMedication}{Medication}}* m = \textcolor{keyword}{new} \mbox{\hyperlink{classMedicationHandle}{MedicationHandle}}(name, quantity, requiresPrescription);}
+\DoxyCodeLine{38     \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.push\_back(m);}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} m;}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}\label{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}} 
+\index{SystemBody@{SystemBody}!createReservation@{createReservation}}
+\index{createReservation@{createReservation}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{createReservation()}{createReservation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ System\+Body\+::create\+Reservation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Cpf,  }\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication,  }\item[{int}]{quantity,  }\item[{const std\+::string \&}]{prescription\+Path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                                                                                                                \{}
+\DoxyCodeLine{43     \mbox{\hyperlink{classReservation}{Reservation}}* r = \textcolor{keyword}{new} \mbox{\hyperlink{classReservationHandle}{ReservationHandle}}(patientCpf, medication, quantity, prescriptionPath);}
+\DoxyCodeLine{44     \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.push\_back(r);}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}\label{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}} 
+\index{SystemBody@{SystemBody}!createUser@{createUser}}
+\index{createUser@{createUser}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} $\ast$ System\+Body\+::create\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{cpf,  }\item[{const std\+::string \&}]{email,  }\item[{const std\+::string \&}]{password,  }\item[{\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                                                                                                                           \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{classUser}{User}}* u = \textcolor{keyword}{new} \mbox{\hyperlink{classUserHandle}{UserHandle}}(name, cpf, email, password, type);}
+\DoxyCodeLine{26     \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.push\_back(u);}
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} u;}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_aa5d6743fe652a2ef2d703efcc7a80b39}\label{classSystemBody_aa5d6743fe652a2ef2d703efcc7a80b39}} 
+\index{SystemBody@{SystemBody}!deleteAppointment@{deleteAppointment}}
+\index{deleteAppointment@{deleteAppointment}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{deleteAppointment()}{deleteAppointment()}}
+{\footnotesize\ttfamily bool System\+Body\+::delete\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$}]{appointment }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                            \{}
+\DoxyCodeLine{82     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.begin(), \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end(), appointment);}
+\DoxyCodeLine{83     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end()) \{}
+\DoxyCodeLine{84         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{85         \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.erase(it);}
+\DoxyCodeLine{86         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}\label{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}} 
+\index{SystemBody@{SystemBody}!deleteMedication@{deleteMedication}}
+\index{deleteMedication@{deleteMedication}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{deleteMedication()}{deleteMedication()}}
+{\footnotesize\ttfamily bool System\+Body\+::delete\+Medication (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 91 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                        \{}
+\DoxyCodeLine{92     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.begin(); it != \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.end(); ++it) \{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if} ((*it)-\/>getName() == name) \{}
+\DoxyCodeLine{94             \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{95             \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.erase(it);}
+\DoxyCodeLine{96             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}\label{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}} 
+\index{SystemBody@{SystemBody}!deleteReservation@{deleteReservation}}
+\index{deleteReservation@{deleteReservation}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{deleteReservation()}{deleteReservation()}}
+{\footnotesize\ttfamily bool System\+Body\+::delete\+Reservation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReservation}{Reservation}} $\ast$}]{reservation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 102 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                                                            \{}
+\DoxyCodeLine{103     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.begin(), \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end(), reservation);}
+\DoxyCodeLine{104     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end()) \{}
+\DoxyCodeLine{105         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{106         \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.erase(it);}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{110 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}\label{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}} 
+\index{SystemBody@{SystemBody}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily bool System\+Body\+::delete\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                                 \{}
+\DoxyCodeLine{71     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.begin(); it != \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.end(); ++it) \{}
+\DoxyCodeLine{72         \textcolor{keywordflow}{if} ((*it)-\/>getCpf() == cpf) \{}
+\DoxyCodeLine{73             \textcolor{keyword}{delete} *it; }
+\DoxyCodeLine{74             \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.erase(it);}
+\DoxyCodeLine{75             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSystemBody_a44b58e8381472c788ca9185ba68f713b}\label{classSystemBody_a44b58e8381472c788ca9185ba68f713b}} 
+\index{SystemBody@{SystemBody}!appointments@{appointments}}
+\index{appointments@{appointments}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{appointments}{appointments}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classAppointment}{Appointment}}$\ast$$>$ System\+Body\+::appointments\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 11 of file System\+Impl.\+h.
+
+\mbox{\Hypertarget{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}\label{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}} 
+\index{SystemBody@{SystemBody}!medications@{medications}}
+\index{medications@{medications}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{medications}{medications}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMedication}{Medication}}$\ast$$>$ System\+Body\+::medications\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 12 of file System\+Impl.\+h.
+
+\mbox{\Hypertarget{classSystemBody_a532636830dcdedae5300e30f9371f006}\label{classSystemBody_a532636830dcdedae5300e30f9371f006}} 
+\index{SystemBody@{SystemBody}!reservations@{reservations}}
+\index{reservations@{reservations}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{reservations}{reservations}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classReservation}{Reservation}}$\ast$$>$ System\+Body\+::reservations\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 13 of file System\+Impl.\+h.
+
+\mbox{\Hypertarget{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}\label{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}} 
+\index{SystemBody@{SystemBody}!users@{users}}
+\index{users@{users}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUser}{User}}$\ast$$>$ System\+Body\+::users\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 10 of file System\+Impl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{SystemImpl_8h}{System\+Impl.\+h}}\item 
+src/\mbox{\hyperlink{SystemImpl_8cpp}{System\+Impl.\+cpp}}\end{DoxyCompactItemize}

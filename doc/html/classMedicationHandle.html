@@ -64,6 +64,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classMedicationHandle-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MedicationHandle Class Reference</div>  </div>
@@ -97,9 +99,6 @@ Collaboration diagram for MedicationHandle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a685463572e3f83cf99fb8fb7b66e19f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationHandle.html#a685463572e3f83cf99fb8fb7b66e19f1">MedicationHandle</a> (const std::string &amp;name, int quantity, bool <a class="el" href="classMedicationHandle.html#a460337a472ac51a1c76ba0e0f6698e46">requiresPrescription</a>)</td></tr>
-<tr class="memdesc:a685463572e3f83cf99fb8fb7b66e19f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classMedicationHandle.html" title="The Handle class for Medication.">MedicationHandle</a>.  <a href="classMedicationHandle.html#a685463572e3f83cf99fb8fb7b66e19f1">More...</a><br /></td></tr>
-<tr class="separator:a685463572e3f83cf99fb8fb7b66e19f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6382ed92bcaa1733eabc6c99c95022b1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationHandle.html#a6382ed92bcaa1733eabc6c99c95022b1">~MedicationHandle</a> ()</td></tr>
 <tr class="memdesc:a6382ed92bcaa1733eabc6c99c95022b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classMedicationHandle.html#a6382ed92bcaa1733eabc6c99c95022b1">More...</a><br /></td></tr>
 <tr class="separator:a6382ed92bcaa1733eabc6c99c95022b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +143,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_classHandle"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator  <a href="classHandle.html#a06418155d929707d0a95e27efb8f3b82">More...</a><br /></td></tr>
 <tr class="separator:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_classHandle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a685463572e3f83cf99fb8fb7b66e19f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationHandle.html#a685463572e3f83cf99fb8fb7b66e19f1">MedicationHandle</a> (const std::string &amp;name, int quantity, bool <a class="el" href="classMedicationHandle.html#a460337a472ac51a1c76ba0e0f6698e46">requiresPrescription</a>)</td></tr>
+<tr class="memdesc:a685463572e3f83cf99fb8fb7b66e19f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classMedicationHandle.html" title="The Handle class for Medication.">MedicationHandle</a>.  <a href="classMedicationHandle.html#a685463572e3f83cf99fb8fb7b66e19f1">More...</a><br /></td></tr>
+<tr class="separator:a685463572e3f83cf99fb8fb7b66e19f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa038edfe2415ec2ca1a86a4b15051ab8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationHandle.html#aa038edfe2415ec2ca1a86a4b15051ab8">MedicationHandle</a> ()</td></tr>
+<tr class="separator:aa038edfe2415ec2ca1a86a4b15051ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a43873a298b26752314d9cba9aadbc1be"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMedicationHandle.html#a43873a298b26752314d9cba9aadbc1be">SystemBody</a></td></tr>
+<tr class="separator:a43873a298b26752314d9cba9aadbc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classHandle"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classHandle')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classHandle.html">Handle&lt; MedicationBody &gt;</a></td></tr>
@@ -157,13 +169,16 @@ Additional Inherited Members</h2></td></tr>
 <li>This class acts as a proxy/wrapper for <a class="el" href="classMedicationBody.html" title="Concrete implementation (Body) of the Medication class.">MedicationBody</a>, managing its lifecycle (reference counting) and delegating method calls to the underlying implementation. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8h_source.html#l00057">57</a> of file <a class="el" href="MedicationImpl_8h_source.html">MedicationImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8h_source.html#l00051">51</a> of file <a class="el" href="MedicationImpl_8h_source.html">MedicationImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a685463572e3f83cf99fb8fb7b66e19f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685463572e3f83cf99fb8fb7b66e19f1">&#9670;&nbsp;</a></span>MedicationHandle()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a685463572e3f83cf99fb8fb7b66e19f1">&#9670;&nbsp;</a></span>MedicationHandle() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">MedicationHandle::MedicationHandle </td>
@@ -189,6 +204,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classMedicationHandle.html" title="The Handle class for Medication.">MedicationHandle</a>. </p>
@@ -201,18 +221,46 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00053">53</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                                                 {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// O pImpl_ já foi criado vazio pelo Handle, agora usamos os setters:</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a1a0ad89c29918da470653a0f0cb17966">setName</a>(name);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a413d16ace0475cc5e1cf545a926852a1">setQuantity</a>(quantity);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a9c98014fbd5e531f3961659d2a809550">setRequiresPrescription</a>(<a class="code" href="classMedicationHandle.html#a460337a472ac51a1c76ba0e0f6698e46">requiresPrescription</a>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00050">50</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                                                 {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// O pImpl_ já foi criado vazio pelo Handle, agora usamos os setters:</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a1a0ad89c29918da470653a0f0cb17966">setName</a>(name);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a413d16ace0475cc5e1cf545a926852a1">setQuantity</a>(quantity);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a9c98014fbd5e531f3961659d2a809550">setRequiresPrescription</a>(<a class="code" href="classMedicationHandle.html#a460337a472ac51a1c76ba0e0f6698e46">requiresPrescription</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="ttc" id="aclassHandle_html_a16021e57596d7369dfa1a9fadc35c06f"><div class="ttname"><a href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">Handle&lt; MedicationBody &gt;::pImpl_</a></div><div class="ttdeci">MedicationBody * pImpl_</div><div class="ttdoc">referência para a implementação</div><div class="ttdef"><b>Definition:</b> <a href="handleBody_8h_source.html#l00081">handleBody.h:81</a></div></div>
-<div class="ttc" id="aclassMedicationBody_html_a1a0ad89c29918da470653a0f0cb17966"><div class="ttname"><a href="classMedicationBody.html#a1a0ad89c29918da470653a0f0cb17966">MedicationBody::setName</a></div><div class="ttdeci">void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00030">MedicationImpl.cpp:30</a></div></div>
-<div class="ttc" id="aclassMedicationBody_html_a413d16ace0475cc5e1cf545a926852a1"><div class="ttname"><a href="classMedicationBody.html#a413d16ace0475cc5e1cf545a926852a1">MedicationBody::setQuantity</a></div><div class="ttdeci">void setQuantity(int quantity)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00034">MedicationImpl.cpp:34</a></div></div>
-<div class="ttc" id="aclassMedicationBody_html_a9c98014fbd5e531f3961659d2a809550"><div class="ttname"><a href="classMedicationBody.html#a9c98014fbd5e531f3961659d2a809550">MedicationBody::setRequiresPrescription</a></div><div class="ttdeci">void setRequiresPrescription(bool requires)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00038">MedicationImpl.cpp:38</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_a1a0ad89c29918da470653a0f0cb17966"><div class="ttname"><a href="classMedicationBody.html#a1a0ad89c29918da470653a0f0cb17966">MedicationBody::setName</a></div><div class="ttdeci">void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00027">MedicationImpl.cpp:27</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_a413d16ace0475cc5e1cf545a926852a1"><div class="ttname"><a href="classMedicationBody.html#a413d16ace0475cc5e1cf545a926852a1">MedicationBody::setQuantity</a></div><div class="ttdeci">void setQuantity(int quantity)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00031">MedicationImpl.cpp:31</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_a9c98014fbd5e531f3961659d2a809550"><div class="ttname"><a href="classMedicationBody.html#a9c98014fbd5e531f3961659d2a809550">MedicationBody::setRequiresPrescription</a></div><div class="ttdeci">void setRequiresPrescription(bool requires)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00035">MedicationImpl.cpp:35</a></div></div>
 <div class="ttc" id="aclassMedicationHandle_html_a460337a472ac51a1c76ba0e0f6698e46"><div class="ttname"><a href="classMedicationHandle.html#a460337a472ac51a1c76ba0e0f6698e46">MedicationHandle::requiresPrescription</a></div><div class="ttdeci">bool requiresPrescription() const override</div><div class="ttdoc">Checks if the medication requires a medical prescription.</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00069">MedicationImpl.cpp:69</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa038edfe2415ec2ca1a86a4b15051ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa038edfe2415ec2ca1a86a4b15051ab8">&#9670;&nbsp;</a></span>MedicationHandle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MedicationHandle::MedicationHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8cpp_source.html#l00057">57</a> of file <a class="el" href="MedicationImpl_8cpp_source.html">MedicationImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                               { </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#aa3fdd570f259a611f1a825f8c90c7a5d">decreaseStock</a>(amount); </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="ttc" id="aclassMedicationBody_html_aa3fdd570f259a611f1a825f8c90c7a5d"><div class="ttname"><a href="classMedicationBody.html#aa3fdd570f259a611f1a825f8c90c7a5d">MedicationBody::decreaseStock</a></div><div class="ttdeci">bool decreaseStock(int amount)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00042">MedicationImpl.cpp:42</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_aa3fdd570f259a611f1a825f8c90c7a5d"><div class="ttname"><a href="classMedicationBody.html#aa3fdd570f259a611f1a825f8c90c7a5d">MedicationBody::decreaseStock</a></div><div class="ttdeci">bool decreaseStock(int amount)</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00039">MedicationImpl.cpp:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -326,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                          { </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a0c4a0382ba7e304691673d6e4151b27a">getName</a>(); </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="ttc" id="aclassMedicationBody_html_a0c4a0382ba7e304691673d6e4151b27a"><div class="ttname"><a href="classMedicationBody.html#a0c4a0382ba7e304691673d6e4151b27a">MedicationBody::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00018">MedicationImpl.cpp:18</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_a0c4a0382ba7e304691673d6e4151b27a"><div class="ttname"><a href="classMedicationBody.html#a0c4a0382ba7e304691673d6e4151b27a">MedicationBody::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00015">MedicationImpl.cpp:15</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                        { </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#afd21fe24380a5ff68faa1fea06128ae2">getQuantity</a>(); </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aclassMedicationBody_html_afd21fe24380a5ff68faa1fea06128ae2"><div class="ttname"><a href="classMedicationBody.html#afd21fe24380a5ff68faa1fea06128ae2">MedicationBody::getQuantity</a></div><div class="ttdeci">int getQuantity() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00022">MedicationImpl.cpp:22</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_afd21fe24380a5ff68faa1fea06128ae2"><div class="ttname"><a href="classMedicationBody.html#afd21fe24380a5ff68faa1fea06128ae2">MedicationBody::getQuantity</a></div><div class="ttdeci">int getQuantity() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00019">MedicationImpl.cpp:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,7 +446,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                  { </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a7f9405c74f01d24018340911b8810d6f">getRequiresPrescription</a>(); </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="aclassMedicationBody_html_a7f9405c74f01d24018340911b8810d6f"><div class="ttname"><a href="classMedicationBody.html#a7f9405c74f01d24018340911b8810d6f">MedicationBody::getRequiresPrescription</a></div><div class="ttdeci">bool getRequiresPrescription() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00026">MedicationImpl.cpp:26</a></div></div>
+<div class="ttc" id="aclassMedicationBody_html_a7f9405c74f01d24018340911b8810d6f"><div class="ttname"><a href="classMedicationBody.html#a7f9405c74f01d24018340911b8810d6f">MedicationBody::getRequiresPrescription</a></div><div class="ttdeci">bool getRequiresPrescription() const</div><div class="ttdef"><b>Definition:</b> <a href="MedicationImpl_8cpp_source.html#l00023">MedicationImpl.cpp:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,6 +571,31 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classMedicationBody.html#a9c98014fbd5e531f3961659d2a809550">setRequiresPrescription</a>(requires); </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a43873a298b26752314d9cba9aadbc1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43873a298b26752314d9cba9aadbc1be">&#9670;&nbsp;</a></span>SystemBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classSystemBody.html">SystemBody</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="MedicationImpl_8h_source.html#l00078">78</a> of file <a class="el" href="MedicationImpl_8h_source.html">MedicationImpl.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

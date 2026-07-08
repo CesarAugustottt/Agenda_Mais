@@ -1,8 +1,9 @@
 <map id="src/AppointmentController.h" name="src/AppointmentController.h">
 <area shape="rect" id="node1" title=" " alt="" coords="244,5,448,32"/>
 <area shape="rect" id="node2" href="$AppointmentImpl_8h.html" title=" " alt="" coords="126,80,273,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="133,229,191,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="384,80,447,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="98,304,157,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="384,80,447,107"/>
 <area shape="rect" id="node3" href="$Appointment_8h.html" title=" " alt="" coords="5,155,124,181"/>
-<area shape="rect" id="node5" href="$handleBody_8h.html" title=" " alt="" coords="199,155,309,181"/>
+<area shape="rect" id="node6" href="$handleBody_8h.html" title=" " alt="" coords="199,155,309,181"/>
+<area shape="rect" id="node5" href="$User_8h.html" title=" " alt="" coords="61,229,124,256"/>
 </map>

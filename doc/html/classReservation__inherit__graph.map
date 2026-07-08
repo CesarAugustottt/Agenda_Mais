@@ -1,4 +1,4 @@
 <map id="Reservation" name="Reservation">
-<area shape="rect" id="node1" title=" " alt="" coords="29,5,129,32"/>
-<area shape="rect" id="node2" href="$classReservationHandle.html" title=" " alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node1" title="This class represents the interface of a Reservation as implemented in this code." alt="" coords="29,5,129,32"/>
+<area shape="rect" id="node2" href="$classReservationHandle.html" title="This class represents the handle of a Reservation." alt="" coords="5,80,152,107"/>
 </map>
