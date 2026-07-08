@@ -41,15 +41,15 @@ public:
     //getters e setters
     /*!
      * @brief Returns the patientName attribute in the Appointment Class.
-     * * @return string - the content patientName attribute.
+     * * @return User - the content patient attribute.
      */
-    virtual std::string getPatientName() const = 0;
+    virtual User* getPatient() const = 0;
 
     /*!
      * @brief Returns the doctorName attribute in the Appointment Class.
-     * * @return string - the content doctorName attribute.
+     * * @return User - the content doctor attribute.
      */
-    virtual std::string getDoctorName() const = 0;
+    virtual User* getDoctor() const = 0;
 
     /*!
      * @brief Returns the date attribute in the Appointment Class.
@@ -77,15 +77,15 @@ public:
 
     /*!
      * @brief Sets the patientName attribute in the Appointment Class.
-     * * @param name which will be set to the current appointment.
+     * * @param  patient will be set to the current appointment.
      */
-    virtual void setPatientName(const std::string& name) = 0;
+    virtual void setPatient( User* patient) = 0;
 
     /*!
      * @brief Sets the doctorName attribute in the Appointment Class.
-     * * @param name which will be set to the current appointment.
+     * * @param doctor which will be set to the current appointment.
      */
-    virtual void setDoctorName(const std::string& name) = 0;
+    virtual void setDoctor( User* doctor) = 0;
 
     /*!
      * @brief Sets the date attribute in the Appointment Class.
