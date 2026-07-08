@@ -33,7 +33,7 @@ private:
     QPushButton *btnHora1500;
     QPushButton *btnVoltar;
 
-    void processarAgendamento(const std::string& horario);
+    void processarAgendamento(const std::string& horario, User* patient);
 };
 
 #endif // TELADATAHORA_H
