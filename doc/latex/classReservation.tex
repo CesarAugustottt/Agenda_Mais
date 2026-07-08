@@ -2,11 +2,17 @@
 \label{classReservation}\index{Reservation@{Reservation}}
 
 
+This class represents the interface of a \mbox{\hyperlink{classReservation}{Reservation}} as implemented in this code.  
+
+
+
+
 {\ttfamily \#include $<$Reservation.\+h$>$}
 
 
 
-Inheritance diagram for Reservation\+:\nopagebreak
+Inheritance diagram for Reservation\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,37 +23,42 @@ Inheritance diagram for Reservation\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classReservation_a746dd092922e520049d8bbfe71d3b576}{$\sim$\+Reservation}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classReservation_a65ec9fb2cac854c7a208c49f541d27cf}{get\+Patient\+Cpf}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classReservation_a0d6b16114db37e37dac95364e57b7a2b}{get\+Medication}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the medication pointer attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{classReservation_a9c8c4f8f62d1c336ff433128b714c0d1}{get\+Quantity}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classReservation_aa19177b8c49a1604bb055b35e97c68e6}{get\+Prescription\+Path}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} \mbox{\hyperlink{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}{get\+Status}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classReservation_a574a0459e90415c927664e85a283cfcb}{get\+Justification}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a28631a97f61ce043d10c30fee66bff98}{set\+Patient\+Cpf}} (const std\+::string \&cpf)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a966e16d4259d4a57fc7c10b273feed77}{set\+Medication}} (\mbox{\hyperlink{classMedication}{Medication}} $\ast$medication)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the medication attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a1fe90b41e9cba63a194aa557f4cfeeb6}{set\+Quantity}} (int quantity)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a2228904e5dbcc1a2fb96178863421c5a}{set\+Prescription\+Path}} (const std\+::string \&path)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a784ad03aeb30837448d0b97ec3a129ca}{set\+Status}} (\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} status)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReservation_a4e5fed968424f58018d4b722448b8af4}{set\+Justification}} (const std\+::string \&justification)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+This class represents the interface of a \mbox{\hyperlink{classReservation}{Reservation}} as implemented in this code. 
 
 
-Definition at line 14 of file Reservation.\+h.
+\begin{DoxyItemize}
+\item It defines the abstract methods for medicine reservation management. 
+\end{DoxyItemize}
+
+Definition at line 21 of file Reservation.\+h.
 
 
 
@@ -60,11 +71,15 @@ Definition at line 14 of file Reservation.\+h.
 
 
 
-Definition at line 16 of file Reservation.\+h.
+This is the default destructor for the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+
+Definition at line 26 of file Reservation.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{16 \{\}}
+\DoxyCodeLine{26 \{\}}
 
 \end{DoxyCode}
 
@@ -78,6 +93,16 @@ Definition at line 16 of file Reservation.\+h.
 
 
 
+Returns the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content justification attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_aa86e476622f7d6868b9529e8a664fe10}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_a0d6b16114db37e37dac95364e57b7a2b}\label{classReservation_a0d6b16114db37e37dac95364e57b7a2b}} 
@@ -87,6 +112,16 @@ Implemented in \mbox{\hyperlink{classReservationHandle_aa86e476622f7d6868b9529e8
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{classMedication}{Medication}}$\ast$ Reservation\+::get\+Medication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Returns the medication pointer attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+Medication$\ast$ -\/ the content medication pointer attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_a7b8a34982d87bf20061cd22f140b1054}{Reservation\+Handle}}.
 
@@ -98,6 +133,16 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a7b8a34982d87bf20061cd22f
 
 
 
+Returns the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content patient cpf attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_a3db2147b98ce4be97673e489aac19c85}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_aa19177b8c49a1604bb055b35e97c68e6}\label{classReservation_aa19177b8c49a1604bb055b35e97c68e6}} 
@@ -107,6 +152,16 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a3db2147b98ce4be97673e489
 {\footnotesize\ttfamily virtual std\+::string Reservation\+::get\+Prescription\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Returns the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+string -\/ the content prescription path attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_a46c5a93bd60ac1645cdad6072d64c2fa}{Reservation\+Handle}}.
 
@@ -118,6 +173,16 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a46c5a93bd60ac1645cdad607
 
 
 
+Returns the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+int -\/ the content quantity attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_a068e25c8387e792ca4bb2894db55e634}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}\label{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}} 
@@ -127,6 +192,16 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a068e25c8387e792ca4bb2894
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}} Reservation\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Returns the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+Reservation\+Status -\/ the content status attribute. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_a7d8d8a79fdb5b1e4d3fb277c607e7fdc}{Reservation\+Handle}}.
 
@@ -138,6 +213,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a7d8d8a79fdb5b1e4d3fb277c
 
 
 
+Sets the justification attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em justification} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_ab2c9747ef547791d9505a8a42e2f453e}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_a966e16d4259d4a57fc7c10b273feed77}\label{classReservation_a966e16d4259d4a57fc7c10b273feed77}} 
@@ -147,6 +234,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_ab2c9747ef547791d9505a8a4
 {\footnotesize\ttfamily virtual void Reservation\+::set\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Sets the medication attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em medication} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_aff1d6d1529b3dc178830b4188dbc1d28}{Reservation\+Handle}}.
 
@@ -158,6 +257,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_aff1d6d1529b3dc178830b418
 
 
 
+Sets the patient cpf attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em cpf} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_a99021712bf6da5d9bd70bc548ecbefe3}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_a2228904e5dbcc1a2fb96178863421c5a}\label{classReservation_a2228904e5dbcc1a2fb96178863421c5a}} 
@@ -167,6 +278,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a99021712bf6da5d9bd70bc54
 {\footnotesize\ttfamily virtual void Reservation\+::set\+Prescription\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Sets the prescription path attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em path} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_a1bd56c1eb422946f656689fb5a2db26e}{Reservation\+Handle}}.
 
@@ -178,6 +301,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_a1bd56c1eb422946f656689fb
 
 
 
+Sets the quantity attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em quantity} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implemented in \mbox{\hyperlink{classReservationHandle_ae7389ec388998e8bbc488a6994660eed}{Reservation\+Handle}}.
 
 \mbox{\Hypertarget{classReservation_a784ad03aeb30837448d0b97ec3a129ca}\label{classReservation_a784ad03aeb30837448d0b97ec3a129ca}} 
@@ -187,6 +322,18 @@ Implemented in \mbox{\hyperlink{classReservationHandle_ae7389ec388998e8bbc488a69
 {\footnotesize\ttfamily virtual void Reservation\+::set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3}{Reservation\+Status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+Sets the status attribute in the \mbox{\hyperlink{classReservation}{Reservation}} Class. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em status} & which will be set to the current reservation. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classReservationHandle_a9adb186039a554ff357e9f4f57db0444}{Reservation\+Handle}}.
 

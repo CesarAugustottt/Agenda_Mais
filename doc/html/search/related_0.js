@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unit_5fappointment_526',['Unit_Appointment',['../classAppointmentBody.html#aceecb3099daa4a515d39ed3adfd3d27e',1,'AppointmentBody::Unit_Appointment()'],['../classAppointmentHandle.html#aceecb3099daa4a515d39ed3adfd3d27e',1,'AppointmentHandle::Unit_Appointment()']]],
-  ['unit_5fuser_527',['Unit_User',['../classUserBody.html#a0ec03bb437d38aebadc68361839057f0',1,'UserBody::Unit_User()'],['../classUserHandle.html#a0ec03bb437d38aebadc68361839057f0',1,'UserHandle::Unit_User()']]]
+  ['systembody_576',['SystemBody',['../classAppointmentBody.html#a43873a298b26752314d9cba9aadbc1be',1,'AppointmentBody::SystemBody()'],['../classAppointmentHandle.html#a43873a298b26752314d9cba9aadbc1be',1,'AppointmentHandle::SystemBody()'],['../classMedicationBody.html#a43873a298b26752314d9cba9aadbc1be',1,'MedicationBody::SystemBody()'],['../classMedicationHandle.html#a43873a298b26752314d9cba9aadbc1be',1,'MedicationHandle::SystemBody()'],['../classReservationBody.html#a43873a298b26752314d9cba9aadbc1be',1,'ReservationBody::SystemBody()'],['../classReservationHandle.html#a43873a298b26752314d9cba9aadbc1be',1,'ReservationHandle::SystemBody()'],['../classUserBody.html#a43873a298b26752314d9cba9aadbc1be',1,'UserBody::SystemBody()'],['../classUserHandle.html#a43873a298b26752314d9cba9aadbc1be',1,'UserHandle::SystemBody()']]]
 ];

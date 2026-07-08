@@ -30,8 +30,6 @@ Collaboration diagram for User\+Handle\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classUserHandle_a605daa046e754b8237f9abe444f3f939}{User\+Handle}} (const std\+::string \&name, const std\+::string \&cpf, const std\+::string \&email, const std\+::string \&password, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} type)
-\begin{DoxyCompactList}\small\item\em This is the parameterized constructor for the \mbox{\hyperlink{classUserHandle}{User\+Handle}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classUserHandle_af32fb0520616ddde9ab53a07d0364384}{$\sim$\+User\+Handle}} ()
 \begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classUserHandle}{User\+Handle}} Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classUserHandle_a5caee32fa944e7ea57fbf82bb2e15cbb}{get\+Cpf}} () const override
@@ -46,10 +44,19 @@ void \mbox{\hyperlink{classUserHandle_ad5f490d9ef91f1a4960efe0449ef754d}{set\+Ty
 \begin{DoxyCompactList}\small\item\em Sets the type attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classUserHandle_a607ea0dd513d8c9942dceeaa2a7ad664}{deactivate}} () override
 \begin{DoxyCompactList}\small\item\em Pure virtual method to deactivate the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserHandle_a605daa046e754b8237f9abe444f3f939}{User\+Handle}} (const std\+::string \&name, const std\+::string \&cpf, const std\+::string \&email, const std\+::string \&password, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} type)
+\begin{DoxyCompactList}\small\item\em This is the parameterized constructor for the \mbox{\hyperlink{classUserHandle}{User\+Handle}} Class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUserHandle_a2db47fd4fe5a4779042a3ca304f9871e}{User\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classUserHandle}{User\+Handle}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classUserHandle_a0ec03bb437d38aebadc68361839057f0}{Unit\+\_\+\+User}}
+\item 
+class \mbox{\hyperlink{classUserHandle_a43873a298b26752314d9cba9aadbc1be}{System\+Body}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -57,7 +64,7 @@ class \mbox{\hyperlink{classUserHandle_a0ec03bb437d38aebadc68361839057f0}{Unit\+
 \doxysubsection{Detailed Description}
 This class represents the handle of a \mbox{\hyperlink{classUser}{User}}. 
 
-Definition at line 60 of file User\+Impl.\+h.
+Definition at line 61 of file User\+Impl.\+h.
 
 
 
@@ -65,8 +72,8 @@ Definition at line 60 of file User\+Impl.\+h.
 \mbox{\Hypertarget{classUserHandle_a605daa046e754b8237f9abe444f3f939}\label{classUserHandle_a605daa046e754b8237f9abe444f3f939}} 
 \index{UserHandle@{UserHandle}!UserHandle@{UserHandle}}
 \index{UserHandle@{UserHandle}!UserHandle@{UserHandle}}
-\doxysubsubsection{\texorpdfstring{UserHandle()}{UserHandle()}}
-{\footnotesize\ttfamily User\+Handle\+::\+User\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{cpf,  }\item[{const std\+::string \&}]{email,  }\item[{const std\+::string \&}]{password,  }\item[{\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}}}]{type }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{UserHandle()}{UserHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily User\+Handle\+::\+User\+Handle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{cpf,  }\item[{const std\+::string \&}]{email,  }\item[{const std\+::string \&}]{password,  }\item[{\mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -119,6 +126,25 @@ Definition at line 56 of file User\+Impl.\+cpp.
 \DoxyCodeLine{62 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classUserHandle_a2db47fd4fe5a4779042a3ca304f9871e}\label{classUserHandle_a2db47fd4fe5a4779042a3ca304f9871e}} 
+\index{UserHandle@{UserHandle}!UserHandle@{UserHandle}}
+\index{UserHandle@{UserHandle}!UserHandle@{UserHandle}}
+\doxysubsubsection{\texorpdfstring{UserHandle()}{UserHandle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily User\+Handle\+::\+User\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+This is the default constructor for the \mbox{\hyperlink{classUserHandle}{User\+Handle}} Class. 
+
+
+
+Definition at line 64 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{\}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_af32fb0520616ddde9ab53a07d0364384}\label{classUserHandle_af32fb0520616ddde9ab53a07d0364384}} 
 \index{UserHandle@{UserHandle}!````~UserHandle@{$\sim$UserHandle}}
 \index{````~UserHandle@{$\sim$UserHandle}!UserHandle@{UserHandle}}
@@ -131,11 +157,11 @@ This is the default destructor for the \mbox{\hyperlink{classUserHandle}{User\+H
 
 
 
-Definition at line 64 of file User\+Impl.\+cpp.
+Definition at line 66 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{64 \{\}}
+\DoxyCodeLine{66 \{\}}
 
 \end{DoxyCode}
 
@@ -160,13 +186,13 @@ Implements \mbox{\hyperlink{classUser_a09f7933c1926c4d8b3b3181ef063b235}{User}}.
 
 
 
-Definition at line 86 of file User\+Impl.\+cpp.
+Definition at line 88 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{86                             \{ }
-\DoxyCodeLine{87     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_aa611151e7f457bcc411a852f56cbdc69}{deactivate}}(); }
-\DoxyCodeLine{88 \}}
+\DoxyCodeLine{88                             \{ }
+\DoxyCodeLine{89     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_aa611151e7f457bcc411a852f56cbdc69}{deactivate}}(); }
+\DoxyCodeLine{90 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_a5caee32fa944e7ea57fbf82bb2e15cbb}\label{classUserHandle_a5caee32fa944e7ea57fbf82bb2e15cbb}} 
@@ -191,13 +217,13 @@ Implements \mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{User}}.
 
 
 
-Definition at line 66 of file User\+Impl.\+cpp.
+Definition at line 68 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{66                                    \{}
-\DoxyCodeLine{67     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a78f30be1b94c8a3532de9e15557ed559}{getCpf}}(); }
-\DoxyCodeLine{68 \}}
+\DoxyCodeLine{68                                    \{}
+\DoxyCodeLine{69     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a78f30be1b94c8a3532de9e15557ed559}{getCpf}}(); }
+\DoxyCodeLine{70 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_ad28ea24763961199ebf4934f8dca0cab}\label{classUserHandle_ad28ea24763961199ebf4934f8dca0cab}} 
@@ -222,13 +248,13 @@ Implements \mbox{\hyperlink{classUser_ac70713a8100d22a586cc50496069071e}{User}}.
 
 
 
-Definition at line 70 of file User\+Impl.\+cpp.
+Definition at line 72 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{70                                      \{}
-\DoxyCodeLine{71     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}{getEmail}}(); }
-\DoxyCodeLine{72 \}}
+\DoxyCodeLine{72                                      \{}
+\DoxyCodeLine{73     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}{getEmail}}(); }
+\DoxyCodeLine{74 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_a674cf1811b2ab92c819c62a8fd0768f1}\label{classUserHandle_a674cf1811b2ab92c819c62a8fd0768f1}} 
@@ -253,13 +279,13 @@ Implements \mbox{\hyperlink{classUser_a7b663fb1d71ad5ffe07d6225657099b9}{User}}.
 
 
 
-Definition at line 74 of file User\+Impl.\+cpp.
+Definition at line 76 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{74                                    \{ }
-\DoxyCodeLine{75     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}{getType}}(); }
-\DoxyCodeLine{76 \}}
+\DoxyCodeLine{76                                    \{ }
+\DoxyCodeLine{77     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}{getType}}(); }
+\DoxyCodeLine{78 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_a11490d48a745a0eb6415c518a17d2711}\label{classUserHandle_a11490d48a745a0eb6415c518a17d2711}} 
@@ -284,13 +310,13 @@ Implements \mbox{\hyperlink{classUser_ab2484a8ad22bca122e320184c219beab}{User}}.
 
 
 
-Definition at line 78 of file User\+Impl.\+cpp.
+Definition at line 80 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{78                                 \{ }
-\DoxyCodeLine{79     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a52cec1c327b9509936cdb0111134d3ee}{isActive}}(); }
-\DoxyCodeLine{80 \}}
+\DoxyCodeLine{80                                 \{ }
+\DoxyCodeLine{81     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_a52cec1c327b9509936cdb0111134d3ee}{isActive}}(); }
+\DoxyCodeLine{82 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserHandle_ad5f490d9ef91f1a4960efe0449ef754d}\label{classUserHandle_ad5f490d9ef91f1a4960efe0449ef754d}} 
@@ -317,18 +343,28 @@ Implements \mbox{\hyperlink{classUser_ad2bfc02024c5c0d867dfc32af82b83f3}{User}}.
 
 
 
-Definition at line 82 of file User\+Impl.\+cpp.
+Definition at line 84 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{82                                          \{ }
-\DoxyCodeLine{83     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_ab57984453bb4467773f13f635c0bb5bf}{setType}}(newType); }
-\DoxyCodeLine{84 \}}
+\DoxyCodeLine{84                                          \{ }
+\DoxyCodeLine{85     \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classUserBody_ab57984453bb4467773f13f635c0bb5bf}{setType}}(newType); }
+\DoxyCodeLine{86 \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classUserHandle_a43873a298b26752314d9cba9aadbc1be}\label{classUserHandle_a43873a298b26752314d9cba9aadbc1be}} 
+\index{UserHandle@{UserHandle}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!UserHandle@{UserHandle}}
+\doxysubsubsection{\texorpdfstring{SystemBody}{SystemBody}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSystemBody}{System\+Body}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 95 of file User\+Impl.\+h.
+
 \mbox{\Hypertarget{classUserHandle_a0ec03bb437d38aebadc68361839057f0}\label{classUserHandle_a0ec03bb437d38aebadc68361839057f0}} 
 \index{UserHandle@{UserHandle}!Unit\_User@{Unit\_User}}
 \index{Unit\_User@{Unit\_User}!UserHandle@{UserHandle}}
@@ -337,7 +373,7 @@ Definition at line 82 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 87 of file User\+Impl.\+h.
+Definition at line 94 of file User\+Impl.\+h.
 
 
 

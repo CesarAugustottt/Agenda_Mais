@@ -23,9 +23,9 @@ Inheritance diagram for Appointment\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classAppointment_ad07411589ffabede4a1c8b9b8521935c}{$\sim$\+Appointment}} ()
 \begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-virtual std\+::string \mbox{\hyperlink{classAppointment_ae1e029c32ad90e7e348cb869ce773967}{get\+Patient\+Name}} () const =0
+virtual \mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classAppointment_add6d4e67b0050b1f56328f92eca59328}{get\+Patient}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-virtual std\+::string \mbox{\hyperlink{classAppointment_acdab90efcb5110c1bb770c2f98b2aaef}{get\+Doctor\+Name}} () const =0
+virtual \mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classAppointment_a10d8a15164e842c773c831d847fa56ef}{get\+Doctor}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classAppointment_a8649cfc25e7b38d114310f2e5e1924b2}{get\+Date}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the date attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
@@ -35,9 +35,9 @@ virtual \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Statu
 \begin{DoxyCompactList}\small\item\em Returns the status attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classAppointment_a838d1c7f550b0238c3998e2a3ca6bdaf}{get\+Appointment\+Type}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classAppointment_ad4edc336985a727137d67bbad012e3f7}{set\+Patient\+Name}} (const std\+::string \&name)=0
+virtual void \mbox{\hyperlink{classAppointment_a120cc5218236f1e535e58da773fe36bf}{set\+Patient}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient)=0
 \begin{DoxyCompactList}\small\item\em Sets the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classAppointment_a65b55b38aaff39317df0b35e18d6a6f3}{set\+Doctor\+Name}} (const std\+::string \&name)=0
+virtual void \mbox{\hyperlink{classAppointment_a97aff7fe29156f47c43c89bbeb2e3262}{set\+Doctor}} (\mbox{\hyperlink{classUser}{User}} $\ast$doctor)=0
 \begin{DoxyCompactList}\small\item\em Sets the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classAppointment_aee0cf1f127fd8d5639b99fcfd4102c89}{set\+Date}} (const std\+::string \&date)=0
 \begin{DoxyCompactList}\small\item\em Sets the date attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
@@ -57,7 +57,7 @@ This class represents the interface of an \mbox{\hyperlink{classAppointment}{App
 \item It defines the abstract methods for appointment management. 
 \end{DoxyItemize}
 
-Definition at line 34 of file Appointment.\+h.
+Definition at line 35 of file Appointment.\+h.
 
 
 
@@ -74,11 +74,11 @@ This is the default destructor for the \mbox{\hyperlink{classAppointment}{Appoin
 
 
 
-Definition at line 39 of file Appointment.\+h.
+Definition at line 40 of file Appointment.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{39 \{\}}
+\DoxyCodeLine{40 \{\}}
 
 \end{DoxyCode}
 
@@ -124,11 +124,11 @@ string -\/ the content date attribute.
 
 Implemented in \mbox{\hyperlink{classAppointmentHandle_a442d386efef763e53c6bc887bb95c601}{Appointment\+Handle}}.
 
-\mbox{\Hypertarget{classAppointment_acdab90efcb5110c1bb770c2f98b2aaef}\label{classAppointment_acdab90efcb5110c1bb770c2f98b2aaef}} 
-\index{Appointment@{Appointment}!getDoctorName@{getDoctorName}}
-\index{getDoctorName@{getDoctorName}!Appointment@{Appointment}}
-\doxysubsubsection{\texorpdfstring{getDoctorName()}{getDoctorName()}}
-{\footnotesize\ttfamily virtual std\+::string Appointment\+::get\+Doctor\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classAppointment_a10d8a15164e842c773c831d847fa56ef}\label{classAppointment_a10d8a15164e842c773c831d847fa56ef}} 
+\index{Appointment@{Appointment}!getDoctor@{getDoctor}}
+\index{getDoctor@{getDoctor}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{getDoctor()}{getDoctor()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classUser}{User}}$\ast$ Appointment\+::get\+Doctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -137,18 +137,18 @@ Returns the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{App
 
 \begin{DoxyItemize}
 \item \begin{DoxyReturn}{Returns}
-string -\/ the content doctor\+Name attribute. 
+\mbox{\hyperlink{classUser}{User}} -\/ the content doctor attribute. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Implemented in \mbox{\hyperlink{classAppointmentHandle_aea099685e9c8e29937be3bd50a1217be}{Appointment\+Handle}}.
+Implemented in \mbox{\hyperlink{classAppointmentHandle_a05d02a9d1e6efefc85b309a7902a23d1}{Appointment\+Handle}}.
 
-\mbox{\Hypertarget{classAppointment_ae1e029c32ad90e7e348cb869ce773967}\label{classAppointment_ae1e029c32ad90e7e348cb869ce773967}} 
-\index{Appointment@{Appointment}!getPatientName@{getPatientName}}
-\index{getPatientName@{getPatientName}!Appointment@{Appointment}}
-\doxysubsubsection{\texorpdfstring{getPatientName()}{getPatientName()}}
-{\footnotesize\ttfamily virtual std\+::string Appointment\+::get\+Patient\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classAppointment_add6d4e67b0050b1f56328f92eca59328}\label{classAppointment_add6d4e67b0050b1f56328f92eca59328}} 
+\index{Appointment@{Appointment}!getPatient@{getPatient}}
+\index{getPatient@{getPatient}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{getPatient()}{getPatient()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classUser}{User}}$\ast$ Appointment\+::get\+Patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -157,12 +157,12 @@ Returns the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Ap
 
 \begin{DoxyItemize}
 \item \begin{DoxyReturn}{Returns}
-string -\/ the content patient\+Name attribute. 
+\mbox{\hyperlink{classUser}{User}} -\/ the content patient attribute. 
 \end{DoxyReturn}
 
 \end{DoxyItemize}
 
-Implemented in \mbox{\hyperlink{classAppointmentHandle_a5beb823859b573c5cb4683a391f7c16a}{Appointment\+Handle}}.
+Implemented in \mbox{\hyperlink{classAppointmentHandle_a5f4d4c876f5caff7ff396eec9bd653db}{Appointment\+Handle}}.
 
 \mbox{\Hypertarget{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}\label{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}} 
 \index{Appointment@{Appointment}!getStatus@{getStatus}}
@@ -248,11 +248,11 @@ Sets the date attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} 
 
 Implemented in \mbox{\hyperlink{classAppointmentHandle_a674596c3547b76bf5a86f74000e4fc66}{Appointment\+Handle}}.
 
-\mbox{\Hypertarget{classAppointment_a65b55b38aaff39317df0b35e18d6a6f3}\label{classAppointment_a65b55b38aaff39317df0b35e18d6a6f3}} 
-\index{Appointment@{Appointment}!setDoctorName@{setDoctorName}}
-\index{setDoctorName@{setDoctorName}!Appointment@{Appointment}}
-\doxysubsubsection{\texorpdfstring{setDoctorName()}{setDoctorName()}}
-{\footnotesize\ttfamily virtual void Appointment\+::set\+Doctor\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classAppointment_a97aff7fe29156f47c43c89bbeb2e3262}\label{classAppointment_a97aff7fe29156f47c43c89bbeb2e3262}} 
+\index{Appointment@{Appointment}!setDoctor@{setDoctor}}
+\index{setDoctor@{setDoctor}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{setDoctor()}{setDoctor()}}
+{\footnotesize\ttfamily virtual void Appointment\+::set\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{doctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -262,19 +262,19 @@ Sets the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appoin
 \begin{DoxyItemize}
 \item 
 \begin{DoxyParams}{Parameters}
-{\em name} & which will be set to the current appointment. \\
+{\em doctor} & which will be set to the current appointment. \\
 \hline
 \end{DoxyParams}
 
 \end{DoxyItemize}
 
-Implemented in \mbox{\hyperlink{classAppointmentHandle_aa7491d3d72de725e78172de9d1628fb4}{Appointment\+Handle}}.
+Implemented in \mbox{\hyperlink{classAppointmentHandle_a847075921b1bf708fb14fc98235137c3}{Appointment\+Handle}}.
 
-\mbox{\Hypertarget{classAppointment_ad4edc336985a727137d67bbad012e3f7}\label{classAppointment_ad4edc336985a727137d67bbad012e3f7}} 
-\index{Appointment@{Appointment}!setPatientName@{setPatientName}}
-\index{setPatientName@{setPatientName}!Appointment@{Appointment}}
-\doxysubsubsection{\texorpdfstring{setPatientName()}{setPatientName()}}
-{\footnotesize\ttfamily virtual void Appointment\+::set\+Patient\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classAppointment_a120cc5218236f1e535e58da773fe36bf}\label{classAppointment_a120cc5218236f1e535e58da773fe36bf}} 
+\index{Appointment@{Appointment}!setPatient@{setPatient}}
+\index{setPatient@{setPatient}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{setPatient()}{setPatient()}}
+{\footnotesize\ttfamily virtual void Appointment\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{patient }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -284,13 +284,13 @@ Sets the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appoi
 \begin{DoxyItemize}
 \item 
 \begin{DoxyParams}{Parameters}
-{\em name} & which will be set to the current appointment. \\
+{\em patient} & will be set to the current appointment. \\
 \hline
 \end{DoxyParams}
 
 \end{DoxyItemize}
 
-Implemented in \mbox{\hyperlink{classAppointmentHandle_a11a90e226e37ffc25c3563acbc3a1305}{Appointment\+Handle}}.
+Implemented in \mbox{\hyperlink{classAppointmentHandle_ab1e5b043148768a7dc100b567a7a0242}{Appointment\+Handle}}.
 
 \mbox{\Hypertarget{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}\label{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}} 
 \index{Appointment@{Appointment}!setStatus@{setStatus}}
