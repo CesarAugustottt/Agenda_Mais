@@ -2,6 +2,7 @@
 #define APPOINTMENT_H
 
 #include <string>
+#include "User.h"
 
 // Definição dos Enums limitando as opções do Storyboard
 

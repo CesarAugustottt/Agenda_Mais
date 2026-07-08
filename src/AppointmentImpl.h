@@ -3,7 +3,6 @@
 
 #include "Appointment.h"
 #include "handleBody.h"
-#include "User.h"
 #include <string>
 
 /*!
