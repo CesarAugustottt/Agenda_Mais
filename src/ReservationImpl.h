@@ -15,7 +15,7 @@ protected:
     std::string justification;
 
 public:
-    ReservationBody(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath);
+    ReservationBody();
     virtual ~ReservationBody();
 
     std::string getPatientCpf() const;
@@ -34,8 +34,10 @@ public:
 };
 
 class ReservationHandle : public Reservation, public Handle<ReservationBody> {
-public:
+protected:
     ReservationHandle(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath);
+    ReservationHandle();
+public:
     virtual ~ReservationHandle();
 
     std::string getPatientCpf() const override;
