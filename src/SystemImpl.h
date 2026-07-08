@@ -7,7 +7,6 @@
 
 class SystemBody : public Body {
 protected:
-    // Vetores guardados de forma 100% privada e oculta
     std::vector<User*> users;
     std::vector<Appointment*> appointments;
     std::vector<Medication*> medications;

@@ -15,6 +15,11 @@ SystemBody::~SystemBody() {
     for (auto r : reservations) delete r;
 }
 
+//fabrica global
+System* System::createSystem() {
+    return new SystemHandle(); 
+}
+
 //fabricas
 User* SystemBody::createUser(const std::string& name, const std::string& cpf, const std::string& email, const std::string& password, UserType type) {
     User* u = new UserHandle(name, cpf, email, password, type);
