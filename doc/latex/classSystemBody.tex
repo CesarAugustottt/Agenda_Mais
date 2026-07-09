@@ -2,6 +2,11 @@
 \label{classSystemBody}\index{SystemBody@{SystemBody}}
 
 
+This class represents the concrete implementation of a \mbox{\hyperlink{classSystem}{System}}.  
+
+
+
+
 {\ttfamily \#include $<$System\+Impl.\+h$>$}
 
 
@@ -28,9 +33,9 @@ Collaboration diagram for System\+Body\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classSystemBody_a147c54091a4184a5cfb99215702d86eb}{System\+Body}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classSystemBody}{System\+Body}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}{$\sim$\+System\+Body}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classSystemBody}{System\+Body}} Class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}{create\+User}} (const std\+::string \&name, const std\+::string \&cpf, const std\+::string \&email, const std\+::string \&password, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} type)
 \item 
 \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ \mbox{\hyperlink{classSystemBody_a55feb73c2efcace04e183b1222adea12}{create\+Appointment}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient, \mbox{\hyperlink{classUser}{User}} $\ast$doctor, const std\+::string \&date, const std\+::string \&time, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp)
@@ -69,9 +74,9 @@ std\+::vector$<$ \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ $>$ \mb
 
 
 \doxysubsection{Detailed Description}
+This class represents the concrete implementation of a \mbox{\hyperlink{classSystem}{System}}. 
 
-
-Definition at line 8 of file System\+Impl.\+h.
+Definition at line 12 of file System\+Impl.\+h.
 
 
 
@@ -84,11 +89,15 @@ Definition at line 8 of file System\+Impl.\+h.
 
 
 
-Definition at line 16 of file System\+Impl.\+h.
+This is the default constructor for the \mbox{\hyperlink{classSystemBody}{System\+Body}} Class. 
+
+
+
+Definition at line 28 of file System\+Impl.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{16 \{\}}
+\DoxyCodeLine{28 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}\label{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}} 
@@ -96,6 +105,10 @@ Definition at line 16 of file System\+Impl.\+h.
 \index{````~SystemBody@{$\sim$SystemBody}!SystemBody@{SystemBody}}
 \doxysubsubsection{\texorpdfstring{$\sim$SystemBody()}{~SystemBody()}}
 {\footnotesize\ttfamily System\+Body\+::$\sim$\+System\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the default destructor for the \mbox{\hyperlink{classSystemBody}{System\+Body}} Class. 
 
 
 
@@ -366,9 +379,9 @@ Definition at line 70 of file System\+Impl.\+cpp.
 \doxysubsubsection{\texorpdfstring{appointments}{appointments}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classAppointment}{Appointment}}$\ast$$>$ System\+Body\+::appointments\hspace{0.3cm}{\ttfamily [protected]}}
 
+This attribute contains the vector list of all medical appointments. 
 
-
-Definition at line 11 of file System\+Impl.\+h.
+Definition at line 17 of file System\+Impl.\+h.
 
 \mbox{\Hypertarget{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}\label{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}} 
 \index{SystemBody@{SystemBody}!medications@{medications}}
@@ -376,9 +389,9 @@ Definition at line 11 of file System\+Impl.\+h.
 \doxysubsubsection{\texorpdfstring{medications}{medications}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMedication}{Medication}}$\ast$$>$ System\+Body\+::medications\hspace{0.3cm}{\ttfamily [protected]}}
 
+This attribute contains the vector list of all stocked medications. 
 
-
-Definition at line 12 of file System\+Impl.\+h.
+Definition at line 19 of file System\+Impl.\+h.
 
 \mbox{\Hypertarget{classSystemBody_a532636830dcdedae5300e30f9371f006}\label{classSystemBody_a532636830dcdedae5300e30f9371f006}} 
 \index{SystemBody@{SystemBody}!reservations@{reservations}}
@@ -386,9 +399,9 @@ Definition at line 12 of file System\+Impl.\+h.
 \doxysubsubsection{\texorpdfstring{reservations}{reservations}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classReservation}{Reservation}}$\ast$$>$ System\+Body\+::reservations\hspace{0.3cm}{\ttfamily [protected]}}
 
+This attribute contains the vector list of all pending and approved reservations. 
 
-
-Definition at line 13 of file System\+Impl.\+h.
+Definition at line 21 of file System\+Impl.\+h.
 
 \mbox{\Hypertarget{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}\label{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}} 
 \index{SystemBody@{SystemBody}!users@{users}}
@@ -396,9 +409,9 @@ Definition at line 13 of file System\+Impl.\+h.
 \doxysubsubsection{\texorpdfstring{users}{users}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUser}{User}}$\ast$$>$ System\+Body\+::users\hspace{0.3cm}{\ttfamily [protected]}}
 
+This attribute contains the vector list of all system users. 
 
-
-Definition at line 10 of file System\+Impl.\+h.
+Definition at line 15 of file System\+Impl.\+h.
 
 
 

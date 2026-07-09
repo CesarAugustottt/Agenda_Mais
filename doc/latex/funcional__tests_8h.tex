@@ -1,0 +1,240 @@
+\hypertarget{funcional__tests_8h}{}\doxysection{test/funcional/funcional\+\_\+tests.h File Reference}
+\label{funcional__tests_8h}\index{test/funcional/funcional\_tests.h@{test/funcional/funcional\_tests.h}}
+{\ttfamily \#include \char`\"{}../../src/\+System.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for funcional\+\_\+tests.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcional__tests_8h_a534fd1ec5e3550a13e30df719c7ce814}{test\+\_\+user\+\_\+management}} ()
+\begin{DoxyCompactList}\small\item\em Functional tests header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcional__tests_8h_a537d26a88db7a2205bc6354e1fc9e23f}{test\+\_\+appointment\+\_\+flow}} ()
+\item 
+void \mbox{\hyperlink{funcional__tests_8h_a663ebfadfd8fb1b04896e3b5e4352048}{test\+\_\+medication\+\_\+stock}} ()
+\item 
+void \mbox{\hyperlink{funcional__tests_8h_a347b5b9e2d562f577ba4f689497fc39d}{test\+\_\+reservation\+\_\+flow}} ()
+\item 
+void \mbox{\hyperlink{funcional__tests_8h_a6812a65fed7a411822168f4867657dd9}{test\+\_\+system\+\_\+deletes}} ()
+\item 
+void \mbox{\hyperlink{funcional__tests_8h_ade19cd9c49eda7cd7a2162e3695e07d1}{run\+\_\+all\+\_\+functional\+\_\+tests}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcional__tests_8h_ade19cd9c49eda7cd7a2162e3695e07d1}\label{funcional__tests_8h_ade19cd9c49eda7cd7a2162e3695e07d1}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!run\_all\_functional\_tests@{run\_all\_functional\_tests}}
+\index{run\_all\_functional\_tests@{run\_all\_functional\_tests}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{run\_all\_functional\_tests()}{run\_all\_functional\_tests()}}
+{\footnotesize\ttfamily void run\+\_\+all\+\_\+functional\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function prototype to run the complete suite of functional tests. 
+
+Definition at line 101 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                 \{}
+\DoxyCodeLine{102     std::cout << \textcolor{stringliteral}{"{}Iniciando bateria de testes funcionais estruturados..."{}} << std::endl;}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     \mbox{\hyperlink{funcional__tests_8cpp_a534fd1ec5e3550a13e30df719c7ce814}{test\_user\_management}}();}
+\DoxyCodeLine{105     std::cout << \textcolor{stringliteral}{"{} -\/> Teste de Gerenciamento de Usuários: OK!"{}} << std::endl;}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107     \mbox{\hyperlink{funcional__tests_8cpp_a537d26a88db7a2205bc6354e1fc9e23f}{test\_appointment\_flow}}();}
+\DoxyCodeLine{108     std::cout << \textcolor{stringliteral}{"{} -\/> Teste de Fluxo de Agendamentos: OK!"{}} << std::endl;}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \mbox{\hyperlink{funcional__tests_8cpp_a663ebfadfd8fb1b04896e3b5e4352048}{test\_medication\_stock}}();}
+\DoxyCodeLine{111     std::cout << \textcolor{stringliteral}{"{} -\/> Teste de Controle de Estoque de Medicamentos: OK!"{}} << std::endl;}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     \mbox{\hyperlink{funcional__tests_8cpp_a347b5b9e2d562f577ba4f689497fc39d}{test\_reservation\_flow}}();}
+\DoxyCodeLine{114     std::cout << \textcolor{stringliteral}{"{} -\/> Teste de Fluxo de Reservas: OK!"{}} << std::endl;}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \mbox{\hyperlink{funcional__tests_8cpp_a6812a65fed7a411822168f4867657dd9}{test\_system\_deletes}}();}
+\DoxyCodeLine{117     std::cout << \textcolor{stringliteral}{"{} -\/> Teste de Remoções e Deleções: OK!"{}} << std::endl;}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nTodos os testes funcionais passaram com sucesso! 🎉"{}} << std::endl;}
+\DoxyCodeLine{120 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{funcional__tests_8h_a537d26a88db7a2205bc6354e1fc9e23f}\label{funcional__tests_8h_a537d26a88db7a2205bc6354e1fc9e23f}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!test\_appointment\_flow@{test\_appointment\_flow}}
+\index{test\_appointment\_flow@{test\_appointment\_flow}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{test\_appointment\_flow()}{test\_appointment\_flow()}}
+{\footnotesize\ttfamily void test\+\_\+appointment\+\_\+flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function prototype for the appointment workflow functional test. 
+
+Definition at line 23 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                              \{}
+\DoxyCodeLine{24     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{25     }
+\DoxyCodeLine{26     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}fulano@ufop.edu.br"{}}, \textcolor{stringliteral}{"{}senha123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{27     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Dr. Rey"{}}, \textcolor{stringliteral}{"{}987.654.321-\/11"{}}, \textcolor{stringliteral}{"{}rey@hospital.com"{}}, \textcolor{stringliteral}{"{}med123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}15/07/2026"{}}, \textcolor{stringliteral}{"{}14:30"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}});}
+\DoxyCodeLine{30     assert(consulta != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{31     assert(consulta-\/>\mbox{\hyperlink{classAppointment_a8649cfc25e7b38d114310f2e5e1924b2}{getDate}}() == \textcolor{stringliteral}{"{}15/07/2026"{}});}
+\DoxyCodeLine{32     assert(consulta-\/>\mbox{\hyperlink{classAppointment_a7a0d1b841e8498ea0b8ff6ec1a52e8fd}{getTime}}() == \textcolor{stringliteral}{"{}14:30"{}});}
+\DoxyCodeLine{33     assert(consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}() == \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}});}
+\DoxyCodeLine{34     assert(consulta-\/>\mbox{\hyperlink{classAppointment_a838d1c7f550b0238c3998e2a3ca6bdaf}{getAppointmentType}}() == \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{comment}{// Mudança de estado da consulta}}
+\DoxyCodeLine{37     consulta-\/>\mbox{\hyperlink{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}{setStatus}}(\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba1e314c89b115f3a21ca40f76d231bcd0}{Status::CONFIRMED}});}
+\DoxyCodeLine{38     assert(consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}() == \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba1e314c89b115f3a21ca40f76d231bcd0}{Status::CONFIRMED}});}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{funcional__tests_8h_a663ebfadfd8fb1b04896e3b5e4352048}\label{funcional__tests_8h_a663ebfadfd8fb1b04896e3b5e4352048}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!test\_medication\_stock@{test\_medication\_stock}}
+\index{test\_medication\_stock@{test\_medication\_stock}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{test\_medication\_stock()}{test\_medication\_stock()}}
+{\footnotesize\ttfamily void test\+\_\+medication\+\_\+stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function prototype for the medication stock control functional test. 
+
+Definition at line 43 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                              \{}
+\DoxyCodeLine{44     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Amoxicilina 500mg"{}}, 50, \textcolor{keyword}{true});}
+\DoxyCodeLine{47     assert(remedio != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{48     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 50);}
+\DoxyCodeLine{49     assert(remedio-\/>\mbox{\hyperlink{classMedication_a6bd246a40b794147903749340f4b5ffc}{requiresPrescription}}() == \textcolor{keyword}{true});}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{// Retirada válida}}
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} estoqueReduzido = remedio-\/>\mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{decreaseStock}}(10);}
+\DoxyCodeLine{53     assert(estoqueReduzido == \textcolor{keyword}{true});}
+\DoxyCodeLine{54     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 40);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{comment}{// Retirada inválida (acima do estoque)}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} estoqueInvalido = remedio-\/>\mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{decreaseStock}}(100);}
+\DoxyCodeLine{58     assert(estoqueInvalido == \textcolor{keyword}{false});}
+\DoxyCodeLine{59     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 40);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{funcional__tests_8h_a347b5b9e2d562f577ba4f689497fc39d}\label{funcional__tests_8h_a347b5b9e2d562f577ba4f689497fc39d}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!test\_reservation\_flow@{test\_reservation\_flow}}
+\index{test\_reservation\_flow@{test\_reservation\_flow}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{test\_reservation\_flow()}{test\_reservation\_flow()}}
+{\footnotesize\ttfamily void test\+\_\+reservation\+\_\+flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function prototype for the medicine reservation flow functional test. 
+
+Definition at line 64 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                              \{}
+\DoxyCodeLine{65     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}fulano@ufop.edu.br"{}}, \textcolor{stringliteral}{"{}senha123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{68     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Amoxicilina 500mg"{}}, 50, \textcolor{keyword}{true});}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = sistema-\/>\mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{createReservation}}(paciente-\/>\mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{getCpf}}(), remedio, 2, \textcolor{stringliteral}{"{}/path/to/prescription.pdf"{}});}
+\DoxyCodeLine{71     assert(reserva != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{72     assert(reserva-\/>\mbox{\hyperlink{classReservation_a65ec9fb2cac854c7a208c49f541d27cf}{getPatientCpf}}() == \textcolor{stringliteral}{"{}123.456.789-\/00"{}});}
+\DoxyCodeLine{73     assert(reserva-\/>\mbox{\hyperlink{classReservation_a0d6b16114db37e37dac95364e57b7a2b}{getMedication}}() == remedio);}
+\DoxyCodeLine{74     assert(reserva-\/>\mbox{\hyperlink{classReservation_a9c8c4f8f62d1c336ff433128b714c0d1}{getQuantity}}() == 2);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{77 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{funcional__tests_8h_a6812a65fed7a411822168f4867657dd9}\label{funcional__tests_8h_a6812a65fed7a411822168f4867657dd9}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!test\_system\_deletes@{test\_system\_deletes}}
+\index{test\_system\_deletes@{test\_system\_deletes}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{test\_system\_deletes()}{test\_system\_deletes()}}
+{\footnotesize\ttfamily void test\+\_\+system\+\_\+deletes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function prototype for the system entities safe deletions functional test. 
+
+Definition at line 79 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                            \{}
+\DoxyCodeLine{80     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}fulano@ufop.edu.br"{}}, \textcolor{stringliteral}{"{}senha123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{83     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Dr. Rey"{}}, \textcolor{stringliteral}{"{}987.654.321-\/11"{}}, \textcolor{stringliteral}{"{}rey@hospital.com"{}}, \textcolor{stringliteral}{"{}med123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{84     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}15/07/2026"{}}, \textcolor{stringliteral}{"{}14:30"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}});}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{comment}{// Remoção bem-\/sucedida}}
+\DoxyCodeLine{87     \textcolor{keywordtype}{bool} removidoComSucesso = sistema-\/>\mbox{\hyperlink{classSystem_a87a6bb892cce696ea300f66329ee80f4}{deleteAppointment}}(consulta);}
+\DoxyCodeLine{88     assert(removidoComSucesso == \textcolor{keyword}{true});}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{comment}{// Tentativa duplicada de remoção}}
+\DoxyCodeLine{91     \textcolor{keywordtype}{bool} removeDuplicado = sistema-\/>\mbox{\hyperlink{classSystem_a87a6bb892cce696ea300f66329ee80f4}{deleteAppointment}}(consulta);}
+\DoxyCodeLine{92     assert(removeDuplicado == \textcolor{keyword}{false});}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{comment}{// Remoção de usuário pelo identificador (CPF)}}
+\DoxyCodeLine{95     \textcolor{keywordtype}{bool} usuarioRemovido = sistema-\/>\mbox{\hyperlink{classSystem_ae0965fe409fe0b2666f9c69bb307f803}{deleteUser}}(\textcolor{stringliteral}{"{}123.456.789-\/00"{}});}
+\DoxyCodeLine{96     assert(usuarioRemovido == \textcolor{keyword}{true});}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{funcional__tests_8h_a534fd1ec5e3550a13e30df719c7ce814}\label{funcional__tests_8h_a534fd1ec5e3550a13e30df719c7ce814}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!test\_user\_management@{test\_user\_management}}
+\index{test\_user\_management@{test\_user\_management}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{test\_user\_management()}{test\_user\_management()}}
+{\footnotesize\ttfamily void test\+\_\+user\+\_\+management (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functional tests header. 
+
+Prototypes for the functional tests of the Agenda+. This file declares the test cases responsible for validating the lifecycle, resource allocation, and core entities like Users, Appointments, Medications, and Reservations.
+
+Function prototype for the user management functional test. 
+
+Definition at line 5 of file funcional\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                             \{}
+\DoxyCodeLine{6     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{7     assert(sistema != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9     \textcolor{comment}{// Teste Paciente}}
+\DoxyCodeLine{10     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}fulano@ufop.edu.br"{}}, \textcolor{stringliteral}{"{}senha123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{11     assert(paciente != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{12     assert(paciente-\/>\mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{getCpf}}() == \textcolor{stringliteral}{"{}123.456.789-\/00"{}});}
+\DoxyCodeLine{13     assert(paciente-\/>\mbox{\hyperlink{classUser_ab2484a8ad22bca122e320184c219beab}{isActive}}() == \textcolor{keyword}{true});}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{comment}{// Teste Médico}}
+\DoxyCodeLine{16     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Dr. Rey"{}}, \textcolor{stringliteral}{"{}987.654.321-\/11"{}}, \textcolor{stringliteral}{"{}rey@hospital.com"{}}, \textcolor{stringliteral}{"{}med123"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{17     assert(medico != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{18     assert(medico-\/>\mbox{\hyperlink{classUser_a7b663fb1d71ad5ffe07d6225657099b9}{getType}}() == \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}

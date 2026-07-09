@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['isactive_96',['isActive',['../classUser.html#ab2484a8ad22bca122e320184c219beab',1,'User::isActive()'],['../classUserBody.html#a52cec1c327b9509936cdb0111134d3ee',1,'UserBody::isActive()'],['../classUserHandle.html#a11490d48a745a0eb6415c518a17d2711',1,'UserHandle::isActive()']]]
+  ['handle_91',['Handle',['../classHandle.html',1,'Handle&lt; T &gt;'],['../classHandle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../classHandle.html#a47f0407d5732a702df4759c2fc4b18e6',1,'Handle::Handle(T *pImpl)'],['../classHandle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]],
+  ['handle_3c_20appointmentbody_20_3e_92',['Handle&lt; AppointmentBody &gt;',['../classHandle.html',1,'']]],
+  ['handle_3c_20medicationbody_20_3e_93',['Handle&lt; MedicationBody &gt;',['../classHandle.html',1,'']]],
+  ['handle_3c_20reservationbody_20_3e_94',['Handle&lt; ReservationBody &gt;',['../classHandle.html',1,'']]],
+  ['handle_3c_20systembody_20_3e_95',['Handle&lt; SystemBody &gt;',['../classHandle.html',1,'']]],
+  ['handle_3c_20userbody_20_3e_96',['Handle&lt; UserBody &gt;',['../classHandle.html',1,'']]],
+  ['handlebody_2eh_97',['handleBody.h',['../handleBody_8h.html',1,'']]]
 ];

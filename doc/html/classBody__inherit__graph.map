@@ -3,6 +3,6 @@
 <area shape="rect" id="node2" href="$classAppointmentBody.html" title="This class represents the concrete implementation of an Appointment." alt="" coords="5,80,144,107"/>
 <area shape="rect" id="node3" href="$classMedicationBody.html" title="Concrete implementation (Body) of the Medication class." alt="" coords="169,80,295,107"/>
 <area shape="rect" id="node4" href="$classReservationBody.html" title="This class represents the concrete implementation of a Reservation." alt="" coords="320,80,453,107"/>
-<area shape="rect" id="node5" href="$classSystemBody.html" title=" " alt="" coords="477,80,581,107"/>
+<area shape="rect" id="node5" href="$classSystemBody.html" title="This class represents the concrete implementation of a System." alt="" coords="477,80,581,107"/>
 <area shape="rect" id="node6" href="$classUserBody.html" title="This class represents the concrete implementation of a User." alt="" coords="605,80,691,107"/>
 </map>
