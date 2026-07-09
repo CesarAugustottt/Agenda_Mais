@@ -2,6 +2,11 @@
 \label{classSystemHandle}\index{SystemHandle@{SystemHandle}}
 
 
+This class represents the handle of a \mbox{\hyperlink{classSystem}{System}}.  
+
+
+
+
 {\ttfamily \#include $<$System\+Impl.\+h$>$}
 
 
@@ -28,40 +33,40 @@ Collaboration diagram for System\+Handle\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classSystemHandle_a89a4db1dc76231a95167a904fd0175c4}{System\+Handle}} ()
-\begin{DoxyCompactList}\small\item\em IMPLEMENTAÇÂO DO HANDLE. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classSystemHandle}{System\+Handle}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystemHandle_a0f32dc96ff8e68c2b5ab3497a20f8169}{$\sim$\+System\+Handle}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classSystemHandle}{System\+Handle}} Class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classSystemHandle_aaad933a599d489a3e75c8d9a0ebea244}{create\+User}} (const std\+::string \&name, const std\+::string \&cpf, const std\+::string \&email, const std\+::string \&password, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} type) override
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual method to create and register a \mbox{\hyperlink{classUser}{User}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ \mbox{\hyperlink{classSystemHandle_a2eb0a670640aa2f903853b0e046b4c12}{create\+Appointment}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient, \mbox{\hyperlink{classUser}{User}} $\ast$doctor, const std\+::string \&date, const std\+::string \&time, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp) override
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual method to create and register an \mbox{\hyperlink{classAppointment}{Appointment}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMedication}{Medication}} $\ast$ \mbox{\hyperlink{classSystemHandle_a7aaf2c210bc7cac3d9b3050f44b58a48}{create\+Medication}} (const std\+::string \&name, int quantity, bool requires\+Prescription) override
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual method to create and register a \mbox{\hyperlink{classMedication}{Medication}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ \mbox{\hyperlink{classSystemHandle_afc4e81d8a8b6686e3ac07985db18e8fa}{create\+Reservation}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path) override
-\item 
+\begin{DoxyCompactList}\small\item\em Pure virtual method to create and register a \mbox{\hyperlink{classReservation}{Reservation}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_ad4c20398b9d6ce05998e4a2a0b047cec}{add\+User}} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classUser}{User}} pointer to the system database. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_a1bcb1d2c38fb7b0a2d5cc2f427555431}{add\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment) override
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classAppointment}{Appointment}} pointer to the system database. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_a68548f81f75056852da70ad2ec0ba2fb}{add\+Medication}} (\mbox{\hyperlink{classMedication}{Medication}} $\ast$medication) override
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classMedication}{Medication}} pointer to the system database. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_a7a58990321c8ac0d4fd00f169b6b5d59}{add\+Reservation}} (\mbox{\hyperlink{classReservation}{Reservation}} $\ast$reservation) override
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classReservation}{Reservation}} pointer to the system database. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystemHandle_ac41852d3bacaad9d7a4589819ca07c4b}{delete\+User}} (const std\+::string \&cpf) override
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes a \mbox{\hyperlink{classUser}{User}} from the system database by its unique cpf identifier. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystemHandle_a1f0143fc8e1cd9b163594889044e09d4}{delete\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment) override
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes a specific \mbox{\hyperlink{classAppointment}{Appointment}} pointer from the system database. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystemHandle_a1dcc8aea867970304e74ef8b706c503c}{delete\+Medication}} (const std\+::string \&name) override
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes a \mbox{\hyperlink{classMedication}{Medication}} from the system database by its unique name identifier. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystemHandle_a778ba2b31b1326221d857bbde86b6b56}{delete\+Reservation}} (\mbox{\hyperlink{classReservation}{Reservation}} $\ast$reservation) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Deletes a specific \mbox{\hyperlink{classReservation}{Reservation}} pointer from the system database. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+This class represents the handle of a \mbox{\hyperlink{classSystem}{System}}. 
 
-
-Definition at line 36 of file System\+Impl.\+h.
+Definition at line 56 of file System\+Impl.\+h.
 
 
 
@@ -74,9 +79,9 @@ Definition at line 36 of file System\+Impl.\+h.
 
 
 
+This is the default constructor for the \mbox{\hyperlink{classSystemHandle}{System\+Handle}} Class. 
+
 IMPLEMENTAÇÂO DO HANDLE. 
-
-
 
 Definition at line 115 of file System\+Impl.\+cpp.
 
@@ -90,6 +95,10 @@ Definition at line 115 of file System\+Impl.\+cpp.
 \index{````~SystemHandle@{$\sim$SystemHandle}!SystemHandle@{SystemHandle}}
 \doxysubsubsection{\texorpdfstring{$\sim$SystemHandle()}{~SystemHandle()}}
 {\footnotesize\ttfamily System\+Handle\+::$\sim$\+System\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the default destructor for the \mbox{\hyperlink{classSystemHandle}{System\+Handle}} Class. 
 
 
 
@@ -111,6 +120,18 @@ Definition at line 116 of file System\+Impl.\+cpp.
 
 
 
+Adds an existing \mbox{\hyperlink{classAppointment}{Appointment}} pointer to the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em appointment} & pointer to be added. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_a3817edefe341b2f00a24d642b0d01f80}{System}}.
 
 
@@ -129,6 +150,18 @@ Definition at line 135 of file System\+Impl.\+cpp.
 {\footnotesize\ttfamily void System\+Handle\+::add\+Medication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Adds an existing \mbox{\hyperlink{classMedication}{Medication}} pointer to the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em medication} & pointer to be added. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classSystem_ae48b0e4e46b78217685486ec55d13291}{System}}.
 
@@ -149,6 +182,18 @@ Definition at line 136 of file System\+Impl.\+cpp.
 
 
 
+Adds an existing \mbox{\hyperlink{classReservation}{Reservation}} pointer to the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em reservation} & pointer to be added. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_ab25a8e01f855642a8b32715b3d54c9d8}{System}}.
 
 
@@ -168,6 +213,18 @@ Definition at line 137 of file System\+Impl.\+cpp.
 
 
 
+Adds an existing \mbox{\hyperlink{classUser}{User}} pointer to the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em user} & pointer to be added. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_a0c199f1f954c599953a1698709a5220d}{System}}.
 
 
@@ -186,6 +243,46 @@ Definition at line 134 of file System\+Impl.\+cpp.
 {\footnotesize\ttfamily \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ System\+Handle\+::create\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{patient,  }\item[{\mbox{\hyperlink{classUser}{User}} $\ast$}]{doctor,  }\item[{const std\+::string \&}]{date,  }\item[{const std\+::string \&}]{time,  }\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{esp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Pure virtual method to create and register an \mbox{\hyperlink{classAppointment}{Appointment}}. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em patient} & the patient pointer from the appointment.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em doctor} & the doctor pointer from the appointment.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em date} & the date of the appointment.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the appointment.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em esp} & the type of specialty for the appointment.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+Appointment$\ast$ -\/ pointer to the created \mbox{\hyperlink{classAppointment}{Appointment}}. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{System}}.
 
@@ -208,6 +305,34 @@ Definition at line 122 of file System\+Impl.\+cpp.
 
 
 
+Pure virtual method to create and register a \mbox{\hyperlink{classMedication}{Medication}}. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the medication.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em quantity} & initial quantity in stock.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em requires\+Prescription} & flag indicating if a prescription is needed.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+Medication$\ast$ -\/ pointer to the created \mbox{\hyperlink{classMedication}{Medication}}. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{System}}.
 
 
@@ -228,6 +353,40 @@ Definition at line 126 of file System\+Impl.\+cpp.
 {\footnotesize\ttfamily \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ System\+Handle\+::create\+Reservation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{patient\+Cpf,  }\item[{\mbox{\hyperlink{classMedication}{Medication}} $\ast$}]{medication,  }\item[{int}]{quantity,  }\item[{const std\+::string \&}]{prescription\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Pure virtual method to create and register a \mbox{\hyperlink{classReservation}{Reservation}}. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em patient\+Cpf} & the cpf of the patient making the reservation.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em medication} & the pointer to the medication object.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em quantity} & the amount of units requested.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em prescription\+Path} & the path string for the attached prescription document.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+Reservation$\ast$ -\/ pointer to the created \mbox{\hyperlink{classReservation}{Reservation}}. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{System}}.
 
@@ -250,6 +409,46 @@ Definition at line 130 of file System\+Impl.\+cpp.
 
 
 
+Pure virtual method to create and register a \mbox{\hyperlink{classUser}{User}}. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the \mbox{\hyperlink{classUser}{User}}.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em cpf} & the cpf of the \mbox{\hyperlink{classUser}{User}}.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em email} & the email of the \mbox{\hyperlink{classUser}{User}}.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em password} & the password of the \mbox{\hyperlink{classUser}{User}}.\\
+\hline
+\end{DoxyParams}
+
+\item 
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of the \mbox{\hyperlink{classUser}{User}}.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+User$\ast$ -\/ pointer to the created \mbox{\hyperlink{classUser}{User}}. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{System}}.
 
 
@@ -271,6 +470,22 @@ Definition at line 118 of file System\+Impl.\+cpp.
 
 
 
+Deletes a specific \mbox{\hyperlink{classAppointment}{Appointment}} pointer from the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em appointment} & pointer to the target appointment.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+bool -\/ true if successfully deleted, false otherwise. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_a87a6bb892cce696ea300f66329ee80f4}{System}}.
 
 
@@ -289,6 +504,22 @@ Definition at line 140 of file System\+Impl.\+cpp.
 {\footnotesize\ttfamily bool System\+Handle\+::delete\+Medication (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Deletes a \mbox{\hyperlink{classMedication}{Medication}} from the system database by its unique name identifier. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em name} & the identifier of the target medication.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+bool -\/ true if successfully deleted, false otherwise. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classSystem_af4d87bef330021d2f71403daaae53200}{System}}.
 
@@ -309,6 +540,22 @@ Definition at line 141 of file System\+Impl.\+cpp.
 
 
 
+Deletes a specific \mbox{\hyperlink{classReservation}{Reservation}} pointer from the system database. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em reservation} & pointer to the target reservation.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+bool -\/ true if successfully deleted, false otherwise. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
 Implements \mbox{\hyperlink{classSystem_a2139da6135b6de3f6c9fd26e8cf622a9}{System}}.
 
 
@@ -327,6 +574,22 @@ Definition at line 142 of file System\+Impl.\+cpp.
 {\footnotesize\ttfamily bool System\+Handle\+::delete\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Deletes a \mbox{\hyperlink{classUser}{User}} from the system database by its unique cpf identifier. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em cpf} & the identifier of the target user.\\
+\hline
+\end{DoxyParams}
+
+\item \begin{DoxyReturn}{Returns}
+bool -\/ true if successfully deleted, false otherwise. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{classSystem_ae0965fe409fe0b2666f9c69bb307f803}{System}}.
 

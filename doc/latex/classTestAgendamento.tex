@@ -1,0 +1,125 @@
+\hypertarget{classTestAgendamento}{}\doxysection{Test\+Agendamento Class Reference}
+\label{classTestAgendamento}\index{TestAgendamento@{TestAgendamento}}
+
+
+{\ttfamily \#include $<$test\+Agendamento.\+h$>$}
+
+
+
+Inheritance diagram for Test\+Agendamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTestAgendamento__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Test\+Agendamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classTestAgendamento__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTestAgendamento_af8636100f2b5e1f7d07b81fbeed32156}{test\+Fluxo\+Agendamento\+Completo}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file test\+Agendamento.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestAgendamento_af8636100f2b5e1f7d07b81fbeed32156}\label{classTestAgendamento_af8636100f2b5e1f7d07b81fbeed32156}} 
+\index{TestAgendamento@{TestAgendamento}!testFluxoAgendamentoCompleto@{testFluxoAgendamentoCompleto}}
+\index{testFluxoAgendamentoCompleto@{testFluxoAgendamentoCompleto}!TestAgendamento@{TestAgendamento}}
+\doxysubsubsection{\texorpdfstring{testFluxoAgendamentoCompleto}{testFluxoAgendamentoCompleto}}
+{\footnotesize\ttfamily void Test\+Agendamento\+::test\+Fluxo\+Agendamento\+Completo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 5 of file test\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                                                    \{}
+\DoxyCodeLine{6     \textcolor{comment}{//TESTANDO A TELA DE ESPECIALIDADE}}
+\DoxyCodeLine{7     \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}} telaEsp;}
+\DoxyCodeLine{8     telaEsp.show();}
+\DoxyCodeLine{9     QVERIFY(telaEsp.isVisible()); \textcolor{comment}{//valida se abriu}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     QTest::qWait(1500);\textcolor{comment}{//congela a tela por 1.5s}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{comment}{// Buscando o botão de Dentista na interface (1° botao)}}
+\DoxyCodeLine{14     \textcolor{comment}{//QPushButton* btnDentista = telaEsp.findChild<QPushButton*>();}}
+\DoxyCodeLine{15     }
+\DoxyCodeLine{16     \textcolor{comment}{//lista de botaoes}}
+\DoxyCodeLine{17     QList<QPushButton*> botoes = telaEsp.findChildren<QPushButton*>();}
+\DoxyCodeLine{18     QPushButton* btnAlvo = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{19     \textcolor{keywordflow}{for} (QPushButton* btn : botoes) \{ \textcolor{comment}{//buscar botao dentista}}
+\DoxyCodeLine{20         \textcolor{keywordflow}{if} (btn-\/>text() == \textcolor{stringliteral}{"{}Dentista"{}}) \{}
+\DoxyCodeLine{21             btnAlvo = btn;}
+\DoxyCodeLine{22             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23         \}}
+\DoxyCodeLine{24     \}}
+\DoxyCodeLine{25     }
+\DoxyCodeLine{26     \textcolor{comment}{//verificar se existe o botao de dentista}}
+\DoxyCodeLine{27     QVERIFY2(btnAlvo != \textcolor{keyword}{nullptr}, \textcolor{stringliteral}{"{}Botão Dentista não foi encontrado na tela."{}});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{// Simula o clique do usuário no botão de Dentista}}
+\DoxyCodeLine{30     QTest::mouseClick(btnAlvo, Qt::LeftButton);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{comment}{//TESTANDO A PROXIMA TELA (Data e Hora)}}
+\DoxyCodeLine{33     \textcolor{comment}{// Vamos instanciar diretamente para testar os componentes internos}}
+\DoxyCodeLine{34     \mbox{\hyperlink{classTelaDataHora}{TelaDataHora}} telaDataHora(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}});}
+\DoxyCodeLine{35     telaDataHora.show();}
+\DoxyCodeLine{36     QVERIFY(telaDataHora.isVisible()); \textcolor{comment}{//valida se abriu}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     QTest::qWait(1500);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{comment}{// Localizando o calendário e os botões de hora}}
+\DoxyCodeLine{41     QCalendarWidget* calendario = telaDataHora.findChild<QCalendarWidget*>();}
+\DoxyCodeLine{42     QVERIFY(calendario != \textcolor{keyword}{nullptr}); \textcolor{comment}{//valida se tem o calendario}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     QList<QPushButton*> botoesHora = telaDataHora.findChildren<QPushButton*>();}
+\DoxyCodeLine{45     QPushButton* btnHora = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{46     \textcolor{keywordflow}{for} (QPushButton* btn : botoesHora) \{ \textcolor{comment}{//buscar botão de 13h30}}
+\DoxyCodeLine{47         \textcolor{keywordflow}{if} (btn-\/>text() == \textcolor{stringliteral}{"{}13:30"{}}) \{}
+\DoxyCodeLine{48             btnHora = btn;}
+\DoxyCodeLine{49             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51     \}}
+\DoxyCodeLine{52     QVERIFY2(btnHora != \textcolor{keyword}{nullptr}, \textcolor{stringliteral}{"{}Botão de horário 13:30 não foi encontrado."{}});}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{comment}{// agendar um fechamento automático dele em 1 segundo para o teste não travar no vídeo!}}
+\DoxyCodeLine{55     QTimer::singleShot(1000, []() \{}
+\DoxyCodeLine{56         QWidget* activeModal = QApplication::activeModalWidget();}
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (activeModal) \{}
+\DoxyCodeLine{58             activeModal-\/>close(); \textcolor{comment}{//fechar tela de mensagem apos ok}}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60     \});}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{comment}{// Simular o clique no horário para disparar a função "{}processarAgendamento"{}}}
+\DoxyCodeLine{63     QTest::mouseClick(btnHora, Qt::LeftButton);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{comment}{// Verifica se a tela fechou após o agendamento concluído}}
+\DoxyCodeLine{66     QTest::qWait(1500); \textcolor{comment}{// Aguarda o modal sumir}}
+\DoxyCodeLine{67     QVERIFY(!telaDataHora.isVisible());}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+test/funcional/\mbox{\hyperlink{testAgendamento_8h}{test\+Agendamento.\+h}}\item 
+test/funcional/\mbox{\hyperlink{testAgendamento_8cpp}{test\+Agendamento.\+cpp}}\end{DoxyCompactItemize}

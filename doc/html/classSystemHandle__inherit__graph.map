@@ -1,5 +1,5 @@
 <map id="SystemHandle" name="SystemHandle">
-<area shape="rect" id="node1" title=" " alt="" coords="57,80,174,107"/>
-<area shape="rect" id="node2" href="$classSystem.html" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node1" title="This class represents the handle of a System." alt="" coords="57,80,174,107"/>
+<area shape="rect" id="node2" href="$classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="5,5,76,32"/>
 <area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="100,5,280,32"/>
 </map>
