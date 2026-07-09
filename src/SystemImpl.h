@@ -5,15 +5,31 @@
 #include "handleBody.h"
 #include <vector>
 
+/*!
+ * @class SystemBody
+ * @brief This class represents the concrete implementation of a System.
+ */
 class SystemBody : public Body {
 protected:
+    /*! This attribute contains the vector list of all system users. */
     std::vector<User*> users;
+    /*! This attribute contains the vector list of all medical appointments. */
     std::vector<Appointment*> appointments;
+    /*! This attribute contains the vector list of all stocked medications. */
     std::vector<Medication*> medications;
+    /*! This attribute contains the vector list of all pending and approved reservations. */
     std::vector<Reservation*> reservations;
 
 public:
+    // construtores e destrutor
+    /*!
+     * @brief This is the default constructor for the SystemBody Class.
+     */
     SystemBody() {}
+
+    /*!
+     * @brief This is the default destructor for the SystemBody Class.
+     */
     virtual ~SystemBody();
 
     // Métodos do ciclo de vida
@@ -33,9 +49,21 @@ public:
     bool deleteReservation(Reservation* reservation);
 };
 
+/*!
+ * @class SystemHandle
+ * @brief This class represents the handle of a System.
+ */
 class SystemHandle : public System, public Handle<SystemBody> {
 public:
+    // construtores e destrutor
+    /*!
+     * @brief This is the default constructor for the SystemHandle Class.
+     */
     SystemHandle();
+
+    /*!
+     * @brief This is the default destructor for the SystemHandle Class.
+     */
     virtual ~SystemHandle();
 
     User* createUser(const std::string& name, const std::string& cpf, const std::string& email, const std::string& password, UserType type) override;
