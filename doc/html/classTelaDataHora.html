@@ -94,8 +94,8 @@ Collaboration diagram for TelaDataHora:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a67cd624356e120df6ee524eea1e9cca1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaDataHora.html#a67cd624356e120df6ee524eea1e9cca1">TelaDataHora</a> (QWidget *parent=nullptr, <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a> esp=<a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a>)</td></tr>
-<tr class="separator:a67cd624356e120df6ee524eea1e9cca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534794453f0e6eb519e8ad29807fd48a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaDataHora.html#a534794453f0e6eb519e8ad29807fd48a">TelaDataHora</a> (QWidget *parent=nullptr, <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a> esp=<a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a>, <a class="el" href="classSystem.html">System</a> *sys=nullptr)</td></tr>
+<tr class="separator:a534794453f0e6eb519e8ad29807fd48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d93bd3d99090b9c39037e5b01db957d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaDataHora.html#a7d93bd3d99090b9c39037e5b01db957d">~TelaDataHora</a> ()</td></tr>
 <tr class="separator:a7d93bd3d99090b9c39037e5b01db957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,10 +135,10 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00010">10</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00012">12</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a67cd624356e120df6ee524eea1e9cca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67cd624356e120df6ee524eea1e9cca1">&#9670;&nbsp;</a></span>TelaDataHora()</h2>
+<a id="a534794453f0e6eb519e8ad29807fd48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534794453f0e6eb519e8ad29807fd48a">&#9670;&nbsp;</a></span>TelaDataHora()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +156,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a>&#160;</td>
-          <td class="paramname"><em>esp</em> = <code><a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a></code>&#160;</td>
+          <td class="paramname"><em>esp</em> = <code><a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>sys</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,51 +177,51 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00007">7</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : QWidget(parent), <a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a>(esp) </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;resize(360, 640);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Data&quot;</span>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a> = <span class="keyword">new</span> QVBoxLayout(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a> = <span class="keyword">new</span> QCalendarWidget(<span class="keyword">this</span>); <span class="comment">//calendario</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>-&gt;setMinimumDate(QDate::currentDate()); <span class="comment">//bloqueia dias q ja passaram</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;13:30&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;14:00&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;14:30&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;15:00&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>   = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Voltar&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//adiciona botões ao layout</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//conecta clique ao slot</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a71984cb2c00676ace00d3125a1c7a16a">TelaDataHora::on_btnHora1330_clicked</a>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a09c58db6b2e113e4b6c596ba53c5852c">TelaDataHora::on_btnHora1400_clicked</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a0eaf0c7c5083490c486770ffeb72d9e9">TelaDataHora::on_btnHora1430_clicked</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a5ce168d0cbe18250a16b4b48901414e1">TelaDataHora::on_btnHora1500_clicked</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>,   &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a73e0a5109bcb113ead5f7d059e3b9975">TelaDataHora::on_btnVoltar_clicked</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="ttc" id="aclassTelaDataHora_html_a0366d3fb28ace9603457a101a45a9e1d"><div class="ttname"><a href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">TelaDataHora::btnHora1400</a></div><div class="ttdeci">QPushButton * btnHora1400</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00031">TelaDataHora.h:31</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a096d3136df377ebf289cbc131c277e98"><div class="ttname"><a href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">TelaDataHora::layoutPrincipal</a></div><div class="ttdeci">QVBoxLayout * layoutPrincipal</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00028">TelaDataHora.h:28</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a09c58db6b2e113e4b6c596ba53c5852c"><div class="ttname"><a href="classTelaDataHora.html#a09c58db6b2e113e4b6c596ba53c5852c">TelaDataHora::on_btnHora1400_clicked</a></div><div class="ttdeci">void on_btnHora1400_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00082">TelaDataHora.cpp:82</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a0eaf0c7c5083490c486770ffeb72d9e9"><div class="ttname"><a href="classTelaDataHora.html#a0eaf0c7c5083490c486770ffeb72d9e9">TelaDataHora::on_btnHora1430_clicked</a></div><div class="ttdeci">void on_btnHora1430_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00088">TelaDataHora.cpp:88</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a3af255135b50c32db2fc9c4a96e7bb49"><div class="ttname"><a href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">TelaDataHora::calendarioWidget</a></div><div class="ttdeci">QCalendarWidget * calendarioWidget</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00029">TelaDataHora.h:29</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a50c3a4acac5197e23dd732248e4b7d84"><div class="ttname"><a href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">TelaDataHora::btnHora1330</a></div><div class="ttdeci">QPushButton * btnHora1330</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00030">TelaDataHora.h:30</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a5ce168d0cbe18250a16b4b48901414e1"><div class="ttname"><a href="classTelaDataHora.html#a5ce168d0cbe18250a16b4b48901414e1">TelaDataHora::on_btnHora1500_clicked</a></div><div class="ttdeci">void on_btnHora1500_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00094">TelaDataHora.cpp:94</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a6c96b6b4a0cc80c953f3bf7aaeb0759f"><div class="ttname"><a href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">TelaDataHora::espSelecionada</a></div><div class="ttdeci">Specialty espSelecionada</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00026">TelaDataHora.h:26</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a71984cb2c00676ace00d3125a1c7a16a"><div class="ttname"><a href="classTelaDataHora.html#a71984cb2c00676ace00d3125a1c7a16a">TelaDataHora::on_btnHora1330_clicked</a></div><div class="ttdeci">void on_btnHora1330_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00074">TelaDataHora.cpp:74</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a73e0a5109bcb113ead5f7d059e3b9975"><div class="ttname"><a href="classTelaDataHora.html#a73e0a5109bcb113ead5f7d059e3b9975">TelaDataHora::on_btnVoltar_clicked</a></div><div class="ttdeci">void on_btnVoltar_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00100">TelaDataHora.cpp:100</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a85692b05f204066fe0755eba05a4d297"><div class="ttname"><a href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">TelaDataHora::btnHora1430</a></div><div class="ttdeci">QPushButton * btnHora1430</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00032">TelaDataHora.h:32</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_a9fa44df4eb3ab387e7a0d3fcc91beb22"><div class="ttname"><a href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">TelaDataHora::btnHora1500</a></div><div class="ttdeci">QPushButton * btnHora1500</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00033">TelaDataHora.h:33</a></div></div>
-<div class="ttc" id="aclassTelaDataHora_html_abd5b9b60f82998b46aeaab5c758eb1e7"><div class="ttname"><a href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">TelaDataHora::btnVoltar</a></div><div class="ttdeci">QPushButton * btnVoltar</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00034">TelaDataHora.h:34</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00006">6</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    : QWidget(parent), <a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a>(esp) </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;resize(360, 640);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Data&quot;</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a> = <span class="keyword">new</span> QVBoxLayout(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a> = <span class="keyword">new</span> QCalendarWidget(<span class="keyword">this</span>); <span class="comment">//calendario</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>-&gt;setMinimumDate(QDate::currentDate()); <span class="comment">//bloqueia dias q ja passaram</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;13:30&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;14:00&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;14:30&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;15:00&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>   = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Voltar&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//adiciona botões ao layout</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">layoutPrincipal</a>-&gt;addWidget(<a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//conecta clique ao slot</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">btnHora1330</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a71984cb2c00676ace00d3125a1c7a16a">TelaDataHora::on_btnHora1330_clicked</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">btnHora1400</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a09c58db6b2e113e4b6c596ba53c5852c">TelaDataHora::on_btnHora1400_clicked</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">btnHora1430</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a0eaf0c7c5083490c486770ffeb72d9e9">TelaDataHora::on_btnHora1430_clicked</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">btnHora1500</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a5ce168d0cbe18250a16b4b48901414e1">TelaDataHora::on_btnHora1500_clicked</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    connect(<a class="code" href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">btnVoltar</a>,   &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaDataHora.html#a73e0a5109bcb113ead5f7d059e3b9975">TelaDataHora::on_btnVoltar_clicked</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="ttc" id="aclassTelaDataHora_html_a0366d3fb28ace9603457a101a45a9e1d"><div class="ttname"><a href="classTelaDataHora.html#a0366d3fb28ace9603457a101a45a9e1d">TelaDataHora::btnHora1400</a></div><div class="ttdeci">QPushButton * btnHora1400</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00033">TelaDataHora.h:33</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a096d3136df377ebf289cbc131c277e98"><div class="ttname"><a href="classTelaDataHora.html#a096d3136df377ebf289cbc131c277e98">TelaDataHora::layoutPrincipal</a></div><div class="ttdeci">QVBoxLayout * layoutPrincipal</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00030">TelaDataHora.h:30</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a09c58db6b2e113e4b6c596ba53c5852c"><div class="ttname"><a href="classTelaDataHora.html#a09c58db6b2e113e4b6c596ba53c5852c">TelaDataHora::on_btnHora1400_clicked</a></div><div class="ttdeci">void on_btnHora1400_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00080">TelaDataHora.cpp:80</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a0eaf0c7c5083490c486770ffeb72d9e9"><div class="ttname"><a href="classTelaDataHora.html#a0eaf0c7c5083490c486770ffeb72d9e9">TelaDataHora::on_btnHora1430_clicked</a></div><div class="ttdeci">void on_btnHora1430_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00086">TelaDataHora.cpp:86</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a3af255135b50c32db2fc9c4a96e7bb49"><div class="ttname"><a href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">TelaDataHora::calendarioWidget</a></div><div class="ttdeci">QCalendarWidget * calendarioWidget</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00031">TelaDataHora.h:31</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a50c3a4acac5197e23dd732248e4b7d84"><div class="ttname"><a href="classTelaDataHora.html#a50c3a4acac5197e23dd732248e4b7d84">TelaDataHora::btnHora1330</a></div><div class="ttdeci">QPushButton * btnHora1330</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00032">TelaDataHora.h:32</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a5ce168d0cbe18250a16b4b48901414e1"><div class="ttname"><a href="classTelaDataHora.html#a5ce168d0cbe18250a16b4b48901414e1">TelaDataHora::on_btnHora1500_clicked</a></div><div class="ttdeci">void on_btnHora1500_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00092">TelaDataHora.cpp:92</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a6c96b6b4a0cc80c953f3bf7aaeb0759f"><div class="ttname"><a href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">TelaDataHora::espSelecionada</a></div><div class="ttdeci">Specialty espSelecionada</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00028">TelaDataHora.h:28</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a71984cb2c00676ace00d3125a1c7a16a"><div class="ttname"><a href="classTelaDataHora.html#a71984cb2c00676ace00d3125a1c7a16a">TelaDataHora::on_btnHora1330_clicked</a></div><div class="ttdeci">void on_btnHora1330_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00073">TelaDataHora.cpp:73</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a73e0a5109bcb113ead5f7d059e3b9975"><div class="ttname"><a href="classTelaDataHora.html#a73e0a5109bcb113ead5f7d059e3b9975">TelaDataHora::on_btnVoltar_clicked</a></div><div class="ttdeci">void on_btnVoltar_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00099">TelaDataHora.cpp:99</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a85692b05f204066fe0755eba05a4d297"><div class="ttname"><a href="classTelaDataHora.html#a85692b05f204066fe0755eba05a4d297">TelaDataHora::btnHora1430</a></div><div class="ttdeci">QPushButton * btnHora1430</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00034">TelaDataHora.h:34</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_a9fa44df4eb3ab387e7a0d3fcc91beb22"><div class="ttname"><a href="classTelaDataHora.html#a9fa44df4eb3ab387e7a0d3fcc91beb22">TelaDataHora::btnHora1500</a></div><div class="ttdeci">QPushButton * btnHora1500</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00035">TelaDataHora.h:35</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_abd5b9b60f82998b46aeaab5c758eb1e7"><div class="ttname"><a href="classTelaDataHora.html#abd5b9b60f82998b46aeaab5c758eb1e7">TelaDataHora::btnVoltar</a></div><div class="ttdeci">QPushButton * btnVoltar</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8h_source.html#l00036">TelaDataHora.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,8 +240,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00040">40</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00039">39</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,17 +269,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00074">74</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                          { </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 👈 CORRIGIDO: Passando os 5 parâmetros exigidos pelo seu UserHandle</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = <span class="keyword">new</span> <a class="code" href="classUserHandle.html">UserHandle</a>(<span class="stringliteral">&quot;Paciente&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;13:30&quot;</span>, usuarioFicticio); </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">delete</span> usuarioFicticio; <span class="comment">// Deleta após o processamento para não vazar memória</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00073">73</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                          { </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classSystem.html">System</a>* sistema = <a class="code" href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = sistema-&gt;<a class="code" href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">createUser</a>(<span class="stringliteral">&quot;Paciente Teste&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;13:30&quot;</span>, usuarioFicticio); </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="ttc" id="aUser_8h_html_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b"><div class="ttname"><a href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a></div><div class="ttdeci">@ PATIENT</div></div>
-<div class="ttc" id="aclassTelaDataHora_html_ab01a05c40a81879dbaedcd06f04ef687"><div class="ttname"><a href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">TelaDataHora::processarAgendamento</a></div><div class="ttdeci">void processarAgendamento(const std::string &amp;horario, User *patient)</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00042">TelaDataHora.cpp:42</a></div></div>
-<div class="ttc" id="aclassUserHandle_html"><div class="ttname"><a href="classUserHandle.html">UserHandle</a></div><div class="ttdoc">This class represents the handle of a User.</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8h_source.html#l00061">UserImpl.h:61</a></div></div>
+<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">This class represents the interface of a System as implemented in this code.</div><div class="ttdef"><b>Definition:</b> <a href="System_8h_source.html#l00014">System.h:14</a></div></div>
+<div class="ttc" id="aclassSystem_html_aa52d35ae271bda96cf8b0f7377d78eb5"><div class="ttname"><a href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">System::createUser</a></div><div class="ttdeci">virtual User * createUser(const std::string &amp;name, const std::string &amp;cpf, const std::string &amp;email, const std::string &amp;password, UserType type)=0</div><div class="ttdoc">Pure virtual method to create and register a User.</div></div>
+<div class="ttc" id="aclassSystem_html_adafab6f86fb79b5f6bc97203130fc481"><div class="ttname"><a href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a></div><div class="ttdeci">static System * createSystem()</div><div class="ttdoc">Static factory method for creating a global system instance.</div><div class="ttdef"><b>Definition:</b> <a href="SystemImpl_8cpp_source.html#l00019">SystemImpl.cpp:19</a></div></div>
+<div class="ttc" id="aclassTelaDataHora_html_ab01a05c40a81879dbaedcd06f04ef687"><div class="ttname"><a href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">TelaDataHora::processarAgendamento</a></div><div class="ttdeci">void processarAgendamento(const std::string &amp;horario, User *patient)</div><div class="ttdef"><b>Definition:</b> <a href="TelaDataHora_8cpp_source.html#l00041">TelaDataHora.cpp:41</a></div></div>
 <div class="ttc" id="aclassUser_html"><div class="ttname"><a href="classUser.html">User</a></div><div class="ttdoc">This class represents the interface of a User as implemented in this code.</div><div class="ttdef"><b>Definition:</b> <a href="User_8h_source.html#l00020">User.h:20</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -301,12 +308,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00082">82</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                          { </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = <span class="keyword">new</span> <a class="code" href="classUserHandle.html">UserHandle</a>(<span class="stringliteral">&quot;Paciente&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;14:00&quot;</span>, usuarioFicticio); </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">delete</span> usuarioFicticio;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00080">80</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                          { </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classSystem.html">System</a>* sistema = <a class="code" href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = sistema-&gt;<a class="code" href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">createUser</a>(<span class="stringliteral">&quot;Paciente Teste&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;14:00&quot;</span>, usuarioFicticio); </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -333,12 +340,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00088">88</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                          { </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = <span class="keyword">new</span> <a class="code" href="classUserHandle.html">UserHandle</a>(<span class="stringliteral">&quot;Paciente&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;14:30&quot;</span>, usuarioFicticio); </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">delete</span> usuarioFicticio;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00086">86</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                          { </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classSystem.html">System</a>* sistema = <a class="code" href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = sistema-&gt;<a class="code" href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">createUser</a>(<span class="stringliteral">&quot;Paciente Teste&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;14:30&quot;</span>, usuarioFicticio); </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,12 +372,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00094">94</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                          { </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = <span class="keyword">new</span> <a class="code" href="classUserHandle.html">UserHandle</a>(<span class="stringliteral">&quot;Paciente&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;15:00&quot;</span>, usuarioFicticio); </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">delete</span> usuarioFicticio;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00092">92</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                          { </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classSystem.html">System</a>* sistema = <a class="code" href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classUser.html">User</a>* usuarioFicticio = sistema-&gt;<a class="code" href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">createUser</a>(<span class="stringliteral">&quot;Paciente Teste&quot;</span>, <span class="stringliteral">&quot;111.111.111-11&quot;</span>, <span class="stringliteral">&quot;paciente@teste.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b">UserType::PATIENT</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classTelaDataHora.html#ab01a05c40a81879dbaedcd06f04ef687">processarAgendamento</a>(<span class="stringliteral">&quot;15:00&quot;</span>, usuarioFicticio); </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,13 +404,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00100">100</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classTelaEspecialidade.html">TelaEspecialidade</a> *tela = <span class="keyword">new</span> <a class="code" href="classTelaEspecialidade.html">TelaEspecialidade</a>(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    tela-&gt;setAttribute(Qt::WA_DeleteOnClose);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    tela-&gt;show();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    this-&gt;close();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00099">99</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classTelaEspecialidade.html">TelaEspecialidade</a> *tela = <span class="keyword">new</span> <a class="code" href="classTelaEspecialidade.html">TelaEspecialidade</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    tela-&gt;setAttribute(Qt::WA_DeleteOnClose);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    tela-&gt;show();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    this-&gt;close();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="aclassTelaEspecialidade_html"><div class="ttname"><a href="classTelaEspecialidade.html">TelaEspecialidade</a></div><div class="ttdef"><b>Definition:</b> <a href="TelaEspecialidade_8h_source.html#l00009">TelaEspecialidade.h:9</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -442,39 +449,38 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00042">42</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string dataStr = <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>-&gt;selectedDate().toString(<span class="stringliteral">&quot;dd/MM/yyyy&quot;</span>).toStdString();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string nomeMedico = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Dentista)&quot;</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b">Specialty::NEUROLOGIST</a>) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Neurologista)&quot;</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1">Specialty::PSYCHOLOGIST</a>) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Psicologo)&quot;</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773">Specialty::CARDIOLOGIST</a>) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Cadiologista)&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e">Specialty::NUTRITIONIST</a>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Nutricionista)&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9">Specialty::DERMATOLOGIST</a>) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Dermatologista)&quot;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classUser.html">User</a>* doctor = <span class="keyword">new</span> <a class="code" href="classUserHandle.html">UserHandle</a>(nomeMedico, <span class="stringliteral">&quot;000.000.000-00&quot;</span>, <span class="stringliteral">&quot;doctor@agendamais.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1">UserType::DOCTOR</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Criando o objeto com a assinatura correta de 6 parâmetros</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classAppointment.html">Appointment</a>* novoAgendamento = <span class="keyword">new</span> <a class="code" href="classAppointmentHandle.html">AppointmentHandle</a>(</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        patient, doctor, dataStr, horario, <a class="code" href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">Status::PENDING</a>, <a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QString msg = QString::fromStdString(<span class="stringliteral">&quot;Consulta Solicitada!\n\nCom: &quot;</span> + nomeMedico + <span class="stringliteral">&quot;\nData: &quot;</span> + dataStr + <span class="stringliteral">&quot;\nHora: &quot;</span> + horario);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Sucesso&quot;</span>, msg);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">delete</span> novoAgendamento;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    this-&gt;close();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="ttc" id="aAppointment_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2"><div class="ttname"><a href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">Status::PENDING</a></div><div class="ttdeci">@ PENDING</div></div>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8cpp_source.html#l00041">41</a> of file <a class="el" href="TelaDataHora_8cpp_source.html">TelaDataHora.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                               {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::string dataStr = <a class="code" href="classTelaDataHora.html#a3af255135b50c32db2fc9c4a96e7bb49">calendarioWidget</a>-&gt;selectedDate().toString(<span class="stringliteral">&quot;dd/MM/yyyy&quot;</span>).toStdString();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string nomeMedico = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Dentista)&quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b">Specialty::NEUROLOGIST</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Neurologista)&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1">Specialty::PSYCHOLOGIST</a>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Psicologo)&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773">Specialty::CARDIOLOGIST</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Cadiologista)&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e">Specialty::NUTRITIONIST</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dr. Fulano (Nutricionista)&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a> == <a class="code" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9">Specialty::DERMATOLOGIST</a>) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        nomeMedico = <span class="stringliteral">&quot;Dra. Fulana (Dermatologista)&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classSystem.html">System</a>* sistema = <a class="code" href="classSystem.html#adafab6f86fb79b5f6bc97203130fc481">System::createSystem</a>(); </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classUser.html">User</a>* doctor = sistema-&gt;<a class="code" href="classSystem.html#aa52d35ae271bda96cf8b0f7377d78eb5">createUser</a>(nomeMedico, <span class="stringliteral">&quot;000.000.000-00&quot;</span>, <span class="stringliteral">&quot;doctor@agendamais.com&quot;</span>, <span class="stringliteral">&quot;123456&quot;</span>, <a class="code" href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1">UserType::DOCTOR</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classAppointment.html">Appointment</a>* novoAgendamento = sistema-&gt;<a class="code" href="classSystem.html#ad9ea9ac509eb6cda38c7ceb48ffd2261">createAppointment</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        patient, doctor, dataStr, horario, <a class="code" href="classTelaDataHora.html#a6c96b6b4a0cc80c953f3bf7aaeb0759f">espSelecionada</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QString msg = QString::fromStdString(<span class="stringliteral">&quot;Consulta Solicitada!\n\nCom: &quot;</span> + nomeMedico + <span class="stringliteral">&quot;\nData: &quot;</span> + dataStr + <span class="stringliteral">&quot;\nHora: &quot;</span> + horario);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Sucesso&quot;</span>, msg);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;close();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="ttc" id="aAppointment_8h_html_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b"><div class="ttname"><a href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b">Specialty::NEUROLOGIST</a></div><div class="ttdeci">@ NEUROLOGIST</div></div>
 <div class="ttc" id="aAppointment_8h_html_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e"><div class="ttname"><a href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e">Specialty::NUTRITIONIST</a></div><div class="ttdeci">@ NUTRITIONIST</div></div>
 <div class="ttc" id="aAppointment_8h_html_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1"><div class="ttname"><a href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1">Specialty::PSYCHOLOGIST</a></div><div class="ttdeci">@ PSYCHOLOGIST</div></div>
@@ -482,8 +488,8 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aAppointment_8h_html_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546"><div class="ttname"><a href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546">Specialty::DENTIST</a></div><div class="ttdeci">@ DENTIST</div></div>
 <div class="ttc" id="aAppointment_8h_html_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773"><div class="ttname"><a href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773">Specialty::CARDIOLOGIST</a></div><div class="ttdeci">@ CARDIOLOGIST</div></div>
 <div class="ttc" id="aUser_8h_html_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1"><div class="ttname"><a href="User_8h.html#a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1">UserType::DOCTOR</a></div><div class="ttdeci">@ DOCTOR</div></div>
-<div class="ttc" id="aclassAppointmentHandle_html"><div class="ttname"><a href="classAppointmentHandle.html">AppointmentHandle</a></div><div class="ttdoc">This class represents the handle of an Appointment.</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8h_source.html#l00059">AppointmentImpl.h:59</a></div></div>
 <div class="ttc" id="aclassAppointment_html"><div class="ttname"><a href="classAppointment.html">Appointment</a></div><div class="ttdoc">This class represents the interface of an Appointment as implemented in this code.</div><div class="ttdef"><b>Definition:</b> <a href="Appointment_8h_source.html#l00035">Appointment.h:35</a></div></div>
+<div class="ttc" id="aclassSystem_html_ad9ea9ac509eb6cda38c7ceb48ffd2261"><div class="ttname"><a href="classSystem.html#ad9ea9ac509eb6cda38c7ceb48ffd2261">System::createAppointment</a></div><div class="ttdeci">virtual Appointment * createAppointment(User *patient, User *doctor, const std::string &amp;date, const std::string &amp;time, Specialty esp)=0</div><div class="ttdoc">Pure virtual method to create and register an Appointment.</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -508,7 +514,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00030">30</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00032">32</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +538,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00031">31</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00033">33</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +562,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00032">32</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00034">34</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +586,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00033">33</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00035">35</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +610,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00034">34</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00036">36</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +634,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00029">29</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00031">31</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +658,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00026">26</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00028">28</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +682,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00028">28</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaDataHora_8h_source.html#l00030">30</a> of file <a class="el" href="TelaDataHora_8h_source.html">TelaDataHora.h</a>.</p>
 
 </div>
 </div>
