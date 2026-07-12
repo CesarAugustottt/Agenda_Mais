@@ -7,11 +7,13 @@
 #include <QVBoxLayout>
 #include "Appointment.h"
 
+class System;
+
 class TelaDataHora : public QWidget {
     Q_OBJECT
 
 public:
-    explicit TelaDataHora(QWidget *parent = nullptr, Specialty esp = Specialty::DENTIST);
+    explicit TelaDataHora(QWidget *parent = nullptr, Specialty esp = Specialty::DENTIST, System* sys = nullptr);
     ~TelaDataHora();
 
 private:
