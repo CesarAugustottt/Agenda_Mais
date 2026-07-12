@@ -1,6 +1,6 @@
 #include "testAgendamento.h"
-#include "../../interface/tela_agendamentos/TelaEspecialidade.h"
-#include "../../interface/tela_agendamentos/TelaDataHora.h"
+#include "../../src/TelaEspecialidade.h"
+#include "../../src/TelaDataHora.h"
 
 void TestAgendamento::testFluxoAgendamentoCompleto() {
     //TESTANDO A TELA DE ESPECIALIDADE

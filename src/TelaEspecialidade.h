@@ -7,7 +7,7 @@
 #include "Appointment.h"
 
 class TelaEspecialidade : public QWidget {
-    Q_OBJECT //macro para habilitar slots e signals
+    Q_OBJECT
 
 public:
     explicit TelaEspecialidade(QWidget *parent = nullptr);
@@ -23,7 +23,7 @@ private:
     void on_btnDermatologista_clicked();
 
 private:
-    QVBoxLayout *layoutPrincipal; //layout q organiza os botões
+    QVBoxLayout *layoutPrincipal;
     
     // Os 6 botões correspondentes aAs especialidades do seu Enum
     QPushButton *btnDentista;

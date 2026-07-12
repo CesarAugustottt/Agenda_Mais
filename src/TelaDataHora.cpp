@@ -1,10 +1,9 @@
 #include "TelaDataHora.h"
-#include ".AppointmentImpl.h" 
-#include "UserImpl.h"
+#include "System.h"
 #include "TelaEspecialidade.h"
 #include <QMessageBox>
 
-TelaDataHora::TelaDataHora(QWidget *parent, Specialty esp) 
+TelaDataHora::TelaDataHora(QWidget *parent, Specialty esp, System* sys) 
     : QWidget(parent), espSelecionada(esp) 
 {
     this->resize(360, 640);
@@ -57,45 +56,45 @@ void TelaDataHora::processarAgendamento(const std::string& horario, User* patien
         nomeMedico = "Dra. Fulana (Dermatologista)";
     }
 
-    User* doctor = new UserHandle(nomeMedico, "000.000.000-00", "doctor@agendamais.com", "123456", UserType::DOCTOR);
+    System* sistema = System::createSystem(); 
 
-    // Criando o objeto com a assinatura correta de 6 parâmetros
-    Appointment* novoAgendamento = new AppointmentHandle(
-        patient, doctor, dataStr, horario, Status::PENDING, espSelecionada);
+    User* doctor = sistema->createUser(nomeMedico, "000.000.000-00", "doctor@agendamais.com", "123456", UserType::DOCTOR);
+
+    Appointment* novoAgendamento = sistema->createAppointment(
+        patient, doctor, dataStr, horario, espSelecionada
+    );
 
     QString msg = QString::fromStdString("Consulta Solicitada!\n\nCom: " + nomeMedico + "\nData: " + dataStr + "\nHora: " + horario);
     QMessageBox::information(this, "Sucesso", msg);
-
-    delete novoAgendamento;
-
+    
     this->close();
 }
 
 void TelaDataHora::on_btnHora1330_clicked() { 
-    // 👈 CORRIGIDO: Passando os 5 parâmetros exigidos pelo seu UserHandle
-    User* usuarioFicticio = new UserHandle("Paciente", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
+    System* sistema = System::createSystem();
+    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
     
     processarAgendamento("13:30", usuarioFicticio); 
-    delete usuarioFicticio; // Deleta após o processamento para não vazar memória
 }
 
 void TelaDataHora::on_btnHora1400_clicked() { 
-    User* usuarioFicticio = new UserHandle("Paciente", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
+    System* sistema = System::createSystem();
+    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
     processarAgendamento("14:00", usuarioFicticio); 
-    delete usuarioFicticio;
 }
 
 void TelaDataHora::on_btnHora1430_clicked() { 
-    User* usuarioFicticio = new UserHandle("Paciente", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
+    System* sistema = System::createSystem();
+    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
     processarAgendamento("14:30", usuarioFicticio); 
-    delete usuarioFicticio;
 }
 
 void TelaDataHora::on_btnHora1500_clicked() { 
-    User* usuarioFicticio = new UserHandle("Paciente", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
+    System* sistema = System::createSystem();
+    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
     processarAgendamento("15:00", usuarioFicticio); 
-    delete usuarioFicticio;
 }
+
 //se apertar em voltar, abre a tela anterior
 void TelaDataHora::on_btnVoltar_clicked() {
     TelaEspecialidade *tela = new TelaEspecialidade(nullptr);
