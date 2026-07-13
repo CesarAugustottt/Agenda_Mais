@@ -37,6 +37,7 @@ public:
     virtual ~UserBody();
 
     //getters e setters
+    std::string getName() const;
     std::string getCpf() const;
     std::string getEmail() const;
     UserType getType() const;
@@ -83,6 +84,7 @@ public:
     virtual ~UserHandle();
 
     //getters e setters
+    std::string getName() const override;
     std::string getCpf() const override;
     std::string getEmail() const override;
     UserType getType() const override;

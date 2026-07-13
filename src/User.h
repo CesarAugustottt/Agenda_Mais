@@ -32,6 +32,12 @@ public:
     virtual std::string getCpf() const = 0;
 
     /*!
+     * @brief Retorna o nome do usuário.
+     * @return std::string - O nome armazenado.
+     */
+    virtual std::string getName() const = 0;
+
+    /*!
      * @brief Returns the email attribute in the User Class.
      * * @return string - the content email attribute.
      */

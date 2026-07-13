@@ -12,6 +12,15 @@ UserBody::UserBody() {
 
 UserBody::~UserBody() {} // fica vazio, pois não há ponteiros dinâmicos locais para desalocar
 
+std::string UserBody::getName() const {
+    return this->name;
+}
+
+
+std::string UserHandle::getName() const {
+    return pImpl_->getName();
+}
+
 std::string UserBody::getCpf() const {
     return this->cpf; 
 }
