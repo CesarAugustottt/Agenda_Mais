@@ -37,6 +37,7 @@ public:
     Appointment* createAppointment(User* patient, User* doctor, const std::string& date, const std::string& time, Specialty esp);
     Medication* createMedication(const std::string& name, int quantity, bool requiresPrescription);
     Reservation* createReservation(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath);
+    std::vector<Appointment*> getAllAppointments() const;
 
     void addUser(User* user);
     void addAppointment(Appointment* appointment);
@@ -70,6 +71,7 @@ public:
     Appointment* createAppointment(User* patient, User* doctor, const std::string& date, const std::string& time, Specialty esp) override;
     Medication* createMedication(const std::string& name, int quantity, bool requiresPrescription) override;
     Reservation* createReservation(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath) override;
+    std::vector<Appointment*> getAllAppointments() const override;
 
     void addUser(User* user) override;
     void addAppointment(Appointment* appointment) override;

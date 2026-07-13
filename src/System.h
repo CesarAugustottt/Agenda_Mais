@@ -2,6 +2,7 @@
 #define SYSTEM_H
 
 #include <string>
+#include <vector>
 #include "User.h"
 #include "Appointment.h"
 #include "Medication.h"
@@ -91,6 +92,12 @@ public:
      */
     virtual void addReservation(Reservation* reservation) = 0;
 
+    /*!
+     * @brief Retorna todas as consultas (Appointments) cadastradas no sistema.
+     * @return std::vector<Appointment*> - lista de ponteiros para as consultas.
+     */
+
+    virtual std::vector<Appointment*> getAllAppointments() const = 0;
     // metodos de delete
     /*!
      * @brief Deletes a User from the system database by its unique cpf identifier.
