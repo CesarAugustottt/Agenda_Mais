@@ -14,7 +14,7 @@ TelaStatusAgendamento::TelaStatusAgendamento(QWidget *parent, System* sys)
 
     // linha de busca por CPF
     layoutBusca = new QHBoxLayout();
-    lblCpf = new QLabel("CPF do Paciente:", this);
+    lblCpf = new QLabel("CPF do Paciente (deixe vazio para ver todos):", this);
     txtCpf = new QLineEdit(this);
     btnBuscar = new QPushButton("Buscar", this);
     layoutBusca->addWidget(lblCpf);
@@ -24,9 +24,9 @@ TelaStatusAgendamento::TelaStatusAgendamento(QWidget *parent, System* sys)
 
     // tabela de resultados
     tabela = new QTableWidget(this);
-    tabela->setColumnCount(5);
+    tabela->setColumnCount(6);
     QStringList headers;
-    headers << "Data" << "Hora" << "Especialidade" << "Status" << "Justificativa";
+    headers << "Paciente" << "Data" << "Hora" << "Especialidade" << "Status" << "Justificativa";
     tabela->setHorizontalHeaderLabels(headers);
     tabela->horizontalHeader()->setStretchLastSection(true);
     tabela->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -38,6 +38,9 @@ TelaStatusAgendamento::TelaStatusAgendamento(QWidget *parent, System* sys)
 
     connect(btnBuscar, &QPushButton::clicked, this, &TelaStatusAgendamento::on_btnBuscar_clicked);
     connect(btnVoltar, &QPushButton::clicked, this, &TelaStatusAgendamento::on_btnVoltar_clicked);
+
+    // já carrega TODAS as consultas de TODOS os pacientes ao abrir a tela
+    carregarStatus("");
 }
 
 TelaStatusAgendamento::~TelaStatusAgendamento() {}
@@ -50,12 +53,16 @@ void TelaStatusAgendamento::carregarStatus(const std::string& cpfPaciente) {
 
     std::vector<Appointment*> todas = sistema->getAllAppointments();
 
-    // filtra apenas as consultas do paciente com o CPF informado
+    // se o CPF estiver vazio, mostra TODAS as consultas de TODOS; senão, filtra por paciente
     std::vector<Appointment*> filtradas;
-    for (auto consulta : todas) {
-        User* paciente = consulta->getPatient();
-        if (paciente && paciente->getCpf() == cpfPaciente) {
-            filtradas.push_back(consulta);
+    if (cpfPaciente.empty()) {
+        filtradas = todas;
+    } else {
+        for (auto consulta : todas) {
+            User* paciente = consulta->getPatient();
+            if (paciente && paciente->getCpf() == cpfPaciente) {
+                filtradas.push_back(consulta);
+            }
         }
     }
 
@@ -64,10 +71,13 @@ void TelaStatusAgendamento::carregarStatus(const std::string& cpfPaciente) {
     for (size_t i = 0; i < filtradas.size(); ++i) {
         Appointment* consulta = filtradas[i];
 
-        tabela->setItem(static_cast<int>(i), 0, new QTableWidgetItem(QString::fromStdString(consulta->getDate())));
-        tabela->setItem(static_cast<int>(i), 1, new QTableWidgetItem(QString::fromStdString(consulta->getTime())));
-        tabela->setItem(static_cast<int>(i), 2, new QTableWidgetItem(especialidadeToString(consulta->getAppointmentType())));
-        tabela->setItem(static_cast<int>(i), 3, new QTableWidgetItem(statusToString(consulta->getStatus())));
+        QString nomePaciente = consulta->getPatient() ? QString::fromStdString(consulta->getPatient()->getName()) : "-";
+
+        tabela->setItem(static_cast<int>(i), 0, new QTableWidgetItem(nomePaciente));
+        tabela->setItem(static_cast<int>(i), 1, new QTableWidgetItem(QString::fromStdString(consulta->getDate())));
+        tabela->setItem(static_cast<int>(i), 2, new QTableWidgetItem(QString::fromStdString(consulta->getTime())));
+        tabela->setItem(static_cast<int>(i), 3, new QTableWidgetItem(especialidadeToString(consulta->getAppointmentType())));
+        tabela->setItem(static_cast<int>(i), 4, new QTableWidgetItem(statusToString(consulta->getStatus())));
 
         QString justificativa;
         if (consulta->getStatus() == Status::REJECTED) {
@@ -76,42 +86,38 @@ void TelaStatusAgendamento::carregarStatus(const std::string& cpfPaciente) {
         } else {
             justificativa = "-";
         }
-        tabela->setItem(static_cast<int>(i), 4, new QTableWidgetItem(justificativa));
+        tabela->setItem(static_cast<int>(i), 5, new QTableWidgetItem(justificativa));
     }
 
-    if (filtradas.empty()) {
+    if (filtradas.empty() && !cpfPaciente.empty()) {
         QMessageBox::information(this, "Nenhum resultado", "Nenhuma consulta encontrada para esse CPF.");
     }
 }
 
 QString TelaStatusAgendamento::especialidadeToString(Specialty esp) {
     switch (esp) {
-        case Specialty::DENTIST:       return "Dentista";
-        case Specialty::NEUROLOGIST:   return "Neurologista";
-        case Specialty::PSYCHOLOGIST:  return "Psicólogo";
-        case Specialty::CARDIOLOGIST:  return "Cardiologista";
-        case Specialty::NUTRITIONIST:  return "Nutricionista";
-        case Specialty::DERMATOLOGIST: return "Dermatologista";
+    case Specialty::DENTIST:       return "Dentista";
+    case Specialty::NEUROLOGIST:   return "Neurologista";
+    case Specialty::PSYCHOLOGIST:  return "Psicólogo";
+    case Specialty::CARDIOLOGIST:  return "Cardiologista";
+    case Specialty::NUTRITIONIST:  return "Nutricionista";
+    case Specialty::DERMATOLOGIST: return "Dermatologista";
     }
     return "Desconhecida";
 }
 
 QString TelaStatusAgendamento::statusToString(Status status) {
     switch (status) {
-        case Status::PENDING:   return "Pendente";
-        case Status::CONFIRMED: return "Confirmada";
-        case Status::REJECTED:  return "Recusada";
+    case Status::PENDING:   return "Pendente";
+    case Status::CONFIRMED: return "Confirmada";
+    case Status::REJECTED:  return "Recusada";
     }
     return "Desconhecido";
 }
 
 void TelaStatusAgendamento::on_btnBuscar_clicked() {
     std::string cpf = txtCpf->text().toStdString();
-    if (cpf.empty()) {
-        QMessageBox::warning(this, "Atenção", "Digite um CPF para buscar.");
-        return;
-    }
-    carregarStatus(cpf);
+    carregarStatus(cpf); // vazio = mostra todas, preenchido = filtra por esse paciente
 }
 
 void TelaStatusAgendamento::on_btnVoltar_clicked() {
