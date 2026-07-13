@@ -1,6 +1,7 @@
 #include <QApplication>
 #include "mainwindow.h"
 #include "TelaLogin.h"
+#include "System.h"
 
 int numBodyCreated = 0;
 int numBodyDeleted = 0;
@@ -10,8 +11,9 @@ int numHandleDeleted = 0;
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    // Agora o aplicativo inicia obrigatoriamente pela tela de Login integrada
-    TelaLogin w;
+    System* sys = System::createSystem();
+
+    TelaLogin w(sys);
     w.show();
 
     return app.exec();
