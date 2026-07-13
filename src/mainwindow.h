@@ -4,7 +4,8 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include "MedicationsController.h" // COM 'S'
+#include "MedicationsController.h"
+#include "System.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,7 +17,7 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(System* sys, QWidget *parent = nullptr);
     ~MainWindow() override;
 
 private slots:
@@ -31,8 +32,9 @@ private:
     QPushButton *btnAbrirCadastro;
     QPushButton *btnGerenciarMedicamentos; 
     
-    QVBoxLayout *layoutCentral;
+    QVBoxLayout *layoutCentral; //layout que organiza tudo
 
-    MedicationsController *medicationsController; // COM 'S'
+    MedicationsController *medicationsController;
+    System* sistema; //ponteiro de system
 };
 #endif // MAINWINDOW_H
