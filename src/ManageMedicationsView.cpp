@@ -50,8 +50,8 @@ void ManageMedicationsView::setupUI() {
     QVBoxLayout *resLayout = new QVBoxLayout(tabReservations);
 
     // Adicionámos 4 colunas em vez de 3 para mostrar o Status
-    tableReservations = new QTableWidget(0, 4, this);
-    tableReservations->setHorizontalHeaderLabels({"CPF Paciente", "Medicamento", "Qtd Solicitada", "Status"});
+    tableReservations = new QTableWidget(0, 5, this);
+    tableReservations->setHorizontalHeaderLabels({"CPF Paciente", "Medicamento", "Qtd Solicitada", "Exige Receita", "Status"});
     tableReservations->horizontalHeader()->setStretchLastSection(true);
     resLayout->addWidget(tableReservations);
 
@@ -79,7 +79,7 @@ void ManageMedicationsView::setupUI() {
     resLayout->addLayout(resControls);
 
     tabWidget->addTab(tabStock, "Controle de Estoque");
-    tabWidget->addTab(tabReservations, "Validação de Receitas");
+    tabWidget->addTab(tabReservations, "Gerenciar Solicitações de Medicamentos");
     mainLayout->addWidget(tabWidget);
 
     connect(btnUpdateStock, &QPushButton::clicked, this, &ManageMedicationsView::on_btnUpdateStock_clicked);
@@ -110,11 +110,14 @@ void ManageMedicationsView::refreshUI() {
         tableReservations->setItem(i, 1, new QTableWidgetItem(medName));
         tableReservations->setItem(i, 2, new QTableWidgetItem(QString::number(pendings[i]->getQuantity())));
 
+        QString exigeReceita = (pendings[i]->getMedication() && pendings[i]->getMedication()->requiresPrescription()) ? "Sim" : "Não";
+        tableReservations->setItem(i, 3, new QTableWidgetItem(exigeReceita));
+
         QString statusStr = "Pendente";
         if (pendings[i]->getStatus() == ReservationStatus::APPROVED) statusStr = "Aprovado";
         else if (pendings[i]->getStatus() == ReservationStatus::REFUSED) statusStr = "Recusado";
 
-        tableReservations->setItem(i, 3, new QTableWidgetItem(statusStr));
+        tableReservations->setItem(i, 4, new QTableWidgetItem(statusStr));
     }
 }
 

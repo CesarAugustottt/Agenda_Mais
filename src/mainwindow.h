@@ -28,6 +28,7 @@ private slots:
     void on_btnGerenciarMedicamentos_clicked();
     void on_btnConsultarAgenda_clicked();
     void on_btnAcompanharStatus_clicked();
+    void on_btnSolicitarMedicamento_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -37,6 +38,7 @@ private:
     QPushButton *btnGerenciarMedicamentos; 
     QPushButton *btnConsultarAgenda;
     QPushButton *btnAcompanharStatus;
+    QPushButton *btnSolicitarMedicamento;
     
     QVBoxLayout *layoutCentral; //layout que organiza tudo
 

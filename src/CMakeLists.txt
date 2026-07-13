@@ -45,6 +45,8 @@ qt_add_executable(Agenda
     ReservationImpl.cpp
     TelaStatusAgendamento.h
     TelaStatusAgendamento.cpp
+    TelaSolicitarMedicamento.h
+    TelaSolicitarMedicamento.cpp
     SystemImpl.cpp
     SystemImpl.h
 )

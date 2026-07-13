@@ -39,6 +39,31 @@ void test_reservation_flow();
 void test_system_deletes();
 
 /*!
+  Cenário 1 do BDD: consulta recém-criada deve estar Pendente, sem justificativa.
+*/
+void test_status_tracking_pending();
+
+/*!
+  Cenário 2 do BDD: consulta confirmada deve refletir o status Confirmed.
+*/
+void test_status_tracking_confirmed();
+
+/*!
+  Cenário 3 do BDD: consulta recusada deve guardar a justificativa informada.
+*/
+void test_status_tracking_rejected_with_justification();
+
+/*!
+  Cenário 4 do BDD: busca sem CPF deve retornar consultas de todos os pacientes.
+*/
+void test_status_tracking_search_all();
+
+/*!
+  Cenário 5 do BDD: busca com CPF deve filtrar apenas o paciente correspondente.
+*/
+void test_status_tracking_search_by_cpf();
+
+/*!
   Function prototype to run the complete suite of functional tests.
 */
 void run_all_functional_tests();

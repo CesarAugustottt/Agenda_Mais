@@ -5,6 +5,7 @@
 #include "ManageMedicationsView.h"
 #include "TelaAgenda.h"
 #include "TelaStatusAgendamento.h"
+#include "TelaSolicitarMedicamento.h"
 
 //recebe o sistema pelo construtor
 MainWindow::MainWindow(System* sys, QWidget *parent)
@@ -28,6 +29,8 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     btnConsultarAgenda->setMinimumHeight(50);
     btnAcompanharStatus = new QPushButton("Acompanhar Status do Agendamento", this);
     btnAcompanharStatus->setMinimumHeight(50);
+    btnSolicitarMedicamento = new QPushButton("Solicitar Medicamento", this);
+    btnSolicitarMedicamento->setMinimumHeight(50);
 
     //adiciona botoes ao layout
     layoutCentral->addWidget(btnAbrirAgendamento);
@@ -35,6 +38,7 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     layoutCentral->addWidget(btnGerenciarMedicamentos);
     layoutCentral->addWidget(btnConsultarAgenda);
     layoutCentral->addWidget(btnAcompanharStatus);
+    layoutCentral->addWidget(btnSolicitarMedicamento);
 
     //conecta clique ao slot
     connect(btnAbrirAgendamento, &QPushButton::clicked, this, &MainWindow::on_btnAbrirAgendamento_clicked);
@@ -42,6 +46,7 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     connect(btnGerenciarMedicamentos, &QPushButton::clicked, this, &MainWindow::on_btnGerenciarMedicamentos_clicked);
     connect(btnConsultarAgenda, &QPushButton::clicked, this, &MainWindow::on_btnConsultarAgenda_clicked);
     connect(btnAcompanharStatus, &QPushButton::clicked, this, &MainWindow::on_btnAcompanharStatus_clicked);
+    connect(btnSolicitarMedicamento, &QPushButton::clicked, this, &MainWindow::on_btnSolicitarMedicamento_clicked);
 }
 
 //destrutor
@@ -77,6 +82,12 @@ void MainWindow::on_btnConsultarAgenda_clicked() {
 
 void MainWindow::on_btnAcompanharStatus_clicked() {
     TelaStatusAgendamento *tela = new TelaStatusAgendamento(nullptr, sistema);
+    tela->setAttribute(Qt::WA_DeleteOnClose);
+    tela->show();
+}
+
+void MainWindow::on_btnSolicitarMedicamento_clicked() {
+    TelaSolicitarMedicamento *tela = new TelaSolicitarMedicamento(nullptr, medicationsController);
     tela->setAttribute(Qt::WA_DeleteOnClose);
     tela->show();
 }
