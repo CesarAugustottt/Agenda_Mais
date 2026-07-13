@@ -3,7 +3,7 @@
 #include "TelaCadastroUsuario.h" // Incluindo a sua tela de cadastro existente
 #include <QMessageBox>
 
-TelaLogin::TelaLogin(QWidget *parent) : QWidget(parent) {
+TelaLogin::TelaLogin(System* sys, QWidget *parent) : QWidget(parent), sistema(sys){
     // Reduzimos o tamanho da janela já que agora ela tem menos componentes
     this->resize(380, 400);
     this->setWindowTitle("Clínica - Acesso ao Sistema");
@@ -58,7 +58,7 @@ void TelaLogin::on_btnEntrar_clicked() {
     QString senha = txtSenha->text();
 
     if ((usuario == "admin" && senha == "1234") || (!usuario.isEmpty() && !senha.isEmpty())) {
-        MainWindow *janelaPrincipal = new MainWindow();
+        MainWindow *janelaPrincipal = new MainWindow(sistema);
         janelaPrincipal->setAttribute(Qt::WA_DeleteOnClose);
         janelaPrincipal->show();
 
@@ -71,7 +71,7 @@ void TelaLogin::on_btnEntrar_clicked() {
 // Essa função roda quando clicam no botão de Cadastrar lá embaixo
 void TelaLogin::on_btnIrParaCadastro_clicked() {
     // Abre a sua tela de cadastro de usuário padrão do projeto
-    TelaCadastroUsuario *telaCadastro = new TelaCadastroUsuario(nullptr);
+    TelaCadastroUsuario *telaCadastro = new TelaCadastroUsuario(nullptr, sistema);
     telaCadastro->setAttribute(Qt::WA_DeleteOnClose);
     telaCadastro->show();
 
