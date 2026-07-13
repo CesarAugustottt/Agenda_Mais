@@ -6,11 +6,13 @@
 #include <QVBoxLayout>
 #include "Appointment.h"
 
+class System;
+
 class TelaEspecialidade : public QWidget {
     Q_OBJECT
 
 public:
-    explicit TelaEspecialidade(QWidget *parent = nullptr);
+    explicit TelaEspecialidade(QWidget *parent = nullptr, System* sys = nullptr);
     ~TelaEspecialidade();
 
 private:
@@ -24,6 +26,7 @@ private:
 
 private:
     QVBoxLayout *layoutPrincipal;
+    System* sistema;
     
     // Os 6 botões correspondentes aAs especialidades do seu Enum
     QPushButton *btnDentista;

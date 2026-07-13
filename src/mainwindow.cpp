@@ -46,9 +46,9 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::on_btnAbrirAgendamento_clicked() {
-    TelaEspecialidade *tela = new TelaEspecialidade(nullptr);
+    TelaEspecialidade *tela = new TelaEspecialidade(nullptr, sistema);
     tela->setAttribute(Qt::WA_DeleteOnClose);
-    tela->show(); //exibir
+    tela->show();
 }
 
 void MainWindow::on_btnAbrirCadastro_clicked() {
