@@ -37,6 +37,10 @@ qt_add_executable(Agenda
     System.h
     ReservationImpl.h
     ReservationImpl.cpp
+    SystemImpl.cpp
+    UserImpl.cpp
+    AppointmentImpl.cpp
+    ReservationImpl.cpp
 )
 
 target_link_libraries(Agenda

@@ -1,22 +1,24 @@
 #ifndef MEDICATIONSCONTROLLER_H
 #define MEDICATIONSCONTROLLER_H
 
-#include "MedicationImpl.h" // SEM 'S' (A entidade é singular)
-#include "ReservationImpl.h"
+#include "System.h" // ADICIONADO: Inclui a interface do sistema
 #include <vector>
 #include <string>
 
-class MedicationsController { // COM 'S'
+class MedicationsController {
 private:
-    std::vector<MedicationHandle> medications;
-    std::vector<ReservationHandle> pendingReservations;
+    System* sistema; // ADICIONADO: Guarda o ponteiro do sistema global
+    std::vector<Medication*> medications; // MODIFICADO: De MedicationHandle para Medication*
+    std::vector<Reservation*> pendingReservations; // MODIFICADO: De ReservationHandle para Reservation*
 
 public:
-    MedicationsController();
+    // MODIFICADO: Agora recebe o System* no construtor
+    MedicationsController(System* sys);
     virtual ~MedicationsController();
 
-    std::vector<MedicationHandle> getAllMedications() const;
-    std::vector<ReservationHandle> getPendingReservations() const;
+    // MODIFICADO: Retornam vetores de ponteiros das interfaces
+    std::vector<Medication*> getAllMedications() const;
+    std::vector<Reservation*> getPendingReservations() const;
 
     void updateStock(size_t index, int newQuantity);
     void approveReservation(size_t index);
