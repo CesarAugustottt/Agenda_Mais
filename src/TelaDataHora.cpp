@@ -112,7 +112,7 @@ void TelaDataHora::on_btnHora1500_clicked() {
 
 //se apertar em voltar, abre a tela anterior
 void TelaDataHora::on_btnVoltar_clicked() {
-    TelaEspecialidade *tela = new TelaEspecialidade(nullptr);
+    TelaEspecialidade *tela = new TelaEspecialidade(nullptr, sistema);
     tela->setAttribute(Qt::WA_DeleteOnClose);
     tela->show();
     this->close();

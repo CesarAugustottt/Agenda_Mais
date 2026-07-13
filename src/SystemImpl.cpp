@@ -66,6 +66,10 @@ void SystemBody::addReservation(Reservation* reservation) {
     reservations.push_back(reservation); 
 }
 
+std::vector<Appointment*> SystemBody::getAllAppointments() const {
+    return appointments;
+}
+
 //Remoções Práticas com 'delete' 
 bool SystemBody::deleteUser(const std::string& cpf) {
     for (auto it = users.begin(); it != users.end(); ++it) {
@@ -129,6 +133,10 @@ Medication* SystemHandle::createMedication(const std::string& name, int quantity
 
 Reservation* SystemHandle::createReservation(const std::string& patientCpf, Medication* medication, int quantity, const std::string& prescriptionPath) {
     return pImpl_->createReservation(patientCpf, medication, quantity, prescriptionPath);
+}
+
+std::vector<Appointment*> SystemHandle::getAllAppointments() const {
+    return pImpl_->getAllAppointments();
 }
 
 void SystemHandle::addUser(User* user) { pImpl_->addUser(user); }

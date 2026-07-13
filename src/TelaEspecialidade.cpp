@@ -1,13 +1,14 @@
 #include "TelaEspecialidade.h"
 #include "TelaDataHora.h"
 
-TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
-    this->resize(360, 640); //define o tamanho da janela
-    this->setWindowTitle("Agende Sua Consulta"); //titulo
+TelaEspecialidade::TelaEspecialidade(QWidget *parent, System* sys)
+    : QWidget(parent), sistema(sys) {
+
+    this->resize(360, 640);
+    this->setWindowTitle("Agende Sua Consulta");
 
     layoutPrincipal = new QVBoxLayout(this);
 
-    // Inicializando todos os 6 botões
     btnDentista      = new QPushButton("Dentista", this);
     btnNeurologista  = new QPushButton("Neurologista", this);
     btnPsicologo     = new QPushButton("Psicologo", this);
@@ -15,7 +16,6 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     btnNutricionista = new QPushButton("Nutricionista", this);
     btnDermatologista = new QPushButton("Dermatologista", this);
 
-    // Adicionando todos os botoes ao layout de exibição
     layoutPrincipal->addWidget(btnDentista);
     layoutPrincipal->addWidget(btnNeurologista);
     layoutPrincipal->addWidget(btnPsicologo);
@@ -23,7 +23,6 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     layoutPrincipal->addWidget(btnNutricionista);
     layoutPrincipal->addWidget(btnDermatologista);
 
-    // Conectando os sinais aos slots
     connect(btnDentista,      &QPushButton::clicked, this, &TelaEspecialidade::on_btnDentista_clicked);
     connect(btnNeurologista,  &QPushButton::clicked, this, &TelaEspecialidade::on_btnNeurologista_clicked);
     connect(btnPsicologo,     &QPushButton::clicked, this, &TelaEspecialidade::on_btnPsicologo_clicked);
@@ -32,17 +31,15 @@ TelaEspecialidade::TelaEspecialidade(QWidget *parent) : QWidget(parent) {
     connect(btnDermatologista, &QPushButton::clicked, this, &TelaEspecialidade::on_btnDermatologista_clicked);
 }
 
-//destrutor
 TelaEspecialidade::~TelaEspecialidade() {}
 
 void TelaEspecialidade::abrirProximaTela(Specialty esp) {
-    TelaDataHora *proximaTela = new TelaDataHora(nullptr, esp);
+    TelaDataHora *proximaTela = new TelaDataHora(nullptr, esp, sistema);
     proximaTela->setAttribute(Qt::WA_DeleteOnClose);
-    proximaTela->show(); //exibir
-    this->close(); //fechar tela atual
+    proximaTela->show();
+    this->close();
 }
 
-// Repassando o valor do Enum original para a próxima tela
 void TelaEspecialidade::on_btnDentista_clicked()      { abrirProximaTela(Specialty::DENTIST); }
 void TelaEspecialidade::on_btnNeurologista_clicked()  { abrirProximaTela(Specialty::NEUROLOGIST); }
 void TelaEspecialidade::on_btnPsicologo_clicked()     { abrirProximaTela(Specialty::PSYCHOLOGIST); }

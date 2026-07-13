@@ -8,6 +8,7 @@ qt_standard_project_setup()
 qt_add_executable(Agenda
     WIN32 MACOSX_BUNDLE
     main.cpp
+    System.h
     TelaDataHora.cpp
     TelaDataHora.h
     TelaEspecialidade.cpp
@@ -34,13 +35,16 @@ qt_add_executable(Agenda
     ManageMedicationsView.h
     ManageMedicationsView.cpp
     Reservation.h
-    System.h
+    TelaAgenda.h
+    TelaAgenda.cpp
     ReservationImpl.h
     ReservationImpl.cpp
     SystemImpl.cpp
     UserImpl.cpp
     AppointmentImpl.cpp
     ReservationImpl.cpp
+    SystemImpl.cpp
+    SystemImpl.h
 )
 
 target_link_libraries(Agenda

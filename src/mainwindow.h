@@ -6,6 +6,7 @@
 #include <QVBoxLayout>
 #include "MedicationsController.h"
 #include "System.h"
+#include "TelaAgenda.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,6 +25,7 @@ private slots:
     void on_btnAbrirAgendamento_clicked();
     void on_btnAbrirCadastro_clicked();
     void on_btnGerenciarMedicamentos_clicked();
+    void on_btnConsultarAgenda_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -31,6 +33,7 @@ private:
     QPushButton *btnAbrirAgendamento;
     QPushButton *btnAbrirCadastro;
     QPushButton *btnGerenciarMedicamentos; 
+    QPushButton *btnConsultarAgenda;
     
     QVBoxLayout *layoutCentral; //layout que organiza tudo
 
