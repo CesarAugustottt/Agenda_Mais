@@ -4,6 +4,7 @@
 #include "TelaCadastroUsuario.h"
 #include "ManageMedicationsView.h"
 #include "TelaAgenda.h"
+#include "TelaStatusAgendamento.h"
 
 //recebe o sistema pelo construtor
 MainWindow::MainWindow(System* sys, QWidget *parent)
@@ -25,18 +26,22 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     btnGerenciarMedicamentos = new QPushButton("Gerenciar Medicamentos (Secretária)", this);
     btnConsultarAgenda = new QPushButton("Consultar Agenda de Atendimentos", this);
     btnConsultarAgenda->setMinimumHeight(50);
+    btnAcompanharStatus = new QPushButton("Acompanhar Status do Agendamento", this);
+    btnAcompanharStatus->setMinimumHeight(50);
 
     //adiciona botoes ao layout
     layoutCentral->addWidget(btnAbrirAgendamento);
     layoutCentral->addWidget(btnAbrirCadastro);
     layoutCentral->addWidget(btnGerenciarMedicamentos);
     layoutCentral->addWidget(btnConsultarAgenda);
+    layoutCentral->addWidget(btnAcompanharStatus);
 
     //conecta clique ao slot
     connect(btnAbrirAgendamento, &QPushButton::clicked, this, &MainWindow::on_btnAbrirAgendamento_clicked);
     connect(btnAbrirCadastro, &QPushButton::clicked, this, &MainWindow::on_btnAbrirCadastro_clicked);
     connect(btnGerenciarMedicamentos, &QPushButton::clicked, this, &MainWindow::on_btnGerenciarMedicamentos_clicked);
     connect(btnConsultarAgenda, &QPushButton::clicked, this, &MainWindow::on_btnConsultarAgenda_clicked);
+    connect(btnAcompanharStatus, &QPushButton::clicked, this, &MainWindow::on_btnAcompanharStatus_clicked);
 }
 
 //destrutor
@@ -66,6 +71,12 @@ void MainWindow::on_btnGerenciarMedicamentos_clicked() {
 
 void MainWindow::on_btnConsultarAgenda_clicked() {
     TelaAgenda *tela = new TelaAgenda(nullptr, sistema);
+    tela->setAttribute(Qt::WA_DeleteOnClose);
+    tela->show();
+}
+
+void MainWindow::on_btnAcompanharStatus_clicked() {
+    TelaStatusAgendamento *tela = new TelaStatusAgendamento(nullptr, sistema);
     tela->setAttribute(Qt::WA_DeleteOnClose);
     tela->show();
 }
