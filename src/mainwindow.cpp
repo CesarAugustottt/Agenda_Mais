@@ -13,7 +13,7 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     ui->setupUi(this);
     this->setWindowTitle("Menu Principal - Clínica"); //titulo
 
-    medicationsController = new MedicationsController();
+    medicationsController = new MedicationsController(sistema);
 
     layoutCentral = new QVBoxLayout(ui->centralwidget);
     

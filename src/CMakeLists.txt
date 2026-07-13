@@ -34,7 +34,12 @@ qt_add_executable(Agenda
     ManageMedicationsView.h
     ManageMedicationsView.cpp
     Reservation.h
+    System.h
     ReservationImpl.h
+    ReservationImpl.cpp
+    SystemImpl.cpp
+    UserImpl.cpp
+    AppointmentImpl.cpp
     ReservationImpl.cpp
 )
 

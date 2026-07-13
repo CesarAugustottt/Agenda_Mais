@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include "Appointment.h"
+#include "System.h"
 
 class System;
 
@@ -25,6 +26,7 @@ private:
     void on_btnVoltar_clicked();
 
 private:
+    System* sistema;
     Specialty espSelecionada; 
 
     QVBoxLayout *layoutPrincipal; //layout que organiza tudo

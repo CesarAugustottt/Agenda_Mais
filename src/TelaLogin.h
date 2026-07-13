@@ -7,12 +7,13 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QFrame>
+#include "System.h"
 
 class TelaLogin : public QWidget {
     Q_OBJECT
 
 public:
-    explicit TelaLogin(QWidget *parent = nullptr);
+    explicit TelaLogin(System* sys, QWidget *parent = nullptr);
     ~TelaLogin();
 
 private slots:
@@ -36,6 +37,8 @@ private:
     // --- COMPONENTES DE CADASTRO SIMPLIFICADO ---
     QLabel *lblTextoCadastro;
     QPushButton *btnIrParaCadastro; // Apenas o botão agora!
+
+    System* sistema;
 };
 
 #endif // TELALOGIN_H
