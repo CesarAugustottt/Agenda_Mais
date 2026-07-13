@@ -23,6 +23,8 @@ protected:
     Status status;
     /*! This attribute contains the type of the appointment. */
     Specialty appointmentType;
+    /*! This attribute contains the justification of the appointment. */
+    std::string justificativa;
 
 public:
     /*!
@@ -40,6 +42,7 @@ public:
     std::string getTime() const;
     Status getStatus() const;
     Specialty getAppointmentType() const;
+    std::string getJustificativa() const;
 
     void setPatient( User* patient);
     void setDoctor( User* doctor);
@@ -47,6 +50,7 @@ public:
     void setTime(const std::string& time);
     void setStatus(const Status status);
     void setAppointmentType(const Specialty type);
+    void setJustificativa(const std::string& justificativa);
 
     friend class Unit_Appointment; 
     friend class SystemBody; 
@@ -86,6 +90,7 @@ public:
     std::string getTime() const override;
     Status getStatus() const override;
     Specialty getAppointmentType() const override;
+    std::string getJustificativa() const override;
 
     void setPatient( User* patient) override;
     void setDoctor( User* doctor) override;
@@ -93,6 +98,7 @@ public:
     void setTime(const std::string& time) override;
     void setStatus(const Status status) override;
     void setAppointmentType(const Specialty type) override;
+    void setJustificativa(const std::string& justificativa) override;
 
     friend class Unit_Appointment;
     friend class SystemBody; 

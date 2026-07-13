@@ -77,6 +77,12 @@ public:
     virtual Specialty getAppointmentType() const = 0;
 
     /*!
+     * @brief Retorna a justificativa cadastrada para a consulta (usada em caso de recusa).
+     * @return std::string - a justificativa, ou string vazia se nenhuma foi registrada.
+     */
+    virtual std::string getJustificativa() const = 0;
+
+    /*!
      * @brief Sets the patientName attribute in the Appointment Class.
      * * @param  patient will be set to the current appointment.
      */
@@ -111,6 +117,12 @@ public:
      * * @param type which will be set to the current appointment.
      */
     virtual void setAppointmentType(const Specialty type) = 0;
+
+    /*!
+     * @brief Define a justificativa da consulta (ex: motivo da recusa pela secretária/médico).
+     * @param justificativa texto explicando o motivo.
+     */
+    virtual void setJustificativa(const std::string& justificativa) = 0;
 };
 
 #endif // APPOINTMENT_H

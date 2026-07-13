@@ -7,7 +7,6 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QComboBox>
-#include "User.h" 
 
 class System; // declaracao antecipada pra evitar erro de dependencia circular
 
