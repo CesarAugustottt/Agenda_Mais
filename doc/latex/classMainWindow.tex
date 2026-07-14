@@ -15,17 +15,18 @@ Inheritance diagram for Main\+Window\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Main\+Window\+:\nopagebreak
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=332pt]{classMainWindow__coll__graph}
+\includegraphics[width=350pt]{classMainWindow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classMainWindow_a8e3c1bcdcba39b4befbf7d576489074c}{Main\+Window}} (\mbox{\hyperlink{classSystem}{System}} $\ast$sys, QWidget $\ast$parent=nullptr)
 \item 
 \mbox{\hyperlink{classMainWindow_a1f7d2c56410fc1bfa135bb907d43313f}{$\sim$\+Main\+Window}} () override
 \end{DoxyCompactItemize}
@@ -37,6 +38,12 @@ void \mbox{\hyperlink{classMainWindow_ada410fdba2a036f685120b0e4d8828f3}{on\+\_\
 void \mbox{\hyperlink{classMainWindow_adc3a38ea0b25b03d891d3d7acf4755e9}{on\+\_\+btn\+Abrir\+Cadastro\+\_\+clicked}} ()
 \item 
 void \mbox{\hyperlink{classMainWindow_a1ec27cfe33a5ce2f2f383b054a0068ca}{on\+\_\+btn\+Gerenciar\+Medicamentos\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a050420fc2a7c10b9aaedc95c25cacce9}{on\+\_\+btn\+Consultar\+Agenda\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_adf6fef524cb869ed14086a488978ec02}{on\+\_\+btn\+Acompanhar\+Status\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_af7ca2f32c6d42f10e6d4b3b263f072f3}{on\+\_\+btn\+Solicitar\+Medicamento\+\_\+clicked}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -49,55 +56,82 @@ QPush\+Button $\ast$ \mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3d
 \item 
 QPush\+Button $\ast$ \mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btn\+Gerenciar\+Medicamentos}}
 \item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btn\+Consultar\+Agenda}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classMainWindow_a10e3638231683a050eae1ff0a88d8252}{btn\+Acompanhar\+Status}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classMainWindow_add37d33b84f744f2436519d6bd0f7280}{btn\+Solicitar\+Medicamento}}
+\item 
 QVBox\+Layout $\ast$ \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layout\+Central}}
 \item 
 \mbox{\hyperlink{classMedicationsController}{Medications\+Controller}} $\ast$ \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medications\+Controller}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} $\ast$ \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 15 of file mainwindow.\+h.
+Definition at line 18 of file mainwindow.\+h.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\mbox{\Hypertarget{classMainWindow_a8e3c1bcdcba39b4befbf7d576489074c}\label{classMainWindow_a8e3c1bcdcba39b4befbf7d576489074c}} 
 \index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
 \index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
 \doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
-{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} $\ast$}]{sys,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Definition at line 7 of file mainwindow.\+cpp.
+Definition at line 11 of file mainwindow.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8     : QMainWindow(parent)}
-\DoxyCodeLine{9     , \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}(\textcolor{keyword}{new} Ui::MainWindow)}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11     \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
-\DoxyCodeLine{12     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Menu Principal -\/ Clínica"{}});}
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14     \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}} = \textcolor{keyword}{new} \mbox{\hyperlink{classMedicationsController}{MedicationsController}}(); \textcolor{comment}{// COM 'S'}}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}} = \textcolor{keyword}{new} QVBoxLayout(\mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}-\/>centralwidget);}
-\DoxyCodeLine{17     }
-\DoxyCodeLine{18     \mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Solicitar Agendamento"{}}, \textcolor{keyword}{this});}
-\DoxyCodeLine{19     \mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}}-\/>setMinimumHeight(50);}
-\DoxyCodeLine{20     \mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Cadastrar Usuário"{}}, \textcolor{keyword}{this});}
-\DoxyCodeLine{21     \mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Gerenciar Medicamentos (Secretária)"{}}, \textcolor{keyword}{this});}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}});}
-\DoxyCodeLine{24     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}});}
-\DoxyCodeLine{25     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}});}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27     connect(\mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_ada410fdba2a036f685120b0e4d8828f3}{MainWindow::on\_btnAbrirAgendamento\_clicked}});}
-\DoxyCodeLine{28     connect(\mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_adc3a38ea0b25b03d891d3d7acf4755e9}{MainWindow::on\_btnAbrirCadastro\_clicked}});}
-\DoxyCodeLine{29     connect(\mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_a1ec27cfe33a5ce2f2f383b054a0068ca}{MainWindow::on\_btnGerenciarMedicamentos\_clicked}});}
-\DoxyCodeLine{30 \}}
+\DoxyCodeLine{12     : QMainWindow(parent)}
+\DoxyCodeLine{13     , \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}(\textcolor{keyword}{new} Ui::MainWindow)}
+\DoxyCodeLine{14     , \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}}(sys) \textcolor{comment}{//guarda o ponteiro do sistema}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{17     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Menu Principal -\/ Clínica"{}}); \textcolor{comment}{//titulo}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}} = \textcolor{keyword}{new} \mbox{\hyperlink{classMedicationsController}{MedicationsController}}(\mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}});}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}} = \textcolor{keyword}{new} QVBoxLayout(\mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}}-\/>centralwidget);}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23     \textcolor{comment}{//inicializando os botoes}}
+\DoxyCodeLine{24     \mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Solicitar Agendamento"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{25     \mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{26     \mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Cadastrar Usuário"{}}, \textcolor{keyword}{this}); \textcolor{comment}{// <-\/ linha que faltava}}
+\DoxyCodeLine{27     \mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{28     \mbox{\hyperlink{classMainWindow_a10e3638231683a050eae1ff0a88d8252}{btnAcompanharStatus}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}(Paciente)Acompanhar Status do Agendamento"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{29     \mbox{\hyperlink{classMainWindow_a10e3638231683a050eae1ff0a88d8252}{btnAcompanharStatus}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{30     \mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btnConsultarAgenda}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}(Médico)Consultar Agenda de Atendimentos"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{31     \mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btnConsultarAgenda}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{32     \mbox{\hyperlink{classMainWindow_add37d33b84f744f2436519d6bd0f7280}{btnSolicitarMedicamento}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}(Paciente)Solicitar Medicamento"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{33     \mbox{\hyperlink{classMainWindow_add37d33b84f744f2436519d6bd0f7280}{btnSolicitarMedicamento}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{34     \mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}(Secretária)Gerenciar Medicamentos"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{35     \mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btnConsultarAgenda}}-\/>setMinimumHeight(50);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{//adiciona botoes ao layout}}
+\DoxyCodeLine{39     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}});}
+\DoxyCodeLine{40     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}});}
+\DoxyCodeLine{41     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}});}
+\DoxyCodeLine{42     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btnConsultarAgenda}});}
+\DoxyCodeLine{43     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_a10e3638231683a050eae1ff0a88d8252}{btnAcompanharStatus}});}
+\DoxyCodeLine{44     \mbox{\hyperlink{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}{layoutCentral}}-\/>addWidget(\mbox{\hyperlink{classMainWindow_add37d33b84f744f2436519d6bd0f7280}{btnSolicitarMedicamento}});}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{//conecta clique ao slot}}
+\DoxyCodeLine{47     connect(\mbox{\hyperlink{classMainWindow_a0bfc34cbfbca709f3547f555383cd34a}{btnAbrirAgendamento}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_ada410fdba2a036f685120b0e4d8828f3}{MainWindow::on\_btnAbrirAgendamento\_clicked}});}
+\DoxyCodeLine{48     connect(\mbox{\hyperlink{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}{btnAbrirCadastro}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_adc3a38ea0b25b03d891d3d7acf4755e9}{MainWindow::on\_btnAbrirCadastro\_clicked}});}
+\DoxyCodeLine{49     connect(\mbox{\hyperlink{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}{btnGerenciarMedicamentos}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_a1ec27cfe33a5ce2f2f383b054a0068ca}{MainWindow::on\_btnGerenciarMedicamentos\_clicked}});}
+\DoxyCodeLine{50     connect(\mbox{\hyperlink{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}{btnConsultarAgenda}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_a050420fc2a7c10b9aaedc95c25cacce9}{MainWindow::on\_btnConsultarAgenda\_clicked}});}
+\DoxyCodeLine{51     connect(\mbox{\hyperlink{classMainWindow_a10e3638231683a050eae1ff0a88d8252}{btnAcompanharStatus}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_adf6fef524cb869ed14086a488978ec02}{MainWindow::on\_btnAcompanharStatus\_clicked}});}
+\DoxyCodeLine{52     connect(\mbox{\hyperlink{classMainWindow_add37d33b84f744f2436519d6bd0f7280}{btnSolicitarMedicamento}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classMainWindow_af7ca2f32c6d42f10e6d4b3b263f072f3}{MainWindow::on\_btnSolicitarMedicamento\_clicked}});}
+\DoxyCodeLine{53 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classMainWindow_a1f7d2c56410fc1bfa135bb907d43313f}\label{classMainWindow_a1f7d2c56410fc1bfa135bb907d43313f}} 
@@ -108,14 +142,14 @@ Definition at line 7 of file mainwindow.\+cpp.
 
 
 
-Definition at line 32 of file mainwindow.\+cpp.
+Definition at line 56 of file mainwindow.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{32                         \{}
-\DoxyCodeLine{33     \textcolor{keyword}{delete} \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}};}
-\DoxyCodeLine{34     \textcolor{keyword}{delete} \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}}; }
-\DoxyCodeLine{35 \}}
+\DoxyCodeLine{56                         \{}
+\DoxyCodeLine{57     \textcolor{keyword}{delete} \mbox{\hyperlink{classMainWindow_a35466a70ed47252a0191168126a352a5}{ui}};}
+\DoxyCodeLine{58     \textcolor{keyword}{delete} \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}}; }
+\DoxyCodeLine{59 \}}
 
 \end{DoxyCode}
 
@@ -129,15 +163,15 @@ Definition at line 32 of file mainwindow.\+cpp.
 
 
 
-Definition at line 37 of file mainwindow.\+cpp.
+Definition at line 61 of file mainwindow.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{37                                                 \{}
-\DoxyCodeLine{38     \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}}(\textcolor{keyword}{nullptr});}
-\DoxyCodeLine{39     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
-\DoxyCodeLine{40     tela-\/>show();}
-\DoxyCodeLine{41 \}}
+\DoxyCodeLine{61                                                 \{}
+\DoxyCodeLine{62     \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaEspecialidade}{TelaEspecialidade}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}});}
+\DoxyCodeLine{63     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{64     tela-\/>show();}
+\DoxyCodeLine{65 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classMainWindow_adc3a38ea0b25b03d891d3d7acf4755e9}\label{classMainWindow_adc3a38ea0b25b03d891d3d7acf4755e9}} 
@@ -148,15 +182,54 @@ Definition at line 37 of file mainwindow.\+cpp.
 
 
 
-Definition at line 43 of file mainwindow.\+cpp.
+Definition at line 67 of file mainwindow.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{43                                              \{}
-\DoxyCodeLine{44     \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}}(\textcolor{keyword}{nullptr});}
-\DoxyCodeLine{45     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
-\DoxyCodeLine{46     tela-\/>show();}
-\DoxyCodeLine{47 \}}
+\DoxyCodeLine{67                                              \{}
+\DoxyCodeLine{68     \textcolor{comment}{//abre a tela repassando o sistema global}}
+\DoxyCodeLine{69     \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}});}
+\DoxyCodeLine{70     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{71     tela-\/>show(); \textcolor{comment}{//exibir}}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMainWindow_adf6fef524cb869ed14086a488978ec02}\label{classMainWindow_adf6fef524cb869ed14086a488978ec02}} 
+\index{MainWindow@{MainWindow}!on\_btnAcompanharStatus\_clicked@{on\_btnAcompanharStatus\_clicked}}
+\index{on\_btnAcompanharStatus\_clicked@{on\_btnAcompanharStatus\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_btnAcompanharStatus\_clicked}{on\_btnAcompanharStatus\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+btn\+Acompanhar\+Status\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 86 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                                 \{}
+\DoxyCodeLine{87     \mbox{\hyperlink{classTelaStatusAgendamento}{TelaStatusAgendamento}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaStatusAgendamento}{TelaStatusAgendamento}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}});}
+\DoxyCodeLine{88     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{89     tela-\/>show();}
+\DoxyCodeLine{90 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMainWindow_a050420fc2a7c10b9aaedc95c25cacce9}\label{classMainWindow_a050420fc2a7c10b9aaedc95c25cacce9}} 
+\index{MainWindow@{MainWindow}!on\_btnConsultarAgenda\_clicked@{on\_btnConsultarAgenda\_clicked}}
+\index{on\_btnConsultarAgenda\_clicked@{on\_btnConsultarAgenda\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_btnConsultarAgenda\_clicked}{on\_btnConsultarAgenda\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+btn\+Consultar\+Agenda\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 80 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                                \{}
+\DoxyCodeLine{81     \mbox{\hyperlink{classTelaAgenda}{TelaAgenda}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaAgenda}{TelaAgenda}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}{sistema}});}
+\DoxyCodeLine{82     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{83     tela-\/>show();}
+\DoxyCodeLine{84 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classMainWindow_a1ec27cfe33a5ce2f2f383b054a0068ca}\label{classMainWindow_a1ec27cfe33a5ce2f2f383b054a0068ca}} 
@@ -167,15 +240,34 @@ Definition at line 43 of file mainwindow.\+cpp.
 
 
 
-Definition at line 49 of file mainwindow.\+cpp.
+Definition at line 74 of file mainwindow.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{49                                                      \{}
-\DoxyCodeLine{50     \mbox{\hyperlink{classManageMedicationsView}{ManageMedicationsView}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classManageMedicationsView}{ManageMedicationsView}}(\mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}}, \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{51     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
-\DoxyCodeLine{52     tela-\/>show();}
-\DoxyCodeLine{53 \}}
+\DoxyCodeLine{74                                                      \{}
+\DoxyCodeLine{75     \mbox{\hyperlink{classManageMedicationsView}{ManageMedicationsView}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classManageMedicationsView}{ManageMedicationsView}}(\mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{76     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{77     tela-\/>show(); \textcolor{comment}{//exibir}}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMainWindow_af7ca2f32c6d42f10e6d4b3b263f072f3}\label{classMainWindow_af7ca2f32c6d42f10e6d4b3b263f072f3}} 
+\index{MainWindow@{MainWindow}!on\_btnSolicitarMedicamento\_clicked@{on\_btnSolicitarMedicamento\_clicked}}
+\index{on\_btnSolicitarMedicamento\_clicked@{on\_btnSolicitarMedicamento\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_btnSolicitarMedicamento\_clicked}{on\_btnSolicitarMedicamento\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+btn\+Solicitar\+Medicamento\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 92 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                                     \{}
+\DoxyCodeLine{93     \mbox{\hyperlink{classTelaSolicitarMedicamento}{TelaSolicitarMedicamento}} *tela = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaSolicitarMedicamento}{TelaSolicitarMedicamento}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}{medicationsController}});}
+\DoxyCodeLine{94     tela-\/>setAttribute(Qt::WA\_DeleteOnClose);}
+\DoxyCodeLine{95     tela-\/>show();}
+\DoxyCodeLine{96 \}}
 
 \end{DoxyCode}
 
@@ -189,7 +281,7 @@ Definition at line 49 of file mainwindow.\+cpp.
 
 
 
-Definition at line 30 of file mainwindow.\+h.
+Definition at line 36 of file mainwindow.\+h.
 
 \mbox{\Hypertarget{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}\label{classMainWindow_aab4edc89b9d05cc7078660e3de77983b}} 
 \index{MainWindow@{MainWindow}!btnAbrirCadastro@{btnAbrirCadastro}}
@@ -199,7 +291,27 @@ Definition at line 30 of file mainwindow.\+h.
 
 
 
-Definition at line 31 of file mainwindow.\+h.
+Definition at line 37 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{classMainWindow_a10e3638231683a050eae1ff0a88d8252}\label{classMainWindow_a10e3638231683a050eae1ff0a88d8252}} 
+\index{MainWindow@{MainWindow}!btnAcompanharStatus@{btnAcompanharStatus}}
+\index{btnAcompanharStatus@{btnAcompanharStatus}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{btnAcompanharStatus}{btnAcompanharStatus}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Main\+Window\+::btn\+Acompanhar\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}\label{classMainWindow_a84f61f83a10e05bf9670bc080e0bc0e1}} 
+\index{MainWindow@{MainWindow}!btnConsultarAgenda@{btnConsultarAgenda}}
+\index{btnConsultarAgenda@{btnConsultarAgenda}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{btnConsultarAgenda}{btnConsultarAgenda}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Main\+Window\+::btn\+Consultar\+Agenda\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file mainwindow.\+h.
 
 \mbox{\Hypertarget{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}\label{classMainWindow_aadacfacacbf485f4ccf48c8f3bf31e13}} 
 \index{MainWindow@{MainWindow}!btnGerenciarMedicamentos@{btnGerenciarMedicamentos}}
@@ -209,7 +321,17 @@ Definition at line 31 of file mainwindow.\+h.
 
 
 
-Definition at line 32 of file mainwindow.\+h.
+Definition at line 38 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{classMainWindow_add37d33b84f744f2436519d6bd0f7280}\label{classMainWindow_add37d33b84f744f2436519d6bd0f7280}} 
+\index{MainWindow@{MainWindow}!btnSolicitarMedicamento@{btnSolicitarMedicamento}}
+\index{btnSolicitarMedicamento@{btnSolicitarMedicamento}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{btnSolicitarMedicamento}{btnSolicitarMedicamento}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Main\+Window\+::btn\+Solicitar\+Medicamento\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file mainwindow.\+h.
 
 \mbox{\Hypertarget{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}\label{classMainWindow_ade6f2f9b6ea55bf1e0a3dc503a0919e5}} 
 \index{MainWindow@{MainWindow}!layoutCentral@{layoutCentral}}
@@ -219,7 +341,7 @@ Definition at line 32 of file mainwindow.\+h.
 
 
 
-Definition at line 34 of file mainwindow.\+h.
+Definition at line 43 of file mainwindow.\+h.
 
 \mbox{\Hypertarget{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}\label{classMainWindow_a78ce9b2e26251da995b87287cfb92f33}} 
 \index{MainWindow@{MainWindow}!medicationsController@{medicationsController}}
@@ -229,7 +351,17 @@ Definition at line 34 of file mainwindow.\+h.
 
 
 
-Definition at line 36 of file mainwindow.\+h.
+Definition at line 45 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}\label{classMainWindow_aa3fca75d47c1bf8bc7e332dab3c9bdc4}} 
+\index{MainWindow@{MainWindow}!sistema@{sistema}}
+\index{sistema@{sistema}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sistema}{sistema}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}}$\ast$ Main\+Window\+::sistema\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file mainwindow.\+h.
 
 \mbox{\Hypertarget{classMainWindow_a35466a70ed47252a0191168126a352a5}\label{classMainWindow_a35466a70ed47252a0191168126a352a5}} 
 \index{MainWindow@{MainWindow}!ui@{ui}}
@@ -239,7 +371,7 @@ Definition at line 36 of file mainwindow.\+h.
 
 
 
-Definition at line 28 of file mainwindow.\+h.
+Definition at line 34 of file mainwindow.\+h.
 
 
 

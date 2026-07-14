@@ -39,6 +39,8 @@ virtual void \mbox{\hyperlink{classSystem_ae48b0e4e46b78217685486ec55d13291}{add
 \begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classMedication}{Medication}} pointer to the system database. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classSystem_ab25a8e01f855642a8b32715b3d54c9d8}{add\+Reservation}} (\mbox{\hyperlink{classReservation}{Reservation}} $\ast$reservation)=0
 \begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classReservation}{Reservation}} pointer to the system database. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ \mbox{\hyperlink{classSystem_a37f34483a9e487ad6760fb321d07569a}{get\+All\+Appointments}} () const =0
+\begin{DoxyCompactList}\small\item\em Retorna todas as consultas (Appointments) cadastradas no sistema. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classSystem_ae0965fe409fe0b2666f9c69bb307f803}{delete\+User}} (const std\+::string \&cpf)=0
 \begin{DoxyCompactList}\small\item\em Deletes a \mbox{\hyperlink{classUser}{User}} from the system database by its unique cpf identifier. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classSystem_a87a6bb892cce696ea300f66329ee80f4}{delete\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment)=0
@@ -62,7 +64,7 @@ This class represents the interface of a \mbox{\hyperlink{classSystem}{System}} 
 \item It defines the abstract factory methods and containers management operations. 
 \end{DoxyItemize}
 
-Definition at line 14 of file System.\+h.
+Definition at line 15 of file System.\+h.
 
 
 
@@ -79,11 +81,11 @@ This is the default destructor for the \mbox{\hyperlink{classSystem}{System}} Cl
 
 
 
-Definition at line 19 of file System.\+h.
+Definition at line 20 of file System.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{19 \{\}}
+\DoxyCodeLine{20 \{\}}
 
 \end{DoxyCode}
 
@@ -489,6 +491,23 @@ bool -\/ true if successfully deleted, false otherwise.
 \end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classSystemHandle_ac41852d3bacaad9d7a4589819ca07c4b}{System\+Handle}}.
+
+\mbox{\Hypertarget{classSystem_a37f34483a9e487ad6760fb321d07569a}\label{classSystem_a37f34483a9e487ad6760fb321d07569a}} 
+\index{System@{System}!getAllAppointments@{getAllAppointments}}
+\index{getAllAppointments@{getAllAppointments}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getAllAppointments()}{getAllAppointments()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{classAppointment}{Appointment}}$\ast$$>$ System\+::get\+All\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retorna todas as consultas (Appointments) cadastradas no sistema. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Appointment$\ast$$>$ -\/ lista de ponteiros para as consultas. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSystemHandle_a86a814952a1f580bb84997c72ccf1826}{System\+Handle}}.
 
 
 

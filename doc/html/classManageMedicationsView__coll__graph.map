@@ -1,5 +1,6 @@
 <map id="ManageMedicationsView" name="ManageMedicationsView">
-<area shape="rect" id="node1" title=" " alt="" coords="25,95,211,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node3" href="$classMedicationsController.html" title=" " alt="" coords="109,5,274,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,191,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="37,95,116,121"/>
+<area shape="rect" id="node3" href="$classMedicationsController.html" title=" " alt="" coords="141,95,306,121"/>
+<area shape="rect" id="node4" href="$classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="188,5,259,32"/>
 </map>

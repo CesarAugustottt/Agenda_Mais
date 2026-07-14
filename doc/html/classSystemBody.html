@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a72088bbef273a17898f879bae393a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe21600379dced9f60dbf83edc6fa60e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classReservation.html">Reservation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemBody.html#abe21600379dced9f60dbf83edc6fa60e">createReservation</a> (const std::string &amp;patientCpf, <a class="el" href="classMedication.html">Medication</a> *medication, int quantity, const std::string &amp;prescriptionPath)</td></tr>
 <tr class="separator:abe21600379dced9f60dbf83edc6fa60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b02ac9a695141b852b39a8a46783e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classAppointment.html">Appointment</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemBody.html#a34b02ac9a695141b852b39a8a46783e5">getAllAppointments</a> () const</td></tr>
+<tr class="separator:a34b02ac9a695141b852b39a8a46783e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa093acb06c4ca377572365553caa188f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemBody.html#aa093acb06c4ca377572365553caa188f">addUser</a> (<a class="el" href="classUser.html">User</a> *user)</td></tr>
 <tr class="separator:aa093acb06c4ca377572365553caa188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04707e83a9fd204e3fae43f9ad7d91d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemBody.html#a04707e83a9fd204e3fae43f9ad7d91d1">addAppointment</a> (<a class="el" href="classAppointment.html">Appointment</a> *appointment)</td></tr>
@@ -376,7 +378,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> a;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="ttc" id="aAppointment_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2"><div class="ttname"><a href="Appointment_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2">Status::PENDING</a></div><div class="ttdeci">@ PENDING</div></div>
-<div class="ttc" id="aclassAppointmentHandle_html"><div class="ttname"><a href="classAppointmentHandle.html">AppointmentHandle</a></div><div class="ttdoc">This class represents the handle of an Appointment.</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8h_source.html#l00059">AppointmentImpl.h:59</a></div></div>
+<div class="ttc" id="aclassAppointmentHandle_html"><div class="ttname"><a href="classAppointmentHandle.html">AppointmentHandle</a></div><div class="ttdoc">This class represents the handle of an Appointment.</div><div class="ttdef"><b>Definition:</b> <a href="AppointmentImpl_8h_source.html#l00063">AppointmentImpl.h:63</a></div></div>
 <div class="ttc" id="aclassAppointment_html"><div class="ttname"><a href="classAppointment.html">Appointment</a></div><div class="ttdoc">This class represents the interface of an Appointment as implemented in this code.</div><div class="ttdef"><b>Definition:</b> <a href="Appointment_8h_source.html#l00035">Appointment.h:35</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -523,7 +525,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.push_back(u);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> u;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="aclassUserHandle_html"><div class="ttname"><a href="classUserHandle.html">UserHandle</a></div><div class="ttdoc">This class represents the handle of a User.</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8h_source.html#l00061">UserImpl.h:61</a></div></div>
+<div class="ttc" id="aclassUserHandle_html"><div class="ttname"><a href="classUserHandle.html">UserHandle</a></div><div class="ttdoc">This class represents the handle of a User.</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8h_source.html#l00062">UserImpl.h:62</a></div></div>
 <div class="ttc" id="aclassUser_html"><div class="ttname"><a href="classUser.html">User</a></div><div class="ttdoc">This class represents the interface of a User as implemented in this code.</div><div class="ttdef"><b>Definition:</b> <a href="User_8h_source.html#l00020">User.h:20</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -544,16 +546,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00081">81</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                           {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">auto</span> it = std::find(<a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.begin(), <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.end(), appointment);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.end()) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">delete</span> *it;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.erase(it);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00085">85</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                           {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">auto</span> it = std::find(<a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.begin(), <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.end(), appointment);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.end()) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">delete</span> *it;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>.erase(it);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -573,17 +575,17 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00091">91</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                       {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.begin(); it != <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.end(); ++it) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> ((*it)-&gt;getName() == name) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">delete</span> *it;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.erase(it);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00095">95</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                       {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.begin(); it != <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.end(); ++it) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> ((*it)-&gt;getName() == name) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">delete</span> *it;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classSystemBody.html#a768748c71179e410c2cb6d3c12df9f2c">medications</a>.erase(it);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -603,16 +605,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00102">102</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                           {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">auto</span> it = std::find(<a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.begin(), <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.end(), reservation);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.end()) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">delete</span> *it;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.erase(it);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00106">106</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                           {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">auto</span> it = std::find(<a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.begin(), <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.end(), reservation);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.end()) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">delete</span> *it;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classSystemBody.html#a532636830dcdedae5300e30f9371f006">reservations</a>.erase(it);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -632,17 +634,39 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00070">70</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.begin(); it != <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.end(); ++it) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> ((*it)-&gt;getCpf() == cpf) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">delete</span> *it; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.erase(it);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00074">74</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.begin(); it != <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.end(); ++it) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> ((*it)-&gt;getCpf() == cpf) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">delete</span> *it; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classSystemBody.html#a37bcde4dacaa08c563c560e1995b838a">users</a>.erase(it);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a34b02ac9a695141b852b39a8a46783e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b02ac9a695141b852b39a8a46783e5">&#9670;&nbsp;</a></span>getAllAppointments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classAppointment.html">Appointment</a> * &gt; SystemBody::getAllAppointments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SystemImpl_8cpp_source.html#l00069">69</a> of file <a class="el" href="SystemImpl_8cpp_source.html">SystemImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                             {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classSystemBody.html#a44b58e8381472c788ca9185ba68f713b">appointments</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

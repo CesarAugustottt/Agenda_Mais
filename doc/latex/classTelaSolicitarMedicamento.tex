@@ -1,0 +1,478 @@
+\hypertarget{classTelaSolicitarMedicamento}{}\doxysection{Tela\+Solicitar\+Medicamento Class Reference}
+\label{classTelaSolicitarMedicamento}\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+
+
+{\ttfamily \#include $<$Tela\+Solicitar\+Medicamento.\+h$>$}
+
+
+
+Inheritance diagram for Tela\+Solicitar\+Medicamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classTelaSolicitarMedicamento__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tela\+Solicitar\+Medicamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classTelaSolicitarMedicamento__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTelaSolicitarMedicamento_a2a9cb47121015cd83a01784c87e80598}{Tela\+Solicitar\+Medicamento}} (QWidget $\ast$parent=nullptr, \mbox{\hyperlink{classMedicationsController}{Medications\+Controller}} $\ast$\mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}=nullptr)
+\item 
+\mbox{\hyperlink{classTelaSolicitarMedicamento_a16f2af9a0c698eb55778d9a9b1658841}{$\sim$\+Tela\+Solicitar\+Medicamento}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaSolicitarMedicamento_ac2361a6b7670487310d3f442642f61f3}{on\+\_\+cbx\+Medicamento\+\_\+current\+Index\+Changed}} (int index)
+\item 
+void \mbox{\hyperlink{classTelaSolicitarMedicamento_a477a2d154a8ba0f588b333e025467bc7}{on\+\_\+btn\+Solicitar\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaSolicitarMedicamento_a131b93fd9145cdfd7e80a8022df5da57}{on\+\_\+btn\+Voltar\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaSolicitarMedicamento_a5bd5e337804cf29ebd4649f97cedae43}{carregar\+Medicamentos}} ()
+\item 
+void \mbox{\hyperlink{classTelaSolicitarMedicamento_ac3e93699293a335dd0ac357886e7c1f2}{atualizar\+Info\+Medicamento}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMedicationsController}{Medications\+Controller}} $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMedication}{Medication}} $\ast$ $>$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentos\+Disponiveis}}
+\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layout\+Principal}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_aa1796ae0494166e22a110b1376316050}{lbl\+Cpf}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}{txt\+Cpf}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_ad3199ed7f44a9c6f3b53a5e4273bf1be}{lbl\+Medicamento}}
+\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbx\+Medicamento}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}{lbl\+Estoque\+Disponivel}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}{lbl\+Exige\+Receita}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a653e1ec902ecf75efa1dc05a1e17d4ac}{lbl\+Quantidade}}
+\item 
+QSpin\+Box $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spin\+Quantidade}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_ad4a7b36c5c58a08ce0cd75213c3aa3f1}{lbl\+Receita}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}{txt\+Caminho\+Receita}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}{btn\+Solicitar}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}{btn\+Voltar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file Tela\+Solicitar\+Medicamento.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a2a9cb47121015cd83a01784c87e80598}\label{classTelaSolicitarMedicamento_a2a9cb47121015cd83a01784c87e80598}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{TelaSolicitarMedicamento()}{TelaSolicitarMedicamento()}}
+{\footnotesize\ttfamily Tela\+Solicitar\+Medicamento\+::\+Tela\+Solicitar\+Medicamento (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classMedicationsController}{Medications\+Controller}} $\ast$}]{controller = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 4 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5     : QWidget(parent), \mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}(\mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}})}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     this-\/>resize(420, 420);}
+\DoxyCodeLine{8     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Solicitar Medicamento"{}});}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{classTelaSolicitarMedicamento_aa1796ae0494166e22a110b1376316050}{lblCpf}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}CPF do Paciente:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{13     \mbox{\hyperlink{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}{txtCpf}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{14     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_aa1796ae0494166e22a110b1376316050}{lblCpf}});}
+\DoxyCodeLine{15     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}{txtCpf}});}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \mbox{\hyperlink{classTelaSolicitarMedicamento_ad3199ed7f44a9c6f3b53a5e4273bf1be}{lblMedicamento}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Medicamento:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{18     \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}} = \textcolor{keyword}{new} QComboBox(\textcolor{keyword}{this});}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_ad3199ed7f44a9c6f3b53a5e4273bf1be}{lblMedicamento}});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}});}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}{lblEstoqueDisponivel}} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});}
+\DoxyCodeLine{23     \mbox{\hyperlink{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}{lblExigeReceita}} = \textcolor{keyword}{new} QLabel(\textcolor{keyword}{this});}
+\DoxyCodeLine{24     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}{lblEstoqueDisponivel}});}
+\DoxyCodeLine{25     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}{lblExigeReceita}});}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{classTelaSolicitarMedicamento_a653e1ec902ecf75efa1dc05a1e17d4ac}{lblQuantidade}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Quantidade:"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{28     \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}} = \textcolor{keyword}{new} QSpinBox(\textcolor{keyword}{this});}
+\DoxyCodeLine{29     \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}}-\/>setMinimum(1);}
+\DoxyCodeLine{30     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_a653e1ec902ecf75efa1dc05a1e17d4ac}{lblQuantidade}});}
+\DoxyCodeLine{31     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{classTelaSolicitarMedicamento_ad4a7b36c5c58a08ce0cd75213c3aa3f1}{lblReceita}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Caminho da Receita (obrigatório se exigir receita):"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{34     \mbox{\hyperlink{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}{txtCaminhoReceita}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{35     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_ad4a7b36c5c58a08ce0cd75213c3aa3f1}{lblReceita}});}
+\DoxyCodeLine{36     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}{txtCaminhoReceita}});}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \mbox{\hyperlink{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}{btnSolicitar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Solicitar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{39     \mbox{\hyperlink{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}{btnVoltar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Voltar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{40     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}{btnSolicitar}});}
+\DoxyCodeLine{41     \mbox{\hyperlink{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}{btnVoltar}});}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     connect(\mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}}, QOverload<int>::of(\&QComboBox::currentIndexChanged),}
+\DoxyCodeLine{44             \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaSolicitarMedicamento_ac2361a6b7670487310d3f442642f61f3}{TelaSolicitarMedicamento::on\_cbxMedicamento\_currentIndexChanged}});}
+\DoxyCodeLine{45     connect(\mbox{\hyperlink{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}{btnSolicitar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaSolicitarMedicamento_a477a2d154a8ba0f588b333e025467bc7}{TelaSolicitarMedicamento::on\_btnSolicitar\_clicked}});}
+\DoxyCodeLine{46     connect(\mbox{\hyperlink{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}{btnVoltar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaSolicitarMedicamento_a131b93fd9145cdfd7e80a8022df5da57}{TelaSolicitarMedicamento::on\_btnVoltar\_clicked}});}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \mbox{\hyperlink{classTelaSolicitarMedicamento_a5bd5e337804cf29ebd4649f97cedae43}{carregarMedicamentos}}();}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a16f2af9a0c698eb55778d9a9b1658841}\label{classTelaSolicitarMedicamento_a16f2af9a0c698eb55778d9a9b1658841}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!````~TelaSolicitarMedicamento@{$\sim$TelaSolicitarMedicamento}}
+\index{````~TelaSolicitarMedicamento@{$\sim$TelaSolicitarMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{$\sim$TelaSolicitarMedicamento()}{~TelaSolicitarMedicamento()}}
+{\footnotesize\ttfamily Tela\+Solicitar\+Medicamento\+::$\sim$\+Tela\+Solicitar\+Medicamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_ac3e93699293a335dd0ac357886e7c1f2}\label{classTelaSolicitarMedicamento_ac3e93699293a335dd0ac357886e7c1f2}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!atualizarInfoMedicamento@{atualizarInfoMedicamento}}
+\index{atualizarInfoMedicamento@{atualizarInfoMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{atualizarInfoMedicamento()}{atualizarInfoMedicamento()}}
+{\footnotesize\ttfamily void Tela\+Solicitar\+Medicamento\+::atualizar\+Info\+Medicamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                         \{}
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}}-\/>currentIndex();}
+\DoxyCodeLine{71     \textcolor{keywordflow}{if} (index < 0 || index >= (\textcolor{keywordtype}{int})\mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}}.size()) \{}
+\DoxyCodeLine{72         \mbox{\hyperlink{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}{lblEstoqueDisponivel}}-\/>setText(\textcolor{stringliteral}{"{}Estoque disponível: -\/"{}});}
+\DoxyCodeLine{73         \mbox{\hyperlink{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}{lblExigeReceita}}-\/>setText(\textcolor{stringliteral}{"{}Exige receita: -\/"{}});}
+\DoxyCodeLine{74         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{75     \}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \mbox{\hyperlink{classMedication}{Medication}}* med = \mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}}[index];}
+\DoxyCodeLine{78     \mbox{\hyperlink{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}{lblEstoqueDisponivel}}-\/>setText(QString(\textcolor{stringliteral}{"{}Estoque disponível: \%1"{}}).arg(med-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}()));}
+\DoxyCodeLine{79     \mbox{\hyperlink{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}{lblExigeReceita}}-\/>setText(med-\/>\mbox{\hyperlink{classMedication_a6bd246a40b794147903749340f4b5ffc}{requiresPrescription}}() ? \textcolor{stringliteral}{"{}Exige receita: Sim"{}} : \textcolor{stringliteral}{"{}Exige receita: Não"{}});}
+\DoxyCodeLine{80     \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}}-\/>setMaximum(med-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() > 0 ? med-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() : 1);}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a5bd5e337804cf29ebd4649f97cedae43}\label{classTelaSolicitarMedicamento_a5bd5e337804cf29ebd4649f97cedae43}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!carregarMedicamentos@{carregarMedicamentos}}
+\index{carregarMedicamentos@{carregarMedicamentos}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{carregarMedicamentos()}{carregarMedicamentos()}}
+{\footnotesize\ttfamily void Tela\+Solicitar\+Medicamento\+::carregar\+Medicamentos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                     \{}
+\DoxyCodeLine{54     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}) \{}
+\DoxyCodeLine{55         QMessageBox::critical(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Erro"{}}, \textcolor{stringliteral}{"{}Controlador de medicamentos não inicializado."{}});}
+\DoxyCodeLine{56         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}} = \mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a71901f0a7b8ab69c4fd306491258204a}{getAllMedications}}();}
+\DoxyCodeLine{60     \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}}-\/>clear();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} med : \mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}}) \{}
+\DoxyCodeLine{63         \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}}-\/>addItem(QString::fromStdString(med-\/>getName()));}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \mbox{\hyperlink{classTelaSolicitarMedicamento_ac3e93699293a335dd0ac357886e7c1f2}{atualizarInfoMedicamento}}();}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a477a2d154a8ba0f588b333e025467bc7}\label{classTelaSolicitarMedicamento_a477a2d154a8ba0f588b333e025467bc7}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!on\_btnSolicitar\_clicked@{on\_btnSolicitar\_clicked}}
+\index{on\_btnSolicitar\_clicked@{on\_btnSolicitar\_clicked}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{on\_btnSolicitar\_clicked}{on\_btnSolicitar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Solicitar\+Medicamento\+::on\+\_\+btn\+Solicitar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 88 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88                                                        \{}
+\DoxyCodeLine{89     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}) \{}
+\DoxyCodeLine{90         QMessageBox::critical(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Erro"{}}, \textcolor{stringliteral}{"{}Controlador de medicamentos não inicializado."{}});}
+\DoxyCodeLine{91         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     std::string cpf = \mbox{\hyperlink{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}{txtCpf}}-\/>text().toStdString();}
+\DoxyCodeLine{95     \textcolor{keywordflow}{if} (cpf.empty()) \{}
+\DoxyCodeLine{96         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Atenção"{}}, \textcolor{stringliteral}{"{}Informe o CPF do paciente."{}});}
+\DoxyCodeLine{97         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{int} index = \mbox{\hyperlink{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}{cbxMedicamento}}-\/>currentIndex();}
+\DoxyCodeLine{101     \textcolor{keywordflow}{if} (index < 0 || index >= (\textcolor{keywordtype}{int})\mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}}.size()) \{}
+\DoxyCodeLine{102         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Atenção"{}}, \textcolor{stringliteral}{"{}Selecione um medicamento."{}});}
+\DoxyCodeLine{103         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{104     \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \mbox{\hyperlink{classMedication}{Medication}}* medicamentoSelecionado = \mbox{\hyperlink{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}{medicamentosDisponiveis}}[index];}
+\DoxyCodeLine{107     \textcolor{keywordtype}{int} quantidade = \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}}-\/>value();}
+\DoxyCodeLine{108     std::string caminhoReceita = \mbox{\hyperlink{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}{txtCaminhoReceita}}-\/>text().toStdString();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \textcolor{keywordflow}{if} (medicamentoSelecionado-\/>\mbox{\hyperlink{classMedication_a6bd246a40b794147903749340f4b5ffc}{requiresPrescription}}() \&\& caminhoReceita.empty()) \{}
+\DoxyCodeLine{111         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Atenção"{}}, \textcolor{stringliteral}{"{}Este medicamento exige receita. Informe o caminho do arquivo da receita."{}});}
+\DoxyCodeLine{112         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{113     \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115     \textcolor{keywordflow}{if} (medicamentoSelecionado-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() < quantidade) \{}
+\DoxyCodeLine{116         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Estoque insuficiente"{}}, \textcolor{stringliteral}{"{}Não há estoque suficiente para essa quantidade."{}});}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = \mbox{\hyperlink{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_ad19e87ea428a0ba35ba4cb8b9959013f}{requestMedication}}(cpf, medicamentoSelecionado, quantidade, caminhoReceita);}
+\DoxyCodeLine{121     \textcolor{keywordflow}{if} (!reserva) \{}
+\DoxyCodeLine{122         QMessageBox::critical(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Erro"{}}, \textcolor{stringliteral}{"{}Não foi possível registrar a solicitação."{}});}
+\DoxyCodeLine{123         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{124     \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Sucesso"{}}, \textcolor{stringliteral}{"{}Solicitação de medicamento enviada! Aguarde a avaliação da secretária."{}});}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \mbox{\hyperlink{classTelaSolicitarMedicamento_a5bd5e337804cf29ebd4649f97cedae43}{carregarMedicamentos}}(); \textcolor{comment}{// atualiza a tela com o estoque já descontado}}
+\DoxyCodeLine{129     \mbox{\hyperlink{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}{txtCpf}}-\/>clear();}
+\DoxyCodeLine{130     \mbox{\hyperlink{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}{txtCaminhoReceita}}-\/>clear();}
+\DoxyCodeLine{131     \mbox{\hyperlink{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}{spinQuantidade}}-\/>setValue(1);}
+\DoxyCodeLine{132 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a131b93fd9145cdfd7e80a8022df5da57}\label{classTelaSolicitarMedicamento_a131b93fd9145cdfd7e80a8022df5da57}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}}
+\index{on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{on\_btnVoltar\_clicked}{on\_btnVoltar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Solicitar\+Medicamento\+::on\+\_\+btn\+Voltar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 134 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134                                                     \{}
+\DoxyCodeLine{135     this-\/>close();}
+\DoxyCodeLine{136 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_ac2361a6b7670487310d3f442642f61f3}\label{classTelaSolicitarMedicamento_ac2361a6b7670487310d3f442642f61f3}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!on\_cbxMedicamento\_currentIndexChanged@{on\_cbxMedicamento\_currentIndexChanged}}
+\index{on\_cbxMedicamento\_currentIndexChanged@{on\_cbxMedicamento\_currentIndexChanged}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{on\_cbxMedicamento\_currentIndexChanged}{on\_cbxMedicamento\_currentIndexChanged}}
+{\footnotesize\ttfamily void Tela\+Solicitar\+Medicamento\+::on\+\_\+cbx\+Medicamento\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 83 of file Tela\+Solicitar\+Medicamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                                               \{}
+\DoxyCodeLine{84     Q\_UNUSED(index);}
+\DoxyCodeLine{85     \mbox{\hyperlink{classTelaSolicitarMedicamento_ac3e93699293a335dd0ac357886e7c1f2}{atualizarInfoMedicamento}}();}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}\label{classTelaSolicitarMedicamento_a1a77be7480e7fc6523c65e76e69e4371}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!btnSolicitar@{btnSolicitar}}
+\index{btnSolicitar@{btnSolicitar}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{btnSolicitar}{btnSolicitar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Solicitar\+Medicamento\+::btn\+Solicitar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}\label{classTelaSolicitarMedicamento_afa4b79f12e49757035a353ca0483568e}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!btnVoltar@{btnVoltar}}
+\index{btnVoltar@{btnVoltar}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{btnVoltar}{btnVoltar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Solicitar\+Medicamento\+::btn\+Voltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}\label{classTelaSolicitarMedicamento_aef53bed5657ce8ae188bcd5a86b1dbd0}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!cbxMedicamento@{cbxMedicamento}}
+\index{cbxMedicamento@{cbxMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{cbxMedicamento}{cbxMedicamento}}
+{\footnotesize\ttfamily QCombo\+Box$\ast$ Tela\+Solicitar\+Medicamento\+::cbx\+Medicamento\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}\label{classTelaSolicitarMedicamento_a6b8d9e3a10dc81249b997d5e0300fa32}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!controller@{controller}}
+\index{controller@{controller}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedicationsController}{Medications\+Controller}}$\ast$ Tela\+Solicitar\+Medicamento\+::controller\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}\label{classTelaSolicitarMedicamento_afc40548037d8667df1adaf37dbd6f4f4}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!layoutPrincipal@{layoutPrincipal}}
+\index{layoutPrincipal@{layoutPrincipal}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{layoutPrincipal}{layoutPrincipal}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ Tela\+Solicitar\+Medicamento\+::layout\+Principal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_aa1796ae0494166e22a110b1376316050}\label{classTelaSolicitarMedicamento_aa1796ae0494166e22a110b1376316050}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblCpf@{lblCpf}}
+\index{lblCpf@{lblCpf}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblCpf}{lblCpf}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}\label{classTelaSolicitarMedicamento_accd692f73e545693245ca5383bd613b0}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblEstoqueDisponivel@{lblEstoqueDisponivel}}
+\index{lblEstoqueDisponivel@{lblEstoqueDisponivel}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblEstoqueDisponivel}{lblEstoqueDisponivel}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Estoque\+Disponivel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}\label{classTelaSolicitarMedicamento_aaccf1f89a1baee6f718c88fd145f908b}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblExigeReceita@{lblExigeReceita}}
+\index{lblExigeReceita@{lblExigeReceita}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblExigeReceita}{lblExigeReceita}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Exige\+Receita\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_ad3199ed7f44a9c6f3b53a5e4273bf1be}\label{classTelaSolicitarMedicamento_ad3199ed7f44a9c6f3b53a5e4273bf1be}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblMedicamento@{lblMedicamento}}
+\index{lblMedicamento@{lblMedicamento}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblMedicamento}{lblMedicamento}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Medicamento\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a653e1ec902ecf75efa1dc05a1e17d4ac}\label{classTelaSolicitarMedicamento_a653e1ec902ecf75efa1dc05a1e17d4ac}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblQuantidade@{lblQuantidade}}
+\index{lblQuantidade@{lblQuantidade}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblQuantidade}{lblQuantidade}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Quantidade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_ad4a7b36c5c58a08ce0cd75213c3aa3f1}\label{classTelaSolicitarMedicamento_ad4a7b36c5c58a08ce0cd75213c3aa3f1}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!lblReceita@{lblReceita}}
+\index{lblReceita@{lblReceita}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{lblReceita}{lblReceita}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Solicitar\+Medicamento\+::lbl\+Receita\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}\label{classTelaSolicitarMedicamento_a42b64f17038dd87d0805b9544dca2f0a}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!medicamentosDisponiveis@{medicamentosDisponiveis}}
+\index{medicamentosDisponiveis@{medicamentosDisponiveis}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{medicamentosDisponiveis}{medicamentosDisponiveis}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMedication}{Medication}}$\ast$$>$ Tela\+Solicitar\+Medicamento\+::medicamentos\+Disponiveis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}\label{classTelaSolicitarMedicamento_a9f5a27cb0425f60478e4f63d1bbefd06}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!spinQuantidade@{spinQuantidade}}
+\index{spinQuantidade@{spinQuantidade}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{spinQuantidade}{spinQuantidade}}
+{\footnotesize\ttfamily QSpin\+Box$\ast$ Tela\+Solicitar\+Medicamento\+::spin\+Quantidade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}\label{classTelaSolicitarMedicamento_a428c77dc5395c0f8de461f8efa96dc7c}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!txtCaminhoReceita@{txtCaminhoReceita}}
+\index{txtCaminhoReceita@{txtCaminhoReceita}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{txtCaminhoReceita}{txtCaminhoReceita}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Solicitar\+Medicamento\+::txt\+Caminho\+Receita\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Tela\+Solicitar\+Medicamento.\+h.
+
+\mbox{\Hypertarget{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}\label{classTelaSolicitarMedicamento_a0226d9995056685d1c65d6ab53d75eea}} 
+\index{TelaSolicitarMedicamento@{TelaSolicitarMedicamento}!txtCpf@{txtCpf}}
+\index{txtCpf@{txtCpf}!TelaSolicitarMedicamento@{TelaSolicitarMedicamento}}
+\doxysubsubsection{\texorpdfstring{txtCpf}{txtCpf}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Solicitar\+Medicamento\+::txt\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Tela\+Solicitar\+Medicamento.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{TelaSolicitarMedicamento_8h}{Tela\+Solicitar\+Medicamento.\+h}}\item 
+src/\mbox{\hyperlink{TelaSolicitarMedicamento_8cpp}{Tela\+Solicitar\+Medicamento.\+cpp}}\end{DoxyCompactItemize}

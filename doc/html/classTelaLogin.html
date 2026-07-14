@@ -87,15 +87,16 @@ Collaboration diagram for TelaLogin:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTelaLogin__coll__graph.png" border="0" usemap="#aTelaLogin_coll__map" alt="Collaboration graph"/></div>
 <map name="aTelaLogin_coll__map" id="aTelaLogin_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" title=" " alt="" coords="7,5,86,32"/>
+<area shape="rect" title=" " alt="" coords="53,95,135,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,84,32"/>
+<area shape="rect" href="classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="108,5,179,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9aef403dbcff5489cb18b950b9ac23c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaLogin.html#a9aef403dbcff5489cb18b950b9ac23c3">TelaLogin</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="separator:a9aef403dbcff5489cb18b950b9ac23c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01724510f970e1c592e71fe25f4c299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaLogin.html#ae01724510f970e1c592e71fe25f4c299">TelaLogin</a> (<a class="el" href="classSystem.html">System</a> *sys, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:ae01724510f970e1c592e71fe25f4c299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43527872a0139a9facd15be623408f66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaLogin.html#a43527872a0139a9facd15be623408f66">~TelaLogin</a> ()</td></tr>
 <tr class="separator:a43527872a0139a9facd15be623408f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,13 +129,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ad051ee9ac60b5b55fc6baf806809093f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e45be8fa6240714318e99d29ecab307"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaLogin.html#a1e45be8fa6240714318e99d29ecab307">btnIrParaCadastro</a></td></tr>
 <tr class="separator:a1e45be8fa6240714318e99d29ecab307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1327491ba56048c1538799dc194aa484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTelaLogin.html#a1327491ba56048c1538799dc194aa484">sistema</a></td></tr>
+<tr class="separator:a1327491ba56048c1538799dc194aa484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00011">11</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00012">12</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9aef403dbcff5489cb18b950b9ac23c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aef403dbcff5489cb18b950b9ac23c3">&#9670;&nbsp;</a></span>TelaLogin()</h2>
+<a id="ae01724510f970e1c592e71fe25f4c299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01724510f970e1c592e71fe25f4c299">&#9670;&nbsp;</a></span>TelaLogin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,9 +148,19 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">TelaLogin::TelaLogin </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>sys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -158,7 +171,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="TelaLogin_8cpp_source.html#l00006">6</a> of file <a class="el" href="TelaLogin_8cpp_source.html">TelaLogin.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                    : QWidget(parent) {</div>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                                 : QWidget(parent), <a class="code" href="classTelaLogin.html#a1327491ba56048c1538799dc194aa484">sistema</a>(sys){</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// Reduzimos o tamanho da janela já que agora ela tem menos componentes</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    this-&gt;resize(380, 400);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Clínica - Acesso ao Sistema&quot;</span>);</div>
@@ -206,17 +219,18 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    connect(<a class="code" href="classTelaLogin.html#a1e45be8fa6240714318e99d29ecab307">btnIrParaCadastro</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="classTelaLogin.html#a0ab08db6758fbfe885221f5bfd066214">TelaLogin::on_btnIrParaCadastro_clicked</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="ttc" id="aclassTelaLogin_html_a0ab08db6758fbfe885221f5bfd066214"><div class="ttname"><a href="classTelaLogin.html#a0ab08db6758fbfe885221f5bfd066214">TelaLogin::on_btnIrParaCadastro_clicked</a></div><div class="ttdeci">void on_btnIrParaCadastro_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8cpp_source.html#l00072">TelaLogin.cpp:72</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_a1e45be8fa6240714318e99d29ecab307"><div class="ttname"><a href="classTelaLogin.html#a1e45be8fa6240714318e99d29ecab307">TelaLogin::btnIrParaCadastro</a></div><div class="ttdeci">QPushButton * btnIrParaCadastro</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00038">TelaLogin.h:38</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a1327491ba56048c1538799dc194aa484"><div class="ttname"><a href="classTelaLogin.html#a1327491ba56048c1538799dc194aa484">TelaLogin::sistema</a></div><div class="ttdeci">System * sistema</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00041">TelaLogin.h:41</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a1e45be8fa6240714318e99d29ecab307"><div class="ttname"><a href="classTelaLogin.html#a1e45be8fa6240714318e99d29ecab307">TelaLogin::btnIrParaCadastro</a></div><div class="ttdeci">QPushButton * btnIrParaCadastro</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00039">TelaLogin.h:39</a></div></div>
 <div class="ttc" id="aclassTelaLogin_html_a1f4753c4dc376d8765cb4756cb641f54"><div class="ttname"><a href="classTelaLogin.html#a1f4753c4dc376d8765cb4756cb641f54">TelaLogin::on_btnEntrar_clicked</a></div><div class="ttdeci">void on_btnEntrar_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8cpp_source.html#l00056">TelaLogin.cpp:56</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_a2127103fb190718d19d92bad05a1c6f1"><div class="ttname"><a href="classTelaLogin.html#a2127103fb190718d19d92bad05a1c6f1">TelaLogin::txtSenha</a></div><div class="ttdeci">QLineEdit * txtSenha</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00030">TelaLogin.h:30</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_a8da9f63225c047e3165db12f946d0ef5"><div class="ttname"><a href="classTelaLogin.html#a8da9f63225c047e3165db12f946d0ef5">TelaLogin::linhaDivisoria</a></div><div class="ttdeci">QFrame * linhaDivisoria</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00034">TelaLogin.h:34</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_a9282ceedc8c003cdb03f25c3bd69ff27"><div class="ttname"><a href="classTelaLogin.html#a9282ceedc8c003cdb03f25c3bd69ff27">TelaLogin::lblTituloLogin</a></div><div class="ttdeci">QLabel * lblTituloLogin</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00026">TelaLogin.h:26</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_a9558fd9c227931ff5f1412ed6445b817"><div class="ttname"><a href="classTelaLogin.html#a9558fd9c227931ff5f1412ed6445b817">TelaLogin::txtUsuario</a></div><div class="ttdeci">QLineEdit * txtUsuario</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00028">TelaLogin.h:28</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_aa3265757651cef7aa2ad6cfcc9277c9b"><div class="ttname"><a href="classTelaLogin.html#aa3265757651cef7aa2ad6cfcc9277c9b">TelaLogin::btnEntrar</a></div><div class="ttdeci">QPushButton * btnEntrar</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00031">TelaLogin.h:31</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_ac0bb7ac7d8f156f415b185f39bf753fa"><div class="ttname"><a href="classTelaLogin.html#ac0bb7ac7d8f156f415b185f39bf753fa">TelaLogin::layoutPrincipal</a></div><div class="ttdeci">QVBoxLayout * layoutPrincipal</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00023">TelaLogin.h:23</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_ad051ee9ac60b5b55fc6baf806809093f"><div class="ttname"><a href="classTelaLogin.html#ad051ee9ac60b5b55fc6baf806809093f">TelaLogin::lblTextoCadastro</a></div><div class="ttdeci">QLabel * lblTextoCadastro</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00037">TelaLogin.h:37</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_adf7baa3003c9c16074f2aebb2bdb93d8"><div class="ttname"><a href="classTelaLogin.html#adf7baa3003c9c16074f2aebb2bdb93d8">TelaLogin::lblSenha</a></div><div class="ttdeci">QLabel * lblSenha</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00029">TelaLogin.h:29</a></div></div>
-<div class="ttc" id="aclassTelaLogin_html_af48a08289e86c395c67537ff755ad40a"><div class="ttname"><a href="classTelaLogin.html#af48a08289e86c395c67537ff755ad40a">TelaLogin::lblUsuario</a></div><div class="ttdeci">QLabel * lblUsuario</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00027">TelaLogin.h:27</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a2127103fb190718d19d92bad05a1c6f1"><div class="ttname"><a href="classTelaLogin.html#a2127103fb190718d19d92bad05a1c6f1">TelaLogin::txtSenha</a></div><div class="ttdeci">QLineEdit * txtSenha</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00031">TelaLogin.h:31</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a8da9f63225c047e3165db12f946d0ef5"><div class="ttname"><a href="classTelaLogin.html#a8da9f63225c047e3165db12f946d0ef5">TelaLogin::linhaDivisoria</a></div><div class="ttdeci">QFrame * linhaDivisoria</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00035">TelaLogin.h:35</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a9282ceedc8c003cdb03f25c3bd69ff27"><div class="ttname"><a href="classTelaLogin.html#a9282ceedc8c003cdb03f25c3bd69ff27">TelaLogin::lblTituloLogin</a></div><div class="ttdeci">QLabel * lblTituloLogin</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00027">TelaLogin.h:27</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_a9558fd9c227931ff5f1412ed6445b817"><div class="ttname"><a href="classTelaLogin.html#a9558fd9c227931ff5f1412ed6445b817">TelaLogin::txtUsuario</a></div><div class="ttdeci">QLineEdit * txtUsuario</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00029">TelaLogin.h:29</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_aa3265757651cef7aa2ad6cfcc9277c9b"><div class="ttname"><a href="classTelaLogin.html#aa3265757651cef7aa2ad6cfcc9277c9b">TelaLogin::btnEntrar</a></div><div class="ttdeci">QPushButton * btnEntrar</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00032">TelaLogin.h:32</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_ac0bb7ac7d8f156f415b185f39bf753fa"><div class="ttname"><a href="classTelaLogin.html#ac0bb7ac7d8f156f415b185f39bf753fa">TelaLogin::layoutPrincipal</a></div><div class="ttdeci">QVBoxLayout * layoutPrincipal</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00024">TelaLogin.h:24</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_ad051ee9ac60b5b55fc6baf806809093f"><div class="ttname"><a href="classTelaLogin.html#ad051ee9ac60b5b55fc6baf806809093f">TelaLogin::lblTextoCadastro</a></div><div class="ttdeci">QLabel * lblTextoCadastro</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00038">TelaLogin.h:38</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_adf7baa3003c9c16074f2aebb2bdb93d8"><div class="ttname"><a href="classTelaLogin.html#adf7baa3003c9c16074f2aebb2bdb93d8">TelaLogin::lblSenha</a></div><div class="ttdeci">QLabel * lblSenha</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00030">TelaLogin.h:30</a></div></div>
+<div class="ttc" id="aclassTelaLogin_html_af48a08289e86c395c67537ff755ad40a"><div class="ttname"><a href="classTelaLogin.html#af48a08289e86c395c67537ff755ad40a">TelaLogin::lblUsuario</a></div><div class="ttdeci">QLabel * lblUsuario</div><div class="ttdef"><b>Definition:</b> <a href="TelaLogin_8h_source.html#l00028">TelaLogin.h:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,7 +284,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QString senha = <a class="code" href="classTelaLogin.html#a2127103fb190718d19d92bad05a1c6f1">txtSenha</a>-&gt;text();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> ((usuario == <span class="stringliteral">&quot;admin&quot;</span> &amp;&amp; senha == <span class="stringliteral">&quot;1234&quot;</span>) || (!usuario.isEmpty() &amp;&amp; !senha.isEmpty())) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classMainWindow.html">MainWindow</a> *janelaPrincipal = <span class="keyword">new</span> <a class="code" href="classMainWindow.html">MainWindow</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classMainWindow.html">MainWindow</a> *janelaPrincipal = <span class="keyword">new</span> <a class="code" href="classMainWindow.html">MainWindow</a>(<a class="code" href="classTelaLogin.html#a1327491ba56048c1538799dc194aa484">sistema</a>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        janelaPrincipal-&gt;setAttribute(Qt::WA_DeleteOnClose);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        janelaPrincipal-&gt;show();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -279,7 +293,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        QMessageBox::warning(<span class="keyword">this</span>, <span class="stringliteral">&quot;Erro de Acesso&quot;</span>, <span class="stringliteral">&quot;Por favor, preencha o usuário e senha corretamente!&quot;</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="ttc" id="aclassMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00015">mainwindow.h:15</a></div></div>
+<div class="ttc" id="aclassMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00018">mainwindow.h:18</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,14 +323,14 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TelaLogin_8cpp_source.html#l00072">72</a> of file <a class="el" href="TelaLogin_8cpp_source.html">TelaLogin.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                             {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Abre a sua tela de cadastro de usuário padrão do projeto</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a> *telaCadastro = <span class="keyword">new</span> <a class="code" href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a> *telaCadastro = <span class="keyword">new</span> <a class="code" href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a>(<span class="keyword">nullptr</span>, <a class="code" href="classTelaLogin.html#a1327491ba56048c1538799dc194aa484">sistema</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    telaCadastro-&gt;setAttribute(Qt::WA_DeleteOnClose);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    telaCadastro-&gt;show();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Opcional: Se quiser fechar a tela de login ao abrir o cadastro, descomente a linha abaixo:</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// this-&gt;close();</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="ttc" id="aclassTelaCadastroUsuario_html"><div class="ttname"><a href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a></div><div class="ttdef"><b>Definition:</b> <a href="TelaCadastroUsuario_8h_source.html#l00011">TelaCadastroUsuario.h:11</a></div></div>
+<div class="ttc" id="aclassTelaCadastroUsuario_html"><div class="ttname"><a href="classTelaCadastroUsuario.html">TelaCadastroUsuario</a></div><div class="ttdef"><b>Definition:</b> <a href="TelaCadastroUsuario_8h_source.html#l00013">TelaCadastroUsuario.h:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -341,7 +355,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00031">31</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00032">32</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +379,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00038">38</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00039">39</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +403,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00023">23</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00024">24</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +427,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00029">29</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00030">30</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +451,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00037">37</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00038">38</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +475,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00026">26</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00027">27</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +499,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00027">27</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00028">28</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +523,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00034">34</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00035">35</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+
+</div>
+</div>
+<a id="a1327491ba56048c1538799dc194aa484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1327491ba56048c1538799dc194aa484">&#9670;&nbsp;</a></span>sistema</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a>* TelaLogin::sistema</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00041">41</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +571,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00030">30</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00031">31</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +595,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00028">28</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TelaLogin_8h_source.html#l00029">29</a> of file <a class="el" href="TelaLogin_8h_source.html">TelaLogin.h</a>.</p>
 
 </div>
 </div>

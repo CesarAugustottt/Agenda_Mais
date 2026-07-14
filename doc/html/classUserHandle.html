@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af32fb0520616ddde9ab53a07d0364384"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserHandle.html#af32fb0520616ddde9ab53a07d0364384">~UserHandle</a> ()</td></tr>
 <tr class="memdesc:af32fb0520616ddde9ab53a07d0364384"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default destructor for the <a class="el" href="classUserHandle.html" title="This class represents the handle of a User.">UserHandle</a> Class.  <a href="classUserHandle.html#af32fb0520616ddde9ab53a07d0364384">More...</a><br /></td></tr>
 <tr class="separator:af32fb0520616ddde9ab53a07d0364384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab037032e94b684525884daba94a5a080"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserHandle.html#ab037032e94b684525884daba94a5a080">getName</a> () const override</td></tr>
+<tr class="memdesc:ab037032e94b684525884daba94a5a080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome do usuário.  <a href="classUserHandle.html#ab037032e94b684525884daba94a5a080">More...</a><br /></td></tr>
+<tr class="separator:ab037032e94b684525884daba94a5a080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5caee32fa944e7ea57fbf82bb2e15cbb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserHandle.html#a5caee32fa944e7ea57fbf82bb2e15cbb">getCpf</a> () const override</td></tr>
 <tr class="memdesc:a5caee32fa944e7ea57fbf82bb2e15cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cpf attribute in the <a class="el" href="classUser.html" title="This class represents the interface of a User as implemented in this code.">User</a> Class.  <a href="classUserHandle.html#a5caee32fa944e7ea57fbf82bb2e15cbb">More...</a><br /></td></tr>
 <tr class="separator:a5caee32fa944e7ea57fbf82bb2e15cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +169,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents the handle of a <a class="el" href="classUser.html" title="This class represents the interface of a User as implemented in this code.">User</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00061">61</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00062">62</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a605daa046e754b8237f9abe444f3f939"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a605daa046e754b8237f9abe444f3f939">&#9670;&nbsp;</a></span>UserHandle() <span class="overload">[1/2]</span></h2>
@@ -259,20 +262,20 @@ Additional Inherited Members</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00056">56</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                                                                                    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a8ad503c2e9947764d390359073e6c122">setName</a>(name);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ae3b032f5872a435982a900595cbac6b1">setCpf</a>(cpf);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab6854fc5d8b343f1c890c9a9487e5b57">setEmail</a>(email);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#afdd00c178b0d51a7117db6298395f55a">setPassword</a>(password);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">setType</a>(type);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00065">65</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                                                                                    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a8ad503c2e9947764d390359073e6c122">setName</a>(name);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ae3b032f5872a435982a900595cbac6b1">setCpf</a>(cpf);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab6854fc5d8b343f1c890c9a9487e5b57">setEmail</a>(email);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#afdd00c178b0d51a7117db6298395f55a">setPassword</a>(password);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">setType</a>(type);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="ttc" id="aclassHandle_html_a16021e57596d7369dfa1a9fadc35c06f"><div class="ttname"><a href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">Handle&lt; UserBody &gt;::pImpl_</a></div><div class="ttdeci">UserBody * pImpl_</div><div class="ttdoc">referência para a implementação</div><div class="ttdef"><b>Definition:</b> <a href="handleBody_8h_source.html#l00081">handleBody.h:81</a></div></div>
-<div class="ttc" id="aclassUserBody_html_a8ad503c2e9947764d390359073e6c122"><div class="ttname"><a href="classUserBody.html#a8ad503c2e9947764d390359073e6c122">UserBody::setName</a></div><div class="ttdeci">void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00031">UserImpl.cpp:31</a></div></div>
-<div class="ttc" id="aclassUserBody_html_ab57984453bb4467773f13f635c0bb5bf"><div class="ttname"><a href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">UserBody::setType</a></div><div class="ttdeci">void setType(UserType newType)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00047">UserImpl.cpp:47</a></div></div>
-<div class="ttc" id="aclassUserBody_html_ab6854fc5d8b343f1c890c9a9487e5b57"><div class="ttname"><a href="classUserBody.html#ab6854fc5d8b343f1c890c9a9487e5b57">UserBody::setEmail</a></div><div class="ttdeci">void setEmail(const std::string &amp;email)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00039">UserImpl.cpp:39</a></div></div>
-<div class="ttc" id="aclassUserBody_html_ae3b032f5872a435982a900595cbac6b1"><div class="ttname"><a href="classUserBody.html#ae3b032f5872a435982a900595cbac6b1">UserBody::setCpf</a></div><div class="ttdeci">void setCpf(const std::string &amp;cpf)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00035">UserImpl.cpp:35</a></div></div>
-<div class="ttc" id="aclassUserBody_html_afdd00c178b0d51a7117db6298395f55a"><div class="ttname"><a href="classUserBody.html#afdd00c178b0d51a7117db6298395f55a">UserBody::setPassword</a></div><div class="ttdeci">void setPassword(const std::string &amp;password)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00043">UserImpl.cpp:43</a></div></div>
+<div class="ttc" id="aclassUserBody_html_a8ad503c2e9947764d390359073e6c122"><div class="ttname"><a href="classUserBody.html#a8ad503c2e9947764d390359073e6c122">UserBody::setName</a></div><div class="ttdeci">void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00040">UserImpl.cpp:40</a></div></div>
+<div class="ttc" id="aclassUserBody_html_ab57984453bb4467773f13f635c0bb5bf"><div class="ttname"><a href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">UserBody::setType</a></div><div class="ttdeci">void setType(UserType newType)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00056">UserImpl.cpp:56</a></div></div>
+<div class="ttc" id="aclassUserBody_html_ab6854fc5d8b343f1c890c9a9487e5b57"><div class="ttname"><a href="classUserBody.html#ab6854fc5d8b343f1c890c9a9487e5b57">UserBody::setEmail</a></div><div class="ttdeci">void setEmail(const std::string &amp;email)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00048">UserImpl.cpp:48</a></div></div>
+<div class="ttc" id="aclassUserBody_html_ae3b032f5872a435982a900595cbac6b1"><div class="ttname"><a href="classUserBody.html#ae3b032f5872a435982a900595cbac6b1">UserBody::setCpf</a></div><div class="ttdeci">void setCpf(const std::string &amp;cpf)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00044">UserImpl.cpp:44</a></div></div>
+<div class="ttc" id="aclassUserBody_html_afdd00c178b0d51a7117db6298395f55a"><div class="ttname"><a href="classUserBody.html#afdd00c178b0d51a7117db6298395f55a">UserBody::setPassword</a></div><div class="ttdeci">void setPassword(const std::string &amp;password)</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00052">UserImpl.cpp:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,8 +304,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>This is the default constructor for the <a class="el" href="classUserHandle.html" title="This class represents the handle of a User.">UserHandle</a> Class. </p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00064">64</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00073">73</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -331,8 +334,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>This is the default destructor for the <a class="el" href="classUserHandle.html" title="This class represents the handle of a User.">UserHandle</a> Class. </p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00066">66</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00075">75</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,11 +370,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#a09f7933c1926c4d8b3b3181ef063b235">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00088">88</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                            { </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#aa611151e7f457bcc411a852f56cbdc69">deactivate</a>(); </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="ttc" id="aclassUserBody_html_aa611151e7f457bcc411a852f56cbdc69"><div class="ttname"><a href="classUserBody.html#aa611151e7f457bcc411a852f56cbdc69">UserBody::deactivate</a></div><div class="ttdeci">void deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00051">UserImpl.cpp:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00097">97</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                            { </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#aa611151e7f457bcc411a852f56cbdc69">deactivate</a>(); </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_aa611151e7f457bcc411a852f56cbdc69"><div class="ttname"><a href="classUserBody.html#aa611151e7f457bcc411a852f56cbdc69">UserBody::deactivate</a></div><div class="ttdeci">void deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00060">UserImpl.cpp:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -406,11 +409,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#a0256ab4607c0b726f0dfdb359dc95e5e">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00068">68</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                   {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a78f30be1b94c8a3532de9e15557ed559">getCpf</a>(); </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="ttc" id="aclassUserBody_html_a78f30be1b94c8a3532de9e15557ed559"><div class="ttname"><a href="classUserBody.html#a78f30be1b94c8a3532de9e15557ed559">UserBody::getCpf</a></div><div class="ttdeci">std::string getCpf() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00015">UserImpl.cpp:15</a></div></div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00077">77</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                   {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a78f30be1b94c8a3532de9e15557ed559">getCpf</a>(); </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_a78f30be1b94c8a3532de9e15557ed559"><div class="ttname"><a href="classUserBody.html#a78f30be1b94c8a3532de9e15557ed559">UserBody::getCpf</a></div><div class="ttdeci">std::string getCpf() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00024">UserImpl.cpp:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -445,11 +448,47 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#ac70713a8100d22a586cc50496069071e">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00072">72</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                     {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a5f3a4177f5c35eab68db150e50715e5a">getEmail</a>(); </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="ttc" id="aclassUserBody_html_a5f3a4177f5c35eab68db150e50715e5a"><div class="ttname"><a href="classUserBody.html#a5f3a4177f5c35eab68db150e50715e5a">UserBody::getEmail</a></div><div class="ttdeci">std::string getEmail() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00019">UserImpl.cpp:19</a></div></div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00081">81</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                     {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a5f3a4177f5c35eab68db150e50715e5a">getEmail</a>(); </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_a5f3a4177f5c35eab68db150e50715e5a"><div class="ttname"><a href="classUserBody.html#a5f3a4177f5c35eab68db150e50715e5a">UserBody::getEmail</a></div><div class="ttdeci">std::string getEmail() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00028">UserImpl.cpp:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab037032e94b684525884daba94a5a080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab037032e94b684525884daba94a5a080">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string UserHandle::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o nome do usuário. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string - O nome armazenado. </dd></dl>
+
+<p>Implements <a class="el" href="classUser.html#a538e10150819d39d8b7ad1f90c3ef630">User</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00020">20</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab85bceeae5d1863ecc8cc88f6139ac74">getName</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_ab85bceeae5d1863ecc8cc88f6139ac74"><div class="ttname"><a href="classUserBody.html#ab85bceeae5d1863ecc8cc88f6139ac74">UserBody::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00015">UserImpl.cpp:15</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -484,11 +523,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#a7b663fb1d71ad5ffe07d6225657099b9">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00076">76</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                   { </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ad507bd97636796fbe158bc3eced7d9b4">getType</a>(); </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="ttc" id="aclassUserBody_html_ad507bd97636796fbe158bc3eced7d9b4"><div class="ttname"><a href="classUserBody.html#ad507bd97636796fbe158bc3eced7d9b4">UserBody::getType</a></div><div class="ttdeci">UserType getType() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00023">UserImpl.cpp:23</a></div></div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00085">85</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                   { </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ad507bd97636796fbe158bc3eced7d9b4">getType</a>(); </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_ad507bd97636796fbe158bc3eced7d9b4"><div class="ttname"><a href="classUserBody.html#ad507bd97636796fbe158bc3eced7d9b4">UserBody::getType</a></div><div class="ttdeci">UserType getType() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00032">UserImpl.cpp:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,11 +562,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#ab2484a8ad22bca122e320184c219beab">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00080">80</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                { </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a52cec1c327b9509936cdb0111134d3ee">isActive</a>(); </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="ttc" id="aclassUserBody_html_a52cec1c327b9509936cdb0111134d3ee"><div class="ttname"><a href="classUserBody.html#a52cec1c327b9509936cdb0111134d3ee">UserBody::isActive</a></div><div class="ttdeci">bool isActive() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00027">UserImpl.cpp:27</a></div></div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00089">89</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                { </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#a52cec1c327b9509936cdb0111134d3ee">isActive</a>(); </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="ttc" id="aclassUserBody_html_a52cec1c327b9509936cdb0111134d3ee"><div class="ttname"><a href="classUserBody.html#a52cec1c327b9509936cdb0111134d3ee">UserBody::isActive</a></div><div class="ttdeci">bool isActive() const</div><div class="ttdef"><b>Definition:</b> <a href="UserImpl_8cpp_source.html#l00036">UserImpl.cpp:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -568,10 +607,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classUser.html#ad2bfc02024c5c0d867dfc32af82b83f3">User</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00084">84</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                         { </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">setType</a>(newType); </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00093">93</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                         { </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classHandle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="classUserBody.html#ab57984453bb4467773f13f635c0bb5bf">setType</a>(newType); </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -596,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00095">95</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00097">97</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +659,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00094">94</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00096">96</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
 
 </div>
 </div>

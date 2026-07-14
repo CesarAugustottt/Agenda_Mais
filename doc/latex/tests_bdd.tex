@@ -30,5 +30,42 @@
 \begin{DoxyItemize}
 \item {\bfseries{Dado}} que eu sou um Paciente logado e a data atual do sistema é {\ttfamily \char`\"{}20/11/2026\char`\"{}}.
 \item {\bfseries{Quando}} eu tento selecionar uma data passada, como {\ttfamily \char`\"{}19/11/2026\char`\"{}}, para qualquer horário.
-\item {\bfseries{Então}} o sistema deve desabilitar os horários correspondentes na interface. 
+\item {\bfseries{Então}} o sistema deve desabilitar os horários correspondentes na interface.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md7}{}\doxysection{História de Usuário\+: Acompanhar Status do Agendamento}\label{tests_bdd_autotoc_md7}
+\hypertarget{tests_bdd_autotoc_md8}{}\doxysubsection{Consulta de Status pelo Paciente}\label{tests_bdd_autotoc_md8}
+
+\begin{DoxyItemize}
+\item {\bfseries{Como um}} Paciente
+\item {\bfseries{Eu quero}} visualizar o status das minhas consultas solicitadas (pendente, confirmada ou recusada)
+\item {\bfseries{Para que}} eu saiba se preciso aguardar, já posso comparecer, ou preciso remarcar.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md9}{}\doxysubsubsection{Cenário 1\+: Consulta recém-\/criada aparece como Pendente}\label{tests_bdd_autotoc_md9}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dado}} que eu solicitei uma consulta e nenhuma secretária/médico ainda avaliou o pedido.
+\item {\bfseries{Quando}} eu abro a tela de acompanhamento e busco pelo meu CPF.
+\item {\bfseries{Então}} o sistema deve exibir a consulta com status {\ttfamily \char`\"{}\+Pendente\char`\"{}} e justificativa {\ttfamily \char`\"{}-\/\char`\"{}}.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md10}{}\doxysubsubsection{Cenário 2\+: Consulta confirmada}\label{tests_bdd_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dado}} que minha consulta teve o status alterado para {\ttfamily CONFIRMED} pela secretária.
+\item {\bfseries{Quando}} eu busco pelo meu CPF na tela de acompanhamento.
+\item {\bfseries{Então}} o sistema deve exibir o status {\ttfamily \char`\"{}\+Confirmada\char`\"{}} e justificativa {\ttfamily \char`\"{}-\/\char`\"{}}.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md11}{}\doxysubsubsection{Cenário 3\+: Consulta recusada com justificativa}\label{tests_bdd_autotoc_md11}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dado}} que minha consulta teve o status alterado para {\ttfamily REJECTED} com a justificativa {\ttfamily \char`\"{}\+Médico indisponível nesse horário\char`\"{}}.
+\item {\bfseries{Quando}} eu busco pelo meu CPF na tela de acompanhamento.
+\item {\bfseries{Então}} o sistema deve exibir o status {\ttfamily \char`\"{}\+Recusada\char`\"{}} e a justificativa {\ttfamily \char`\"{}\+Médico indisponível nesse horário\char`\"{}}.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md12}{}\doxysubsubsection{Cenário 4\+: Busca sem CPF mostra todas as consultas}\label{tests_bdd_autotoc_md12}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dado}} que existem consultas de múltiplos pacientes cadastradas no sistema.
+\item {\bfseries{Quando}} eu deixo o campo de CPF vazio e clico em {\ttfamily \char`\"{}\+Buscar\char`\"{}}.
+\item {\bfseries{Então}} o sistema deve exibir todas as consultas de todos os pacientes, com a coluna {\ttfamily \char`\"{}\+Paciente\char`\"{}} identificando cada uma.
+\end{DoxyItemize}\hypertarget{tests_bdd_autotoc_md13}{}\doxysubsubsection{Cenário 5\+: Busca com CPF filtra apenas o paciente informado}\label{tests_bdd_autotoc_md13}
+
+\begin{DoxyItemize}
+\item {\bfseries{Dado}} que existem consultas de mais de um paciente cadastradas no sistema.
+\item {\bfseries{Quando}} eu digito o CPF de um paciente específico e clico em {\ttfamily \char`\"{}\+Buscar\char`\"{}}.
+\item {\bfseries{Então}} o sistema deve exibir somente as consultas vinculadas àquele CPF. 
 \end{DoxyItemize}

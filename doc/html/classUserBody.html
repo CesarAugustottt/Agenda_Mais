@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43e1143995f735f72e242c424424198a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserBody.html#a43e1143995f735f72e242c424424198a">~UserBody</a> ()</td></tr>
 <tr class="memdesc:a43e1143995f735f72e242c424424198a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the default destructor for the <a class="el" href="classUserBody.html" title="This class represents the concrete implementation of a User.">UserBody</a> Class.  <a href="classUserBody.html#a43e1143995f735f72e242c424424198a">More...</a><br /></td></tr>
 <tr class="separator:a43e1143995f735f72e242c424424198a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85bceeae5d1863ecc8cc88f6139ac74"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserBody.html#ab85bceeae5d1863ecc8cc88f6139ac74">getName</a> () const</td></tr>
+<tr class="separator:ab85bceeae5d1863ecc8cc88f6139ac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f30be1b94c8a3532de9e15557ed559"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserBody.html#a78f30be1b94c8a3532de9e15557ed559">getCpf</a> () const</td></tr>
 <tr class="separator:a78f30be1b94c8a3532de9e15557ed559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3a4177f5c35eab68db150e50715e5a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUserBody.html#a5f3a4177f5c35eab68db150e50715e5a">getEmail</a> () const</td></tr>
@@ -248,10 +250,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00051">51</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                          {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a8759d8676cce0bfe4180568a4a2cf4f6">active</a> = <span class="keyword">false</span>; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00060">60</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a8759d8676cce0bfe4180568a4a2cf4f6">active</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,10 +272,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00015">15</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                 {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a>; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00024">24</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                 {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,10 +294,32 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00019">19</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                   {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a>; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00028">28</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                   {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab85bceeae5d1863ecc8cc88f6139ac74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85bceeae5d1863ecc8cc88f6139ac74">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string UserBody::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00015">15</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                  {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#ae6645ee270deaf30d525117689d36cf8">name</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -314,10 +338,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00023">23</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                 {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a6084389bf7a938d7919de5295ea78f66">type</a>; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00032">32</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                 {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a6084389bf7a938d7919de5295ea78f66">type</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,10 +360,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00027">27</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                              {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a8759d8676cce0bfe4180568a4a2cf4f6">active</a>; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00036">36</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classUserBody.html#a8759d8676cce0bfe4180568a4a2cf4f6">active</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -359,10 +383,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00035">35</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                          {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a> = <a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a>; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00044">44</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                          {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a> = <a class="code" href="classUserBody.html#a5257440dfdac5bd44d4a95c1c69a12ea">cpf</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,10 +406,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00039">39</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                              {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a> = <a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a>; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00048">48</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                              {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a> = <a class="code" href="classUserBody.html#ac9aaac97fe73930ee52edac4ccd015ed">email</a>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,10 +429,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00031">31</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                            {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ae6645ee270deaf30d525117689d36cf8">name</a> = <a class="code" href="classUserBody.html#ae6645ee270deaf30d525117689d36cf8">name</a>; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00040">40</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ae6645ee270deaf30d525117689d36cf8">name</a> = <a class="code" href="classUserBody.html#ae6645ee270deaf30d525117689d36cf8">name</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,10 +452,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00043">43</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ae8f19d8ca94419069ea6a10221814e2c">password</a> = <a class="code" href="classUserBody.html#ae8f19d8ca94419069ea6a10221814e2c">password</a>; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00052">52</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#ae8f19d8ca94419069ea6a10221814e2c">password</a> = <a class="code" href="classUserBody.html#ae8f19d8ca94419069ea6a10221814e2c">password</a>; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -451,10 +475,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00047">47</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                       {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a6084389bf7a938d7919de5295ea78f66">type</a> = newType; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8cpp_source.html#l00056">56</a> of file <a class="el" href="UserImpl_8cpp_source.html">UserImpl.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                       {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this-&gt;<a class="code" href="classUserBody.html#a6084389bf7a938d7919de5295ea78f66">type</a> = newType; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -479,7 +503,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00054">54</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00055">55</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +527,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00053">53</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="UserImpl_8h_source.html#l00054">54</a> of file <a class="el" href="UserImpl_8h_source.html">UserImpl.h</a>.</p>
 
 </div>
 </div>

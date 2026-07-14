@@ -1,12 +1,13 @@
 <map id="test/funcional/main.cpp" name="test/funcional/main.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="163,5,338,32"/>
-<area shape="rect" id="node2" href="$funcional__tests_8h.html" title=" " alt="" coords="184,80,317,107"/>
-<area shape="rect" id="node3" href="$System_8h.html" title=" " alt="" coords="61,155,192,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="216,155,285,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="309,155,389,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="98,379,157,405"/>
-<area shape="rect" id="node5" href="$User_8h.html" title=" " alt="" coords="27,304,90,331"/>
-<area shape="rect" id="node6" href="$Appointment_8h.html" title=" " alt="" coords="67,229,186,256"/>
-<area shape="rect" id="node7" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="168,304,274,331"/>
-<area shape="rect" id="node8" href="$Reservation_8h.html" title=" " alt="" coords="261,229,373,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="207,5,382,32"/>
+<area shape="rect" id="node2" href="$funcional__tests_8h.html" title=" " alt="" coords="228,80,361,107"/>
+<area shape="rect" id="node3" href="$System_8h.html" title=" " alt="" coords="105,155,236,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="260,155,329,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="353,155,433,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="176,379,235,405"/>
+<area shape="rect" id="node5" title=" " alt="" coords="22,229,85,256"/>
+<area shape="rect" id="node6" href="$User_8h.html" title=" " alt="" coords="105,304,167,331"/>
+<area shape="rect" id="node7" href="$Appointment_8h.html" title=" " alt="" coords="161,229,279,256"/>
+<area shape="rect" id="node8" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="243,304,349,331"/>
+<area shape="rect" id="node9" href="$Reservation_8h.html" title=" " alt="" coords="373,304,485,331"/>
 </map>

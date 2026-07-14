@@ -42,6 +42,8 @@ virtual \mbox{\hyperlink{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}{$\si
 \item 
 \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ \mbox{\hyperlink{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}{create\+Reservation}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path)
 \item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ \mbox{\hyperlink{classSystemBody_a34b02ac9a695141b852b39a8a46783e5}{get\+All\+Appointments}} () const
+\item 
 void \mbox{\hyperlink{classSystemBody_aa093acb06c4ca377572365553caa188f}{add\+User}} (\mbox{\hyperlink{classUser}{User}} $\ast$user)
 \item 
 void \mbox{\hyperlink{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}{add\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment)
@@ -282,19 +284,19 @@ Definition at line 24 of file System\+Impl.\+cpp.
 
 
 
-Definition at line 81 of file System\+Impl.\+cpp.
+Definition at line 85 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{81                                                            \{}
-\DoxyCodeLine{82     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.begin(), \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end(), appointment);}
-\DoxyCodeLine{83     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end()) \{}
-\DoxyCodeLine{84         \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{85         \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.erase(it);}
-\DoxyCodeLine{86         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{87     \}}
-\DoxyCodeLine{88     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{89 \}}
+\DoxyCodeLine{85                                                            \{}
+\DoxyCodeLine{86     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.begin(), \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end(), appointment);}
+\DoxyCodeLine{87     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.end()) \{}
+\DoxyCodeLine{88         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{89         \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}}.erase(it);}
+\DoxyCodeLine{90         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{93 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}\label{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}} 
@@ -305,20 +307,20 @@ Definition at line 81 of file System\+Impl.\+cpp.
 
 
 
-Definition at line 91 of file System\+Impl.\+cpp.
+Definition at line 95 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{91                                                        \{}
-\DoxyCodeLine{92     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.begin(); it != \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.end(); ++it) \{}
-\DoxyCodeLine{93         \textcolor{keywordflow}{if} ((*it)-\/>getName() == name) \{}
-\DoxyCodeLine{94             \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{95             \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.erase(it);}
-\DoxyCodeLine{96             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{97         \}}
-\DoxyCodeLine{98     \}}
-\DoxyCodeLine{99     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{100 \}}
+\DoxyCodeLine{95                                                        \{}
+\DoxyCodeLine{96     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.begin(); it != \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.end(); ++it) \{}
+\DoxyCodeLine{97         \textcolor{keywordflow}{if} ((*it)-\/>getName() == name) \{}
+\DoxyCodeLine{98             \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{99             \mbox{\hyperlink{classSystemBody_a768748c71179e410c2cb6d3c12df9f2c}{medications}}.erase(it);}
+\DoxyCodeLine{100             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{104 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}\label{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}} 
@@ -329,19 +331,19 @@ Definition at line 91 of file System\+Impl.\+cpp.
 
 
 
-Definition at line 102 of file System\+Impl.\+cpp.
+Definition at line 106 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{102                                                            \{}
-\DoxyCodeLine{103     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.begin(), \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end(), reservation);}
-\DoxyCodeLine{104     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end()) \{}
-\DoxyCodeLine{105         \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{106         \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.erase(it);}
-\DoxyCodeLine{107         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{108     \}}
-\DoxyCodeLine{109     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{110 \}}
+\DoxyCodeLine{106                                                            \{}
+\DoxyCodeLine{107     \textcolor{keyword}{auto} it = std::find(\mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.begin(), \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end(), reservation);}
+\DoxyCodeLine{108     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.end()) \{}
+\DoxyCodeLine{109         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{110         \mbox{\hyperlink{classSystemBody_a532636830dcdedae5300e30f9371f006}{reservations}}.erase(it);}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{114 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}\label{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}} 
@@ -352,20 +354,37 @@ Definition at line 102 of file System\+Impl.\+cpp.
 
 
 
-Definition at line 70 of file System\+Impl.\+cpp.
+Definition at line 74 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{70                                                 \{}
-\DoxyCodeLine{71     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.begin(); it != \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.end(); ++it) \{}
-\DoxyCodeLine{72         \textcolor{keywordflow}{if} ((*it)-\/>getCpf() == cpf) \{}
-\DoxyCodeLine{73             \textcolor{keyword}{delete} *it; }
-\DoxyCodeLine{74             \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.erase(it);}
-\DoxyCodeLine{75             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{76         \}}
-\DoxyCodeLine{77     \}}
-\DoxyCodeLine{78     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{79 \}}
+\DoxyCodeLine{74                                                 \{}
+\DoxyCodeLine{75     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.begin(); it != \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.end(); ++it) \{}
+\DoxyCodeLine{76         \textcolor{keywordflow}{if} ((*it)-\/>getCpf() == cpf) \{}
+\DoxyCodeLine{77             \textcolor{keyword}{delete} *it; }
+\DoxyCodeLine{78             \mbox{\hyperlink{classSystemBody_a37bcde4dacaa08c563c560e1995b838a}{users}}.erase(it);}
+\DoxyCodeLine{79             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemBody_a34b02ac9a695141b852b39a8a46783e5}\label{classSystemBody_a34b02ac9a695141b852b39a8a46783e5}} 
+\index{SystemBody@{SystemBody}!getAllAppointments@{getAllAppointments}}
+\index{getAllAppointments@{getAllAppointments}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{getAllAppointments()}{getAllAppointments()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ System\+Body\+::get\+All\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 69 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                              \{}
+\DoxyCodeLine{70     \textcolor{keywordflow}{return} \mbox{\hyperlink{classSystemBody_a44b58e8381472c788ca9185ba68f713b}{appointments}};}
+\DoxyCodeLine{71 \}}
 
 \end{DoxyCode}
 

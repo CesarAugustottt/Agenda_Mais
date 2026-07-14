@@ -1,0 +1,14 @@
+<map id="src/TelaAgenda.h" name="src/TelaAgenda.h">
+<area shape="rect" id="node1" title=" " alt="" coords="233,5,365,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="108,80,219,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="243,80,355,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="379,80,486,107"/>
+<area shape="rect" id="node6" href="$System_8h.html" title=" " alt="" coords="510,80,593,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="555,304,614,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="401,155,464,181"/>
+<area shape="rect" id="node9" href="$User_8h.html" title=" " alt="" coords="484,229,547,256"/>
+<area shape="rect" id="node10" href="$Appointment_8h.html" title=" " alt="" coords="540,155,659,181"/>
+<area shape="rect" id="node11" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="622,229,729,256"/>
+<area shape="rect" id="node12" href="$Reservation_8h.html" title=" " alt="" coords="753,229,865,256"/>
+</map>

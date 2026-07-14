@@ -107,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a838d1c7f550b0238c3998e2a3ca6bdaf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointment.html#a838d1c7f550b0238c3998e2a3ca6bdaf">getAppointmentType</a> () const =0</td></tr>
 <tr class="memdesc:a838d1c7f550b0238c3998e2a3ca6bdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the appointmentType attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointment.html#a838d1c7f550b0238c3998e2a3ca6bdaf">More...</a><br /></td></tr>
 <tr class="separator:a838d1c7f550b0238c3998e2a3ca6bdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50329be79996445534244159b2c31522"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointment.html#a50329be79996445534244159b2c31522">getJustificativa</a> () const =0</td></tr>
+<tr class="memdesc:a50329be79996445534244159b2c31522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a justificativa cadastrada para a consulta (usada em caso de recusa).  <a href="classAppointment.html#a50329be79996445534244159b2c31522">More...</a><br /></td></tr>
+<tr class="separator:a50329be79996445534244159b2c31522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a120cc5218236f1e535e58da773fe36bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointment.html#a120cc5218236f1e535e58da773fe36bf">setPatient</a> (<a class="el" href="classUser.html">User</a> *patient)=0</td></tr>
 <tr class="memdesc:a120cc5218236f1e535e58da773fe36bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the patientName attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointment.html#a120cc5218236f1e535e58da773fe36bf">More...</a><br /></td></tr>
 <tr class="separator:a120cc5218236f1e535e58da773fe36bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77c5105bf0eabedeb6bf6d6bf489335a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointment.html#a77c5105bf0eabedeb6bf6d6bf489335a">setAppointmentType</a> (const <a class="el" href="Appointment_8h.html#a9a222655f442e5d6045c7dd9dc3438e4">Specialty</a> type)=0</td></tr>
 <tr class="memdesc:a77c5105bf0eabedeb6bf6d6bf489335a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the appointmentType attribute in the <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> Class.  <a href="classAppointment.html#a77c5105bf0eabedeb6bf6d6bf489335a">More...</a><br /></td></tr>
 <tr class="separator:a77c5105bf0eabedeb6bf6d6bf489335a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ac93c686acf184da261057faecd304"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppointment.html#a24ac93c686acf184da261057faecd304">setJustificativa</a> (const std::string &amp;justificativa)=0</td></tr>
+<tr class="memdesc:a24ac93c686acf184da261057faecd304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a justificativa da consulta (ex: motivo da recusa pela secretária/médico).  <a href="classAppointment.html#a24ac93c686acf184da261057faecd304">More...</a><br /></td></tr>
+<tr class="separator:a24ac93c686acf184da261057faecd304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents the interface of an <a class="el" href="classAppointment.html" title="This class represents the interface of an Appointment as implemented in this code.">Appointment</a> as implemented in this code. </p>
@@ -261,6 +267,36 @@ Public Member Functions</h2></td></tr>
 </ul>
 
 <p>Implemented in <a class="el" href="classAppointmentHandle.html#a05d02a9d1e6efefc85b309a7902a23d1">AppointmentHandle</a>.</p>
+
+</div>
+</div>
+<a id="a50329be79996445534244159b2c31522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50329be79996445534244159b2c31522">&#9670;&nbsp;</a></span>getJustificativa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Appointment::getJustificativa </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna a justificativa cadastrada para a consulta (usada em caso de recusa). </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string - a justificativa, ou string vazia se nenhuma foi registrada. </dd></dl>
+
+<p>Implemented in <a class="el" href="classAppointmentHandle.html#a425484ca2af97b4b2a89c60a5a0698e3">AppointmentHandle</a>.</p>
 
 </div>
 </div>
@@ -477,6 +513,42 @@ Public Member Functions</h2></td></tr>
 </ul>
 
 <p>Implemented in <a class="el" href="classAppointmentHandle.html#a847075921b1bf708fb14fc98235137c3">AppointmentHandle</a>.</p>
+
+</div>
+</div>
+<a id="a24ac93c686acf184da261057faecd304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ac93c686acf184da261057faecd304">&#9670;&nbsp;</a></span>setJustificativa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Appointment::setJustificativa </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>justificativa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define a justificativa da consulta (ex: motivo da recusa pela secretária/médico). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">justificativa</td><td>texto explicando o motivo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classAppointmentHandle.html#a3a94647964140750a5a902c49544ee8c">AppointmentHandle</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,383 @@
+\hypertarget{classTelaStatusAgendamento}{}\doxysection{Tela\+Status\+Agendamento Class Reference}
+\label{classTelaStatusAgendamento}\index{TelaStatusAgendamento@{TelaStatusAgendamento}}
+
+
+{\ttfamily \#include $<$Tela\+Status\+Agendamento.\+h$>$}
+
+
+
+Inheritance diagram for Tela\+Status\+Agendamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classTelaStatusAgendamento__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tela\+Status\+Agendamento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classTelaStatusAgendamento__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTelaStatusAgendamento_a4ea5bb95e21159d2525c63e4b49210c7}{Tela\+Status\+Agendamento}} (QWidget $\ast$parent=nullptr, \mbox{\hyperlink{classSystem}{System}} $\ast$sys=nullptr)
+\item 
+\mbox{\hyperlink{classTelaStatusAgendamento_ae25444a456d6e913f47c54fc51c1525e}{$\sim$\+Tela\+Status\+Agendamento}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaStatusAgendamento_a0303003188a5a8a35dd4828038537cb7}{on\+\_\+btn\+Buscar\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classTelaStatusAgendamento_a3047fe17b66910b99731ebb5fdcddc55}{on\+\_\+btn\+Voltar\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTelaStatusAgendamento_a4c55cf2ee56bda2e62be2a5a2abaee65}{carregar\+Status}} (const std\+::string \&cpf\+Paciente)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static QString \mbox{\hyperlink{classTelaStatusAgendamento_a0412489018fd26cae1a77a0977331fd6}{especialidade\+To\+String}} (\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} esp)
+\item 
+static QString \mbox{\hyperlink{classTelaStatusAgendamento_a9f7ea48fb7e089c74c9d135c108c9791}{status\+To\+String}} (\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} status)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem}{System}} $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}{sistema}}
+\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}{layout\+Principal}}
+\item 
+QHBox\+Layout $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layout\+Busca}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_a173a5a98eff2b356081090d38575e64e}{lbl\+Cpf}}
+\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}{txt\+Cpf}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}{btn\+Buscar}}
+\item 
+QTable\+Widget $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}{btn\+Voltar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 13 of file Tela\+Status\+Agendamento.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a4ea5bb95e21159d2525c63e4b49210c7}\label{classTelaStatusAgendamento_a4ea5bb95e21159d2525c63e4b49210c7}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{TelaStatusAgendamento()}{TelaStatusAgendamento()}}
+{\footnotesize\ttfamily Tela\+Status\+Agendamento\+::\+Tela\+Status\+Agendamento (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classSystem}{System}} $\ast$}]{sys = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 7 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8     : QWidget(parent), \mbox{\hyperlink{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}{sistema}}(sys)}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     this-\/>resize(680, 480);}
+\DoxyCodeLine{11     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Acompanhar Status do Agendamento"{}});}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}{layoutPrincipal}} = \textcolor{keyword}{new} QVBoxLayout(\textcolor{keyword}{this});}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{comment}{// linha de busca por CPF}}
+\DoxyCodeLine{16     \mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layoutBusca}} = \textcolor{keyword}{new} QHBoxLayout();}
+\DoxyCodeLine{17     \mbox{\hyperlink{classTelaStatusAgendamento_a173a5a98eff2b356081090d38575e64e}{lblCpf}} = \textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}CPF do Paciente (deixe vazio para ver todos):"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{18     \mbox{\hyperlink{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}{txtCpf}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}{btnBuscar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Buscar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layoutBusca}}-\/>addWidget(\mbox{\hyperlink{classTelaStatusAgendamento_a173a5a98eff2b356081090d38575e64e}{lblCpf}});}
+\DoxyCodeLine{21     \mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layoutBusca}}-\/>addWidget(\mbox{\hyperlink{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}{txtCpf}});}
+\DoxyCodeLine{22     \mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layoutBusca}}-\/>addWidget(\mbox{\hyperlink{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}{btnBuscar}});}
+\DoxyCodeLine{23     \mbox{\hyperlink{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}{layoutPrincipal}}-\/>addLayout(\mbox{\hyperlink{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}{layoutBusca}});}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{comment}{// tabela de resultados}}
+\DoxyCodeLine{26     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}} = \textcolor{keyword}{new} QTableWidget(\textcolor{keyword}{this});}
+\DoxyCodeLine{27     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setColumnCount(6);}
+\DoxyCodeLine{28     QStringList headers;}
+\DoxyCodeLine{29     headers << \textcolor{stringliteral}{"{}Paciente"{}} << \textcolor{stringliteral}{"{}Data"{}} << \textcolor{stringliteral}{"{}Hora"{}} << \textcolor{stringliteral}{"{}Especialidade"{}} << \textcolor{stringliteral}{"{}Status"{}} << \textcolor{stringliteral}{"{}Justificativa"{}};}
+\DoxyCodeLine{30     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setHorizontalHeaderLabels(headers);}
+\DoxyCodeLine{31     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>horizontalHeader()-\/>setStretchLastSection(\textcolor{keyword}{true});}
+\DoxyCodeLine{32     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setEditTriggers(QAbstractItemView::NoEditTriggers);}
+\DoxyCodeLine{33     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setSelectionBehavior(QAbstractItemView::SelectRows);}
+\DoxyCodeLine{34     \mbox{\hyperlink{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \mbox{\hyperlink{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}{btnVoltar}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Voltar"{}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{37     \mbox{\hyperlink{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}{layoutPrincipal}}-\/>addWidget(\mbox{\hyperlink{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}{btnVoltar}});}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     connect(\mbox{\hyperlink{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}{btnBuscar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaStatusAgendamento_a0303003188a5a8a35dd4828038537cb7}{TelaStatusAgendamento::on\_btnBuscar\_clicked}});}
+\DoxyCodeLine{40     connect(\mbox{\hyperlink{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}{btnVoltar}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classTelaStatusAgendamento_a3047fe17b66910b99731ebb5fdcddc55}{TelaStatusAgendamento::on\_btnVoltar\_clicked}});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{// já carrega TODAS as consultas de TODOS os pacientes ao abrir a tela}}
+\DoxyCodeLine{43     \mbox{\hyperlink{classTelaStatusAgendamento_a4c55cf2ee56bda2e62be2a5a2abaee65}{carregarStatus}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaStatusAgendamento_ae25444a456d6e913f47c54fc51c1525e}\label{classTelaStatusAgendamento_ae25444a456d6e913f47c54fc51c1525e}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!````~TelaStatusAgendamento@{$\sim$TelaStatusAgendamento}}
+\index{````~TelaStatusAgendamento@{$\sim$TelaStatusAgendamento}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{$\sim$TelaStatusAgendamento()}{~TelaStatusAgendamento()}}
+{\footnotesize\ttfamily Tela\+Status\+Agendamento\+::$\sim$\+Tela\+Status\+Agendamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a4c55cf2ee56bda2e62be2a5a2abaee65}\label{classTelaStatusAgendamento_a4c55cf2ee56bda2e62be2a5a2abaee65}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!carregarStatus@{carregarStatus}}
+\index{carregarStatus@{carregarStatus}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{carregarStatus()}{carregarStatus()}}
+{\footnotesize\ttfamily void Tela\+Status\+Agendamento\+::carregar\+Status (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf\+Paciente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                                        \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}{sistema}}) \{}
+\DoxyCodeLine{50         QMessageBox::critical(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Erro"{}}, \textcolor{stringliteral}{"{}Sistema não inicializado."{}});}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     std::vector<Appointment*> todas = \mbox{\hyperlink{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}{sistema}}-\/>\mbox{\hyperlink{classSystem_a37f34483a9e487ad6760fb321d07569a}{getAllAppointments}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{comment}{// se o CPF estiver vazio, mostra TODAS as consultas de TODOS; senão, filtra por paciente}}
+\DoxyCodeLine{57     std::vector<Appointment*> filtradas;}
+\DoxyCodeLine{58     \textcolor{keywordflow}{if} (cpfPaciente.empty()) \{}
+\DoxyCodeLine{59         filtradas = todas;}
+\DoxyCodeLine{60     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{61         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} consulta : todas) \{}
+\DoxyCodeLine{62             \mbox{\hyperlink{classUser}{User}}* paciente = consulta-\/>getPatient();}
+\DoxyCodeLine{63             \textcolor{keywordflow}{if} (paciente \&\& paciente-\/>\mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{getCpf}}() == cpfPaciente) \{}
+\DoxyCodeLine{64                 filtradas.push\_back(consulta);}
+\DoxyCodeLine{65             \}}
+\DoxyCodeLine{66         \}}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setRowCount(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(filtradas.size()));}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < filtradas.size(); ++i) \{}
+\DoxyCodeLine{72         \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = filtradas[i];}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         QString nomePaciente = consulta-\/>\mbox{\hyperlink{classAppointment_add6d4e67b0050b1f56328f92eca59328}{getPatient}}() ? QString::fromStdString(consulta-\/>\mbox{\hyperlink{classAppointment_add6d4e67b0050b1f56328f92eca59328}{getPatient}}()-\/>\mbox{\hyperlink{classUser_a538e10150819d39d8b7ad1f90c3ef630}{getName}}()) : \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 0, \textcolor{keyword}{new} QTableWidgetItem(nomePaciente));}
+\DoxyCodeLine{77         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 1, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(consulta-\/>\mbox{\hyperlink{classAppointment_a8649cfc25e7b38d114310f2e5e1924b2}{getDate}}())));}
+\DoxyCodeLine{78         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 2, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(consulta-\/>\mbox{\hyperlink{classAppointment_a7a0d1b841e8498ea0b8ff6ec1a52e8fd}{getTime}}())));}
+\DoxyCodeLine{79         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 3, \textcolor{keyword}{new} QTableWidgetItem(\mbox{\hyperlink{classTelaStatusAgendamento_a0412489018fd26cae1a77a0977331fd6}{especialidadeToString}}(consulta-\/>\mbox{\hyperlink{classAppointment_a838d1c7f550b0238c3998e2a3ca6bdaf}{getAppointmentType}}())));}
+\DoxyCodeLine{80         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 4, \textcolor{keyword}{new} QTableWidgetItem(\mbox{\hyperlink{classTelaStatusAgendamento_a9f7ea48fb7e089c74c9d135c108c9791}{statusToString}}(consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}())));}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82         QString justificativa;}
+\DoxyCodeLine{83         \textcolor{keywordflow}{if} (consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}() == \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba9cc8ad3d99798c6726d4af0bd14e49d2}{Status::REJECTED}}) \{}
+\DoxyCodeLine{84             std::string just = consulta-\/>\mbox{\hyperlink{classAppointment_a50329be79996445534244159b2c31522}{getJustificativa}}();}
+\DoxyCodeLine{85             justificativa = just.empty() ? \textcolor{stringliteral}{"{}Sem justificativa registrada"{}} : QString::fromStdString(just);}
+\DoxyCodeLine{86         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{87             justificativa = \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89         \mbox{\hyperlink{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}{tabela}}-\/>setItem(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i), 5, \textcolor{keyword}{new} QTableWidgetItem(justificativa));}
+\DoxyCodeLine{90     \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{keywordflow}{if} (filtradas.empty() \&\& !cpfPaciente.empty()) \{}
+\DoxyCodeLine{93         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Nenhum resultado"{}}, \textcolor{stringliteral}{"{}Nenhuma consulta encontrada para esse CPF."{}});}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a0412489018fd26cae1a77a0977331fd6}\label{classTelaStatusAgendamento_a0412489018fd26cae1a77a0977331fd6}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!especialidadeToString@{especialidadeToString}}
+\index{especialidadeToString@{especialidadeToString}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{especialidadeToString()}{especialidadeToString()}}
+{\footnotesize\ttfamily QString Tela\+Status\+Agendamento\+::especialidade\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}}}]{esp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 97 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                                                   \{}
+\DoxyCodeLine{98     \textcolor{keywordflow}{switch} (esp) \{}
+\DoxyCodeLine{99     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}}:       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Dentista"{}};}
+\DoxyCodeLine{100     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a0c343a3931d3b145878aeaba47c1644b}{Specialty::NEUROLOGIST}}:   \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Neurologista"{}};}
+\DoxyCodeLine{101     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4aba64ab7d2a7d57342d1fda986c0ab9b1}{Specialty::PSYCHOLOGIST}}:  \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Psicólogo"{}};}
+\DoxyCodeLine{102     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4af54e44bfd92655172bd684c10dd1a773}{Specialty::CARDIOLOGIST}}:  \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Cardiologista"{}};}
+\DoxyCodeLine{103     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4a97bd783e3b24d77535d0afd0239a5a4e}{Specialty::NUTRITIONIST}}:  \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Nutricionista"{}};}
+\DoxyCodeLine{104     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ac7cd72a19d8560ecaa40f8e4145afeb9}{Specialty::DERMATOLOGIST}}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Dermatologista"{}};}
+\DoxyCodeLine{105     \}}
+\DoxyCodeLine{106     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Desconhecida"{}};}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a0303003188a5a8a35dd4828038537cb7}\label{classTelaStatusAgendamento_a0303003188a5a8a35dd4828038537cb7}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!on\_btnBuscar\_clicked@{on\_btnBuscar\_clicked}}
+\index{on\_btnBuscar\_clicked@{on\_btnBuscar\_clicked}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{on\_btnBuscar\_clicked}{on\_btnBuscar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Status\+Agendamento\+::on\+\_\+btn\+Buscar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 118 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                  \{}
+\DoxyCodeLine{119     std::string cpf = \mbox{\hyperlink{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}{txtCpf}}-\/>text().toStdString();}
+\DoxyCodeLine{120     \mbox{\hyperlink{classTelaStatusAgendamento_a4c55cf2ee56bda2e62be2a5a2abaee65}{carregarStatus}}(cpf); \textcolor{comment}{// vazio = mostra todas, preenchido = filtra por esse paciente}}
+\DoxyCodeLine{121 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a3047fe17b66910b99731ebb5fdcddc55}\label{classTelaStatusAgendamento_a3047fe17b66910b99731ebb5fdcddc55}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}}
+\index{on\_btnVoltar\_clicked@{on\_btnVoltar\_clicked}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{on\_btnVoltar\_clicked}{on\_btnVoltar\_clicked}}
+{\footnotesize\ttfamily void Tela\+Status\+Agendamento\+::on\+\_\+btn\+Voltar\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 123 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                                  \{}
+\DoxyCodeLine{124     this-\/>close();}
+\DoxyCodeLine{125 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTelaStatusAgendamento_a9f7ea48fb7e089c74c9d135c108c9791}\label{classTelaStatusAgendamento_a9f7ea48fb7e089c74c9d135c108c9791}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!statusToString@{statusToString}}
+\index{statusToString@{statusToString}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{statusToString()}{statusToString()}}
+{\footnotesize\ttfamily QString Tela\+Status\+Agendamento\+::status\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 109 of file Tela\+Status\+Agendamento.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                                                            \{}
+\DoxyCodeLine{110     \textcolor{keywordflow}{switch} (status) \{}
+\DoxyCodeLine{111     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}}:   \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Pendente"{}};}
+\DoxyCodeLine{112     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba1e314c89b115f3a21ca40f76d231bcd0}{Status::CONFIRMED}}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Confirmada"{}};}
+\DoxyCodeLine{113     \textcolor{keywordflow}{case} \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba9cc8ad3d99798c6726d4af0bd14e49d2}{Status::REJECTED}}:  \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Recusada"{}};}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Desconhecido"{}};}
+\DoxyCodeLine{116 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}\label{classTelaStatusAgendamento_ae928804b7c11791872c82c1d510250b7}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!btnBuscar@{btnBuscar}}
+\index{btnBuscar@{btnBuscar}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{btnBuscar}{btnBuscar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Status\+Agendamento\+::btn\+Buscar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}\label{classTelaStatusAgendamento_a7d7997e3c8739f2c34f753a08a05cb68}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!btnVoltar@{btnVoltar}}
+\index{btnVoltar@{btnVoltar}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{btnVoltar}{btnVoltar}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Tela\+Status\+Agendamento\+::btn\+Voltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}\label{classTelaStatusAgendamento_a82826eeda317307950a8a9a695818a96}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!layoutBusca@{layoutBusca}}
+\index{layoutBusca@{layoutBusca}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{layoutBusca}{layoutBusca}}
+{\footnotesize\ttfamily QHBox\+Layout$\ast$ Tela\+Status\+Agendamento\+::layout\+Busca\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}\label{classTelaStatusAgendamento_af48242e09fe34ad2848fb0dcff6d5870}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!layoutPrincipal@{layoutPrincipal}}
+\index{layoutPrincipal@{layoutPrincipal}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{layoutPrincipal}{layoutPrincipal}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ Tela\+Status\+Agendamento\+::layout\+Principal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_a173a5a98eff2b356081090d38575e64e}\label{classTelaStatusAgendamento_a173a5a98eff2b356081090d38575e64e}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!lblCpf@{lblCpf}}
+\index{lblCpf@{lblCpf}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{lblCpf}{lblCpf}}
+{\footnotesize\ttfamily QLabel$\ast$ Tela\+Status\+Agendamento\+::lbl\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}\label{classTelaStatusAgendamento_af6d36315fb3905b72c00074e256a3b6a}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!sistema@{sistema}}
+\index{sistema@{sistema}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{sistema}{sistema}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}}$\ast$ Tela\+Status\+Agendamento\+::sistema\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}\label{classTelaStatusAgendamento_ad0187e258d12de9af675bc2517502488}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!tabela@{tabela}}
+\index{tabela@{tabela}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{tabela}{tabela}}
+{\footnotesize\ttfamily QTable\+Widget$\ast$ Tela\+Status\+Agendamento\+::tabela\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Tela\+Status\+Agendamento.\+h.
+
+\mbox{\Hypertarget{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}\label{classTelaStatusAgendamento_a7768d0f2937d1bf014fbe02fe9692cec}} 
+\index{TelaStatusAgendamento@{TelaStatusAgendamento}!txtCpf@{txtCpf}}
+\index{txtCpf@{txtCpf}!TelaStatusAgendamento@{TelaStatusAgendamento}}
+\doxysubsubsection{\texorpdfstring{txtCpf}{txtCpf}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Tela\+Status\+Agendamento\+::txt\+Cpf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Tela\+Status\+Agendamento.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{TelaStatusAgendamento_8h}{Tela\+Status\+Agendamento.\+h}}\item 
+src/\mbox{\hyperlink{TelaStatusAgendamento_8cpp}{Tela\+Status\+Agendamento.\+cpp}}\end{DoxyCompactItemize}

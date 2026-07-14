@@ -3,7 +3,9 @@
 {\ttfamily \#include $<$QApplication$>$}\newline
 {\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Tela\+Login.\+h\char`\"{}}\newline
-Include dependency graph for main.\+cpp\+:\nopagebreak
+{\ttfamily \#include \char`\"{}System.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,19 +39,20 @@ int \mbox{\hyperlink{src_2main_8cpp_a01128a06118f949a0b24a3d080f515fd}{num\+Hand
 
 
 
-Definition at line 10 of file main.\+cpp.
+Definition at line 11 of file main.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{10                                  \{}
-\DoxyCodeLine{11     QApplication app(argc, argv);}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13     \textcolor{comment}{// Agora o aplicativo inicia obrigatoriamente pela tela de Login integrada}}
-\DoxyCodeLine{14     \mbox{\hyperlink{classTelaLogin}{TelaLogin}} w;}
-\DoxyCodeLine{15     w.show();}
-\DoxyCodeLine{16 }
-\DoxyCodeLine{17     \textcolor{keywordflow}{return} app.exec();}
-\DoxyCodeLine{18 \}}
+\DoxyCodeLine{11                                  \{}
+\DoxyCodeLine{12     QApplication app(argc, argv);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \mbox{\hyperlink{classSystem}{System}}* sys = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \mbox{\hyperlink{classTelaLogin}{TelaLogin}} w(sys);}
+\DoxyCodeLine{17     w.show();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} app.exec();}
+\DoxyCodeLine{20 \}}
 
 \end{DoxyCode}
 
@@ -63,7 +66,7 @@ Definition at line 10 of file main.\+cpp.
 
 
 
-Definition at line 5 of file main.\+cpp.
+Definition at line 6 of file main.\+cpp.
 
 \mbox{\Hypertarget{src_2main_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}\label{src_2main_8cpp_aba38ebae7f83ef57afab8c447dddb6cf}} 
 \index{main.cpp@{main.cpp}!numBodyDeleted@{numBodyDeleted}}
@@ -73,7 +76,7 @@ Definition at line 5 of file main.\+cpp.
 
 
 
-Definition at line 6 of file main.\+cpp.
+Definition at line 7 of file main.\+cpp.
 
 \mbox{\Hypertarget{src_2main_8cpp_aac78cb29dfe4a565da68073b0beebf2f}\label{src_2main_8cpp_aac78cb29dfe4a565da68073b0beebf2f}} 
 \index{main.cpp@{main.cpp}!numHandleCreated@{numHandleCreated}}
@@ -83,7 +86,7 @@ Definition at line 6 of file main.\+cpp.
 
 
 
-Definition at line 7 of file main.\+cpp.
+Definition at line 8 of file main.\+cpp.
 
 \mbox{\Hypertarget{src_2main_8cpp_a01128a06118f949a0b24a3d080f515fd}\label{src_2main_8cpp_a01128a06118f949a0b24a3d080f515fd}} 
 \index{main.cpp@{main.cpp}!numHandleDeleted@{numHandleDeleted}}
@@ -93,5 +96,5 @@ Definition at line 7 of file main.\+cpp.
 
 
 
-Definition at line 8 of file main.\+cpp.
+Definition at line 9 of file main.\+cpp.
 
