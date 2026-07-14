@@ -23,14 +23,17 @@ MainWindow::MainWindow(System* sys, QWidget *parent)
     //inicializando os botoes
     btnAbrirAgendamento = new QPushButton("Solicitar Agendamento", this);
     btnAbrirAgendamento->setMinimumHeight(50);
-    btnAbrirCadastro = new QPushButton("Cadastrar Usuário", this);
-    btnGerenciarMedicamentos = new QPushButton("Gerenciar Medicamentos (Secretária)", this);
-    btnConsultarAgenda = new QPushButton("Consultar Agenda de Atendimentos", this);
-    btnConsultarAgenda->setMinimumHeight(50);
-    btnAcompanharStatus = new QPushButton("Acompanhar Status do Agendamento", this);
+    btnAbrirCadastro = new QPushButton("Cadastrar Usuário", this); // <- linha que faltava
+    btnAbrirCadastro->setMinimumHeight(50);
+    btnAcompanharStatus = new QPushButton("(Paciente)Acompanhar Status do Agendamento", this);
     btnAcompanharStatus->setMinimumHeight(50);
-    btnSolicitarMedicamento = new QPushButton("Solicitar Medicamento", this);
+    btnConsultarAgenda = new QPushButton("(Médico)Consultar Agenda de Atendimentos", this);
+    btnConsultarAgenda->setMinimumHeight(50);
+    btnSolicitarMedicamento = new QPushButton("(Paciente)Solicitar Medicamento", this);
     btnSolicitarMedicamento->setMinimumHeight(50);
+    btnGerenciarMedicamentos = new QPushButton("(Secretária)Gerenciar Medicamentos", this);
+    btnConsultarAgenda->setMinimumHeight(50);
+
 
     //adiciona botoes ao layout
     layoutCentral->addWidget(btnAbrirAgendamento);
