@@ -71,24 +71,24 @@ void test_reservation_flow() {
     delete sistema;
 }
 
-// void test_system_deletes() {
-//     System* sistema = System::createSystem();
+void test_system_deletes() {
+    System* sistema = System::createSystem();
 
-//     User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
-//     User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
-//     Appointment* consulta = sistema->createAppointment(paciente, medico, "15/07/2026", "14:30", Specialty::CARDIOLOGIST);
+    User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
+    User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
+    Appointment* consulta = sistema->createAppointment(paciente, medico, "15/07/2026", "14:30", Specialty::CARDIOLOGIST);
 
-//     bool removidoComSucesso = sistema->deleteAppointment(consulta);
-//     assert(removidoComSucesso == true);
+    bool removidoComSucesso = sistema->deleteAppointment(consulta);
+    assert(removidoComSucesso == true);
 
-//     bool removeDuplicado = sistema->deleteAppointment(consulta);
-//     assert(removeDuplicado == false);
+    bool removeDuplicado = sistema->deleteAppointment(consulta);
+    assert(removeDuplicado == false);
 
-//     bool usuarioRemovido = sistema->deleteUser("123.456.789-00");
-//     assert(usuarioRemovido == true);
+    bool usuarioRemovido = sistema->deleteUser("123.456.789-00");
+    assert(usuarioRemovido == true);
 
-//     delete sistema;
-// }
+    delete sistema;
+}
 
 // Função auxiliar que reproduz a mesma lógica de filtro usada em
 // TelaStatusAgendamento::carregarStatus, testada aqui sem depender de QWidget.
@@ -105,19 +105,19 @@ static std::vector<Appointment*> filtrarPorCpf(const std::vector<Appointment*>& 
     return filtradas;
 }
 
-// void test_status_tracking_pending() {
-//     System* sistema = System::createSystem();
+void test_status_tracking_pending() {
+    System* sistema = System::createSystem();
 
-//     User* paciente = sistema->createUser("Paciente Um", "111.111.111-11", "p1@teste.com", "123456", UserType::PATIENT);
-//     User* medico = sistema->createUser("Dr. Fulano", "000.000.000-00", "medico@teste.com", "123456", UserType::DOCTOR);
+    User* paciente = sistema->createUser("Paciente Um", "111.111.111-11", "p1@teste.com", "123456", UserType::PATIENT);
+    User* medico = sistema->createUser("Dr. Fulano", "000.000.000-00", "medico@teste.com", "123456", UserType::DOCTOR);
 
-//     Appointment* consulta = sistema->createAppointment(paciente, medico, "20/11/2026", "13:30", Specialty::DENTIST);
+    Appointment* consulta = sistema->createAppointment(paciente, medico, "20/11/2026", "13:30", Specialty::DENTIST);
 
-//     assert(consulta->getStatus() == Status::PENDING);
-//     assert(consulta->getJustificativa().empty());
+    assert(consulta->getStatus() == Status::PENDING);
+    assert(consulta->getJustificativa().empty());
 
-//     delete sistema;
-// }
+    delete sistema;
+}
 
 void test_status_tracking_confirmed() {
     System* sistema = System::createSystem();
