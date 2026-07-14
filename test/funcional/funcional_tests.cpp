@@ -18,43 +18,43 @@ void test_user_management() {
     delete sistema;
 }
 
-// void test_appointment_flow() {
-//     System* sistema = System::createSystem();
-
-//     User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
-//     User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
-
-//     Appointment* consulta = sistema->createAppointment(paciente, medico, "15/07/2026", "14:30", Specialty::CARDIOLOGIST);
-//     assert(consulta != nullptr);
-//     assert(consulta->getDate() == "15/07/2026");
-//     assert(consulta->getTime() == "14:30");
-//     assert(consulta->getStatus() == Status::PENDING);
-//     assert(consulta->getAppointmentType() == Specialty::CARDIOLOGIST);
-
-//     consulta->setStatus(Status::CONFIRMED);
-//     assert(consulta->getStatus() == Status::CONFIRMED);
-
-//     delete sistema;
-// }
-
-void test_medication_stock() {
+void test_appointment_flow() {
     System* sistema = System::createSystem();
 
-    Medication* remedio = sistema->createMedication("Amoxicilina 500mg", 50, true);
-    assert(remedio != nullptr);
-    assert(remedio->getQuantity() == 50);
-    assert(remedio->requiresPrescription() == true);
+    User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
+    User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
 
-    bool estoqueReduzido = remedio->decreaseStock(10);
-    assert(estoqueReduzido == true);
-    assert(remedio->getQuantity() == 40);
+    Appointment* consulta = sistema->createAppointment(paciente, medico, "15/07/2026", "14:30", Specialty::CARDIOLOGIST);
+    assert(consulta != nullptr);
+    assert(consulta->getDate() == "15/07/2026");
+    assert(consulta->getTime() == "14:30");
+    assert(consulta->getStatus() == Status::PENDING);
+    assert(consulta->getAppointmentType() == Specialty::CARDIOLOGIST);
 
-    bool estoqueInvalido = remedio->decreaseStock(100);
-    assert(estoqueInvalido == false);
-    assert(remedio->getQuantity() == 40);
+    consulta->setStatus(Status::CONFIRMED);
+    assert(consulta->getStatus() == Status::CONFIRMED);
 
     delete sistema;
 }
+
+// void test_medication_stock() {
+//     System* sistema = System::createSystem();
+
+//     Medication* remedio = sistema->createMedication("Amoxicilina 500mg", 50, true);
+//     assert(remedio != nullptr);
+//     assert(remedio->getQuantity() == 50);
+//     assert(remedio->requiresPrescription() == true);
+
+//     bool estoqueReduzido = remedio->decreaseStock(10);
+//     assert(estoqueReduzido == true);
+//     assert(remedio->getQuantity() == 40);
+
+//     bool estoqueInvalido = remedio->decreaseStock(100);
+//     assert(estoqueInvalido == false);
+//     assert(remedio->getQuantity() == 40);
+
+//     delete sistema;
+// }
 
 void test_reservation_flow() {
     System* sistema = System::createSystem();
