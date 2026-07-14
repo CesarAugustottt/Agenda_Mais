@@ -11,3 +11,10 @@ int numHandleCreated = 0;
 int numHandleDeleted = 0;
 int numBodyCreated = 0;
 int numBodyDeleted = 0;
+
+/*
+make clean
+make
+make run_funcional
+make run_unit
+*/
