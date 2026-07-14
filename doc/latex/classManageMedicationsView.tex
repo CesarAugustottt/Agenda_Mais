@@ -15,11 +15,12 @@ Inheritance diagram for Manage\+Medications\+View\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Manage\+Medications\+View\+:\nopagebreak
+Collaboration diagram for Manage\+Medications\+View\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=282pt]{classManageMedicationsView__coll__graph}
+\includegraphics[width=306pt]{classManageMedicationsView__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Signals}
@@ -102,8 +103,8 @@ Definition at line 6 of file Manage\+Medications\+View.\+cpp.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{7     : QWidget(parent), \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}(\mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}) \{}
-\DoxyCodeLine{8     }
-\DoxyCodeLine{9     \mbox{\hyperlink{classManageMedicationsView_a7a872788372018973c9795337174cdb8}{setupUI}}(); }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9     \mbox{\hyperlink{classManageMedicationsView_a7a872788372018973c9795337174cdb8}{setupUI}}();}
 \DoxyCodeLine{10     \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}(); \textcolor{comment}{// Agora isto vai preencher as tabelas!}}
 \DoxyCodeLine{11 \}}
 
@@ -135,24 +136,24 @@ Definition at line 13 of file Manage\+Medications\+View.\+cpp.
 
 
 
-Definition at line 151 of file Manage\+Medications\+View.\+cpp.
+Definition at line 154 of file Manage\+Medications\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{151                                                   \{}
-\DoxyCodeLine{152     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
-\DoxyCodeLine{153     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
-\DoxyCodeLine{154         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}{getPendingReservations}}()[currentRow].getStatus() != \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}}) \{}
-\DoxyCodeLine{155             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Esta reserva já foi avaliada!"{}});}
-\DoxyCodeLine{156             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{157         \}}
-\DoxyCodeLine{158         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a8d779c0bc48fb27eb10157970f944b1d}{approveReservation}}(currentRow);}
-\DoxyCodeLine{159         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aprovado"{}}, \textcolor{stringliteral}{"{}Reserva de medicamento aprovada!"{}});}
-\DoxyCodeLine{160         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}();}
-\DoxyCodeLine{161     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{162         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Selecione uma reserva na tabela."{}});}
-\DoxyCodeLine{163     \}}
-\DoxyCodeLine{164 \}}
+\DoxyCodeLine{154                                                   \{}
+\DoxyCodeLine{155     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
+\DoxyCodeLine{156     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
+\DoxyCodeLine{157         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a5ff91cc83d421bafe533e9735efb57e4}{getPendingReservations}}()[currentRow]-\/>getStatus() != \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}}) \{}
+\DoxyCodeLine{158             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Esta reserva já foi avaliada!"{}});}
+\DoxyCodeLine{159             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a8d779c0bc48fb27eb10157970f944b1d}{approveReservation}}(currentRow);}
+\DoxyCodeLine{162         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aprovado"{}}, \textcolor{stringliteral}{"{}Reserva de medicamento aprovada!"{}});}
+\DoxyCodeLine{163         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}();}
+\DoxyCodeLine{164     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{165         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Selecione uma reserva na tabela."{}});}
+\DoxyCodeLine{166     \}}
+\DoxyCodeLine{167 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classManageMedicationsView_a465e368b835bd2b0f159a0117624a5ee}\label{classManageMedicationsView_a465e368b835bd2b0f159a0117624a5ee}} 
@@ -163,31 +164,31 @@ Definition at line 151 of file Manage\+Medications\+View.\+cpp.
 
 
 
-Definition at line 166 of file Manage\+Medications\+View.\+cpp.
+Definition at line 169 of file Manage\+Medications\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{166                                                  \{}
-\DoxyCodeLine{167     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
-\DoxyCodeLine{168     QString justification = \mbox{\hyperlink{classManageMedicationsView_ae1c487774eb91ece39bde2d06afccda7}{txtJustification}}-\/>text();}
-\DoxyCodeLine{169 }
-\DoxyCodeLine{170     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
-\DoxyCodeLine{171         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}{getPendingReservations}}()[currentRow].getStatus() != \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}}) \{}
-\DoxyCodeLine{172             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Esta reserva já foi avaliada!"{}});}
-\DoxyCodeLine{173             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{174         \}}
-\DoxyCodeLine{175         \textcolor{keywordflow}{if} (justification.isEmpty()) \{}
-\DoxyCodeLine{176             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Para recusar, tem de preencher a justificativa."{}});}
-\DoxyCodeLine{177             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{178         \}}
-\DoxyCodeLine{179         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_aa9ed759141eb4429e2e6d3ba724a421b}{refuseReservation}}(currentRow, justification.toStdString());}
-\DoxyCodeLine{180         emit \mbox{\hyperlink{classManageMedicationsView_aacd1da579cc788d1fb43d9cb515d3074}{stockUpdatedImmediately}}();}
-\DoxyCodeLine{181         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Recusado"{}}, \textcolor{stringliteral}{"{}Reserva recusada e quantidade devolvida ao estoque."{}});}
-\DoxyCodeLine{182         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}();}
-\DoxyCodeLine{183     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{184         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Selecione uma reserva na tabela."{}});}
-\DoxyCodeLine{185     \}}
-\DoxyCodeLine{186 \}}
+\DoxyCodeLine{169                                                  \{}
+\DoxyCodeLine{170     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
+\DoxyCodeLine{171     QString justification = \mbox{\hyperlink{classManageMedicationsView_ae1c487774eb91ece39bde2d06afccda7}{txtJustification}}-\/>text();}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
+\DoxyCodeLine{174         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a5ff91cc83d421bafe533e9735efb57e4}{getPendingReservations}}()[currentRow]-\/>getStatus() != \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}}) \{}
+\DoxyCodeLine{175             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Esta reserva já foi avaliada!"{}});}
+\DoxyCodeLine{176             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{177         \}}
+\DoxyCodeLine{178         \textcolor{keywordflow}{if} (justification.isEmpty()) \{}
+\DoxyCodeLine{179             QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Para recusar, tem de preencher a justificativa."{}});}
+\DoxyCodeLine{180             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{181         \}}
+\DoxyCodeLine{182         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_aa9ed759141eb4429e2e6d3ba724a421b}{refuseReservation}}(currentRow, justification.toStdString());}
+\DoxyCodeLine{183         emit \mbox{\hyperlink{classManageMedicationsView_aacd1da579cc788d1fb43d9cb515d3074}{stockUpdatedImmediately}}();}
+\DoxyCodeLine{184         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Recusado"{}}, \textcolor{stringliteral}{"{}Reserva recusada e quantidade devolvida ao estoque."{}});}
+\DoxyCodeLine{185         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}();}
+\DoxyCodeLine{186     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{187         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Selecione uma reserva na tabela."{}});}
+\DoxyCodeLine{188     \}}
+\DoxyCodeLine{189 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classManageMedicationsView_aba12b6e3562d3ab15ee5718d60732921}\label{classManageMedicationsView_aba12b6e3562d3ab15ee5718d60732921}} 
@@ -198,22 +199,22 @@ Definition at line 166 of file Manage\+Medications\+View.\+cpp.
 
 
 
-Definition at line 121 of file Manage\+Medications\+View.\+cpp.
+Definition at line 124 of file Manage\+Medications\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{121                                                       \{}
-\DoxyCodeLine{122     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>currentRow();}
-\DoxyCodeLine{123     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
-\DoxyCodeLine{124         \textcolor{keywordtype}{int} newQty = \mbox{\hyperlink{classManageMedicationsView_ab95f1b12d743022b6de67291c36641c6}{spinNewQuantity}}-\/>value();}
-\DoxyCodeLine{125         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a894631948765bba2caffd9da61830d74}{updateStock}}(currentRow, newQty);}
-\DoxyCodeLine{126         emit \mbox{\hyperlink{classManageMedicationsView_aacd1da579cc788d1fb43d9cb515d3074}{stockUpdatedImmediately}}();}
-\DoxyCodeLine{127         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}(); \textcolor{comment}{// Atualiza a tela para mostrar a nova quantidade}}
-\DoxyCodeLine{128         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Sucesso"{}}, \textcolor{stringliteral}{"{}Estoque atualizado com sucesso!"{}});}
-\DoxyCodeLine{129     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{130         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Por favor, selecione um medicamento na tabela."{}});}
-\DoxyCodeLine{131     \}}
-\DoxyCodeLine{132 \}}
+\DoxyCodeLine{124                                                       \{}
+\DoxyCodeLine{125     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>currentRow();}
+\DoxyCodeLine{126     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
+\DoxyCodeLine{127         \textcolor{keywordtype}{int} newQty = \mbox{\hyperlink{classManageMedicationsView_ab95f1b12d743022b6de67291c36641c6}{spinNewQuantity}}-\/>value();}
+\DoxyCodeLine{128         \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a894631948765bba2caffd9da61830d74}{updateStock}}(currentRow, newQty);}
+\DoxyCodeLine{129         emit \mbox{\hyperlink{classManageMedicationsView_aacd1da579cc788d1fb43d9cb515d3074}{stockUpdatedImmediately}}();}
+\DoxyCodeLine{130         \mbox{\hyperlink{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}{refreshUI}}(); \textcolor{comment}{// Atualiza a tela para mostrar a nova quantidade}}
+\DoxyCodeLine{131         QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Sucesso"{}}, \textcolor{stringliteral}{"{}Estoque atualizado com sucesso!"{}});}
+\DoxyCodeLine{132     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{133         QMessageBox::warning(\textcolor{keyword}{this}, \textcolor{stringliteral}{"{}Aviso"{}}, \textcolor{stringliteral}{"{}Por favor, selecione um medicamento na tabela."{}});}
+\DoxyCodeLine{134     \}}
+\DoxyCodeLine{135 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classManageMedicationsView_a80d9759ae7ad593dac47b29c161280e0}\label{classManageMedicationsView_a80d9759ae7ad593dac47b29c161280e0}} 
@@ -224,26 +225,26 @@ Definition at line 121 of file Manage\+Medications\+View.\+cpp.
 
 
 
-Definition at line 134 of file Manage\+Medications\+View.\+cpp.
+Definition at line 137 of file Manage\+Medications\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{134                                                                       \{}
-\DoxyCodeLine{135     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
-\DoxyCodeLine{136     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
-\DoxyCodeLine{137         \textcolor{keyword}{auto} pending = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}{getPendingReservations}}();}
-\DoxyCodeLine{138         \textcolor{keywordflow}{if} (currentRow < (\textcolor{keywordtype}{int})pending.size()) \{}
-\DoxyCodeLine{139             QString imagePath = QString::fromStdString(pending[currentRow].getPrescriptionPath());}
-\DoxyCodeLine{140             QPixmap prescriptionImage(imagePath);}
-\DoxyCodeLine{141             \textcolor{keywordflow}{if} (!prescriptionImage.isNull()) \{}
-\DoxyCodeLine{142                 \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>setPixmap(prescriptionImage.scaled(}
-\DoxyCodeLine{143                     \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));}
-\DoxyCodeLine{144             \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{145                 \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>setText(\textcolor{stringliteral}{"{}Documento de receita não encontrado.\(\backslash\)nCaminho: "{}} + imagePath);}
-\DoxyCodeLine{146             \}}
-\DoxyCodeLine{147         \}}
-\DoxyCodeLine{148     \}}
-\DoxyCodeLine{149 \}}
+\DoxyCodeLine{137                                                                       \{}
+\DoxyCodeLine{138     \textcolor{keywordtype}{int} currentRow = \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>currentRow();}
+\DoxyCodeLine{139     \textcolor{keywordflow}{if} (currentRow >= 0) \{}
+\DoxyCodeLine{140         \textcolor{keyword}{auto} pending = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a5ff91cc83d421bafe533e9735efb57e4}{getPendingReservations}}();}
+\DoxyCodeLine{141         \textcolor{keywordflow}{if} (currentRow < (\textcolor{keywordtype}{int})pending.size()) \{}
+\DoxyCodeLine{142             QString imagePath = QString::fromStdString(pending[currentRow]-\/>getPrescriptionPath());}
+\DoxyCodeLine{143             QPixmap prescriptionImage(imagePath);}
+\DoxyCodeLine{144             \textcolor{keywordflow}{if} (!prescriptionImage.isNull()) \{}
+\DoxyCodeLine{145                 \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>setPixmap(prescriptionImage.scaled(}
+\DoxyCodeLine{146                     \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));}
+\DoxyCodeLine{147             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{148                 \mbox{\hyperlink{classManageMedicationsView_aaf99f0f188ef83b67ed64d88b1698b28}{lblPrescriptionPreview}}-\/>setText(\textcolor{stringliteral}{"{}Documento de receita não encontrado.\(\backslash\)nCaminho: "{}} + imagePath);}
+\DoxyCodeLine{149             \}}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151     \}}
+\DoxyCodeLine{152 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}\label{classManageMedicationsView_a9047cbda13c3edf768e60010c3f45082}} 
@@ -260,33 +261,36 @@ Definition at line 91 of file Manage\+Medications\+View.\+cpp.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{91                                       \{}
 \DoxyCodeLine{92     \textcolor{comment}{// 1. Atualizar a Tabela de Estoque}}
-\DoxyCodeLine{93     \textcolor{keyword}{auto} meds = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a8d95e7c399c0f5ba4b755d5ec86ce68d}{getAllMedications}}();}
+\DoxyCodeLine{93     \textcolor{keyword}{auto} meds = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a71901f0a7b8ab69c4fd306491258204a}{getAllMedications}}();}
 \DoxyCodeLine{94     \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setRowCount(0); \textcolor{comment}{// Limpa as linhas antigas}}
 \DoxyCodeLine{95     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (int)meds.size(); ++i) \{}
 \DoxyCodeLine{96         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>insertRow(i);}
-\DoxyCodeLine{97         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 0, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(meds[i].getName())));}
-\DoxyCodeLine{98         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 1, \textcolor{keyword}{new} QTableWidgetItem(QString::number(meds[i].getQuantity())));}
-\DoxyCodeLine{99         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 2, \textcolor{keyword}{new} QTableWidgetItem(meds[i].requiresPrescription() ? \textcolor{stringliteral}{"{}Sim"{}} : \textcolor{stringliteral}{"{}Não"{}}));}
+\DoxyCodeLine{97         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 0, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(meds[i]-\/>getName())));}
+\DoxyCodeLine{98         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 1, \textcolor{keyword}{new} QTableWidgetItem(QString::number(meds[i]-\/>getQuantity())));}
+\DoxyCodeLine{99         \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setItem(i, 2, \textcolor{keyword}{new} QTableWidgetItem(meds[i]-\/>requiresPrescription() ? \textcolor{stringliteral}{"{}Sim"{}} : \textcolor{stringliteral}{"{}Não"{}}));}
 \DoxyCodeLine{100     \}}
 \DoxyCodeLine{101 }
 \DoxyCodeLine{102     \textcolor{comment}{// 2. Atualizar a Tabela de Reservas}}
-\DoxyCodeLine{103     \textcolor{keyword}{auto} pendings = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_ad6207dd67f08304a3c8ef24fe724361f}{getPendingReservations}}();}
-\DoxyCodeLine{104     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setRowCount(0); }
+\DoxyCodeLine{103     \textcolor{keyword}{auto} pendings = \mbox{\hyperlink{classManageMedicationsView_a50859461bf6bc99fcba5468aa2b8cb53}{controller}}-\/>\mbox{\hyperlink{classMedicationsController_a5ff91cc83d421bafe533e9735efb57e4}{getPendingReservations}}();}
+\DoxyCodeLine{104     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setRowCount(0);}
 \DoxyCodeLine{105     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (int)pendings.size(); ++i) \{}
 \DoxyCodeLine{106         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>insertRow(i);}
-\DoxyCodeLine{107         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 0, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(pendings[i].getPatientCpf())));}
-\DoxyCodeLine{108         }
-\DoxyCodeLine{109         QString medName = pendings[i].getMedication() ? QString::fromStdString(pendings[i].getMedication()-\/>getName()) : \textcolor{stringliteral}{"{}Desconhecido"{}};}
+\DoxyCodeLine{107         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 0, \textcolor{keyword}{new} QTableWidgetItem(QString::fromStdString(pendings[i]-\/>getPatientCpf())));}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         QString medName = pendings[i]-\/>getMedication() ? QString::fromStdString(pendings[i]-\/>getMedication()-\/>getName()) : \textcolor{stringliteral}{"{}Desconhecido"{}};}
 \DoxyCodeLine{110         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 1, \textcolor{keyword}{new} QTableWidgetItem(medName));}
-\DoxyCodeLine{111         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 2, \textcolor{keyword}{new} QTableWidgetItem(QString::number(pendings[i].getQuantity())));}
-\DoxyCodeLine{112         }
-\DoxyCodeLine{113         QString statusStr = \textcolor{stringliteral}{"{}Pendente"{}};}
-\DoxyCodeLine{114         \textcolor{keywordflow}{if} (pendings[i].getStatus() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55}{ReservationStatus::APPROVED}}) statusStr = \textcolor{stringliteral}{"{}Aprovado"{}};}
-\DoxyCodeLine{115         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pendings[i].getStatus() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082}{ReservationStatus::REFUSED}}) statusStr = \textcolor{stringliteral}{"{}Recusado"{}};}
-\DoxyCodeLine{116         }
-\DoxyCodeLine{117         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 3, \textcolor{keyword}{new} QTableWidgetItem(statusStr));}
-\DoxyCodeLine{118     \}}
-\DoxyCodeLine{119 \}}
+\DoxyCodeLine{111         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 2, \textcolor{keyword}{new} QTableWidgetItem(QString::number(pendings[i]-\/>getQuantity())));}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113         QString exigeReceita = (pendings[i]-\/>getMedication() \&\& pendings[i]-\/>getMedication()-\/>requiresPrescription()) ? \textcolor{stringliteral}{"{}Sim"{}} : \textcolor{stringliteral}{"{}Não"{}};}
+\DoxyCodeLine{114         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 3, \textcolor{keyword}{new} QTableWidgetItem(exigeReceita));}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116         QString statusStr = \textcolor{stringliteral}{"{}Pendente"{}};}
+\DoxyCodeLine{117         \textcolor{keywordflow}{if} (pendings[i]-\/>getStatus() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55}{ReservationStatus::APPROVED}}) statusStr = \textcolor{stringliteral}{"{}Aprovado"{}};}
+\DoxyCodeLine{118         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pendings[i]-\/>getStatus() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a392253eaea22aafdb199bc238bafc082}{ReservationStatus::REFUSED}}) statusStr = \textcolor{stringliteral}{"{}Recusado"{}};}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120         \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setItem(i, 4, \textcolor{keyword}{new} QTableWidgetItem(statusStr));}
+\DoxyCodeLine{121     \}}
+\DoxyCodeLine{122 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classManageMedicationsView_a7a872788372018973c9795337174cdb8}\label{classManageMedicationsView_a7a872788372018973c9795337174cdb8}} 
@@ -313,7 +317,7 @@ Definition at line 16 of file Manage\+Medications\+View.\+cpp.
 \DoxyCodeLine{25     \textcolor{comment}{// ==========================================}}
 \DoxyCodeLine{26     \mbox{\hyperlink{classManageMedicationsView_a50c7ba531dea465f7c5e6ae677510e11}{tabStock}} = \textcolor{keyword}{new} QWidget();}
 \DoxyCodeLine{27     QVBoxLayout *stockLayout = \textcolor{keyword}{new} QVBoxLayout(\mbox{\hyperlink{classManageMedicationsView_a50c7ba531dea465f7c5e6ae677510e11}{tabStock}});}
-\DoxyCodeLine{28     }
+\DoxyCodeLine{28 }
 \DoxyCodeLine{29     \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}} = \textcolor{keyword}{new} QTableWidget(0, 3, \textcolor{keyword}{this});}
 \DoxyCodeLine{30     \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>setHorizontalHeaderLabels(\{\textcolor{stringliteral}{"{}Nome do Medicamento"{}}, \textcolor{stringliteral}{"{}Quantidade"{}}, \textcolor{stringliteral}{"{}Exige Receita"{}}\});}
 \DoxyCodeLine{31     \mbox{\hyperlink{classManageMedicationsView_a8e8f72a309eefbb5f47da44d3453867f}{tableStock}}-\/>horizontalHeader()-\/>setStretchLastSection(\textcolor{keyword}{true});}
@@ -321,14 +325,14 @@ Definition at line 16 of file Manage\+Medications\+View.\+cpp.
 \DoxyCodeLine{33 }
 \DoxyCodeLine{34     QHBoxLayout *stockControls = \textcolor{keyword}{new} QHBoxLayout();}
 \DoxyCodeLine{35     stockControls-\/>addWidget(\textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Nova Quantidade:"{}}, \textcolor{keyword}{this}));}
-\DoxyCodeLine{36     }
+\DoxyCodeLine{36 }
 \DoxyCodeLine{37     \mbox{\hyperlink{classManageMedicationsView_ab95f1b12d743022b6de67291c36641c6}{spinNewQuantity}} = \textcolor{keyword}{new} QSpinBox(\textcolor{keyword}{this});}
 \DoxyCodeLine{38     \mbox{\hyperlink{classManageMedicationsView_ab95f1b12d743022b6de67291c36641c6}{spinNewQuantity}}-\/>setMaximum(10000);}
 \DoxyCodeLine{39     stockControls-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_ab95f1b12d743022b6de67291c36641c6}{spinNewQuantity}});}
-\DoxyCodeLine{40     }
+\DoxyCodeLine{40 }
 \DoxyCodeLine{41     \mbox{\hyperlink{classManageMedicationsView_ab03be7eb62c949fd6486d1c262045d68}{btnUpdateStock}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Atualizar Estoque"{}}, \textcolor{keyword}{this});}
 \DoxyCodeLine{42     stockControls-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_ab03be7eb62c949fd6486d1c262045d68}{btnUpdateStock}});}
-\DoxyCodeLine{43     }
+\DoxyCodeLine{43 }
 \DoxyCodeLine{44     stockLayout-\/>addLayout(stockControls);}
 \DoxyCodeLine{45 }
 \DoxyCodeLine{46     \textcolor{comment}{// ==========================================}}
@@ -336,10 +340,10 @@ Definition at line 16 of file Manage\+Medications\+View.\+cpp.
 \DoxyCodeLine{48     \textcolor{comment}{// ==========================================}}
 \DoxyCodeLine{49     \mbox{\hyperlink{classManageMedicationsView_a9433840351ff9633ffeba65a979ac03e}{tabReservations}} = \textcolor{keyword}{new} QWidget();}
 \DoxyCodeLine{50     QVBoxLayout *resLayout = \textcolor{keyword}{new} QVBoxLayout(\mbox{\hyperlink{classManageMedicationsView_a9433840351ff9633ffeba65a979ac03e}{tabReservations}});}
-\DoxyCodeLine{51     }
+\DoxyCodeLine{51 }
 \DoxyCodeLine{52     \textcolor{comment}{// Adicionámos 4 colunas em vez de 3 para mostrar o Status}}
-\DoxyCodeLine{53     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}} = \textcolor{keyword}{new} QTableWidget(0, 4, \textcolor{keyword}{this});}
-\DoxyCodeLine{54     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setHorizontalHeaderLabels(\{\textcolor{stringliteral}{"{}CPF Paciente"{}}, \textcolor{stringliteral}{"{}Medicamento"{}}, \textcolor{stringliteral}{"{}Qtd Solicitada"{}}, \textcolor{stringliteral}{"{}Status"{}}\});}
+\DoxyCodeLine{53     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}} = \textcolor{keyword}{new} QTableWidget(0, 5, \textcolor{keyword}{this});}
+\DoxyCodeLine{54     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>setHorizontalHeaderLabels(\{\textcolor{stringliteral}{"{}CPF Paciente"{}}, \textcolor{stringliteral}{"{}Medicamento"{}}, \textcolor{stringliteral}{"{}Qtd Solicitada"{}}, \textcolor{stringliteral}{"{}Exige Receita"{}}, \textcolor{stringliteral}{"{}Status"{}}\});}
 \DoxyCodeLine{55     \mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}}-\/>horizontalHeader()-\/>setStretchLastSection(\textcolor{keyword}{true});}
 \DoxyCodeLine{56     resLayout-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_a951535661df56498c2c9df2a8ee16222}{tableReservations}});}
 \DoxyCodeLine{57 }
@@ -351,23 +355,23 @@ Definition at line 16 of file Manage\+Medications\+View.\+cpp.
 \DoxyCodeLine{63 }
 \DoxyCodeLine{64     QHBoxLayout *resControls = \textcolor{keyword}{new} QHBoxLayout();}
 \DoxyCodeLine{65     resControls-\/>addWidget(\textcolor{keyword}{new} QLabel(\textcolor{stringliteral}{"{}Justificativa da Recusa:"{}}, \textcolor{keyword}{this}));}
-\DoxyCodeLine{66     }
+\DoxyCodeLine{66 }
 \DoxyCodeLine{67     \mbox{\hyperlink{classManageMedicationsView_ae1c487774eb91ece39bde2d06afccda7}{txtJustification}} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});}
 \DoxyCodeLine{68     resControls-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_ae1c487774eb91ece39bde2d06afccda7}{txtJustification}});}
-\DoxyCodeLine{69     }
+\DoxyCodeLine{69 }
 \DoxyCodeLine{70     \mbox{\hyperlink{classManageMedicationsView_a8231ad081254900fc3fd0a4a732bea1f}{btnApprove}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Aprovar Reserva"{}}, \textcolor{keyword}{this});}
 \DoxyCodeLine{71     \mbox{\hyperlink{classManageMedicationsView_a8231ad081254900fc3fd0a4a732bea1f}{btnApprove}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color: \#4CAF50; color: white; font-\/weight: bold; padding: 5px;"{}});}
-\DoxyCodeLine{72     }
+\DoxyCodeLine{72 }
 \DoxyCodeLine{73     \mbox{\hyperlink{classManageMedicationsView_a2a0eecfd02f64e5bb851f1fd5d1bf32d}{btnRefuse}} = \textcolor{keyword}{new} QPushButton(\textcolor{stringliteral}{"{}Recusar Reserva"{}}, \textcolor{keyword}{this});}
 \DoxyCodeLine{74     \mbox{\hyperlink{classManageMedicationsView_a2a0eecfd02f64e5bb851f1fd5d1bf32d}{btnRefuse}}-\/>setStyleSheet(\textcolor{stringliteral}{"{}background-\/color: \#F44336; color: white; font-\/weight: bold; padding: 5px;"{}});}
-\DoxyCodeLine{75     }
+\DoxyCodeLine{75 }
 \DoxyCodeLine{76     resControls-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_a8231ad081254900fc3fd0a4a732bea1f}{btnApprove}});}
 \DoxyCodeLine{77     resControls-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_a2a0eecfd02f64e5bb851f1fd5d1bf32d}{btnRefuse}});}
-\DoxyCodeLine{78     }
+\DoxyCodeLine{78 }
 \DoxyCodeLine{79     resLayout-\/>addLayout(resControls);}
 \DoxyCodeLine{80 }
 \DoxyCodeLine{81     \mbox{\hyperlink{classManageMedicationsView_a9d612a7171b036d374b32726a533803f}{tabWidget}}-\/>addTab(\mbox{\hyperlink{classManageMedicationsView_a50c7ba531dea465f7c5e6ae677510e11}{tabStock}}, \textcolor{stringliteral}{"{}Controle de Estoque"{}});}
-\DoxyCodeLine{82     \mbox{\hyperlink{classManageMedicationsView_a9d612a7171b036d374b32726a533803f}{tabWidget}}-\/>addTab(\mbox{\hyperlink{classManageMedicationsView_a9433840351ff9633ffeba65a979ac03e}{tabReservations}}, \textcolor{stringliteral}{"{}Validação de Receitas"{}});}
+\DoxyCodeLine{82     \mbox{\hyperlink{classManageMedicationsView_a9d612a7171b036d374b32726a533803f}{tabWidget}}-\/>addTab(\mbox{\hyperlink{classManageMedicationsView_a9433840351ff9633ffeba65a979ac03e}{tabReservations}}, \textcolor{stringliteral}{"{}Gerenciar Solicitações de Medicamentos"{}});}
 \DoxyCodeLine{83     mainLayout-\/>addWidget(\mbox{\hyperlink{classManageMedicationsView_a9d612a7171b036d374b32726a533803f}{tabWidget}});}
 \DoxyCodeLine{84 }
 \DoxyCodeLine{85     connect(\mbox{\hyperlink{classManageMedicationsView_ab03be7eb62c949fd6486d1c262045d68}{btnUpdateStock}}, \&QPushButton::clicked, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classManageMedicationsView_aba12b6e3562d3ab15ee5718d60732921}{ManageMedicationsView::on\_btnUpdateStock\_clicked}});}

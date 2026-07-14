@@ -1,5 +1,6 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="93,95,199,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,121,32"/>
-<area shape="rect" id="node3" href="$classMedicationsController.html" title=" " alt="" coords="146,5,311,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="117,184,223,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,121,121"/>
+<area shape="rect" id="node3" href="$classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="156,5,227,32"/>
+<area shape="rect" id="node4" href="$classMedicationsController.html" title=" " alt="" coords="251,95,417,121"/>
 </map>

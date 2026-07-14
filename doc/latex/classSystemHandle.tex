@@ -42,6 +42,8 @@ virtual \mbox{\hyperlink{classSystemHandle_a0f32dc96ff8e68c2b5ab3497a20f8169}{$\
 \begin{DoxyCompactList}\small\item\em Pure virtual method to create and register a \mbox{\hyperlink{classMedication}{Medication}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classReservation}{Reservation}} $\ast$ \mbox{\hyperlink{classSystemHandle_afc4e81d8a8b6686e3ac07985db18e8fa}{create\+Reservation}} (const std\+::string \&patient\+Cpf, \mbox{\hyperlink{classMedication}{Medication}} $\ast$medication, int quantity, const std\+::string \&prescription\+Path) override
 \begin{DoxyCompactList}\small\item\em Pure virtual method to create and register a \mbox{\hyperlink{classReservation}{Reservation}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ \mbox{\hyperlink{classSystemHandle_a86a814952a1f580bb84997c72ccf1826}{get\+All\+Appointments}} () const override
+\begin{DoxyCompactList}\small\item\em Retorna todas as consultas (Appointments) cadastradas no sistema. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_ad4c20398b9d6ce05998e4a2a0b047cec}{add\+User}} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
 \begin{DoxyCompactList}\small\item\em Adds an existing \mbox{\hyperlink{classUser}{User}} pointer to the system database. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystemHandle_a1bcb1d2c38fb7b0a2d5cc2f427555431}{add\+Appointment}} (\mbox{\hyperlink{classAppointment}{Appointment}} $\ast$appointment) override
@@ -64,7 +66,7 @@ bool \mbox{\hyperlink{classSystemHandle_a778ba2b31b1326221d857bbde86b6b56}{delet
 \doxysubsection{Detailed Description}
 This class represents the handle of a \mbox{\hyperlink{classSystem}{System}}. 
 
-Definition at line 56 of file System\+Impl.\+h.
+Definition at line 57 of file System\+Impl.\+h.
 
 
 
@@ -81,11 +83,11 @@ This is the default constructor for the \mbox{\hyperlink{classSystemHandle}{Syst
 
 IMPLEMENTAÇÂO DO HANDLE. 
 
-Definition at line 115 of file System\+Impl.\+cpp.
+Definition at line 119 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{115 \{\}}
+\DoxyCodeLine{119 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a0f32dc96ff8e68c2b5ab3497a20f8169}\label{classSystemHandle_a0f32dc96ff8e68c2b5ab3497a20f8169}} 
@@ -100,11 +102,11 @@ This is the default destructor for the \mbox{\hyperlink{classSystemHandle}{Syste
 
 
 
-Definition at line 116 of file System\+Impl.\+cpp.
+Definition at line 120 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{116 \{\}}
+\DoxyCodeLine{120 \{\}}
 
 \end{DoxyCode}
 
@@ -134,11 +136,11 @@ Implements \mbox{\hyperlink{classSystem_a3817edefe341b2f00a24d642b0d01f80}{Syste
 
 
 
-Definition at line 135 of file System\+Impl.\+cpp.
+Definition at line 143 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{135 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}{addAppointment}}(appointment); \}}
+\DoxyCodeLine{143 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a04707e83a9fd204e3fae43f9ad7d91d1}{addAppointment}}(appointment); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a68548f81f75056852da70ad2ec0ba2fb}\label{classSystemHandle_a68548f81f75056852da70ad2ec0ba2fb}} 
@@ -165,11 +167,11 @@ Implements \mbox{\hyperlink{classSystem_ae48b0e4e46b78217685486ec55d13291}{Syste
 
 
 
-Definition at line 136 of file System\+Impl.\+cpp.
+Definition at line 144 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{136 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_af6196f2ec5e6ce7257e9451c99377d06}{addMedication}}(medication); \}}
+\DoxyCodeLine{144 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_af6196f2ec5e6ce7257e9451c99377d06}{addMedication}}(medication); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a7a58990321c8ac0d4fd00f169b6b5d59}\label{classSystemHandle_a7a58990321c8ac0d4fd00f169b6b5d59}} 
@@ -196,11 +198,11 @@ Implements \mbox{\hyperlink{classSystem_ab25a8e01f855642a8b32715b3d54c9d8}{Syste
 
 
 
-Definition at line 137 of file System\+Impl.\+cpp.
+Definition at line 145 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{137 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a324d84fc7e4b46c6369d3092d84f28a6}{addReservation}}(reservation); \}}
+\DoxyCodeLine{145 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a324d84fc7e4b46c6369d3092d84f28a6}{addReservation}}(reservation); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_ad4c20398b9d6ce05998e4a2a0b047cec}\label{classSystemHandle_ad4c20398b9d6ce05998e4a2a0b047cec}} 
@@ -227,11 +229,11 @@ Implements \mbox{\hyperlink{classSystem_a0c199f1f954c599953a1698709a5220d}{Syste
 
 
 
-Definition at line 134 of file System\+Impl.\+cpp.
+Definition at line 142 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{134 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa093acb06c4ca377572365553caa188f}{addUser}}(user); \}}
+\DoxyCodeLine{142 \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa093acb06c4ca377572365553caa188f}{addUser}}(user); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a2eb0a670640aa2f903853b0e046b4c12}\label{classSystemHandle_a2eb0a670640aa2f903853b0e046b4c12}} 
@@ -286,13 +288,13 @@ Implements \mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{Syste
 
 
 
-Definition at line 122 of file System\+Impl.\+cpp.
+Definition at line 126 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{122                                                                                                                                      \{}
-\DoxyCodeLine{123     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a55feb73c2efcace04e183b1222adea12}{createAppointment}}(patient, doctor, date, time, esp);}
-\DoxyCodeLine{124 \}}
+\DoxyCodeLine{126                                                                                                                                      \{}
+\DoxyCodeLine{127     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a55feb73c2efcace04e183b1222adea12}{createAppointment}}(patient, doctor, date, time, esp);}
+\DoxyCodeLine{128 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a7aaf2c210bc7cac3d9b3050f44b58a48}\label{classSystemHandle_a7aaf2c210bc7cac3d9b3050f44b58a48}} 
@@ -335,13 +337,13 @@ Implements \mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{Syste
 
 
 
-Definition at line 126 of file System\+Impl.\+cpp.
+Definition at line 130 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{126                                                                                                          \{}
-\DoxyCodeLine{127     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a0a72088bbef273a17898f879bae393a4}{createMedication}}(name, quantity, requiresPrescription);}
-\DoxyCodeLine{128 \}}
+\DoxyCodeLine{130                                                                                                          \{}
+\DoxyCodeLine{131     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a0a72088bbef273a17898f879bae393a4}{createMedication}}(name, quantity, requiresPrescription);}
+\DoxyCodeLine{132 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_afc4e81d8a8b6686e3ac07985db18e8fa}\label{classSystemHandle_afc4e81d8a8b6686e3ac07985db18e8fa}} 
@@ -390,13 +392,13 @@ Implements \mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{Syste
 
 
 
-Definition at line 130 of file System\+Impl.\+cpp.
+Definition at line 134 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{130                                                                                                                                                  \{}
-\DoxyCodeLine{131     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}{createReservation}}(patientCpf, medication, quantity, prescriptionPath);}
-\DoxyCodeLine{132 \}}
+\DoxyCodeLine{134                                                                                                                                                  \{}
+\DoxyCodeLine{135     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_abe21600379dced9f60dbf83edc6fa60e}{createReservation}}(patientCpf, medication, quantity, prescriptionPath);}
+\DoxyCodeLine{136 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_aaad933a599d489a3e75c8d9a0ebea244}\label{classSystemHandle_aaad933a599d489a3e75c8d9a0ebea244}} 
@@ -451,13 +453,13 @@ Implements \mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{Syste
 
 
 
-Definition at line 118 of file System\+Impl.\+cpp.
+Definition at line 122 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{118                                                                                                                                             \{}
-\DoxyCodeLine{119     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}{createUser}}(name, cpf, email, password, type);}
-\DoxyCodeLine{120 \}}
+\DoxyCodeLine{122                                                                                                                                             \{}
+\DoxyCodeLine{123     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_ab933ea72d40ea1fa6276708e1fbe06f7}{createUser}}(name, cpf, email, password, type);}
+\DoxyCodeLine{124 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a1f0143fc8e1cd9b163594889044e09d4}\label{classSystemHandle_a1f0143fc8e1cd9b163594889044e09d4}} 
@@ -488,11 +490,11 @@ Implements \mbox{\hyperlink{classSystem_a87a6bb892cce696ea300f66329ee80f4}{Syste
 
 
 
-Definition at line 140 of file System\+Impl.\+cpp.
+Definition at line 148 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{140 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa5d6743fe652a2ef2d703efcc7a80b39}{deleteAppointment}}(appointment); \}}
+\DoxyCodeLine{148 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa5d6743fe652a2ef2d703efcc7a80b39}{deleteAppointment}}(appointment); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a1dcc8aea867970304e74ef8b706c503c}\label{classSystemHandle_a1dcc8aea867970304e74ef8b706c503c}} 
@@ -523,11 +525,11 @@ Implements \mbox{\hyperlink{classSystem_af4d87bef330021d2f71403daaae53200}{Syste
 
 
 
-Definition at line 141 of file System\+Impl.\+cpp.
+Definition at line 149 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{141 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}{deleteMedication}}(name); \}}
+\DoxyCodeLine{149 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a63887f61fdb84dc8e97d9dbb569c1680}{deleteMedication}}(name); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_a778ba2b31b1326221d857bbde86b6b56}\label{classSystemHandle_a778ba2b31b1326221d857bbde86b6b56}} 
@@ -558,11 +560,11 @@ Implements \mbox{\hyperlink{classSystem_a2139da6135b6de3f6c9fd26e8cf622a9}{Syste
 
 
 
-Definition at line 142 of file System\+Impl.\+cpp.
+Definition at line 150 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{142 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}{deleteReservation}}(reservation); \}}
+\DoxyCodeLine{150 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_aa6f7e410089dc69b5c62f5ad531a911f}{deleteReservation}}(reservation); \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSystemHandle_ac41852d3bacaad9d7a4589819ca07c4b}\label{classSystemHandle_ac41852d3bacaad9d7a4589819ca07c4b}} 
@@ -593,11 +595,39 @@ Implements \mbox{\hyperlink{classSystem_ae0965fe409fe0b2666f9c69bb307f803}{Syste
 
 
 
-Definition at line 139 of file System\+Impl.\+cpp.
+Definition at line 147 of file System\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{139 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}{deleteUser}}(cpf); \}}
+\DoxyCodeLine{147 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a6ffed60a5ef0d8132eb731e898fa0734}{deleteUser}}(cpf); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSystemHandle_a86a814952a1f580bb84997c72ccf1826}\label{classSystemHandle_a86a814952a1f580bb84997c72ccf1826}} 
+\index{SystemHandle@{SystemHandle}!getAllAppointments@{getAllAppointments}}
+\index{getAllAppointments@{getAllAppointments}!SystemHandle@{SystemHandle}}
+\doxysubsubsection{\texorpdfstring{getAllAppointments()}{getAllAppointments()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAppointment}{Appointment}} $\ast$ $>$ System\+Handle\+::get\+All\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna todas as consultas (Appointments) cadastradas no sistema. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Appointment$\ast$$>$ -\/ lista de ponteiros para as consultas. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSystem_a37f34483a9e487ad6760fb321d07569a}{System}}.
+
+
+
+Definition at line 138 of file System\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138                                                                \{}
+\DoxyCodeLine{139     \textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classSystemBody_a34b02ac9a695141b852b39a8a46783e5}{getAllAppointments}}();}
+\DoxyCodeLine{140 \}}
 
 \end{DoxyCode}
 

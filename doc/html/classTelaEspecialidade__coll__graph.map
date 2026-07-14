@@ -1,4 +1,5 @@
 <map id="TelaEspecialidade" name="TelaEspecialidade">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,144,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="35,5,114,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="25,95,163,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node3" href="$classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="108,5,179,32"/>
 </map>

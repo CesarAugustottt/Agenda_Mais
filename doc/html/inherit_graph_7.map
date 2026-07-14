@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classHandle.html" title=" " alt="" coords="5,5,167,32"/>
-<area shape="rect" id="node2" href="$classUserHandle.html" title="This class represents the handle of a User." alt="" coords="215,31,313,57"/>
-<area shape="rect" id="node3" href="$classUser.html" title="This class represents the interface of a User as implemented in this code." alt="" coords="60,56,112,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node2" href="$classMainWindow.html" title=" " alt="" coords="169,5,276,32"/>
 </map>

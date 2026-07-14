@@ -1,11 +1,12 @@
 <map id="test/funcional/funcional_tests.h" name="test/funcional/funcional_tests.h">
-<area shape="rect" id="node1" title=" " alt="" coords="163,5,338,47"/>
-<area shape="rect" id="node2" href="$System_8h.html" title=" " alt="" coords="61,95,192,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="216,95,285,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="309,95,389,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="98,319,157,345"/>
-<area shape="rect" id="node4" href="$User_8h.html" title=" " alt="" coords="27,244,90,271"/>
-<area shape="rect" id="node5" href="$Appointment_8h.html" title=" " alt="" coords="67,169,186,196"/>
-<area shape="rect" id="node6" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="168,244,274,271"/>
-<area shape="rect" id="node7" href="$Reservation_8h.html" title=" " alt="" coords="261,169,373,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="207,5,382,47"/>
+<area shape="rect" id="node2" href="$System_8h.html" title=" " alt="" coords="105,95,236,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="260,95,329,121"/>
+<area shape="rect" id="node10" title=" " alt="" coords="353,95,433,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="176,319,235,345"/>
+<area shape="rect" id="node4" title=" " alt="" coords="22,169,85,196"/>
+<area shape="rect" id="node5" href="$User_8h.html" title=" " alt="" coords="105,244,167,271"/>
+<area shape="rect" id="node6" href="$Appointment_8h.html" title=" " alt="" coords="161,169,279,196"/>
+<area shape="rect" id="node7" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="243,244,349,271"/>
+<area shape="rect" id="node8" href="$Reservation_8h.html" title=" " alt="" coords="373,244,485,271"/>
 </map>

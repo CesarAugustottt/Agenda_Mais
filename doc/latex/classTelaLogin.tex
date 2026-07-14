@@ -15,17 +15,18 @@ Inheritance diagram for Tela\+Login\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Tela\+Login\+:\nopagebreak
+Collaboration diagram for Tela\+Login\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=142pt]{classTelaLogin__coll__graph}
+\includegraphics[width=210pt]{classTelaLogin__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classTelaLogin_a9aef403dbcff5489cb18b950b9ac23c3}{Tela\+Login}} (QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classTelaLogin_ae01724510f970e1c592e71fe25f4c299}{Tela\+Login}} (\mbox{\hyperlink{classSystem}{System}} $\ast$sys, QWidget $\ast$parent=nullptr)
 \item 
 \mbox{\hyperlink{classTelaLogin_a43527872a0139a9facd15be623408f66}{$\sim$\+Tela\+Login}} ()
 \end{DoxyCompactItemize}
@@ -58,22 +59,24 @@ QFrame $\ast$ \mbox{\hyperlink{classTelaLogin_a8da9f63225c047e3165db12f946d0ef5}
 QLabel $\ast$ \mbox{\hyperlink{classTelaLogin_ad051ee9ac60b5b55fc6baf806809093f}{lbl\+Texto\+Cadastro}}
 \item 
 QPush\+Button $\ast$ \mbox{\hyperlink{classTelaLogin_a1e45be8fa6240714318e99d29ecab307}{btn\+Ir\+Para\+Cadastro}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} $\ast$ \mbox{\hyperlink{classTelaLogin_a1327491ba56048c1538799dc194aa484}{sistema}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 11 of file Tela\+Login.\+h.
+Definition at line 12 of file Tela\+Login.\+h.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classTelaLogin_a9aef403dbcff5489cb18b950b9ac23c3}\label{classTelaLogin_a9aef403dbcff5489cb18b950b9ac23c3}} 
+\mbox{\Hypertarget{classTelaLogin_ae01724510f970e1c592e71fe25f4c299}\label{classTelaLogin_ae01724510f970e1c592e71fe25f4c299}} 
 \index{TelaLogin@{TelaLogin}!TelaLogin@{TelaLogin}}
 \index{TelaLogin@{TelaLogin}!TelaLogin@{TelaLogin}}
 \doxysubsubsection{\texorpdfstring{TelaLogin()}{TelaLogin()}}
-{\footnotesize\ttfamily Tela\+Login\+::\+Tela\+Login (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Tela\+Login\+::\+Tela\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} $\ast$}]{sys,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -81,7 +84,7 @@ Definition at line 6 of file Tela\+Login.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{6                                     : QWidget(parent) \{}
+\DoxyCodeLine{6                                                  : QWidget(parent), \mbox{\hyperlink{classTelaLogin_a1327491ba56048c1538799dc194aa484}{sistema}}(sys)\{}
 \DoxyCodeLine{7     \textcolor{comment}{// Reduzimos o tamanho da janela já que agora ela tem menos componentes}}
 \DoxyCodeLine{8     this-\/>resize(380, 400);}
 \DoxyCodeLine{9     this-\/>setWindowTitle(\textcolor{stringliteral}{"{}Clínica -\/ Acesso ao Sistema"{}});}
@@ -165,7 +168,7 @@ Definition at line 56 of file Tela\+Login.\+cpp.
 \DoxyCodeLine{58     QString senha = \mbox{\hyperlink{classTelaLogin_a2127103fb190718d19d92bad05a1c6f1}{txtSenha}}-\/>text();}
 \DoxyCodeLine{59 }
 \DoxyCodeLine{60     \textcolor{keywordflow}{if} ((usuario == \textcolor{stringliteral}{"{}admin"{}} \&\& senha == \textcolor{stringliteral}{"{}1234"{}}) || (!usuario.isEmpty() \&\& !senha.isEmpty())) \{}
-\DoxyCodeLine{61         \mbox{\hyperlink{classMainWindow}{MainWindow}} *janelaPrincipal = \textcolor{keyword}{new} \mbox{\hyperlink{classMainWindow}{MainWindow}}();}
+\DoxyCodeLine{61         \mbox{\hyperlink{classMainWindow}{MainWindow}} *janelaPrincipal = \textcolor{keyword}{new} \mbox{\hyperlink{classMainWindow}{MainWindow}}(\mbox{\hyperlink{classTelaLogin_a1327491ba56048c1538799dc194aa484}{sistema}});}
 \DoxyCodeLine{62         janelaPrincipal-\/>setAttribute(Qt::WA\_DeleteOnClose);}
 \DoxyCodeLine{63         janelaPrincipal-\/>show();}
 \DoxyCodeLine{64 }
@@ -190,7 +193,7 @@ Definition at line 72 of file Tela\+Login.\+cpp.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{72                                              \{}
 \DoxyCodeLine{73     \textcolor{comment}{// Abre a sua tela de cadastro de usuário padrão do projeto}}
-\DoxyCodeLine{74     \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}} *telaCadastro = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}}(\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{74     \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}} *telaCadastro = \textcolor{keyword}{new} \mbox{\hyperlink{classTelaCadastroUsuario}{TelaCadastroUsuario}}(\textcolor{keyword}{nullptr}, \mbox{\hyperlink{classTelaLogin_a1327491ba56048c1538799dc194aa484}{sistema}});}
 \DoxyCodeLine{75     telaCadastro-\/>setAttribute(Qt::WA\_DeleteOnClose);}
 \DoxyCodeLine{76     telaCadastro-\/>show();}
 \DoxyCodeLine{77 }
@@ -210,7 +213,7 @@ Definition at line 72 of file Tela\+Login.\+cpp.
 
 
 
-Definition at line 31 of file Tela\+Login.\+h.
+Definition at line 32 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_a1e45be8fa6240714318e99d29ecab307}\label{classTelaLogin_a1e45be8fa6240714318e99d29ecab307}} 
 \index{TelaLogin@{TelaLogin}!btnIrParaCadastro@{btnIrParaCadastro}}
@@ -220,7 +223,7 @@ Definition at line 31 of file Tela\+Login.\+h.
 
 
 
-Definition at line 38 of file Tela\+Login.\+h.
+Definition at line 39 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_ac0bb7ac7d8f156f415b185f39bf753fa}\label{classTelaLogin_ac0bb7ac7d8f156f415b185f39bf753fa}} 
 \index{TelaLogin@{TelaLogin}!layoutPrincipal@{layoutPrincipal}}
@@ -230,7 +233,7 @@ Definition at line 38 of file Tela\+Login.\+h.
 
 
 
-Definition at line 23 of file Tela\+Login.\+h.
+Definition at line 24 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_adf7baa3003c9c16074f2aebb2bdb93d8}\label{classTelaLogin_adf7baa3003c9c16074f2aebb2bdb93d8}} 
 \index{TelaLogin@{TelaLogin}!lblSenha@{lblSenha}}
@@ -240,7 +243,7 @@ Definition at line 23 of file Tela\+Login.\+h.
 
 
 
-Definition at line 29 of file Tela\+Login.\+h.
+Definition at line 30 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_ad051ee9ac60b5b55fc6baf806809093f}\label{classTelaLogin_ad051ee9ac60b5b55fc6baf806809093f}} 
 \index{TelaLogin@{TelaLogin}!lblTextoCadastro@{lblTextoCadastro}}
@@ -250,7 +253,7 @@ Definition at line 29 of file Tela\+Login.\+h.
 
 
 
-Definition at line 37 of file Tela\+Login.\+h.
+Definition at line 38 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_a9282ceedc8c003cdb03f25c3bd69ff27}\label{classTelaLogin_a9282ceedc8c003cdb03f25c3bd69ff27}} 
 \index{TelaLogin@{TelaLogin}!lblTituloLogin@{lblTituloLogin}}
@@ -260,7 +263,7 @@ Definition at line 37 of file Tela\+Login.\+h.
 
 
 
-Definition at line 26 of file Tela\+Login.\+h.
+Definition at line 27 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_af48a08289e86c395c67537ff755ad40a}\label{classTelaLogin_af48a08289e86c395c67537ff755ad40a}} 
 \index{TelaLogin@{TelaLogin}!lblUsuario@{lblUsuario}}
@@ -270,7 +273,7 @@ Definition at line 26 of file Tela\+Login.\+h.
 
 
 
-Definition at line 27 of file Tela\+Login.\+h.
+Definition at line 28 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_a8da9f63225c047e3165db12f946d0ef5}\label{classTelaLogin_a8da9f63225c047e3165db12f946d0ef5}} 
 \index{TelaLogin@{TelaLogin}!linhaDivisoria@{linhaDivisoria}}
@@ -280,7 +283,17 @@ Definition at line 27 of file Tela\+Login.\+h.
 
 
 
-Definition at line 34 of file Tela\+Login.\+h.
+Definition at line 35 of file Tela\+Login.\+h.
+
+\mbox{\Hypertarget{classTelaLogin_a1327491ba56048c1538799dc194aa484}\label{classTelaLogin_a1327491ba56048c1538799dc194aa484}} 
+\index{TelaLogin@{TelaLogin}!sistema@{sistema}}
+\index{sistema@{sistema}!TelaLogin@{TelaLogin}}
+\doxysubsubsection{\texorpdfstring{sistema}{sistema}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}}$\ast$ Tela\+Login\+::sistema\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_a2127103fb190718d19d92bad05a1c6f1}\label{classTelaLogin_a2127103fb190718d19d92bad05a1c6f1}} 
 \index{TelaLogin@{TelaLogin}!txtSenha@{txtSenha}}
@@ -290,7 +303,7 @@ Definition at line 34 of file Tela\+Login.\+h.
 
 
 
-Definition at line 30 of file Tela\+Login.\+h.
+Definition at line 31 of file Tela\+Login.\+h.
 
 \mbox{\Hypertarget{classTelaLogin_a9558fd9c227931ff5f1412ed6445b817}\label{classTelaLogin_a9558fd9c227931ff5f1412ed6445b817}} 
 \index{TelaLogin@{TelaLogin}!txtUsuario@{txtUsuario}}
@@ -300,7 +313,7 @@ Definition at line 30 of file Tela\+Login.\+h.
 
 
 
-Definition at line 28 of file Tela\+Login.\+h.
+Definition at line 29 of file Tela\+Login.\+h.
 
 
 

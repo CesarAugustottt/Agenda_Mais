@@ -100,7 +100,51 @@ Cenário 3: Tentativa de agendamento em data retroativa</h3>
 <ul>
 <li><b>Dado</b> que eu sou um Paciente logado e a data atual do sistema é <code>"20/11/2026"</code>.</li>
 <li><b>Quando</b> eu tento selecionar uma data passada, como <code>"19/11/2026"</code>, para qualquer horário.</li>
-<li><b>Então</b> o sistema deve desabilitar os horários correspondentes na interface. </li>
+<li><b>Então</b> o sistema deve desabilitar os horários correspondentes na interface.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md7"></a>
+História de Usuário: Acompanhar Status do Agendamento</h1>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Consulta de Status pelo Paciente</h2>
+<ul>
+<li><b>Como um</b> Paciente</li>
+<li><b>Eu quero</b> visualizar o status das minhas consultas solicitadas (pendente, confirmada ou recusada)</li>
+<li><b>Para que</b> eu saiba se preciso aguardar, já posso comparecer, ou preciso remarcar.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Cenário 1: Consulta recém-criada aparece como Pendente</h3>
+<ul>
+<li><b>Dado</b> que eu solicitei uma consulta e nenhuma secretária/médico ainda avaliou o pedido.</li>
+<li><b>Quando</b> eu abro a tela de acompanhamento e busco pelo meu CPF.</li>
+<li><b>Então</b> o sistema deve exibir a consulta com status <code>"Pendente"</code> e justificativa <code>"-"</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Cenário 2: Consulta confirmada</h3>
+<ul>
+<li><b>Dado</b> que minha consulta teve o status alterado para <code>CONFIRMED</code> pela secretária.</li>
+<li><b>Quando</b> eu busco pelo meu CPF na tela de acompanhamento.</li>
+<li><b>Então</b> o sistema deve exibir o status <code>"Confirmada"</code> e justificativa <code>"-"</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Cenário 3: Consulta recusada com justificativa</h3>
+<ul>
+<li><b>Dado</b> que minha consulta teve o status alterado para <code>REJECTED</code> com a justificativa <code>"Médico indisponível nesse horário"</code>.</li>
+<li><b>Quando</b> eu busco pelo meu CPF na tela de acompanhamento.</li>
+<li><b>Então</b> o sistema deve exibir o status <code>"Recusada"</code> e a justificativa <code>"Médico indisponível nesse horário"</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md12"></a>
+Cenário 4: Busca sem CPF mostra todas as consultas</h3>
+<ul>
+<li><b>Dado</b> que existem consultas de múltiplos pacientes cadastradas no sistema.</li>
+<li><b>Quando</b> eu deixo o campo de CPF vazio e clico em <code>"Buscar"</code>.</li>
+<li><b>Então</b> o sistema deve exibir todas as consultas de todos os pacientes, com a coluna <code>"Paciente"</code> identificando cada uma.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Cenário 5: Busca com CPF filtra apenas o paciente informado</h3>
+<ul>
+<li><b>Dado</b> que existem consultas de mais de um paciente cadastradas no sistema.</li>
+<li><b>Quando</b> eu digito o CPF de um paciente específico e clico em <code>"Buscar"</code>.</li>
+<li><b>Então</b> o sistema deve exibir somente as consultas vinculadas àquele CPF. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

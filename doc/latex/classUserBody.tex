@@ -34,6 +34,8 @@ Collaboration diagram for User\+Body\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em This is the default constructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classUserBody_a43e1143995f735f72e242c424424198a}{$\sim$\+User\+Body}} ()
 \begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classUserBody}{User\+Body}} Class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUserBody_ab85bceeae5d1863ecc8cc88f6139ac74}{get\+Name}} () const
+\item 
 std\+::string \mbox{\hyperlink{classUserBody_a78f30be1b94c8a3532de9e15557ed559}{get\+Cpf}} () const
 \item 
 std\+::string \mbox{\hyperlink{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}{get\+Email}} () const
@@ -142,13 +144,13 @@ Definition at line 13 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 51 of file User\+Impl.\+cpp.
+Definition at line 60 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{51                           \{}
-\DoxyCodeLine{52     this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}} = \textcolor{keyword}{false}; }
-\DoxyCodeLine{53 \}}
+\DoxyCodeLine{60                           \{}
+\DoxyCodeLine{61     this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}} = \textcolor{keyword}{false}; }
+\DoxyCodeLine{62 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_a78f30be1b94c8a3532de9e15557ed559}\label{classUserBody_a78f30be1b94c8a3532de9e15557ed559}} 
@@ -159,13 +161,13 @@ Definition at line 51 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 15 of file User\+Impl.\+cpp.
+Definition at line 24 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{15                                  \{}
-\DoxyCodeLine{16     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
-\DoxyCodeLine{17 \}}
+\DoxyCodeLine{24                                  \{}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
+\DoxyCodeLine{26 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}\label{classUserBody_a5f3a4177f5c35eab68db150e50715e5a}} 
@@ -176,13 +178,30 @@ Definition at line 15 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 19 of file User\+Impl.\+cpp.
+Definition at line 28 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{19                                    \{}
-\DoxyCodeLine{20     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
-\DoxyCodeLine{21 \}}
+\DoxyCodeLine{28                                    \{}
+\DoxyCodeLine{29     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserBody_ab85bceeae5d1863ecc8cc88f6139ac74}\label{classUserBody_ab85bceeae5d1863ecc8cc88f6139ac74}} 
+\index{UserBody@{UserBody}!getName@{getName}}
+\index{getName@{getName}!UserBody@{UserBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string User\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 15 of file User\+Impl.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                   \{}
+\DoxyCodeLine{16     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}};}
+\DoxyCodeLine{17 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}\label{classUserBody_ad507bd97636796fbe158bc3eced7d9b4}} 
@@ -193,13 +212,13 @@ Definition at line 19 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 23 of file User\+Impl.\+cpp.
+Definition at line 32 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{23                                  \{}
-\DoxyCodeLine{24     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}}; }
-\DoxyCodeLine{25 \}}
+\DoxyCodeLine{32                                  \{}
+\DoxyCodeLine{33     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}}; }
+\DoxyCodeLine{34 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_a52cec1c327b9509936cdb0111134d3ee}\label{classUserBody_a52cec1c327b9509936cdb0111134d3ee}} 
@@ -210,13 +229,13 @@ Definition at line 23 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 27 of file User\+Impl.\+cpp.
+Definition at line 36 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{27                               \{}
-\DoxyCodeLine{28     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}}; }
-\DoxyCodeLine{29 \}}
+\DoxyCodeLine{36                               \{}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classUserBody_a8759d8676cce0bfe4180568a4a2cf4f6}{active}}; }
+\DoxyCodeLine{38 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_ae3b032f5872a435982a900595cbac6b1}\label{classUserBody_ae3b032f5872a435982a900595cbac6b1}} 
@@ -227,13 +246,13 @@ Definition at line 27 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 35 of file User\+Impl.\+cpp.
+Definition at line 44 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{35                                           \{}
-\DoxyCodeLine{36     this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}} = \mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
-\DoxyCodeLine{37 \}}
+\DoxyCodeLine{44                                           \{}
+\DoxyCodeLine{45     this-\/>\mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}} = \mbox{\hyperlink{classUserBody_a5257440dfdac5bd44d4a95c1c69a12ea}{cpf}}; }
+\DoxyCodeLine{46 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_ab6854fc5d8b343f1c890c9a9487e5b57}\label{classUserBody_ab6854fc5d8b343f1c890c9a9487e5b57}} 
@@ -244,13 +263,13 @@ Definition at line 35 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 39 of file User\+Impl.\+cpp.
+Definition at line 48 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{39                                               \{}
-\DoxyCodeLine{40     this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}} = \mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
-\DoxyCodeLine{41 \}}
+\DoxyCodeLine{48                                               \{}
+\DoxyCodeLine{49     this-\/>\mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}} = \mbox{\hyperlink{classUserBody_ac9aaac97fe73930ee52edac4ccd015ed}{email}}; }
+\DoxyCodeLine{50 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_a8ad503c2e9947764d390359073e6c122}\label{classUserBody_a8ad503c2e9947764d390359073e6c122}} 
@@ -261,13 +280,13 @@ Definition at line 39 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 31 of file User\+Impl.\+cpp.
+Definition at line 40 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{31                                             \{}
-\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}} = \mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}}; }
-\DoxyCodeLine{33 \}}
+\DoxyCodeLine{40                                             \{}
+\DoxyCodeLine{41     this-\/>\mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}} = \mbox{\hyperlink{classUserBody_ae6645ee270deaf30d525117689d36cf8}{name}}; }
+\DoxyCodeLine{42 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_afdd00c178b0d51a7117db6298395f55a}\label{classUserBody_afdd00c178b0d51a7117db6298395f55a}} 
@@ -278,13 +297,13 @@ Definition at line 31 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 43 of file User\+Impl.\+cpp.
+Definition at line 52 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{43                                                     \{}
-\DoxyCodeLine{44     this-\/>\mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}} = \mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}}; }
-\DoxyCodeLine{45 \}}
+\DoxyCodeLine{52                                                     \{}
+\DoxyCodeLine{53     this-\/>\mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}} = \mbox{\hyperlink{classUserBody_ae8f19d8ca94419069ea6a10221814e2c}{password}}; }
+\DoxyCodeLine{54 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classUserBody_ab57984453bb4467773f13f635c0bb5bf}\label{classUserBody_ab57984453bb4467773f13f635c0bb5bf}} 
@@ -295,13 +314,13 @@ Definition at line 43 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 47 of file User\+Impl.\+cpp.
+Definition at line 56 of file User\+Impl.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47                                        \{}
-\DoxyCodeLine{48     this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}} = newType; }
-\DoxyCodeLine{49 \}}
+\DoxyCodeLine{56                                        \{}
+\DoxyCodeLine{57     this-\/>\mbox{\hyperlink{classUserBody_a6084389bf7a938d7919de5295ea78f66}{type}} = newType; }
+\DoxyCodeLine{58 \}}
 
 \end{DoxyCode}
 
@@ -315,7 +334,7 @@ Definition at line 47 of file User\+Impl.\+cpp.
 
 
 
-Definition at line 54 of file User\+Impl.\+h.
+Definition at line 55 of file User\+Impl.\+h.
 
 \mbox{\Hypertarget{classUserBody_a0ec03bb437d38aebadc68361839057f0}\label{classUserBody_a0ec03bb437d38aebadc68361839057f0}} 
 \index{UserBody@{UserBody}!Unit\_User@{Unit\_User}}
@@ -325,7 +344,7 @@ Definition at line 54 of file User\+Impl.\+h.
 
 
 
-Definition at line 53 of file User\+Impl.\+h.
+Definition at line 54 of file User\+Impl.\+h.
 
 
 

@@ -1,0 +1,5 @@
+<map id="TelaStatusAgendamento" name="TelaStatusAgendamento">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,185,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="7,5,85,32"/>
+<area shape="rect" id="node3" href="$classSystem.html" title="This class represents the interface of a System as implemented in this code." alt="" coords="109,5,180,32"/>
+</map>

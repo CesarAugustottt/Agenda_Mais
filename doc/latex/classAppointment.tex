@@ -35,6 +35,8 @@ virtual \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Statu
 \begin{DoxyCompactList}\small\item\em Returns the status attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} \mbox{\hyperlink{classAppointment_a838d1c7f550b0238c3998e2a3ca6bdaf}{get\+Appointment\+Type}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classAppointment_a50329be79996445534244159b2c31522}{get\+Justificativa}} () const =0
+\begin{DoxyCompactList}\small\item\em Retorna a justificativa cadastrada para a consulta (usada em caso de recusa). \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classAppointment_a120cc5218236f1e535e58da773fe36bf}{set\+Patient}} (\mbox{\hyperlink{classUser}{User}} $\ast$patient)=0
 \begin{DoxyCompactList}\small\item\em Sets the patient\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classAppointment_a97aff7fe29156f47c43c89bbeb2e3262}{set\+Doctor}} (\mbox{\hyperlink{classUser}{User}} $\ast$doctor)=0
@@ -46,7 +48,9 @@ virtual void \mbox{\hyperlink{classAppointment_a0884290b4ecc5e97f2e6ada25dadec48
 virtual void \mbox{\hyperlink{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}{set\+Status}} (const \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70b}{Status}} status)=0
 \begin{DoxyCompactList}\small\item\em Sets the status attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classAppointment_a77c5105bf0eabedeb6bf6d6bf489335a}{set\+Appointment\+Type}} (const \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4}{Specialty}} type)=0
-\begin{DoxyCompactList}\small\item\em Sets the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the appointment\+Type attribute in the \mbox{\hyperlink{classAppointment}{Appointment}} Class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAppointment_a24ac93c686acf184da261057faecd304}{set\+Justificativa}} (const std\+::string \&justificativa)=0
+\begin{DoxyCompactList}\small\item\em Define a justificativa da consulta (ex\+: motivo da recusa pela secretária/médico). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -143,6 +147,23 @@ Returns the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{App
 \end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classAppointmentHandle_a05d02a9d1e6efefc85b309a7902a23d1}{Appointment\+Handle}}.
+
+\mbox{\Hypertarget{classAppointment_a50329be79996445534244159b2c31522}\label{classAppointment_a50329be79996445534244159b2c31522}} 
+\index{Appointment@{Appointment}!getJustificativa@{getJustificativa}}
+\index{getJustificativa@{getJustificativa}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{getJustificativa()}{getJustificativa()}}
+{\footnotesize\ttfamily virtual std\+::string Appointment\+::get\+Justificativa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retorna a justificativa cadastrada para a consulta (usada em caso de recusa). 
+
+\begin{DoxyReturn}{Returns}
+std\+::string -\/ a justificativa, ou string vazia se nenhuma foi registrada. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAppointmentHandle_a425484ca2af97b4b2a89c60a5a0698e3}{Appointment\+Handle}}.
 
 \mbox{\Hypertarget{classAppointment_add6d4e67b0050b1f56328f92eca59328}\label{classAppointment_add6d4e67b0050b1f56328f92eca59328}} 
 \index{Appointment@{Appointment}!getPatient@{getPatient}}
@@ -269,6 +290,25 @@ Sets the doctor\+Name attribute in the \mbox{\hyperlink{classAppointment}{Appoin
 \end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classAppointmentHandle_a847075921b1bf708fb14fc98235137c3}{Appointment\+Handle}}.
+
+\mbox{\Hypertarget{classAppointment_a24ac93c686acf184da261057faecd304}\label{classAppointment_a24ac93c686acf184da261057faecd304}} 
+\index{Appointment@{Appointment}!setJustificativa@{setJustificativa}}
+\index{setJustificativa@{setJustificativa}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{setJustificativa()}{setJustificativa()}}
+{\footnotesize\ttfamily virtual void Appointment\+::set\+Justificativa (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{justificativa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Define a justificativa da consulta (ex\+: motivo da recusa pela secretária/médico). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em justificativa} & texto explicando o motivo. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAppointmentHandle_a3a94647964140750a5a902c49544ee8c}{Appointment\+Handle}}.
 
 \mbox{\Hypertarget{classAppointment_a120cc5218236f1e535e58da773fe36bf}\label{classAppointment_a120cc5218236f1e535e58da773fe36bf}} 
 \index{Appointment@{Appointment}!setPatient@{setPatient}}

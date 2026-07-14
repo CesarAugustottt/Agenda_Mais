@@ -1,10 +1,10 @@
 <map id="src/MedicationsController.h" name="src/MedicationsController.h">
-<area shape="rect" id="node1" title=" " alt="" coords="76,5,275,32"/>
-<area shape="rect" id="node2" href="$MedicationImpl_8h.html" title="Defines the Body and Handle classes for Medication using the Bridge pattern." alt="" coords="27,80,161,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="65,229,123,256"/>
-<area shape="rect" id="node6" href="$ReservationImpl_8h.html" title=" " alt="" coords="186,80,327,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="352,80,415,107"/>
-<area shape="rect" id="node3" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="41,155,147,181"/>
-<area shape="rect" id="node5" href="$handleBody_8h.html" title=" " alt="" coords="171,155,281,181"/>
-<area shape="rect" id="node7" href="$Reservation_8h.html" title=" " alt="" coords="355,155,467,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="250,5,449,32"/>
+<area shape="rect" id="node2" href="$System_8h.html" title=" " alt="" coords="188,80,271,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="139,304,197,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="318,155,381,181"/>
+<area shape="rect" id="node5" href="$User_8h.html" title=" " alt="" coords="22,229,85,256"/>
+<area shape="rect" id="node6" href="$Appointment_8h.html" title=" " alt="" coords="73,155,191,181"/>
+<area shape="rect" id="node7" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="160,229,267,256"/>
+<area shape="rect" id="node8" href="$Reservation_8h.html" title=" " alt="" coords="291,229,403,256"/>
 </map>

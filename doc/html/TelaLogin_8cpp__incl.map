@@ -1,23 +1,27 @@
 <map id="src/TelaLogin.cpp" name="src/TelaLogin.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1016,5,1149,32"/>
-<area shape="rect" id="node2" href="$TelaLogin_8h.html" title=" " alt="" coords="1114,80,1208,107"/>
-<area shape="rect" id="node9" href="$mainwindow_8h.html" title=" " alt="" coords="684,80,800,107"/>
-<area shape="rect" id="node19" href="$TelaCadastroUsuario_8h.html" title=" " alt="" coords="921,80,1089,107"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1233,80,1348,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="1080,155,1159,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="687,155,798,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1184,155,1250,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1275,155,1359,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="822,155,929,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="1383,155,1456,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="547,155,663,181"/>
-<area shape="rect" id="node11" href="$MedicationsController_8h.html" title=" " alt="" coords="346,155,522,181"/>
-<area shape="rect" id="node12" href="$MedicationImpl_8h.html" title="Defines the Body and Handle classes for Medication using the Bridge pattern." alt="" coords="80,229,215,256"/>
-<area shape="rect" id="node14" title=" " alt="" coords="273,379,332,405"/>
-<area shape="rect" id="node16" href="$ReservationImpl_8h.html" title=" " alt="" coords="270,229,412,256"/>
-<area shape="rect" id="node18" title=" " alt="" coords="527,229,590,256"/>
-<area shape="rect" id="node13" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="25,304,132,331"/>
-<area shape="rect" id="node15" href="$handleBody_8h.html" title=" " alt="" coords="156,304,265,331"/>
-<area shape="rect" id="node17" href="$Reservation_8h.html" title=" " alt="" coords="340,304,452,331"/>
-<area shape="rect" id="node20" title=" " alt="" coords="954,155,1056,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="578,5,711,32"/>
+<area shape="rect" id="node2" href="$TelaLogin_8h.html" title=" " alt="" coords="329,155,424,181"/>
+<area shape="rect" id="node16" href="$mainwindow_8h.html" title=" " alt="" coords="677,80,793,107"/>
+<area shape="rect" id="node23" href="$TelaCadastroUsuario_8h.html" title=" " alt="" coords="137,155,305,181"/>
+<area shape="rect" id="node25" title=" " alt="" coords="818,80,933,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="429,229,508,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="664,229,775,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="241,229,307,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="132,229,216,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="533,229,639,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="332,229,405,256"/>
+<area shape="rect" id="node9" href="$System_8h.html" title=" " alt="" coords="1070,229,1153,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1059,453,1118,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1243,304,1305,331"/>
+<area shape="rect" id="node12" href="$User_8h.html" title=" " alt="" coords="1173,379,1236,405"/>
+<area shape="rect" id="node13" href="$Appointment_8h.html" title=" " alt="" coords="1048,304,1167,331"/>
+<area shape="rect" id="node14" href="$Medication_8h.html" title="Defines the abstract interface for the Medication entity." alt="" coords="855,379,962,405"/>
+<area shape="rect" id="node15" href="$Reservation_8h.html" title=" " alt="" coords="986,379,1098,405"/>
+<area shape="rect" id="node17" title=" " alt="" coords="448,155,564,181"/>
+<area shape="rect" id="node18" href="$MedicationsController_8h.html" title=" " alt="" coords="1138,155,1314,181"/>
+<area shape="rect" id="node19" href="$TelaAgenda_8h.html" title=" " alt="" coords="906,155,1015,181"/>
+<area shape="rect" id="node21" href="$TelaStatusAgendamento_8h.html" title=" " alt="" coords="639,155,831,181"/>
+<area shape="rect" id="node20" title=" " alt="" coords="934,229,1046,256"/>
+<area shape="rect" id="node22" title=" " alt="" coords="799,229,909,256"/>
+<area shape="rect" id="node24" title=" " alt="" coords="5,229,108,256"/>
 </map>

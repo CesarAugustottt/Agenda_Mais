@@ -1,0 +1,554 @@
+\hypertarget{unit__tests_8cpp}{}\doxysection{test/unit/unit\+\_\+tests.cpp File Reference}
+\label{unit__tests_8cpp}\index{test/unit/unit\_tests.cpp@{test/unit/unit\_tests.cpp}}
+{\ttfamily \#include \char`\"{}unit\+\_\+tests.\+h\char`\"{}}\newline
+Include dependency graph for unit\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a5e739513d53e02c05b443dc2bcd752a4}{test\+\_\+appointment\+\_\+default\+\_\+status\+\_\+is\+\_\+pending}} ()
+\begin{DoxyCompactList}\small\item\em Unit tests header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__tests_8cpp_ad007c92f41aca13f8dffce29c1443d07}{test\+\_\+appointment\+\_\+set\+Status\+\_\+changes\+\_\+status}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a40af1f9964f06faa036c0f50c1aa6709}{test\+\_\+appointment\+\_\+set\+Justificativa\+\_\+stores\+\_\+text}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a118cc3535e60fe45fb24b8f54c88ff80}{test\+\_\+appointment\+\_\+justificativa\+\_\+default\+\_\+is\+\_\+empty}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_ad5ca826e77c3f74dd6fd493a1882f44e}{test\+\_\+medication\+\_\+decrease\+Stock\+\_\+exact\+\_\+amount}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_aebd7b708dae22a6ccc0670a5e6d02c9e}{test\+\_\+medication\+\_\+decrease\+Stock\+\_\+insufficient\+\_\+returns\+\_\+false}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a10b3ab7bbbbdd6221e627c0dc0b1c945}{test\+\_\+medication\+\_\+decrease\+Stock\+\_\+zero\+\_\+amount}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_aa5aba73f39d3217a507fd64a0cbec0a2}{test\+\_\+medication\+\_\+set\+Quantity\+\_\+overwrites\+\_\+value}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_ab568727986e1fd80d27b659b6de02411}{test\+\_\+reservation\+\_\+default\+\_\+status\+\_\+is\+\_\+pending}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_adf9b285f54194e49b38aae4cf56bbac9}{test\+\_\+reservation\+\_\+set\+Status\+\_\+changes\+\_\+status}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a383c25b32c40ac7386b13e0efe5e60b8}{test\+\_\+reservation\+\_\+set\+Justification\+\_\+stores\+\_\+text}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_afb08b7b975c328a685333a8dd4fcd195}{test\+\_\+user\+\_\+created\+\_\+active\+\_\+by\+\_\+default}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_ad72697633ba12491431e53b28dd587c7}{test\+\_\+user\+\_\+type\+\_\+is\+\_\+stored\+\_\+correctly}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a27e6b323725fa2753eefa13dfb1c1f4e}{test\+\_\+controller\+\_\+request\+Medication\+\_\+decreases\+\_\+stock}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_ae3e754a74f5a248a8877b123a2c35a24}{test\+\_\+controller\+\_\+request\+Medication\+\_\+fails\+\_\+when\+\_\+stock\+\_\+insufficient}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a96c60c2f00c1f114e4614814773eb29c}{test\+\_\+controller\+\_\+refuse\+Reservation\+\_\+returns\+\_\+stock}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_a42355f3452667f76450e4cf8aa3cc39b}{test\+\_\+controller\+\_\+approve\+Reservation\+\_\+does\+\_\+not\+\_\+change\+\_\+stock}} ()
+\item 
+void \mbox{\hyperlink{unit__tests_8cpp_aa061262c4008f32f6b99ba4610b8c593}{run\+\_\+all\+\_\+unit\+\_\+tests}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unit__tests_8cpp_aa061262c4008f32f6b99ba4610b8c593}\label{unit__tests_8cpp_aa061262c4008f32f6b99ba4610b8c593}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!run\_all\_unit\_tests@{run\_all\_unit\_tests}}
+\index{run\_all\_unit\_tests@{run\_all\_unit\_tests}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{run\_all\_unit\_tests()}{run\_all\_unit\_tests()}}
+{\footnotesize\ttfamily void run\+\_\+all\+\_\+unit\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 233 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{233                           \{}
+\DoxyCodeLine{234     std::cout << \textcolor{stringliteral}{"{}Iniciando bateria de testes unitarios..."{}} << std::endl;}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236     \mbox{\hyperlink{unit__tests_8cpp_a5e739513d53e02c05b443dc2bcd752a4}{test\_appointment\_default\_status\_is\_pending}}();}
+\DoxyCodeLine{237     std::cout << \textcolor{stringliteral}{"{} -\/> Appointment: status padrao Pendente: OK!"{}} << std::endl;}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239     \mbox{\hyperlink{unit__tests_8cpp_ad007c92f41aca13f8dffce29c1443d07}{test\_appointment\_setStatus\_changes\_status}}();}
+\DoxyCodeLine{240     std::cout << \textcolor{stringliteral}{"{} -\/> Appointment: setStatus altera status: OK!"{}} << std::endl;}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242     \mbox{\hyperlink{unit__tests_8cpp_a40af1f9964f06faa036c0f50c1aa6709}{test\_appointment\_setJustificativa\_stores\_text}}();}
+\DoxyCodeLine{243     std::cout << \textcolor{stringliteral}{"{} -\/> Appointment: setJustificativa armazena texto: OK!"{}} << std::endl;}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245     \mbox{\hyperlink{unit__tests_8cpp_a118cc3535e60fe45fb24b8f54c88ff80}{test\_appointment\_justificativa\_default\_is\_empty}}();}
+\DoxyCodeLine{246     std::cout << \textcolor{stringliteral}{"{} -\/> Appointment: justificativa padrao vazia: OK!"{}} << std::endl;}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248     \mbox{\hyperlink{unit__tests_8cpp_ad5ca826e77c3f74dd6fd493a1882f44e}{test\_medication\_decreaseStock\_exact\_amount}}();}
+\DoxyCodeLine{249     std::cout << \textcolor{stringliteral}{"{} -\/> Medication: decreaseStock quantidade exata: OK!"{}} << std::endl;}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251     \mbox{\hyperlink{unit__tests_8cpp_aebd7b708dae22a6ccc0670a5e6d02c9e}{test\_medication\_decreaseStock\_insufficient\_returns\_false}}();}
+\DoxyCodeLine{252     std::cout << \textcolor{stringliteral}{"{} -\/> Medication: decreaseStock insuficiente retorna false: OK!"{}} << std::endl;}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254     \mbox{\hyperlink{unit__tests_8cpp_a10b3ab7bbbbdd6221e627c0dc0b1c945}{test\_medication\_decreaseStock\_zero\_amount}}();}
+\DoxyCodeLine{255     std::cout << \textcolor{stringliteral}{"{} -\/> Medication: decreaseStock zero: OK!"{}} << std::endl;}
+\DoxyCodeLine{256 }
+\DoxyCodeLine{257     \mbox{\hyperlink{unit__tests_8cpp_aa5aba73f39d3217a507fd64a0cbec0a2}{test\_medication\_setQuantity\_overwrites\_value}}();}
+\DoxyCodeLine{258     std::cout << \textcolor{stringliteral}{"{} -\/> Medication: setQuantity sobrescreve valor: OK!"{}} << std::endl;}
+\DoxyCodeLine{259 }
+\DoxyCodeLine{260     \mbox{\hyperlink{unit__tests_8cpp_ab568727986e1fd80d27b659b6de02411}{test\_reservation\_default\_status\_is\_pending}}();}
+\DoxyCodeLine{261     std::cout << \textcolor{stringliteral}{"{} -\/> Reservation: status padrao Pendente: OK!"{}} << std::endl;}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263     \mbox{\hyperlink{unit__tests_8cpp_adf9b285f54194e49b38aae4cf56bbac9}{test\_reservation\_setStatus\_changes\_status}}();}
+\DoxyCodeLine{264     std::cout << \textcolor{stringliteral}{"{} -\/> Reservation: setStatus altera status: OK!"{}} << std::endl;}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266     \mbox{\hyperlink{unit__tests_8cpp_a383c25b32c40ac7386b13e0efe5e60b8}{test\_reservation\_setJustification\_stores\_text}}();}
+\DoxyCodeLine{267     std::cout << \textcolor{stringliteral}{"{} -\/> Reservation: setJustification armazena texto: OK!"{}} << std::endl;}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{269     \mbox{\hyperlink{unit__tests_8cpp_afb08b7b975c328a685333a8dd4fcd195}{test\_user\_created\_active\_by\_default}}();}
+\DoxyCodeLine{270     std::cout << \textcolor{stringliteral}{"{} -\/> User: criado ativo por padrao: OK!"{}} << std::endl;}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272     \mbox{\hyperlink{unit__tests_8cpp_ad72697633ba12491431e53b28dd587c7}{test\_user\_type\_is\_stored\_correctly}}();}
+\DoxyCodeLine{273     std::cout << \textcolor{stringliteral}{"{} -\/> User: tipo armazenado corretamente: OK!"{}} << std::endl;}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{275     \mbox{\hyperlink{unit__tests_8cpp_a27e6b323725fa2753eefa13dfb1c1f4e}{test\_controller\_requestMedication\_decreases\_stock}}();}
+\DoxyCodeLine{276     std::cout << \textcolor{stringliteral}{"{} -\/> MedicationsController: requestMedication desconta estoque: OK!"{}} << std::endl;}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{278     \mbox{\hyperlink{unit__tests_8cpp_ae3e754a74f5a248a8877b123a2c35a24}{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient}}();}
+\DoxyCodeLine{279     std::cout << \textcolor{stringliteral}{"{} -\/> MedicationsController: requestMedication falha com estoque insuficiente: OK!"{}} << std::endl;}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281     \mbox{\hyperlink{unit__tests_8cpp_a96c60c2f00c1f114e4614814773eb29c}{test\_controller\_refuseReservation\_returns\_stock}}();}
+\DoxyCodeLine{282     std::cout << \textcolor{stringliteral}{"{} -\/> MedicationsController: refuseReservation devolve estoque: OK!"{}} << std::endl;}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284     \mbox{\hyperlink{unit__tests_8cpp_a42355f3452667f76450e4cf8aa3cc39b}{test\_controller\_approveReservation\_does\_not\_change\_stock}}();}
+\DoxyCodeLine{285     std::cout << \textcolor{stringliteral}{"{} -\/> MedicationsController: approveReservation nao altera estoque: OK!"{}} << std::endl;}
+\DoxyCodeLine{286 }
+\DoxyCodeLine{287     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nTodos os testes unitarios passaram com sucesso!"{}} << std::endl;}
+\DoxyCodeLine{288 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a5e739513d53e02c05b443dc2bcd752a4}\label{unit__tests_8cpp_a5e739513d53e02c05b443dc2bcd752a4}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_appointment\_default\_status\_is\_pending@{test\_appointment\_default\_status\_is\_pending}}
+\index{test\_appointment\_default\_status\_is\_pending@{test\_appointment\_default\_status\_is\_pending}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_appointment\_default\_status\_is\_pending()}{test\_appointment\_default\_status\_is\_pending()}}
+{\footnotesize\ttfamily void test\+\_\+appointment\+\_\+default\+\_\+status\+\_\+is\+\_\+pending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unit tests header. 
+
+Testes unitários da Agenda+. Ao contrário dos testes funcionais (que validam fluxos completos), aqui cada teste isola uma única unidade de comportamento\+: um getter/setter específico, uma regra de negócio pontual, um caso de borda. 
+
+Definition at line 7 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                                   \{}
+\DoxyCodeLine{8     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{9     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Paciente"{}}, \textcolor{stringliteral}{"{}111.111.111-\/11"{}}, \textcolor{stringliteral}{"{}p@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{10     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Medico"{}}, \textcolor{stringliteral}{"{}000.000.000-\/00"{}}, \textcolor{stringliteral}{"{}m@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}01/01/2027"{}}, \textcolor{stringliteral}{"{}10:00"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}});}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     assert(consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}() == \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70bac69f06e1a9b016d133907b4e5f5864d2}{Status::PENDING}});}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a118cc3535e60fe45fb24b8f54c88ff80}\label{unit__tests_8cpp_a118cc3535e60fe45fb24b8f54c88ff80}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_appointment\_justificativa\_default\_is\_empty@{test\_appointment\_justificativa\_default\_is\_empty}}
+\index{test\_appointment\_justificativa\_default\_is\_empty@{test\_appointment\_justificativa\_default\_is\_empty}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_appointment\_justificativa\_default\_is\_empty()}{test\_appointment\_justificativa\_default\_is\_empty()}}
+{\footnotesize\ttfamily void test\+\_\+appointment\+\_\+justificativa\+\_\+default\+\_\+is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                                        \{}
+\DoxyCodeLine{46     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{47     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Paciente"{}}, \textcolor{stringliteral}{"{}111.111.111-\/11"{}}, \textcolor{stringliteral}{"{}p@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{48     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Medico"{}}, \textcolor{stringliteral}{"{}000.000.000-\/00"{}}, \textcolor{stringliteral}{"{}m@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}01/01/2027"{}}, \textcolor{stringliteral}{"{}10:00"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}});}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     assert(consulta-\/>\mbox{\hyperlink{classAppointment_a50329be79996445534244159b2c31522}{getJustificativa}}().empty());}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a40af1f9964f06faa036c0f50c1aa6709}\label{unit__tests_8cpp_a40af1f9964f06faa036c0f50c1aa6709}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_appointment\_setJustificativa\_stores\_text@{test\_appointment\_setJustificativa\_stores\_text}}
+\index{test\_appointment\_setJustificativa\_stores\_text@{test\_appointment\_setJustificativa\_stores\_text}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_appointment\_setJustificativa\_stores\_text()}{test\_appointment\_setJustificativa\_stores\_text()}}
+{\footnotesize\ttfamily void test\+\_\+appointment\+\_\+set\+Justificativa\+\_\+stores\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                                      \{}
+\DoxyCodeLine{33     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{34     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Paciente"{}}, \textcolor{stringliteral}{"{}111.111.111-\/11"{}}, \textcolor{stringliteral}{"{}p@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{35     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Medico"{}}, \textcolor{stringliteral}{"{}000.000.000-\/00"{}}, \textcolor{stringliteral}{"{}m@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}01/01/2027"{}}, \textcolor{stringliteral}{"{}10:00"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}});}
+\DoxyCodeLine{38     consulta-\/>\mbox{\hyperlink{classAppointment_a24ac93c686acf184da261057faecd304}{setJustificativa}}(\textcolor{stringliteral}{"{}Conflito de horario"{}});}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     assert(consulta-\/>\mbox{\hyperlink{classAppointment_a50329be79996445534244159b2c31522}{getJustificativa}}() == \textcolor{stringliteral}{"{}Conflito de horario"{}});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_ad007c92f41aca13f8dffce29c1443d07}\label{unit__tests_8cpp_ad007c92f41aca13f8dffce29c1443d07}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_appointment\_setStatus\_changes\_status@{test\_appointment\_setStatus\_changes\_status}}
+\index{test\_appointment\_setStatus\_changes\_status@{test\_appointment\_setStatus\_changes\_status}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_appointment\_setStatus\_changes\_status()}{test\_appointment\_setStatus\_changes\_status()}}
+{\footnotesize\ttfamily void test\+\_\+appointment\+\_\+set\+Status\+\_\+changes\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                                  \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{classUser}{User}}* paciente = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Paciente"{}}, \textcolor{stringliteral}{"{}111.111.111-\/11"{}}, \textcolor{stringliteral}{"{}p@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{22     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Medico"{}}, \textcolor{stringliteral}{"{}000.000.000-\/00"{}}, \textcolor{stringliteral}{"{}m@teste.com"{}}, \textcolor{stringliteral}{"{}123456"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{classAppointment}{Appointment}}* consulta = sistema-\/>\mbox{\hyperlink{classSystem_ad9ea9ac509eb6cda38c7ceb48ffd2261}{createAppointment}}(paciente, medico, \textcolor{stringliteral}{"{}01/01/2027"{}}, \textcolor{stringliteral}{"{}10:00"{}}, \mbox{\hyperlink{Appointment_8h_a9a222655f442e5d6045c7dd9dc3438e4ad279e9604a129f48f5ff39dc6bee6546}{Specialty::DENTIST}});}
+\DoxyCodeLine{25     consulta-\/>\mbox{\hyperlink{classAppointment_ab63bb4f24f114e9971cac870b2ee92ae}{setStatus}}(\mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba1e314c89b115f3a21ca40f76d231bcd0}{Status::CONFIRMED}});}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     assert(consulta-\/>\mbox{\hyperlink{classAppointment_ae9544d54a2c2f36c779ae4f1f120c15a}{getStatus}}() == \mbox{\hyperlink{Appointment_8h_a67a0db04d321a74b7e7fcfd3f1a3f70ba1e314c89b115f3a21ca40f76d231bcd0}{Status::CONFIRMED}});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a42355f3452667f76450e4cf8aa3cc39b}\label{unit__tests_8cpp_a42355f3452667f76450e4cf8aa3cc39b}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_controller\_approveReservation\_does\_not\_change\_stock@{test\_controller\_approveReservation\_does\_not\_change\_stock}}
+\index{test\_controller\_approveReservation\_does\_not\_change\_stock@{test\_controller\_approveReservation\_does\_not\_change\_stock}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_controller\_approveReservation\_does\_not\_change\_stock()}{test\_controller\_approveReservation\_does\_not\_change\_stock()}}
+{\footnotesize\ttfamily void test\+\_\+controller\+\_\+approve\+Reservation\+\_\+does\+\_\+not\+\_\+change\+\_\+stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{212                                                                 \{}
+\DoxyCodeLine{213     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{214     \mbox{\hyperlink{classMedicationsController}{MedicationsController}} controller(sistema);}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Ibuprofeno"{}}, 20, \textcolor{keyword}{false});}
+\DoxyCodeLine{217     controller.requestMedication(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 5, \textcolor{stringliteral}{"{}"{}}); \textcolor{comment}{// estoque vira 15}}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219     \textcolor{keyword}{auto} pendentes = controller.getPendingReservations();}
+\DoxyCodeLine{220     \textcolor{keywordtype}{size\_t} indexNovaReserva = pendentes.size() -\/ 1;}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222     controller.approveReservation(indexNovaReserva);}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 15); \textcolor{comment}{// estoque já tinha sido descontado, aprovar não muda nada}}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{227 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a96c60c2f00c1f114e4614814773eb29c}\label{unit__tests_8cpp_a96c60c2f00c1f114e4614814773eb29c}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_controller\_refuseReservation\_returns\_stock@{test\_controller\_refuseReservation\_returns\_stock}}
+\index{test\_controller\_refuseReservation\_returns\_stock@{test\_controller\_refuseReservation\_returns\_stock}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_controller\_refuseReservation\_returns\_stock()}{test\_controller\_refuseReservation\_returns\_stock()}}
+{\footnotesize\ttfamily void test\+\_\+controller\+\_\+refuse\+Reservation\+\_\+returns\+\_\+stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195                                                        \{}
+\DoxyCodeLine{196     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{197     \mbox{\hyperlink{classMedicationsController}{MedicationsController}} controller(sistema);}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Ibuprofeno"{}}, 20, \textcolor{keyword}{false});}
+\DoxyCodeLine{200     controller.requestMedication(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 5, \textcolor{stringliteral}{"{}"{}}); \textcolor{comment}{// estoque vira 15}}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202     \textcolor{keyword}{auto} pendentes = controller.getPendingReservations();}
+\DoxyCodeLine{203     \textcolor{keywordtype}{size\_t} indexNovaReserva = pendentes.size() -\/ 1; \textcolor{comment}{// a última é a que acabamos de criar}}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205     controller.refuseReservation(indexNovaReserva, \textcolor{stringliteral}{"{}Motivo de teste"{}});}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 20); \textcolor{comment}{// estoque deve voltar ao original}}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{209     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a27e6b323725fa2753eefa13dfb1c1f4e}\label{unit__tests_8cpp_a27e6b323725fa2753eefa13dfb1c1f4e}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_controller\_requestMedication\_decreases\_stock@{test\_controller\_requestMedication\_decreases\_stock}}
+\index{test\_controller\_requestMedication\_decreases\_stock@{test\_controller\_requestMedication\_decreases\_stock}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_controller\_requestMedication\_decreases\_stock()}{test\_controller\_requestMedication\_decreases\_stock()}}
+{\footnotesize\ttfamily void test\+\_\+controller\+\_\+request\+Medication\+\_\+decreases\+\_\+stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 169 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                                          \{}
+\DoxyCodeLine{170     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{171     \mbox{\hyperlink{classMedicationsController}{MedicationsController}} controller(sistema);}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Ibuprofeno"{}}, 20, \textcolor{keyword}{false});}
+\DoxyCodeLine{174     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = controller.requestMedication(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 5, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     assert(reserva != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{177     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 15); \textcolor{comment}{// 20 -\/ 5}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{180 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_ae3e754a74f5a248a8877b123a2c35a24}\label{unit__tests_8cpp_ae3e754a74f5a248a8877b123a2c35a24}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_controller\_requestMedication\_fails\_when\_stock\_insufficient@{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient}}
+\index{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient@{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient()}{test\_controller\_requestMedication\_fails\_when\_stock\_insufficient()}}
+{\footnotesize\ttfamily void test\+\_\+controller\+\_\+request\+Medication\+\_\+fails\+\_\+when\+\_\+stock\+\_\+insufficient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                                                                        \{}
+\DoxyCodeLine{183     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{184     \mbox{\hyperlink{classMedicationsController}{MedicationsController}} controller(sistema);}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Ibuprofeno"{}}, 3, \textcolor{keyword}{false});}
+\DoxyCodeLine{187     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = controller.requestMedication(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 10, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189     assert(reserva == \textcolor{keyword}{nullptr}); \textcolor{comment}{// não deve criar a reserva}}
+\DoxyCodeLine{190     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 3); \textcolor{comment}{// estoque não deve ter sido alterado}}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{193 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_ad5ca826e77c3f74dd6fd493a1882f44e}\label{unit__tests_8cpp_ad5ca826e77c3f74dd6fd493a1882f44e}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_medication\_decreaseStock\_exact\_amount@{test\_medication\_decreaseStock\_exact\_amount}}
+\index{test\_medication\_decreaseStock\_exact\_amount@{test\_medication\_decreaseStock\_exact\_amount}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_medication\_decreaseStock\_exact\_amount()}{test\_medication\_decreaseStock\_exact\_amount()}}
+{\footnotesize\ttfamily void test\+\_\+medication\+\_\+decrease\+Stock\+\_\+exact\+\_\+amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                   \{}
+\DoxyCodeLine{62     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{63     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 10, \textcolor{keyword}{false});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} ok = remedio-\/>\mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{decreaseStock}}(10); \textcolor{comment}{// retira exatamente tudo que tem}}
+\DoxyCodeLine{66     assert(ok == \textcolor{keyword}{true});}
+\DoxyCodeLine{67     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 0);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_aebd7b708dae22a6ccc0670a5e6d02c9e}\label{unit__tests_8cpp_aebd7b708dae22a6ccc0670a5e6d02c9e}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_medication\_decreaseStock\_insufficient\_returns\_false@{test\_medication\_decreaseStock\_insufficient\_returns\_false}}
+\index{test\_medication\_decreaseStock\_insufficient\_returns\_false@{test\_medication\_decreaseStock\_insufficient\_returns\_false}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_medication\_decreaseStock\_insufficient\_returns\_false()}{test\_medication\_decreaseStock\_insufficient\_returns\_false()}}
+{\footnotesize\ttfamily void test\+\_\+medication\+\_\+decrease\+Stock\+\_\+insufficient\+\_\+returns\+\_\+false (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                                 \{}
+\DoxyCodeLine{73     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{74     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 5, \textcolor{keyword}{false});}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} ok = remedio-\/>\mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{decreaseStock}}(6); \textcolor{comment}{// pede mais do que existe}}
+\DoxyCodeLine{77     assert(ok == \textcolor{keyword}{false});}
+\DoxyCodeLine{78     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 5); \textcolor{comment}{// estoque não deve ter sido alterado}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a10b3ab7bbbbdd6221e627c0dc0b1c945}\label{unit__tests_8cpp_a10b3ab7bbbbdd6221e627c0dc0b1c945}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_medication\_decreaseStock\_zero\_amount@{test\_medication\_decreaseStock\_zero\_amount}}
+\index{test\_medication\_decreaseStock\_zero\_amount@{test\_medication\_decreaseStock\_zero\_amount}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_medication\_decreaseStock\_zero\_amount()}{test\_medication\_decreaseStock\_zero\_amount()}}
+{\footnotesize\ttfamily void test\+\_\+medication\+\_\+decrease\+Stock\+\_\+zero\+\_\+amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                  \{}
+\DoxyCodeLine{84     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{85     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 5, \textcolor{keyword}{false});}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{bool} ok = remedio-\/>\mbox{\hyperlink{classMedication_ad0a17791c644d48bcc89cd0e65d3a625}{decreaseStock}}(0); \textcolor{comment}{// caso de borda: retirar zero}}
+\DoxyCodeLine{88     assert(ok == \textcolor{keyword}{true});}
+\DoxyCodeLine{89     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 5);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_aa5aba73f39d3217a507fd64a0cbec0a2}\label{unit__tests_8cpp_aa5aba73f39d3217a507fd64a0cbec0a2}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_medication\_setQuantity\_overwrites\_value@{test\_medication\_setQuantity\_overwrites\_value}}
+\index{test\_medication\_setQuantity\_overwrites\_value@{test\_medication\_setQuantity\_overwrites\_value}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_medication\_setQuantity\_overwrites\_value()}{test\_medication\_setQuantity\_overwrites\_value()}}
+{\footnotesize\ttfamily void test\+\_\+medication\+\_\+set\+Quantity\+\_\+overwrites\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                                     \{}
+\DoxyCodeLine{95     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{96     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 5, \textcolor{keyword}{false});}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     remedio-\/>\mbox{\hyperlink{classMedication_a72a864b5631279fe9cce389637fca50e}{setQuantity}}(100);}
+\DoxyCodeLine{99     assert(remedio-\/>\mbox{\hyperlink{classMedication_aec6f3d991ea24c858f7c775eb3e23a77}{getQuantity}}() == 100);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_ab568727986e1fd80d27b659b6de02411}\label{unit__tests_8cpp_ab568727986e1fd80d27b659b6de02411}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_reservation\_default\_status\_is\_pending@{test\_reservation\_default\_status\_is\_pending}}
+\index{test\_reservation\_default\_status\_is\_pending@{test\_reservation\_default\_status\_is\_pending}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_reservation\_default\_status\_is\_pending()}{test\_reservation\_default\_status\_is\_pending()}}
+{\footnotesize\ttfamily void test\+\_\+reservation\+\_\+default\+\_\+status\+\_\+is\+\_\+pending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 108 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                                   \{}
+\DoxyCodeLine{109     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{110     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 10, \textcolor{keyword}{false});}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = sistema-\/>\mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{createReservation}}(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 2, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     assert(reserva-\/>\mbox{\hyperlink{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}{getStatus}}() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3ac69f06e1a9b016d133907b4e5f5864d2}{ReservationStatus::PENDING}});}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{117 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_a383c25b32c40ac7386b13e0efe5e60b8}\label{unit__tests_8cpp_a383c25b32c40ac7386b13e0efe5e60b8}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_reservation\_setJustification\_stores\_text@{test\_reservation\_setJustification\_stores\_text}}
+\index{test\_reservation\_setJustification\_stores\_text@{test\_reservation\_setJustification\_stores\_text}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_reservation\_setJustification\_stores\_text()}{test\_reservation\_setJustification\_stores\_text()}}
+{\footnotesize\ttfamily void test\+\_\+reservation\+\_\+set\+Justification\+\_\+stores\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                      \{}
+\DoxyCodeLine{132     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{133     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 10, \textcolor{keyword}{false});}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = sistema-\/>\mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{createReservation}}(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 2, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{136     reserva-\/>\mbox{\hyperlink{classReservation_a4e5fed968424f58018d4b722448b8af4}{setJustification}}(\textcolor{stringliteral}{"{}Sem receita anexada"{}});}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138     assert(reserva-\/>\mbox{\hyperlink{classReservation_a574a0459e90415c927664e85a283cfcb}{getJustification}}() == \textcolor{stringliteral}{"{}Sem receita anexada"{}});}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{141 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_adf9b285f54194e49b38aae4cf56bbac9}\label{unit__tests_8cpp_adf9b285f54194e49b38aae4cf56bbac9}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_reservation\_setStatus\_changes\_status@{test\_reservation\_setStatus\_changes\_status}}
+\index{test\_reservation\_setStatus\_changes\_status@{test\_reservation\_setStatus\_changes\_status}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_reservation\_setStatus\_changes\_status()}{test\_reservation\_setStatus\_changes\_status()}}
+{\footnotesize\ttfamily void test\+\_\+reservation\+\_\+set\+Status\+\_\+changes\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                                                  \{}
+\DoxyCodeLine{120     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{121     \mbox{\hyperlink{classMedication}{Medication}}* remedio = sistema-\/>\mbox{\hyperlink{classSystem_a7dcbcf3df9f0b0cf5c052fb2f08ca989}{createMedication}}(\textcolor{stringliteral}{"{}Dipirona"{}}, 10, \textcolor{keyword}{false});}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \mbox{\hyperlink{classReservation}{Reservation}}* reserva = sistema-\/>\mbox{\hyperlink{classSystem_afaf1d017ab7d3a77c2a46416e33225f0}{createReservation}}(\textcolor{stringliteral}{"{}111.111.111-\/11"{}}, remedio, 2, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{124     reserva-\/>\mbox{\hyperlink{classReservation_a784ad03aeb30837448d0b97ec3a129ca}{setStatus}}(\mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55}{ReservationStatus::APPROVED}});}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     assert(reserva-\/>\mbox{\hyperlink{classReservation_a6f0a2a5dfc06ea53dbe2cbde03854b03}{getStatus}}() == \mbox{\hyperlink{Reservation_8h_a2cb75c606487ee602cd39e7139d514e3a21e5b3f076cbce27a9926a00c82a6c55}{ReservationStatus::APPROVED}});}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_afb08b7b975c328a685333a8dd4fcd195}\label{unit__tests_8cpp_afb08b7b975c328a685333a8dd4fcd195}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_user\_created\_active\_by\_default@{test\_user\_created\_active\_by\_default}}
+\index{test\_user\_created\_active\_by\_default@{test\_user\_created\_active\_by\_default}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_user\_created\_active\_by\_default()}{test\_user\_created\_active\_by\_default()}}
+{\footnotesize\ttfamily void test\+\_\+user\+\_\+created\+\_\+active\+\_\+by\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                                            \{}
+\DoxyCodeLine{148     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{149     \mbox{\hyperlink{classUser}{User}}* usuario = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}f@teste.com"{}}, \textcolor{stringliteral}{"{}senha"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a881d450aaf123f74e89b773c02acf75b}{UserType::PATIENT}});}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151     assert(usuario-\/>\mbox{\hyperlink{classUser_ab2484a8ad22bca122e320184c219beab}{isActive}}() == \textcolor{keyword}{true});}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{154 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{unit__tests_8cpp_ad72697633ba12491431e53b28dd587c7}\label{unit__tests_8cpp_ad72697633ba12491431e53b28dd587c7}} 
+\index{unit\_tests.cpp@{unit\_tests.cpp}!test\_user\_type\_is\_stored\_correctly@{test\_user\_type\_is\_stored\_correctly}}
+\index{test\_user\_type\_is\_stored\_correctly@{test\_user\_type\_is\_stored\_correctly}!unit\_tests.cpp@{unit\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_user\_type\_is\_stored\_correctly()}{test\_user\_type\_is\_stored\_correctly()}}
+{\footnotesize\ttfamily void test\+\_\+user\+\_\+type\+\_\+is\+\_\+stored\+\_\+correctly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file unit\+\_\+tests.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156                                           \{}
+\DoxyCodeLine{157     \mbox{\hyperlink{classSystem}{System}}* sistema = \mbox{\hyperlink{classSystem_adafab6f86fb79b5f6bc97203130fc481}{System::createSystem}}();}
+\DoxyCodeLine{158     \mbox{\hyperlink{classUser}{User}}* medico = sistema-\/>\mbox{\hyperlink{classSystem_aa52d35ae271bda96cf8b0f7377d78eb5}{createUser}}(\textcolor{stringliteral}{"{}Dr. Fulano"{}}, \textcolor{stringliteral}{"{}123.456.789-\/00"{}}, \textcolor{stringliteral}{"{}f@teste.com"{}}, \textcolor{stringliteral}{"{}senha"{}}, \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     assert(medico-\/>\mbox{\hyperlink{classUser_a7b663fb1d71ad5ffe07d6225657099b9}{getType}}() == \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9a42fc09c1135efe6604ed73cf74fc71b1}{UserType::DOCTOR}});}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162     \textcolor{keyword}{delete} sistema;}
+\DoxyCodeLine{163 \}}
+
+\end{DoxyCode}

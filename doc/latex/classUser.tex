@@ -25,6 +25,8 @@ virtual \mbox{\hyperlink{classUser_a7d1cf7c22ba031caec015ec427419513}{$\sim$\+Us
 \begin{DoxyCompactList}\small\item\em This is the default destructor for the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classUser_a0256ab4607c0b726f0dfdb359dc95e5e}{get\+Cpf}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the cpf attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classUser_a538e10150819d39d8b7ad1f90c3ef630}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Retorna o nome do usuário. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classUser_ac70713a8100d22a586cc50496069071e}{get\+Email}} () const =0
 \begin{DoxyCompactList}\small\item\em Returns the email attribute in the \mbox{\hyperlink{classUser}{User}} Class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{User_8h_a196c5ae3c192f069339f2966656f6fe9}{User\+Type}} \mbox{\hyperlink{classUser_a7b663fb1d71ad5ffe07d6225657099b9}{get\+Type}} () const =0
@@ -128,6 +130,23 @@ string -\/ the content email attribute.
 \end{DoxyItemize}
 
 Implemented in \mbox{\hyperlink{classUserHandle_ad28ea24763961199ebf4934f8dca0cab}{User\+Handle}}.
+
+\mbox{\Hypertarget{classUser_a538e10150819d39d8b7ad1f90c3ef630}\label{classUser_a538e10150819d39d8b7ad1f90c3ef630}} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retorna o nome do usuário. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string -\/ O nome armazenado. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classUserHandle_ab037032e94b684525884daba94a5a080}{User\+Handle}}.
 
 \mbox{\Hypertarget{classUser_a7b663fb1d71ad5ffe07d6225657099b9}\label{classUser_a7b663fb1d71ad5ffe07d6225657099b9}} 
 \index{User@{User}!getType@{getType}}
