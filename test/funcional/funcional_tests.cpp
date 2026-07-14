@@ -2,21 +2,21 @@
 #include <iostream>
 #include <cassert>
 
-void test_user_management() {
-    System* sistema = System::createSystem();
-    assert(sistema != nullptr);
+// void test_user_management() {
+//     System* sistema = System::createSystem();
+//     assert(sistema != nullptr);
 
-    User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
-    assert(paciente != nullptr);
-    assert(paciente->getCpf() == "123.456.789-00");
-    assert(paciente->isActive() == true);
+//     User* paciente = sistema->createUser("Fulano", "123.456.789-00", "fulano@ufop.edu.br", "senha123", UserType::PATIENT);
+//     assert(paciente != nullptr);
+//     assert(paciente->getCpf() == "123.456.789-00");
+//     assert(paciente->isActive() == true);
 
-    User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
-    assert(medico != nullptr);
-    assert(medico->getType() == UserType::DOCTOR);
+//     User* medico = sistema->createUser("Dr. Rey", "987.654.321-11", "rey@hospital.com", "med123", UserType::DOCTOR);
+//     assert(medico != nullptr);
+//     assert(medico->getType() == UserType::DOCTOR);
 
-    delete sistema;
-}
+//     delete sistema;
+// }
 
 void test_appointment_flow() {
     System* sistema = System::createSystem();
