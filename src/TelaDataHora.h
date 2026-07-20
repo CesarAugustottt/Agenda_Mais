@@ -27,7 +27,8 @@ private:
 
 private:
     System* sistema;
-    Specialty espSelecionada; 
+    Specialty espSelecionada;
+    User* pacienteAtual; // paciente reaproveitado entre os cliques nesta tela, em vez de recriado a cada horário
 
     QVBoxLayout *layoutPrincipal; //layout que organiza tudo
     QCalendarWidget *calendarioWidget; //ponteiro com calendario
@@ -38,6 +39,7 @@ private:
     QPushButton *btnVoltar;
 
     void processarAgendamento(const std::string& horario, User* patient);
+    User* getOrCreatePacienteTeste();
 };
 
 #endif // TELADATAHORA_H
