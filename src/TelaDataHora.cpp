@@ -4,7 +4,7 @@
 #include <QMessageBox>
 
 TelaDataHora::TelaDataHora(QWidget *parent, Specialty esp, System* sys)
-    : QWidget(parent), espSelecionada(esp), sistema(sys)
+    : QWidget(parent), sistema(sys), espSelecionada(esp), pacienteAtual(nullptr)
 {
     this->resize(360, 640);
     this->setWindowTitle("Data");
@@ -38,6 +38,13 @@ TelaDataHora::TelaDataHora(QWidget *parent, Specialty esp, System* sys)
 
 TelaDataHora::~TelaDataHora() {}
 
+User* TelaDataHora::getOrCreatePacienteTeste() {
+    if (!pacienteAtual && sistema) {
+        pacienteAtual = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
+    }
+    return pacienteAtual;
+}
+
 void TelaDataHora::processarAgendamento(const std::string& horario, User* patient) {
     std::string dataStr = calendarioWidget->selectedDate().toString("dd/MM/yyyy").toStdString();
     std::string nomeMedico = "";
@@ -65,11 +72,11 @@ void TelaDataHora::processarAgendamento(const std::string& horario, User* patien
 
     Appointment* novoAgendamento = sistema->createAppointment(
         patient, doctor, dataStr, horario, espSelecionada
-    );
+        );
 
     QString msg = QString::fromStdString("Consulta Solicitada!\n\nCom: " + nomeMedico + "\nData: " + dataStr + "\nHora: " + horario);
     QMessageBox::information(this, "Sucesso", msg);
-    
+
     this->close();
 }
 
@@ -78,9 +85,7 @@ void TelaDataHora::on_btnHora1330_clicked() {
         QMessageBox::critical(this, "Erro", "O sistema não foi transmitido corretamente para esta janela.");
         return;
     }
-    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
-    
-    processarAgendamento("13:30", usuarioFicticio); 
+    processarAgendamento("13:30", getOrCreatePacienteTeste());
 }
 
 void TelaDataHora::on_btnHora1400_clicked() {
@@ -88,8 +93,7 @@ void TelaDataHora::on_btnHora1400_clicked() {
         QMessageBox::critical(this, "Erro", "O sistema não foi transmitido corretamente para esta janela.");
         return;
     }
-    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
-    processarAgendamento("14:00", usuarioFicticio); 
+    processarAgendamento("14:00", getOrCreatePacienteTeste());
 }
 
 void TelaDataHora::on_btnHora1430_clicked() {
@@ -97,8 +101,7 @@ void TelaDataHora::on_btnHora1430_clicked() {
         QMessageBox::critical(this, "Erro", "O sistema não foi transmitido corretamente para esta janela.");
         return;
     }
-    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
-    processarAgendamento("14:30", usuarioFicticio); 
+    processarAgendamento("14:30", getOrCreatePacienteTeste());
 }
 
 void TelaDataHora::on_btnHora1500_clicked() {
@@ -106,8 +109,7 @@ void TelaDataHora::on_btnHora1500_clicked() {
         QMessageBox::critical(this, "Erro", "O sistema não foi transmitido corretamente para esta janela.");
         return;
     }
-    User* usuarioFicticio = sistema->createUser("Paciente Teste", "111.111.111-11", "paciente@teste.com", "123456", UserType::PATIENT);
-    processarAgendamento("15:00", usuarioFicticio); 
+    processarAgendamento("15:00", getOrCreatePacienteTeste());
 }
 
 //se apertar em voltar, abre a tela anterior

@@ -16,49 +16,44 @@ std::string UserBody::getName() const {
     return this->name;
 }
 
-
-std::string UserHandle::getName() const {
-    return pImpl_->getName();
-}
-
 std::string UserBody::getCpf() const {
-    return this->cpf; 
+    return this->cpf;
 }
 
 std::string UserBody::getEmail() const {
-    return this->email; 
+    return this->email;
 }
 
 UserType UserBody::getType() const {
-    return this->type; 
+    return this->type;
 }
 
 bool UserBody::isActive() const {
-    return this->active; 
+    return this->active;
 }
 
 void UserBody::setName(const std::string& name) {
-    this->name = name; 
+    this->name = name;
 }
 
 void UserBody::setCpf(const std::string& cpf) {
-    this->cpf = cpf; 
+    this->cpf = cpf;
 }
 
 void UserBody::setEmail(const std::string& email) {
-    this->email = email; 
+    this->email = email;
 }
 
 void UserBody::setPassword(const std::string& password) {
-    this->password = password; 
+    this->password = password;
 }
 
 void UserBody::setType(UserType newType) {
-    this->type = newType; 
+    this->type = newType;
 }
 
 void UserBody::deactivate() {
-    this->active = false; 
+    this->active = false;
 }
 
 // Implementação de UserHandle
@@ -74,26 +69,30 @@ UserHandle::UserHandle(){}
 
 UserHandle::~UserHandle() {}
 
+std::string UserHandle::getName() const {
+    return pImpl_->getName();
+}
+
 std::string UserHandle::getCpf() const {
-    return pImpl_->getCpf(); 
+    return pImpl_->getCpf();
 }
 
 std::string UserHandle::getEmail() const {
-    return pImpl_->getEmail(); 
+    return pImpl_->getEmail();
 }
 
-UserType UserHandle::getType() const { 
-    return pImpl_->getType(); 
+UserType UserHandle::getType() const {
+    return pImpl_->getType();
 }
 
-bool UserHandle::isActive() const { 
-    return pImpl_->isActive(); 
+bool UserHandle::isActive() const {
+    return pImpl_->isActive();
 }
 
-void UserHandle::setType(UserType newType) { 
-    pImpl_->setType(newType); 
+void UserHandle::setType(UserType newType) {
+    pImpl_->setType(newType);
 }
 
-void UserHandle::deactivate() { 
-    pImpl_->deactivate(); 
+void UserHandle::deactivate() {
+    pImpl_->deactivate();
 }

@@ -98,6 +98,36 @@ public:
      */
 
     virtual std::vector<Appointment*> getAllAppointments() const = 0;
+
+    /*!
+     * @brief Retorna todos os medicamentos cadastrados no sistema (usado para não re-semear dados de exemplo a cada execução).
+     */
+    virtual std::vector<Medication*> getAllMedications() const = 0;
+
+    /*!
+     * @brief Retorna todas as reservas de medicamento cadastradas no sistema.
+     */
+    virtual std::vector<Reservation*> getAllReservations() const = 0;
+
+    // métodos de atualização (persistência)
+    /*!
+     * @brief Persiste o estado atual de uma Appointment já existente (ex: status alterado).
+     * @param appointment o ponteiro cujo estado atual deve ser salvo.
+     */
+    virtual void updateAppointment(Appointment* appointment) = 0;
+
+    /*!
+     * @brief Persiste o estado atual de um Medication já existente (ex: estoque alterado).
+     * @param medication o ponteiro cujo estado atual deve ser salvo.
+     */
+    virtual void updateMedication(Medication* medication) = 0;
+
+    /*!
+     * @brief Persiste o estado atual de uma Reservation já existente (ex: aprovação/recusa).
+     * @param reservation o ponteiro cujo estado atual deve ser salvo.
+     */
+    virtual void updateReservation(Reservation* reservation) = 0;
+
     // metodos de delete
     /*!
      * @brief Deletes a User from the system database by its unique cpf identifier.
